@@ -35,11 +35,11 @@ Each file contains sql scripts to create database and import data.
 
 **blocklists_db:** Collected IoC blocklists
 
-**ioc_transformations_db:** : transformation between IoC served in this database. Possible transformation between IP <-> Domain <-> Subdomain <-> URL divided into different tables.
+**ioc_transformations_db:** transformation between IoC served in this database. Possible transformation between IP <-> Domain <-> Subdomain <-> URL divided into different tables.
 
 **scan_db:** Scan results of IoCs are served in this database.
 
-**ssl_db:**SSL certificates and related info like fingerprints and etc. served in this database.
+**ssl_db:** SSL certificates and related info like fingerprints and etc. served in this database.
 
 **whois_lookup_db:** Whois lookup results served in this database.
 
