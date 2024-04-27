@@ -45,6 +45,6 @@ Each file contains sql scripts to create database and import data.
 
 **x_db:** X (Twitter) posts and related info about IoCs served in tihs database. 
 
-## pg_to_graph_app:
+## pg_to_graph_app
 
 Actual business logic that transforms raw CTI data in PostgreSQL databases to the HIN of CTI served in this project. Project is implemented in Golang. 
