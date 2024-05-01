@@ -1,0 +1,12 @@
+Malware, partdoor
+Malware, royalroad
+AffectedIndustry, telecommunication
+AffectedIndustry, defense
+AffectedCountry, russia
+AttackerCountry, china
+
+cve	CVE-2018-0798
+cve	CVE-2018-0802
+fqdn	cybereason.com
+ip4	45.63.27.162
+url	cybereason.com/blog/portdoor-new-chinese-apt-backdoor-attack-targets-russian-defense-sector

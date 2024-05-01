@@ -1,0 +1,34 @@
+Malware, goldbackdoor
+Filename, Kang Min-chol Edits 2.lnk
+Filename, Kang Min-chol Edits 2.zip
+Filename, Kang Min-chol Edits 2.doc
+
+email	research@stairwell.com
+email	silas@Stairwell.com
+fqdn	2.zip
+fqdn	api.onedrive.com
+fqdn	dailynk.com
+fqdn	dailynk.us
+fqdn	docs.microsoft.com
+fqdn	mail.dailynk.us
+fqdn	main.dailynk.us
+fqdn	stairwell.com
+fqdn	www.volexity.com
+ip4	142.93.201.77
+ip6	::
+ip6	::C
+ip6	aab::
+ip6	b::
+ip6	ccc::C
+ip6	fff::
+sha256	120ca851663ef0ebef585d716c9e2ba67bd4870865160fec3b853156be1159c5
+sha256	18c9fd4f781789cd15cee4fcb18fa983897fc9876422d662a2243ff7499f5948
+sha256	485246b411ef5ea9e903397a5490d106946a8323aaf79e6041bdf94763a0c028
+sha256	94ca32c0a3002574d7ea1bef094146a9d3b2ad0018b3e3d3f4ffca8689b89e5a
+sha256	9eddd99db6f5a7791f7e446792f04b301d29f6b0596920e8b39647cc7585185d
+sha256	c5369c2ce7f33d6cd209cd61226a0637adc809b864deb73a98d78bfed0883163
+tronix	411ef5ea9e903397a5490d106946a8323aaf79e604
+url	https://api.onedrive.com/v1.0/shares/u!aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBcjl6ZnJ3eFdXRW9hczVYaV
+url	https://docs.microsoft.com/en-us/windows/win32/debug/pe-format
+url	https://www.volexity.com/blog/2021/08/17/north-korean-apt-inkysquid-infects-victims-using-browser-exploits/
+url	main.dailynk.us/regex?id=oTks2&file=Kang

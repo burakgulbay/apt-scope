@@ -1,0 +1,43 @@
+AttackerCountry, china
+APTGroup, stone panda, apt10
+APTGroup, intrusiontruth
+APTGroup, gothic panda
+APTGroup, putter panda, apt1
+
+cve	CVE-2018-0802
+email	atreexp@yahoo.com.cn
+email	baobei@xiaohong.org
+email	eshilong@vip.qq.com
+email	long@xiaohong.org
+email	robin4700@foxmail.com
+fqdn	alumni.ecnu.edu.cn
+fqdn	bjgwql.com
+fqdn	crowdstrike.com
+fqdn	down.51cto.com
+fqdn	foxmail.com
+fqdn	kjbz.mca.gov.cn
+fqdn	leveltestorgaction.do
+fqdn	rjzyjsxy.zzia.edu.cn
+fqdn	vip.qq.com
+fqdn	www.djbh.net
+fqdn	www.recordedfuture.com
+fqdn	www.yingjiesheng.com
+fqdn	xiaohong.org
+fqdn	yahoo.com.cn
+fqdn	zhidao.baidu.com
+md5	402885cb35d11a540135d168e41e000c
+trademark	CrowdStrike®
+trademark	Intelligence™
+url	crowdstrike.com/blog/two-birds-one-stone-panda
+url	http://alumni.ecnu.edu.cn/s/328/t/528/3b/02/info80642.htm
+url	http://bjgwql.com/a/hezuojiaoliu/2011/0422/288.htm
+url	http://down.51cto.com/424761/down/1/
+url	http://kjbz.mca.gov.cn/article/mzbzhzcwj/201106/20110600157934.shtml
+url	http://rjzyjsxy.zzia.edu.cn/picture/article/25/27/01/6c8b24a143f9959a85301d4527f0/801f81cf-8f30-4aa4-8428-7f9d4e778e76.doc
+url	http://www.djbh.net/webdev/web/LevelTestOrgAction.do?p=nlbdLv3&id=402885cb35d11a540135d168e41e000c
+url	http://www.yingjiesheng.com/job-001-607-536.html
+url	https://www.recordedfuture.com/chinese-mss-behind-apt3/
+url	https://zhidao.baidu.com/question/1046720364336588899.html
+url	https://zhidao.baidu.com/question/146035392.html
+url	https://zhidao.baidu.com/question/223614321.html
+uuid	801f81cf-8f30-4aa4-8428-7f9d4e778e76

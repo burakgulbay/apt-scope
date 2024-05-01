@@ -1,0 +1,16 @@
+Malware, updocx
+AffectedIndustry, finance
+APTGroup, fin4
+
+fqdn	vb.net
+fqdn	www.advantarlabs.com
+fqdn	www.esentire.com
+fqdn	www.reuters.com
+fqdn	www.symantec.com
+fqdn	www2.fireeye.com
+md5	d102693540b53f9a564e3a550f938709
+url	http://www.advantarlabs.com/plugins/extension-­xtd/WINWORD32.exe
+url	http://www.reuters.com/article/2015/06/23/us-hackers-insidertrading-idUSKBN0P31M720150623
+url	http://www.symantec.com/security_response/writeup.jsp?docid=2014-052813-3721-99&tabid=2
+url	https://www.esentire.com/wp-content/uploads/2013/11/esentire_alert_20131108_DOCM.pdf
+url	https://www2.fireeye.com/rs/fireye/images/rpt-fin4.pdf

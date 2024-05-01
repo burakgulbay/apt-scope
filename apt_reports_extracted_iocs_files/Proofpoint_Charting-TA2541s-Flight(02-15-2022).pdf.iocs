@@ -1,0 +1,24 @@
+Malware, asyncrat
+Malware, strrat
+Malware, imminent monitor
+APTGroup, ta2541
+
+fqdn	6001dc.ddns.net
+fqdn	akconsult.ddns.net
+fqdn	bigdips0n.publicvm.com
+fqdn	bodmas01.zapto.org
+fqdn	e29rava.ddns.net
+fqdn	grace5321.publicvm.com
+fqdn	h0pe.ddns.net
+fqdn	joelthomas.linkpc.net
+fqdn	kimjoy.ddns.net
+fqdn	paste.ee
+fqdn	proofpoint.com
+fqdn	rick63.publicvm.com
+fqdn	tq744.publicvm.com
+sha256	4717ee69d28306254b1affa7efc0a50c481c3930025e75366ce93c99505ded96
+sha256	67250d5e5cb42df505b278e53ae346e7573ba60a06c3daac7ec05f853100e61c
+sha256	d793f37eb89310ddfc6d0337598c316db0eccda4d30e34143c768235594a169c
+sha256	ebd7809cacae62bc94dfb8077868f53d53beb0614766213d48f4385ed09c73a6
+url	https://paste.ee/r/01f2w/0
+url	proofpoint.com/us/blog/threat-insight/charting-ta2541s-flight

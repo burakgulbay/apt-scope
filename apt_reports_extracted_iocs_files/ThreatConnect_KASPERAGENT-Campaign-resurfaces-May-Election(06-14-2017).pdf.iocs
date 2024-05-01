@@ -1,0 +1,24 @@
+Malware, kasperagent
+Filename, testproj.exe
+AffectedCountry, palestine
+AffectedCountry, usa
+AffectedCountry, israel
+AffectedCountry, egypt
+
+fqdn	7aga.net
+fqdn	mailsinfo.net
+fqdn	malwr.com
+fqdn	stikerscloud.com
+fqdn	threatconnect.com
+fqdn	treestower.com
+fqdn	upfile2box.com
+fqdn	windowsnewupdates.com
+ip4	195.154.110.237
+md5	0B4E44256788783634A2B1DADF4F9784
+md5	2DE25306A58D8A5B6CBE8D5E2FC5F3C5
+md5	4FE7561F63A71CA73C26CB95B28EAEE8
+md5	6843AE9EAC03F69DF301D024BFDEFC88
+md5	C66F88D2D76D79210D568D7AD7896B45
+md5	E44F0BD2ADFB9CBCABCAD314D27ACCFC
+md5	c66f88d2d76d79210d568d7ad7896b45
+md5	dcf3aa484253068d8833c7c5b019b07a

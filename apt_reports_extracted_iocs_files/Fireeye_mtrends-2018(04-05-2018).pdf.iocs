@@ -1,0 +1,53 @@
+Malware, alfa team shell
+Malware, mimikatz
+Malware, notpetya
+Malware, emotet
+AffectedIndustry, aerospace and defence
+AffectedIndustry, military
+AffectedIndustry, finance
+AffectedIndustry, government
+AffectedIndustry, energy
+AffectedIndustry, chemicals
+AffectedIndustry, telecommunication
+AffectedIndustry, construction
+AffectedIndustry, defense
+AffectedIndustry, media
+AffectedCountry, vietnam
+AffectedCountry, saudi arabia
+AffectedCountry, usa
+AttackerCountry, iran
+AttackerCountry, russia
+AttackerCountry, china
+APTGroup, apt32
+APTGroup, apt33
+APTGroup, apt34
+APTGroup, apt35
+APTGroup, apt10
+APTGroup, apt28, tsar team
+
+copyright	© 2018 FireEye, Inc. All rights reserved.
+cve	CVE-2017-0199
+email	info@FireEye.com
+fqdn	demiguise.py
+fqdn	domain.com
+fqdn	fireeye.com
+fqdn	github.com
+fqdn	sp.mtrends.us
+fqdn	www.badperson.com
+fqdn	www.fireeye.com
+fqdn	www.innocus.fronted.domain.com
+fqdn	www.ssh.com
+githubHandle	Mr-Un1k0d3r
+githubHandle	PowerShellMafia
+githubHandle	cernekee
+githubHandle	nccgroup
+ip4	1.2.3.4
+ip4	22.9.0.68
+ip6	a::
+ip6	e::deb
+trademark	Mandiant®
+url	https://github.com/Mr-Un1k0d3r/PowerLessShell
+url	https://github.com/PowerShellMafia/PowerSploit/blob/master/Recon/PowerView.ps1
+url	https://github.com/cernekee/stoken
+url	https://github.com/nccgroup/demiguise
+url	https://www.ssh.com/ssh/host-key

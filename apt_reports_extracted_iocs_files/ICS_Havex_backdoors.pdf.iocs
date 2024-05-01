@@ -1,0 +1,24 @@
+Malware, havex
+Filename, SwissrangerSetup1.0.14.706.exe
+Filename, eCatcherSetup.exe
+Filename, egrabitsetup.exe
+Filename, mbCHECK.exe
+Filename, setupvcom_lan2.exe
+APTGroup, dragonfly, energetic bear, crouching yeti
+
+fqdn	malwr.com
+fqdn	netresec.com
+fqdn	www.ewon.biz
+fqdn	www.mbconnectline.com
+ip4	3.0.0.82
+md5	0a9ae7fdcd9a9fe0d8c5c106e8940701
+md5	1080e27b83c37dfeaa0daaa619bdf478
+md5	1d6b11f85debdda27e873662e721289e
+md5	e027d4395d9ac9cc980d6a91122d2d83
+md5	eb0dacdc8b346f44c8c370408bad4306
+sha256	0007ccdddb12491e14c64317f314c15e0628c666b619b10aed199eefcfe09705
+sha256	0b74282d9c03affb25bbecf28d5155c582e246f0ce21be27b75504f1779707f5
+sha256	398a69b8be2ea2b4a6ed23a55459e0469f657e6c7703871f63da63fb04cefe90
+sha256	70103c1078d6eb28b665a89ad0b3d11c1cbca61a05a18f87f6a16c79b501dfa9
+sha256	c32277fba70c82b237a86e9b542eb11b2b49e4995817b7c2da3ef67f6a971d4a
+url	http://netresec.com/?b=14ABDA4

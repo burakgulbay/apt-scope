@@ -1,0 +1,20 @@
+Malware, winnti
+Malware, trendmicro plug
+C2ServerCountry, south korea
+C2ServerCountry, hong kong
+C2ServerCountry, china
+C2ServerCountry, usa
+C2ServerCountry, south korea
+C2ServerCountry, taiwan
+APTGroup, the etso
+
+copyright	©2013 AhnLab, Inc. All rights reserved.
+email	info@ahnlab.com
+fqdn	ahnlab.com
+fqdn	tieba.baidu.com
+fqdn	wenku.baidu.com
+fqdn	www.ahnalb.com
+fqdn	www.cnasm.com
+phoneNumber	+18775512690
+url	http://tieba.baidu.com/p/1103191865
+url	http://wenku.baidu.com/view/2005a703-bb68a98270fefa06?fr=prin

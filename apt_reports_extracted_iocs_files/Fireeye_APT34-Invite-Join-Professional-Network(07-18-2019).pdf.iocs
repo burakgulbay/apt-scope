@@ -1,0 +1,29 @@
+Malware, pickpocket
+Malware, tonedeaf
+AffectedIndustry, government
+AffectedIndustry, energy
+AffectedIndustry, oil and gas
+AttackerCountry, iran
+APTGroup, apt34
+
+fqdn	c.cdn-edge-akamai.com
+fqdn	fireeye.com
+fqdn	offlineearthquake.com
+fqdn	research-ac.com
+fqdn	www.cam
+fqdn	www.cam-research-ac.com
+ip4	185.15.247.154
+md5	021a0f57fe09116a43c27e5133a57a0a
+md5	50fb09d53c856dcd0782e1470eaeae35
+md5	6eca9c2b7cf12c247032aae28419319e
+md5	96feed478c347d4b95a8224de26a1b2c
+md5	9fff498b78d9498b33e08b892148135f
+md5	b338baa673ac007d7af54075ea69660b
+md5	caf418cbf6a9c4e93e79d4714d5d3b87
+md5	d8abe843db508048b4d4db748f92a103
+url	fireeye.com/blog/threat-research/2019/07/hard-pass-declining-apt34-invite-to-join-their-professional-
+url	http://offlineearthquake.com/file/
+url	offlineearthquake.com/download?id=
+url	offlineearthquake.com/file/
+url	offlineearthquake.com/upload?id=
+url	research-ac.com/Documents/ERFT-Details.xls

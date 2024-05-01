@@ -1,0 +1,14 @@
+Malware, killdisk
+Filename, client.exe
+Filename, cdir.exe
+Filename, cname.exe
+Filename, connh.exe
+Filename, intpub.exe
+AffectedCountry, ukraine
+AttackerCountry, russia
+
+fqdn	confluence.novus.ua
+fqdn	symantec-enterprise-blogs.security.com
+fqdn	trustsecpro.com
+fqdn	whatismyip.com
+url	symantec-enterprise-blogs.security.com/blogs/threat-intelligence/ukraine-wiper-malware-russia

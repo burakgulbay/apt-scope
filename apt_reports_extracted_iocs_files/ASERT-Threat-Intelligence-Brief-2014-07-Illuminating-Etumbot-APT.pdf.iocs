@@ -1,0 +1,171 @@
+Malware, etumbot
+Malware, exploz
+Malware, specfix
+Malware, ixeshe
+APTGroup, numbered panda, apt12, dyncalc/calc team
+AffectedCountry, east asia
+AffectedCountry, taiwan
+AffectedCountry, japan
+AffectedIndustry, electronic
+AffectedIndustry, manufacturing
+AffectedIndustry, telecommunication
+Filename, ka4281x3.log
+Filename, WTO^Xͧ Piii20140303 _slx.scr
+Filename, kb71271.log
+Filename, 招標規範 Finarcs.doc
+Filename, 1030522 新機關籌備小組清單 rcs.DOC
+Filename, 報價單 Finarcs.xls
+Filename, 10342 委會-審􏰀金融法規修正草案報告 rcs.xls
+Filename, 國發會 1030324 第 1 次委員會重要議題通報 finalrcs.xls
+Filename, 部會文宣聯繫名單 cod.scr
+Filename, 補捐助案件結餘款處理調查表.doc .exe
+Filename, t3fcj1.doc
+Filename, APO EPIF 邀請函 rcs.xls
+Malware, gh0strat
+AttackerCountry, china
+Filename, ka4a8213.log
+Filename, DA5E74.doc
+Filename, DS5D64.doc
+Filename, t3fcjl.doc 
+Filename, g4h710.doc
+Filename, gh4710.pdf
+Filename, trfai3.doc
+Filename, tresd2.xls
+Filename, 報價單 Finarcs.xls
+Filename, taste3.doc
+Filename, tasyd3.xls
+Filename, tkfad1.xls
+Filename, 1030522 新機關籌備小組清單 rcs.DOC
+Filename, ntprint.exe 
+Filename, conime.exe
+Filename, JavaSvc.exe
+Filename, serverupdate.exe
+Filename, wscnsvr.exe
+Filename, spoolvs.exe
+Filename, winlogdate.exe
+APTGroup, honker union of china
+Filename, Help statement from western U.S ?cod.scr
+Filename, WINCHAT.EXE
+Filename, W3svc.exe
+Filename, ka3157j.log
+Filename, t4hhk0.pdf
+copyright	© Copyright 2013 Arbor Networks, Inc. All rights reserved.
+copyright	© Copyright 2014 Arbor Networks, Inc. All rights reserved.
+email	chuni_fan@sina.com
+fqdn	atlas.arbor.net
+fqdn	blog.commtouch.com
+fqdn	blog.malwarebytes.org
+fqdn	cht.strangled.net
+fqdn	finance.yesplusno.com
+fqdn	github.com
+fqdn	intro.sunnyschool.com.tw
+fqdn	larry.yumiya.com
+fqdn	prishmobile.googlesale.net
+fqdn	read.pudn.com
+fqdn	securezone.yesplusno.com
+fqdn	sina.com
+fqdn	threatpost.com
+fqdn	wwap.publiclol.com
+fqdn	www.arbornetworks.com
+fqdn	www.crowdstrike.com
+fqdn	www.fireeye.com
+fqdn	www.google.com
+fqdn	www.symantec.com
+fqdn	www.trendmicro.com
+fqdn	yahoopush.googlesale.net
+fqdn	yesplusno.com
+githubHandle	arbor
+ip4	133.87.242.63
+ip4	143.89.145.156
+ip4	143.89.47.132
+ip4	190.16.246.129
+ip4	190.193.44.138
+ip4	196.1.99.15
+ip4	196.1.99.154
+ip4	198.209.212.82
+ip4	200.27.173.58
+ip4	200.42.69.140
+ip4	202.106.195.30
+ip4	211.53.164.152
+ip4	217.119.240.118
+ip4	32.114.251.129
+ip4	59.0.249.11
+ip4	92.54.232.142
+ip4	98.188.111.244
+md5	04908c6853cb5c9d7dccaf15fb5fd3bb
+md5	063b6076c69ce3ba4f116d1ad51da2b5
+md5	0bfb9f2080aeee22d3b4ca6fbfd25980
+md5	1498c9761fc819d496171c71604c2128
+md5	18dc518810892d89430a1efe2c71797e
+md5	196ae8d6a5d19737ae6975d047ab1d59
+md5	1ce47f76fca26b94b0b1d74610a734a4
+md5	1e838fd06bcc64c54e75c527df164d91
+md5	1e8fba674761371cb9e88962dcb851c0
+md5	232b659e28c5e06ad5466c01aec35cb6
+md5	2454c4af0b839eb993dd1cbb92b2c10d
+md5	2b3a8734a57604e98e6c996f94776086
+md5	2e073d35934bb3920fe9907ccb7bc5f8
+md5	3214bf22eb28e494b8e23d8ffc5ac4a9
+md5	361a6752766c154c6e31a4d9cc3a3fdc
+md5	36b42162c818cf6c2fb22937012af290
+md5	37648553f4ee6c5cb712cca446340a9a
+md5	47ee9a497a12272b50bb5e197935f13f
+md5	4c703a8cfeded7f889872a86fb7c70cf
+md5	4d47f52c675db16ab1e1df5ac050d3b8
+md5	5340fcfb3d2fa263c280e9659d13ba93
+md5	5b15664fb744c3f3cf7ec7b5515d2be5
+md5	5eba8ced8656da865f91d5fc87e8dc74
+md5	5ef508d0ca7759ecf602192521fff287
+md5	6b7cbcabd963ee4823dd2cd9daa5fcc7
+md5	70424b91dc905e4ca5e4aeb1c62ed91f
+md5	729353afd095ca07940490dbb786ee33
+md5	731f288ebd8ff05b3a32377d9d7f4751
+md5	75193fc10145931ec0788d7c88fc8832
+md5	7a698acebcf19b55170f05388a2f7fe0
+md5	7cd7db8ff8071d590567c68ea0219f23
+md5	7ec4ece7358f9f67a4d583777dc1fb59
+md5	82d4850a02375a7447d2d0381b642a72
+md5	8629b95f9e0898793e0881a8f79ee0cf
+md5	86ef188537f5e4637df24336c9b21cb0
+md5	88653dde22f723934ea9806e76a1f546
+md5	986937eb4052562cdd3960dd8fffc481
+md5	9b42968e9a7646feb7db318713271718
+md5	a6b4b679a51627ce279d5107c20dd078
+md5	a9059c354e5025dfe4f1c0b8b57e4f62
+md5	ac22aa007081caeb8970aefba7eddfcf
+md5	ac7f77cc55c964e400b8926f21bed7d2
+md5	adc0ffd684d9a986d65cb4efba39c3fe
+md5	aeaf1e78c2082644b122bf32803acb1f
+md5	b3830791b0a397bea2ad943d151f856b
+md5	ba4f88fe44d02a299dbeab18c37f74f3
+md5	beb16ac99642f5c9382686fd8ee73e00
+md5	c2d667b8072aa2eaa670d4459dd7c90d
+md5	c4af36f64d515569816263ca48f61899
+md5	c5118ba47b7aa12d6524f648f1623cc1
+md5	ca838b98ca0f516858a8a523dcd1338d
+md5	cd33c5467d425f662f57672531701d89
+md5	d08c54ed480c9cd8b35eab2f278e7a28
+md5	d444be30d2773b23de38ead1f2c6d117
+md5	deeec10be746ecf9bf46a30bf58bc784
+md5	e62453f41af9d87b4f6d4e8223926024
+md5	e7d960060d602deb53c7d49d2002c4a4
+md5	e8b92d20a9c4718b4f90d27cd8cba4b3
+md5	ee8ba3bef6a607af79405e75fb0f0d6f
+md5	eef5f9b46676b31a791216b42360c8bb
+md5	fed7ce0d20e78b5814475d8f9d062c80
+md5	ff5a7a610746ab5492cc6ab284138852
+trademark	ATLAS®
+url	http://atlas.arbor.net
+url	http://blog.malwarebytes.org/online-security/2014/01/the-rtlo-method/
+url	http://read.pudn.com/downloads199/sourcecode/windows/935255/htran.cpp__.htm
+url	http://threatpost.com/sirefef-malware-found-using-unicode-right-to-left-override-technique/102033
+url	http://www.arbornetworks.com/asert/2013/07/asert-mindshare-finding-byte-strings-using-idapython/
+url	http://www.arbornetworks.com/threats/
+url	http://www.crowdstrike.com/blog/whois-numbered-panda/
+url	http://www.fireeye.com/blog/technical/2013/08/survival-of-the-fittest-new-york-times-attackers-evolve-
+url	http://www.google.com
+url	http://www.symantec.com/security_response/writeup.jsp?docid=2013-080921-5219-99&tabid=2
+url	http://www.trendmicro.com/cloud-content/us/pdfs/security-intelligence/white-papers/wp_ixeshe.pdf
+url	https://blog.commtouch.com/cafe/malware/exe-read-backwards-spells-malware/
+url	https://github.com/arbor/reversing/blob/master/find_byte_strings.py
+url	https://www.symantec.com/security_response/writeup.jsp?docid=2014-011500-2419-99&tabid=2

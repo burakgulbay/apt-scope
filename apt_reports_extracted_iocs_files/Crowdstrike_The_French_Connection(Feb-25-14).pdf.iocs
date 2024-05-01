@@ -1,0 +1,29 @@
+Filename, Erido.jpg
+AffectedIndustry, aerospace and defence
+AffectedCountry, france
+APTGroup, aurora panda
+
+
+cve	CVE-2012-4792
+cve	CVE-2014-0322
+fqdn	crowdstrike.com
+fqdn	gifas.assso.net
+fqdn	gifas.blogsite.org
+fqdn	gifas.cechire.com
+fqdn	group.com
+fqdn	icbcqsz.com
+fqdn	oa.ameteksen.com
+fqdn	safran-group.com
+fqdn	savmpet.com
+fqdn	secure.safran-group.com
+fqdn	snecma.fr
+fqdn	web.vipreclod.com
+fqdn	www.crowdstrike.com
+fqdn	www.readability.com
+ip4	173.252.252.204
+ip4	217.108.170.0
+ip4Net	217.108.170.0/24
+md5	61fe6f4cb2c54511f0804b1417ab3bd2
+md5	c869c75ed1998294af3c676bdbd56851
+url	http://www.crowdstrike.com/blog/french-connection-french-aerospace-focused-cve-
+url	https://www.readability.com/articles/orjyhfkm

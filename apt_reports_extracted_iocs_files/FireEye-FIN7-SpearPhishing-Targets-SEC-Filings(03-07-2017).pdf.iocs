@@ -1,0 +1,11 @@
+AffectedIndustry, finance
+AffectedIndustry, transport
+AffectedIndustry, retail
+AffectedIndustry, education
+AffectedIndustry, technology
+APTGroup, fin7
+
+email	filings@sec.gov
+fqdn	fireeye.com
+fqdn	sec.gov
+md5	d04b6410dddee19adec75f597c52e386

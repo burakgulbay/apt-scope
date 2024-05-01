@@ -1,0 +1,28 @@
+Malware, agent tesla
+AffectedCountry, korea
+
+fqdn	bitbucket.org
+fqdn	bitly.com
+fqdn	fortinet.com
+fqdn	madarbloghogya.blogspot.com
+fqdn	onedayiwillloveyouforever.blogspot.com
+ip4	149.56.200.165
+ip4	69.174.99.181
+ip6	::C
+sha1	b271c1b3c7a78e7b68fa388ed463c7cc1dc32ddb
+sha1	c4ab4d371cd40ce3303b4d33c868122f671fd37c
+sha1	c73df176f221868c33d4b3033ec04dc173d4ba4c
+sha256	0BBF16E320FB942E4EA09BB9E953076A4620F59E5FFAEFC3A2FFE8B8C2B3389C
+sha256	0de264895c1ed90486c73c6eb110af6c2222264a0854b0047b9ead88b718f7d0
+sha256	AA121762EB34D32C7D831D7ABCEC34F5A4241AF9E669E5CC43A49A071BD6E894
+url	149.56.200.165/rump/1.txt
+url	69.174.99.181/webpanel-
+url	69.174.99.181/webpanel-divine/mawa/7dd66d9f8e1cf61ae198.php
+url	bitbucket.org/!api/2.0/snippets/hogya/5X7My8/b271c1b3c7a78e7b68fa388ed463c7cc1dc32ddb/files/divine1-
+url	bitbucket.org/!api/2.0/snippets/hogya/nxq8od/c73df176f221868c33d4b3033ec04dc173d4ba4c/files/divine1-
+url	bitly.com/gdhamksgdsadj
+url	fortinet.com/blog/threat-research/phishing-campaign-targeting-korean-to-deliver-agent-tesla-new-variant
+url	https://madarbloghogya.blogspot.com/p/divineback222.html
+url	madarbloghogya.blogspot.com/p/divineback222.html
+url	onedayiwillloveyouforever.blogspot.com/p/divine111.html
+uuid	13709620-C279-11CE-A49E-444553540000

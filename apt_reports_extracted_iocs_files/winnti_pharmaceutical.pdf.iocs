@@ -1,0 +1,18 @@
+Malware, winnti
+Filename, w64.dll
+Filename, C:\Windows\TEMP\tmpCCD.tmp
+Filename, ServiceAdobe.dll
+Filename, ksadobe.dat
+AffectedIndustry, gaming
+AffectedIndustry, pharmaceutical
+AffectedCountry, europe
+AttackerCountry, china
+APTGroup, winnti
+APTGroup, axiom
+
+fqdn	backdoor.win64.winnti.gf
+fqdn	backdoor.win64.winnti.gy
+fqdn	rootkit.win64.winnti.ai
+md5	5979cf5018c03be2524b87b7dda64a1a
+md5	8e61219b18d36748ce956099277cc29b
+md5	ac9b247691b1036a1cdb4aaf37bea97f

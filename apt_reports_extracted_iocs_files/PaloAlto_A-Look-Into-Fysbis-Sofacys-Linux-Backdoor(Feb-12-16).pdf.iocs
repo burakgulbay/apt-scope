@@ -1,0 +1,19 @@
+Malware, fysbis
+APTGroup, sofacy, apt28, sednit
+
+copyright	© 2007­2013 Palo Alto Networks
+fqdn	irc.2600.net
+fqdn	line.com
+fqdn	mozillaplagins.com
+fqdn	plugins.com
+fqdn	researchcenter.paloaltonetworks.com
+ip4	111.90.148.148
+ip4	193.169.244.190
+ip4	198.105.125.74
+ip6	::
+md5	02c7cf55fd5c5809ce2dce56085ba437
+md5	075b6695ab63f36af65f7ffd45cccd39
+md5	364ff454dcf00420cff13a57bcb78467
+md5	95f2480423a4256537bfdfda0df85592
+md5	e107c5c84ded6cd9391aede7f04d64c8
+url	http://researchcenter.paloaltonetworks.com/2016/02/a-look-into-fysbis-sofacys-linux-backdoor/

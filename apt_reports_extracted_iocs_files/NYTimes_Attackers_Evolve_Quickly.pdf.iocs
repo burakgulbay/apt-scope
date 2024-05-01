@@ -1,0 +1,16 @@
+Malware, aumlib
+Malware, ixeshe
+APTGroup, apt12
+
+fqdn	documents.mypicture.info
+fqdn	status.acmetoy.com
+fqdn	www.documents.mypicture.info
+fqdn	www.nytimes.com
+fqdn	www.trendmicro.com
+md5	832f5e01be536da71d5b3f7e41938cfb
+md5	aa873ed803ca800ce92a39d9a683c644
+md5	cb3dcde34fd9ff0e19381d99b02f9692
+url	http://www.nytimes.com/2013/01/31/technology/chinese-hackers-infiltrate-new-york-times-
+url	http://www.trendmicro.com/cloud-content/us/pdfs/security-intelligence/white-
+url	status.acmetoy.com/DD/css.css
+url	status.acmetoy.com/DD/myScript.js

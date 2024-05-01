@@ -1,0 +1,26 @@
+Malware, derbycon
+Filename, googleService.exe
+Filename, GoogleUpdate.exe
+Filename, core
+Filename, data
+Filename, hostname
+Filename, private_key
+Filename, debug.log
+Filename, lock
+Filename, cached-certs
+Filename, cached-microdescs
+Filename, cached-microdescs.new
+Filename, cached-microdescs-consensus
+Filename, state
+Filename, start.ps1
+Filename, install.bat
+APTGroup, apt29
+
+fqdn	cached-microdescs.new
+fqdn	fireeye.com
+fqdn	google.com
+fqdn	meek-reflect.appspot.com
+fqdn	www.google.com
+sha256	2f39dee2ee608e39917cc022d9aae399959e967a2dd70d83b81785a98bd9ed36
+sha256	fe744a5b2d07de396a8b3fe97155fc64e350b76d88db36c619cd941279987dc5
+url	https://meek-reflect.appspot.com

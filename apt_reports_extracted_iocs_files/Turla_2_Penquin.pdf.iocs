@@ -1,0 +1,12 @@
+Malware, snake
+APTGroup, turla
+
+fqdn	bbc.podzone.org
+fqdn	circl.lu
+fqdn	news-bbc.podzone.org
+ip4	80.248.65.0
+ip4	80.248.65.183
+ip4Net	80.248.65.0/24
+md5	0994d9deb50352e76b0322f48ee576c6
+md5	14ecd5e6fc8e501037b54ca263896a11
+md5	19fbd8cbfb12482e8020a887d6427315

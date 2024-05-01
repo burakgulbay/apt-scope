@@ -1,0 +1,11 @@
+AffectedIndustry, government
+AffectedIndustry, telecommunication
+AffectedIndustry, energy
+AffectedIndustry, military
+AffectedCountry, poland
+AffectedCountry, ukraine
+
+copyright	 © Copyright 2014, iSIGHT Partners, Inc. All Rights Reserved
+cve	CVE-2013-3906
+cve	CVE-2014-4114
+fqdn	www.isightpartners.com

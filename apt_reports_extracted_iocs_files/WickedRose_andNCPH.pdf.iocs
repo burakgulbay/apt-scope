@@ -1,0 +1,37 @@
+Malware, ginwui
+Malware, ripgof
+Malware, dasher 
+AffectedCountry, usa
+AffectedCountry, japan
+AttackerCountry, china
+APTGroup, wicked rose
+APTGroup, ncph
+APTGroup, kungbim
+APTGroup, rodag
+APTGroup, charles
+
+email	ncph2005@126.com
+email	whg@163.com
+fqdn	126.com
+fqdn	163.com
+fqdn	cnasm.com
+fqdn	enjoy.bmwsee.com
+fqdn	enjoy.irdet.com
+fqdn	kungbim.blogbus.com
+fqdn	ncph.net
+fqdn	nease.net
+fqdn	rodag.blogbus.com
+fqdn	tthacker.cublog.cn
+fqdn	windowsupdates.net
+fqdn	www.cppblog.com
+fqdn	www.mghacker.com
+fqdn	www.ncph.net
+fqdn	www.study-in-china.org
+fqdn	www.suse.edu.cn
+phoneNumber	+8613154663992
+url	http://cnasm.com
+url	http://kungbim.blogbus.com
+url	http://rodag.blogbus.com
+url	http://rodag.blogbus.com/index.html
+url	http://www.cppblog.com/charles
+url	http://www.study-in-china.org/school/Sichuan/suse/

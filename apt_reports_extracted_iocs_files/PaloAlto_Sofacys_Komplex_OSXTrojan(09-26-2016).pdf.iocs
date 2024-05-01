@@ -1,0 +1,31 @@
+Malware, komplex
+APTGroup, sofacy, apt28, pawn storm, fancy bear, sednit
+
+fqdn	-2025.app
+fqdn	apple-iclouds.net
+fqdn	appleupdate.org
+fqdn	google.com
+fqdn	iclouds.net
+fqdn	itunes-helper.net
+fqdn	main.mm
+fqdn	preview.app
+fqdn	researchcenter.paloaltonetworks.com
+fqdn	start.sh
+fqdn	www.apple.com
+fqdn	www.google.com
+ip4	185.10.58.170
+ip6	::
+ip6	::b
+sha256	1f22e8f489abff004a3c47210a9642798e1c53efc9d6f333a1072af4b11d71ef
+sha256	227b7fe495ad9951aebf0aae3c317c1ac526cdd255953f111341b0b11be3bbc5
+sha256	2a06f142d87bd9b66621a30088683d6fcec019ba5cc9e5793e54f8d920ab0134
+sha256	45a93e4b9ae5bece0d53a3a9a83186b8975953344d4dfb340e9de0015a247c54
+sha256	638e7ca68643d4b01432f0ecaaa0495b805cc3cccc17a753b0fa511d94a22bdd
+sha256	96a19a90caa41406b632a2046f3a39b5579fbf730aca2357f84bf23f2cbc1fd3
+sha256	c1b8fc00d815e777e39f34a520342d1942ebd29695c9453951a988c61875bcd7
+sha256	cffa1d9fc336a1ad89af90443b15c98b71e679aeb03b3a68a5e9c3e7ecabc3d4
+sha256	d494e9f885ad2d6a2686424843142ddc680bb5485414023976b4d15e3b6be800
+sha256	da43d39c749c121e99bba00ce809ca63794df3f704e7ad4077094abde4cf2a73
+tronix	41406b632a2046f3a39b5579fbf730aca2357f84bf
+url	http://www.apple.com/DTDs/PropertyList-1.0.dtd
+url	http://www.google.com

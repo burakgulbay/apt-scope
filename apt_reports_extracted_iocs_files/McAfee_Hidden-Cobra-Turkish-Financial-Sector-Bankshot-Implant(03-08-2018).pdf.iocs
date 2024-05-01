@@ -1,0 +1,24 @@
+Filename, Agreement.docx
+AffectedIndustry, finance
+AffectedCountry, turkey
+AttackerCountry, netherlands
+APTGroup, hidden cobra
+
+cve	CVE-2018-4878
+fqdn	028xmz.com
+fqdn	168wangpi.com
+fqdn	530hr.com
+fqdn	falcancoin.io
+fqdn	securingtomorrow.mcafee.com
+md5	12c786c490366727cf7279fc141921d8
+md5	6de6a0df263ecd2d71a92597b2362f2c
+sha1	166e8c643a4db0df6ffd6e3ab536b3de9edc9fb7
+sha1	343ebca579bb888eb8ccb811f9b52280c72e484c
+sha1	650b7d25f4ed87490f8467eb48e0443fb244a8c4
+sha1	65e7d2338735ec04fd9692d020298e5a7953fd8d
+sha1	843c17b06a3aee22447f021307909890b68828b9
+sha1	a2e966edee45b30bb6bb5c978e55833eec169098
+url	028xmz.com/include/common.php
+url	168wangpi.com/include/charset.php
+url	530hr.com/data/common.php
+url	securingtomorrow.mcafee.com/mcafee-labs/hidden-cobra-targets-turkish-financial-sector-new-bankshot-

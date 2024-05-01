@@ -1,0 +1,18 @@
+Malware, winnti
+Filename, otfkty.dat
+
+fqdn	deleted.is
+fqdn	ftp.openssl.org
+fqdn	kasperskycontenthub.com
+fqdn	sourceforge.net
+fqdn	www.nedprod.com
+fqdn	www.winsim.com
+fqdn	zlib.net
+md5	5164FDA21542C0EB638BA110F9F3ADAF
+url	ftp://ftp.openssl.org/source/old/0.9.x/openssl-0.9.8x.tar.gz
+url	http://kasperskycontenthub.com/wp-
+url	http://sourceforge.net/projects/sevenzip/files/LZMA%20SDK/lzma922.tar.bz2/download
+url	http://www.nedprod.com/programs/portable/nedmalloc/
+url	http://zlib.net/
+url	https://www.winsim.com/diskid32/diskid32.html
+url	https://www.winsim.com/index.html

@@ -1,0 +1,64 @@
+Malware, sogu
+Filename, AntiVirus_update_package.7z
+Filename, acquisition.7z
+Filename, offer.7z
+Filename, update_flashplayer10ax.7z
+AffectedIndustry, chemicals
+AffectedIndustry, military
+AffectedCountry, bangladesh
+AffectedCountry, united kingdom
+AffectedCountry, argentina
+AffectedCountry, singapore
+AffectedCountry, china
+AffectedCountry, germany
+AffectedCountry, czech republic
+AffectedCountry, hong kong
+AffectedCountry, india
+AffectedCountry, netherlands
+AffectedCountry, finland
+AffectedCountry, south korea 
+AffectedCountry, france
+AffectedCountry, russia
+AffectedCountry, japan
+AffectedCountry, sweden
+AffectedCountry, norway
+AffectedCountry, canada
+
+copyright	Copyright © 2011 Symantec Corporation. All rights reserved.
+fqdn	anti-virus.sytes.net
+fqdn	antivirus-groups.com
+fqdn	domain.rm6.org
+fqdn	noip.org
+fqdn	poisonivy-rat.com
+fqdn	www.symantec.com
+ip4	173.252.205.36
+ip4	173.252.205.37
+ip4	173.252.205.64
+ip4	173.252.207.71
+ip4	204.74.215.58
+ip4	216.131.95.22
+ip4	222.255.28.27
+ip4	74.82.166.205
+md5	07e266f7fb3c36a1f3a5c5d2d229a478
+md5	091457444b7e7899c242c5125ddc0571
+md5	0f54a9757f1a2fef2b04b776714a7546
+md5	17e7022496d8092d3ca76ae9524a7260
+md5	2f37912e7cb6e5c478e6dc3d0e381a24
+md5	31346e5b39ddb095d76071ac86da4c2e
+md5	330ddac1f605ff8abf60880c584ed797
+md5	37f70717f549f1938e5785527e56978d
+md5	457a2a8d0784e9fc8e49f6ef60f7f29e
+md5	5d075e9536c5494745135c1176981c96
+md5	64a4ad90a55e7b6c30c46135435f50a2
+md5	6e99585c3fbd4f3a55bd8f604cb35f38
+md5	70fcb3446fce23b18d9a12b2ed911e52
+md5	76000c77ea9a214f5b2ae8cc387809db
+md5	87aeec7f7c4ec1b6dc5e6c39b28d8273
+md5	8d36fd85d9c7d1f4bb170a28cc23498a
+md5	a98d2c90b9494fc885c7cd35d43666ea
+md5	c128c40bd8acb282288e8138352ce4e1
+md5	c53c93a445d751387eb167e5a2b901da
+md5	cab66da82594ff5266ac8dd89e3d1539
+md5	dd5715cb3b0cdddbe131f03cc08f0f57
+md5	de7e293aa9c4d849dc080f3e87573b24
+phoneNumber	+16505278000

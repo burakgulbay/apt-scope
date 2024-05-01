@@ -1,0 +1,15 @@
+Malware, jokra
+Malware, dtrack
+Malware, valefor
+Malware, preft
+AffectedIndustry, energy
+AffectedIndustry, government
+AffectedCountry, usa
+AffectedCountry, south korea
+AttackerCountry, north korea
+APTGroup, stonefly, darkseoul, blackmine, operation troy, silent chollima
+
+cve	CVE-2021-44228
+fqdn	symantec-enterprise-blogs.security.com
+fqdn	wmiexec.py
+url	symantec-enterprise-blogs.security.com/blogs/threat-intelligence/stonefly-north-korea-espionage

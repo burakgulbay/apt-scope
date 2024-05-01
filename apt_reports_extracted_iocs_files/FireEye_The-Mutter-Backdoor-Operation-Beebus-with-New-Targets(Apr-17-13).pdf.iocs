@@ -1,0 +1,36 @@
+Malware, the mutter
+Malware, beebus
+Filename, msdsp.dll
+Filename, igfxtray.exe
+Filename, winsups.dll
+Filename, msdsp.dll
+Filename, ctfmon.exe
+AffectedIndustry, telecommunication
+AffectedIndustry, government
+AffectedIndustry, military
+AffectedCountry, usa
+AffectedCountry, india
+AffectedCountry, pakistan
+AffectedCountry, south korea
+
+copyright	© 2016 FireEye, Inc. All rights reserved. 
+email	binalakshminp@yahoo.com
+fqdn	agfire.com
+fqdn	cdind.antivirup.com
+fqdn	changeip.com
+fqdn	google.co.in
+fqdn	http.4pu.com
+fqdn	mydns.dns2.us
+fqdn	oracledata.ns01.us
+fqdn	winsupdate.com
+fqdn	yahoo.com
+md5	06d5dddd4c349f666d84a91d6edc4f8d
+md5	4d5a235048e94579aab0062057296186
+md5	589f10e2efdd98bfbdc34f247b6a347f
+md5	681a014e9d221c1003c54a2a9a1d9df8
+md5	6aac76fc8309e29ea8a7afea48ae9b29
+md5	725fc0d7a8e7b9e01a83111619744b6f
+md5	92643bfa4121f1960c43c78a3d53568b
+md5	b5f4a9aac67b53762ed98fafd067c803
+md5	d5640ae049779bbb068eff08616adb95
+md5	fd9777c90abb4b758b4aff29cfd68b98

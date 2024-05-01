@@ -1,0 +1,18 @@
+AttackerCountry, china
+APTGroup, sunshop digital quartermaster
+Malware, poison ivy
+Malware, sogu
+Malware, kaba
+fqdn	assign.ddnsking.com
+fqdn	picsgoogle.servepics.com
+fqdn	quakegoogle.servequake.com
+ip4	103.27.108.45
+ip4	115.126.62.100
+ip6	27:14:6A:36:C9:88:77:4D
+ip6	47:8C:E3:D6:CC:17:60:D3
+md5	09d0478591d4f788cb3e5ea416c25237
+md5	118fa558a6b5020b078739ef7bdac3a1
+md5	581AE6B6ABAFD73AC85B1AEFBDB2555F
+md5	82B582589D4A59BE0720F088ACAC67A3
+sha256	82a98c88d3dd57a6ebc0fe7167a86875ed52ebddc6374ad640407efec01b1393
+url	http://103.27.108.45/img/js.php

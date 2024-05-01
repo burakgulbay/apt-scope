@@ -1,0 +1,23 @@
+Malware, njrat
+AffectedCountry, usa
+APTGroup, lazyscripter
+
+fqdn	20offers.zip
+fqdn	ignorelist.com
+fqdn	lab52.io
+fqdn	sytes.net
+ip4	103.73.64.115
+ip4	147.182.192.241
+ip4	157.245.250.76
+ip4	185.81.157.186
+ip4	192.64.119.125
+ip4	45.91.92.112
+ip4	66.29.130.204
+sha256	0fc8d0c3b6ab22533153b7296e597312fc8cf02e2ea92de226d93c09eaf8e579
+sha256	23ea10f4b1a73a4e8b13466fff8983110216779d2d3cefe1fc151c6bb65c3b42
+sha256	5803ded992498b5bd5045095ca1eab33be8a4f9d785fdfc8b231127edf049e72
+sha256	77afef33c249d4d7bb076079eff1cca2aef272c84720e7f258435728be3bf049
+sha256	82f6c8b52103272fcfb27ac71bd4bff76ee970dd16e5cdf3d0cfb75d10aa0609
+sha256	c685897eb3f32ced2b6e404e424ca01d0bc8c88b83da067fbef7e7fe889cffad
+sha256	f5359df2aaa02fbfae540934f3e8f8a2ab362f7ee92dda536846afb67cea1b02
+url	lab52.io/blog/very-very-lazy-lazyscripters-scripts-double-compromise-in-a-single-obfuscation

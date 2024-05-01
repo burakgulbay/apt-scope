@@ -1,0 +1,32 @@
+Malware, downdelph
+AffectedIndustry, military
+AffectedIndustry, government
+APTGroup, apt28, fancy bear, sofacy, strontium, tsar team
+APTGroup, sednit
+
+cve	CVE-2013-1347
+cve	CVE-2013-3897
+cve	CVE-2014-1510
+cve	CVE-2014-1511
+cve	CVE-2014-1776
+cve	CVE-2014-4076
+cve	CVE-2014-6332
+cve	CVE-2015-1701
+cve	CVE-2015-2387
+cve	CVE-2015-2424
+cve	CVE-2015-2590
+cve	CVE-2015-3043
+cve	CVE-2015-4902
+cve	CVE-2015-5119
+cve	CVE-2015-7645
+email	exfil@gmail.com
+email	orders@gmail.com
+email	parepkyiv@gmail.com
+fqdn	esetlabs.com
+fqdn	gmail.com
+fqdn	kenlynton.com
+fqdn	login.accoounts-google.com
+fqdn	softwaresupportsv.com
+fqdn	updmanager.com
+ip6	::
+url	http://login.accoounts-google.com/url/?continue=

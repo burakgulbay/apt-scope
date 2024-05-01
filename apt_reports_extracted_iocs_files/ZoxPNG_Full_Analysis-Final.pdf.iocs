@@ -1,0 +1,11 @@
+Malware, zoxpng
+
+fqdn	www.4nb.co.kr
+fqdn	www.exploit-db.com
+fqdn	www.pudn.com
+sha1	40f9cde4ccd1b1b17a647c6fc72c5c5cd40d2b08
+sha1	60415999bc82dc9c8f4425f90e41a98d514f76a2
+sha1	7dd556415487cc192b647c9a7fde70896eeee7a2
+sha1	b51e419bf999332e695501c62c5b4aee5b070219
+url	http://www.exploit-db.com/download/21371/
+url	http://www.pudn.com/downloads183/sourcecode/hack/exploit/detail861817.html

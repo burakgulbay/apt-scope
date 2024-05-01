@@ -1,0 +1,67 @@
+Malware, bianlian
+Malware, dtrack
+Malware, grease
+Malware, wso webshell
+Filename, base.jsp
+Filename, carbon.jsp
+Filename, databackup.sh
+Filename, Acres.exe
+Filename, ord.dll
+Filename, phost.exe
+Filename, shost.exe
+Filename, onedriver.exe
+Filename, mfcbi.dll
+AffectedIndustry, healthcare
+AffectedIndustry, energy
+AffectedIndustry, defense
+AttackerCountry, north korea
+C2ServerCountry, hong kong
+C2ServerCountry, usa
+C2ServerCountry, north korea
+APTGroup, lazarus group
+
+copyright	© Microsoft Corporation. All rights reserved.
+cve	CVE-2021-4034
+cve	CVE-2022-27925
+cve	CVE-2022-37042
+fqdn	databackup.sh
+fqdn	quickconnect.io
+fqdn	sam.save
+fqdn	synology.me
+fqdn	system.save
+fqdn	trojan.tr
+ip4	104.225.129.103
+ip4	104.225.129.86
+ip4	146.185.26.150
+ip4	15.207.207.64
+ip4	154.6.26.2
+ip4	175.45.176.27
+ip4	193.176.211.0
+ip4	209.95.60.92
+ip4	23.237.32.34
+ip4Net	193.176.211.0/24
+md5	879fa942f9f097b74fd6f7dabcf1745a
+md5	9784a36611c68337698d3be972bd5dca
+md5	B3B9D4A2CAC8EA76F570BBDE5249F076
+sha1	407b934895741a1d3b197e4e3c3d2e3284ebc76a
+sha1	45b35d1176598be7755a6d56ad8009bb03f3c5b1
+sha1	46a934e7b42bfb0a2a9bcecade78f63375192924
+sha1	47f12a1976552a1319bd58d813f213d7ebdef4fa
+sha1	61156df8e4a5eadac8137c1cbd55145eab654726
+sha1	6D0BFFE68BC8992B60DC294EC68DD2B44A5FC6F4
+sha1	7c40d4ded95f425fa01895f9d4359c9ef250290a
+sha1	88df19687e6aa8da376e37a8d71421b5b78a2cb4
+sha1	8b0fb0e478d18a358783429eaed53ca0fe892b37
+sha1	8c384b77b7100d6469e5e7b5cfa779dbcbcaa9ab
+sha1	aa489231455dc2e56e2399edd7c10b5522608a7d
+sha1	af9bc7ef25755982a00aca920ee7ad51f76c5cc2
+sha1	b2b36600ce41129fa85a15a7177a61b7cb714000
+sha1	cbf1529bf025523532666b0b3d2adbdae657db16
+sha1	f7564e93c5b4ec2de6f4f88c80c9691dc068206f
+trademark	Microsoft®
+trademark	Windows®
+trademark	WithSecure™
+trademark	cure™
+url	Trojan.TR/Crypt.XPACK.Gen2
+url	quickconnect.io/
+url	quickconnect.io/Synology.me

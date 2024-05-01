@@ -1,0 +1,27 @@
+AffectedIndustry, government
+AffectedCountry, ukraine
+Filename, Wage arrears.xls
+Filename, Base-Update.exe
+APTGroup, uac-0056
+Malware, graphsteel
+Malware, grimplant
+Filename, java-sdk.exe
+Filename, oracle-java.exe
+Filename, microsoft-cortana.exe
+url	hxxp://194.31.98.124:443/i
+url	hxxp://194.31.98.124:443/p
+url	hxxp://194.31.98.124:443/m
+url	ws://194.31.98.124:443/c
+ip	194.31.98.124
+fqdn	cert.gov.ua
+md5	06124da5b4d6ef31dbfd7a6094fc52a6
+md5	36ff9ec87c458d6d76b2afbd5120dfae
+md5	4a5de4784a6005aa8a19fb0889f1947a
+md5	6b413beb61e46241481f556bb5cdb69c
+md5	da305627acf63792acb02afaf83d94d1
+sha256	8ffe7f2eeb0cbfbe158b77bbff3e0055d2ef7138f481b4fac8ade6bfb9b2b0a1
+sha256	99a2b79a4231806d4979aa017ff7e8b804d32bfe9dcc0958d403dfe06bdd0532
+sha256	9e9fa8b3b0a59762b429853a36674608df1fa7d7f7140c8fccd7c1946070995a
+sha256	c1afb561cd5363ac5826ce7a72f0055b400b86bd7524da43474c94bc480d7eff
+sha256	c83d8b36402639ea3f1ad5d48edc1a22005923aee1c1826afabe27cb3989baa3
+url	cert.gov.ua/article/38374

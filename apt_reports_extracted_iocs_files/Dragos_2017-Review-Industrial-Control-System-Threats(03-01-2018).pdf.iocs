@@ -1,0 +1,27 @@
+Malware, stuxnet
+Malware, blackenergy2
+Malware, havex
+Malware, trisis
+Malware, crashoverride
+Malware, wannacry
+Malware, notpetya
+AffectedCountry, ukraine
+
+email	INFO@DRAGOS.COM
+fqdn	docs.microsoft.com
+fqdn	dragos.com
+fqdn	www.diamondmodel.org
+fqdn	www.dragos.com
+fqdn	www.itnews.com.au
+fqdn	www.novetta.com
+fqdn	www.nytimes.com
+fqdn	www.recordedfuture.com
+url	http://www.diamondmodel.org/
+url	http://www.novetta.com/2016/02/operation-blockbuster-unraveling-the-long-thread-of-the-sony-attack/
+url	http://www.nytimes.com/2012/10/24/business/global/cyberattack-on-saudi-oil-firm-disquiets-us.html
+url	https://docs.microsoft.com/en-us/security-
+url	https://dragos.com/blog/mimics/
+url	https://dragos.com/media/Industrial-Control-Threat-Intelligence-Whitepaper.pdf
+url	https://www.itnews.com.au/news/maersk-had-to-reinstall-all-it-systems-after-notpetya-infection-481815
+url	https://www.novetta.com/tag/the-lazarus-group/
+url	https://www.recordedfuture.com/north-

@@ -1,0 +1,39 @@
+Filename, abuser.xls
+AffectedIndustry, aerospace and defence
+AffectedIndustry, military
+AffectedCountry, india
+AttackerCountry, pakistan
+
+
+email	iasia69@z7az14m.com
+fqdn	c2xy.com
+fqdn	c2xyup.com
+fqdn	cysinfo.com
+fqdn	idsadesk.in
+fqdn	idsagroup.in
+fqdn	qhavcloud.com
+fqdn	z7az14m.com
+ip4	173.212.193.53
+ip4	173.212.194.214
+ip4	180.92.154.176
+ip4	91.205.173.3
+md5	04b4b036a48dc2d2022cc7704f85a560
+md5	15588a9ba1c0abefd38ac2594ee5be53
+md5	3bd16cc1d1fea7190c36b3bd10c6810d
+md5	50c1d394bfa187ffd6251df6dd14e939
+md5	515dce0ede42052ff3ef664db9873cea
+md5	b6c861556412a15b7979459176b7d82f
+md5	becc8e77ef003a4c88f7e6348ffd3609
+md5	ceeeacbaf38792bcf06022e2b4874782
+md5	f8daa49c489f606c87d39a88ab76a1ba
+url	http://c2xy.com/a.exe
+url	http://c2xyup.com/update.exe
+url	http://qhavcloud.com//northernlights//JobProcesses.php
+url	http://qhavcloud.com//northernlights//JobTCP1.php
+url	http://qhavcloud.com//northernlights//JobTCP2.php
+url	http://qhavcloud.com//northernlights//JobWork1.php
+url	http://qhavcloud.com//northernlights//JobWork2.php
+url	http://qhavcloud.com//northernlights//PingPong.php
+url	http://qhavcloud.com//northernlights//Uninstaller.php
+url	http://qhavcloud.com//northernlights//postdata.php
+url	http://qhavcloud.com//northernlights//updateproductdownload.php

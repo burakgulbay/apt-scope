@@ -1,0 +1,30 @@
+AffectedIndustry, aerospace and defence
+AffectedIndustry, government
+AffectedIndustry, finance
+AffectedCountry, russia
+AffectedCountry, ukraine
+AffectedCountry, turkmenistan
+AffectedCountry, kyrgyzstan
+AffectedCountry, afghanistan
+AffectedCountry, turkey
+AffectedCountry, romania
+AffectedCountry, portugal
+APTGroup, inception, cloud atlas
+
+cve	CVE-2017-11882
+cve	CVE-2018-0802
+email	infocentre.gov@bk.ru
+email	infocentre.gov@mail.ru
+email	middleeasteye@asia.com
+email	simbf2019@mail.ru
+email	world_overview@politician.com
+fqdn	asia.com
+fqdn	bk.ru
+fqdn	infocentre.gov
+fqdn	mail.ru
+fqdn	pg.zip
+fqdn	politician.com
+fqdn	securelist.com
+ip4	144.217.174.57
+ip4	176.31.59.232
+url	securelist.com/recent-cloud-atlas-activity/92016

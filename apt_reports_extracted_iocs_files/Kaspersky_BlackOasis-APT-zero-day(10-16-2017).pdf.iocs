@@ -1,0 +1,19 @@
+APTGroup, blackoasis
+
+cve	CVE-2015-5119
+cve	CVE-2016-0984
+cve	CVE-2016-4117
+cve	CVE-2017-11292
+cve	CVE-2017-8759
+email	intelreports@kaspersky.com
+fqdn	15b937.cab
+fqdn	helpx.adobe.com
+fqdn	install.cab
+fqdn	kaspersky.com
+fqdn	securelist.com
+ip4	21.0.0.226
+ip4	89.45.67.107
+md5	4a49135d2ecc07085a8b7c5925a36c0a
+url	http://89.45.67.107/rss/5uzosoff0u.iaf
+url	http://89.45.67.107/rss/mo.exe
+url	https://helpx.adobe.com/security/products/flash-player/apsb17-32.html

@@ -1,0 +1,30 @@
+Filename, WinorDLL64.dll
+AffectedCountry, south korea
+MitreTechnique, T1587
+MitreTechnique, T1059
+MitreTechnique, T1106
+MitreTechnique, T1134
+MitreTechnique, T1070
+MitreTechnique, T1087
+MitreTechnique, T1087
+MitreTechnique, T1083
+MitreTechnique, T1135
+MitreTechnique, T1057
+MitreTechnique, T1012
+MitreTechnique, T1082
+MitreTechnique, T1614
+MitreTechnique, T1614
+MitreTechnique, T1016
+MitreTechnique, T1049
+MitreTechnique, T1033
+MitreTechnique, T1560
+MitreTechnique, T1005
+MitreTechnique, T1531
+APTGroup, lazarus
+
+fqdn	welivesecurity.com
+sha1	1BA443FDE984CEE85EBD4D4FA7EB1263A6F1257F
+sha1	70DE783E5D48C6FBB576BC494BAF0634BC304FD6
+sha1	8EC9219303953396E1CB7105CDB18ED6C568E962
+sha1	FE887FCAB66D7D7F79F05E0266C0649F0114BA7C
+url	welivesecurity.com/2023/02/23/winordll64-backdoor-vast-lazarus-arsenal

@@ -1,0 +1,35 @@
+APTGroup, apt28, sofacy
+AffectedCountry, ukraine
+AffectedCountry, spain
+AffectedCountry, russia
+AffectedCountry, romania
+AffectedCountry, usa 
+AffectedCountry, canada
+AffectedCountry, bulgaria
+AffectedCountry, italy
+AttackerCountry, russia
+Filename, gen_ip.py
+Filename, api-ms-win-downlevel-profile-l1-1-0.dll
+Filename, advstoreshell.dll
+Filename, runrun.exe
+Filename, svehost.exe
+Filename, winloat.exe
+copyright	 © 2015 Bitdefender. All trademarks, trade names, and products referenced herein are property of their respective owners.   
+cve	CVE-2014-4076
+fqdn	blog.gentilkiwi.com
+fqdn	enterprise.bitdefender.com
+fqdn	er.com
+fqdn	ore.net
+fqdn	plugin-nmap-0.43.py
+fqdn	scan-bot-03.py
+fqdn	te.info
+fqdn	ter.info
+fqdn	vw.com
+fqdn	www.bitdefender.com
+md5	075b6695ab63f36af65f7ffd45cccd39
+md5	2683624eacc490238e98c449bddbb573
+md5	5bf524a4860f3c33e3ad77b6b625db37
+md5	78450806E56B1F224D00455EFCD04CE3
+md5	f3bf929a35c3f198226b88537d9ccb1a
+url	http://blog.gentilkiwi.com/mimikatz
+url	http://www.bitdefender.com/

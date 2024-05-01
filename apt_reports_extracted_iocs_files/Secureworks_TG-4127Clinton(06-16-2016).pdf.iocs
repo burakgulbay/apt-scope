@@ -1,0 +1,19 @@
+AffectedIndustry, finance
+AffectedIndustry, telecommunication
+AffectedIndustry, government
+APTGroup, group-4127, apt28, sofacy, sednit, pawn storm
+
+fqdn	aspmx.l.google.com
+fqdn	dnc.org
+fqdn	donaldjtrump.com
+fqdn	gmail.com
+fqdn	gop.com
+fqdn	hillaryclinton.com
+fqdn	johnkasich.com
+fqdn	secureworks.com
+fqdn	www.hillaryclinton.com
+fqdn	www.phishtank.com
+trademark	CTU™
+trademark	SecureWorks®
+trademark	Unit™
+url	secureworks.com/research/threat-group-4127-targets-hillary-clinton-presidential-campaign

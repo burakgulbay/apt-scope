@@ -1,0 +1,9 @@
+Malware, pterodo
+AffectedCountry, ukraine
+APTGroup, shuckworm, gamaredon, armageddon
+
+fqdn	corolain.ru
+fqdn	declined.delivered.maizuko.ru
+fqdn	symantec-enterprise-blogs.security.com
+ip6	::
+url	symantec-enterprise-blogs.security.com/blogs/threat-intelligence/shuckworm-intense-campaign-ukraine

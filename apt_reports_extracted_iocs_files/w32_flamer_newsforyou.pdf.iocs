@@ -1,0 +1,22 @@
+Malware, w32.flamer
+AffectedCountry, middle east
+
+copyright	Copyright © 2012 Symantec Corporation. All rights reserved.
+fqdn	connection.py
+fqdn	dnslocation.info
+fqdn	eraser.py
+fqdn	logwiper.sh
+fqdn	symantec.com
+fqdn	www.symantec.com
+ip4	1.4.11.4
+md5	27934e96d90d06818674b98bec7230fa
+md5	59c5452fb2ba21091513ccdc1e0ec7fd
+phoneNumber	+16505278000
+url	http://symantec.com/connect/blogs/flamer-highly-sophisticated-and-discreet-threat-targets-middle-east
+url	http://symantec.com/connect/blogs/flamer-recipe-bluetoothache
+url	http://symantec.com/connect/blogs/flamer-urgent-suicide
+url	http://symantec.com/connect/blogs/painting-picture-w32flamer
+url	http://symantec.com/connect/blogs/w32flamer-enormous-data-collection
+url	http://symantec.com/connect/blogs/w32flamer-leveraging-microsoft-digital-certificates
+url	http://symantec.com/connect/blogs/w32flamer-microsoft-windows-update-man-middle
+url	http://symantec.com/connect/blogs/w32flamer-spreading-mechanism-tricks-and-exploits

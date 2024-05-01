@@ -1,0 +1,60 @@
+Malware, olympic destroyer
+Filename, Korporativ .doc
+Filename, Korporativ_2018.doc
+Filename, corporativ_2018.doc
+Filename, Scan-2018-03-13.doc.bin
+Filename, Corporativ_2018.doc
+Filename, recommandation.doc
+Filename, recommandation.doc
+Filename, Investigation_file.doc
+Filename, Spiez CONVERGENCE.doc
+Filename, E-Mail-Adressliste_2018.doc
+Filename, nakaz.doc
+AffectedCountry, south korea
+AffectedCountry, russia
+AffectedCountry, ukraine
+AffectedCountry, netherlands
+AffectedCountry, germany
+AffectedCountry, france
+APTGroup, sofacy
+
+email	intelreports@kaspersky.com
+fqdn	edu.br
+fqdn	kaspersky.com
+fqdn	mysent.org
+fqdn	nakaz.zip
+fqdn	narpaninew.linuxuatwebspiders.com
+fqdn	securelist.com
+ip4	159.148.186.116
+ip4	5.133.12.224
+ip4	79.142.76.40
+md5	0c6ddc3a722b865cc2d1185e27cef9b8
+md5	0e7b32d23fbd6d62a593c234bafa2311
+md5	1d0cf431e623b21aeae8f2b8414d2a73
+md5	4247901eca6d87f5f3af7df8249ea825
+md5	54b06b05b6b92a8f2ff02fdf47baad0e
+md5	5ba7ec869c7157efc1e52f5157705867
+md5	6ccd8133f250d4babefbd66b898739b9
+md5	97ddc336d7d92b7db17d098ec2ee6092
+md5	9bc365a16c63f25dfddcbe11da042974
+md5	abe771f280cdea6e7eaf19a26b1a9488
+md5	b60da65b8d3627a89481efb23d59713a
+md5	b94bdb63f0703d32c20f4b2e5500dbbe
+md5	bb5e8733a940fedfb1ef6b0e0ec3635c
+md5	da93e6651c5ba3e3e96f4ae2dd763d94
+md5	e2e102291d259f054625cc85318b7ef5
+sha1	ff59cb2b4a198d1e6438e020bb11602bd7d2510d
+url	159.148.186.116:80/admin/get.php
+url	159.148.186.116:80/login/process.php
+url	159.148.186.116:80/news.php
+url	5.133.12.224:333/admin/get.php
+url	79.142.76.40:80/news.php
+url	79.142.76.40:8989/admin/get.php
+url	79.142.76.40:8989/login/process.php
+url	edu.br/components/com_finder/helpers/access.log
+url	edu.br/components/com_finder/views/default.php
+url	mysent.org/access.log.txt
+url	mysent.org/modules/admin.php
+url	narpaninew.linuxuatwebspiders.com/components/com_contact/controllers/main.php
+url	narpaninew.linuxuatwebspiders.com/components/com_j2xml/error.log
+url	securelist.com/olympic-destroyer-is-still-alive/86169/

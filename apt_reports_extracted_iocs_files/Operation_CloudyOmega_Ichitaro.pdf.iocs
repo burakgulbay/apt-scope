@@ -1,0 +1,11 @@
+Malware, bloodhound
+Malware, emdivi
+Malware, korplug
+Malware, zxshell
+Malware, mdropper
+AffectedIndustry, chemicals
+AffectedIndustry, finance
+AffectedCountry, japan
+
+cve	CVE-2012-5054
+cve	CVE-2013-0634

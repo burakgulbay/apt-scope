@@ -1,0 +1,23 @@
+Malware, dboxagent
+Malware, keyplug
+Filename, economic assistance.iso
+Filename, des.exe
+Filename, ofcpipc.dll
+Filename, libcef.dll
+Filename, Vlog.ipdb
+AffectedIndustry, government
+AffectedCountry, sri lanka
+AttackerCountry, china
+APTGroup, winnti, apt41
+
+copyright	 © Malwarebytes
+fqdn	dash.lcmbk.com
+fqdn	drive.google.com
+fqdn	netscout.com
+ip4	104.27.96.0
+ip4	162.159.36.0
+ip4	172.67.192.0
+ip4Net	104.27.96.0/24
+ip4Net	162.159.36.0/24
+ip4Net	172.67.192.0/24
+url	drive.google.com/u/1/

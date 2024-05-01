@@ -1,0 +1,15 @@
+Malware, denis
+Malware, goopy
+Filename, msfte.dll
+Filename, goopdate.dll
+Filename, product_info.dll
+APTGroup, oceanlotus, apt-c-00, sealotus, apt32
+APTGroup, operation cobalt kitty
+
+fqdn	cybereason.com
+ip4	8.8.8.8
+sha1	3cf4b44c9470fb5bd0c16996c4b2a338502a7517
+sha1	638b7b0536217c8923e856f4138d9caff7eb309d
+sha1	691686839681adb345728806889925dc4eddb74e
+sha1	973b1ca8661be6651114edf29b10b31db4e218f7
+sha1	d30e8c7543adbc801d675068530b57d75cabb13f

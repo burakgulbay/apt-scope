@@ -1,0 +1,16 @@
+Malware, infostealer
+AffectedIndustry, government
+AffectedCountry, ukraine
+MitreTechnique, T1566
+MitreTechnique, T1547
+MitreTechnique, T1213
+MitreTechnique, T1083
+MitreTechnique, T1012
+MitreTechnique, T1518
+MitreTechnique, T1071
+MitreTechnique, T1041
+MitreTechnique, T1112
+APTGroup, armageddon
+
+fqdn	celticso.ru
+sha256	139547707f38622c67c8ce2c026bf32052edd4d344f03a0b37895b5de016641a

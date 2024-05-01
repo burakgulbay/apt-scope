@@ -1,0 +1,30 @@
+Malware, gh0strat
+Malware, moudoor
+Malware, poison ivy
+Malware, hydraq
+Malware, 9002rat
+Malware, mcrat
+Malware, naid
+Malware, hikit
+Malware, matrixrat
+Malware, gaolmay
+Malware, zxshell
+Malware, sensode
+Malware, deputydog
+Malware, fexel
+Malware, kumanichi
+Malware, derusbi
+Malware, plugx
+Malware, destroyrat
+Malware, thoper
+Malware, sogu
+Malware, hydraq
+Malware, hikit
+APTGroup, group 72
+
+cve	CVE-2012-1889
+cve	CVE-2012-4792
+cve	CVE-2013-3893
+cve	CVE-2014-0322
+fqdn	companyacronym.attackerdomain.com
+fqdn	companyname.attackerdomain.com

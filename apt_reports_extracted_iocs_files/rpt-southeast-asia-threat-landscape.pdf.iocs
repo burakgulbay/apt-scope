@@ -1,0 +1,55 @@
+Malware, lecna
+Malware, gh0strat 
+Malware, mirage
+Malware, page
+Malware, downloader.pnaip
+Malware, cannonfodder
+Malware, leouncia
+Malware, kaba
+Malware, sogu
+Malware, lv
+Malware, njrat
+Malware, houdini
+Malware, xtremerat
+Malware, neteagle
+Malware, 1qaz
+AffectedIndustry, government
+AffectedIndustry, telecommunication
+AffectedIndustry, finance
+AffectedIndustry, technology
+AffectedIndustry, energy
+AffectedIndustry, education
+AffectedIndustry, oil and gas
+AffectedIndustry, infrastructure
+AffectedCountry, hong kong
+AffectedCountry, taiwan
+AffectedCountry, south korea
+AffectedCountry, india
+AffectedCountry, australia
+AffectedCountry, japan
+AffectedCountry, thailand
+AffectedCountry, singapore
+AffectedCountry, usa
+AttackerCountry, philippines
+AttackerCountry, brunei
+AttackerCountry, malaysia
+AttackerCountry, thailand
+AttackerCountry, vietnam
+AttackerCountry, singapore
+APTGroup, lv, njrat
+APTGroup, gh0strat
+APTGroup, kaba, sogu
+APTGroup, spynet
+APTGroup, xtremerat
+APTGroup, zxshell
+APTGroup, chinachopper
+APTGroup, photo
+APTGroup, page
+APTGroup, safersing
+
+
+copyright	© 2015 FireEye, Inc. All rights reserved.
+email	info@fireeye.com
+fqdn	fireeye.com
+fqdn	www.fireeye.com
+url	www.fireeye.com/reports

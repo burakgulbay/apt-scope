@@ -1,0 +1,79 @@
+Filename, New Shield and Sword Armed forces of Russia and USA.doc
+Filename, Service and repair of military communication equipment.scr
+Filename, Attacking american space systems will be costly.scr
+Filename, Fifteenth session of Eurasian economic commission.scr
+Filename, Joint anti-terrorism training “Antiterror 2016”.scr
+Filename, Meeting of Chief of General Staff with Bordyuzh.scr
+Filename, Changes to the list of affiliated persons for 20.04.2016.scr
+AffectedCountry, russia
+AffectedCountry, mongolia
+AffectedCountry, belarus
+AttackerGroup, China
+APTGroup, nettraveler, travnet
+
+cve	CVE-2012-0158
+email	fjknge@yahoo.com
+email	ganh@gmail.com
+email	ghjksd@gmail.com
+email	kefj0943@yahoo.com
+email	rubiya@163.com
+email	ukdf@gmail.com
+fqdn	163.com
+fqdn	2016-02-16.zip
+fqdn	army-news.ru
+fqdn	asia.nikkei.com
+fqdn	gmail.com
+fqdn	mogoogle.com
+fqdn	patriotp.com
+fqdn	proofpoint.com
+fqdn	researchcenter.paloaltonetworks.com
+fqdn	ria.ru
+fqdn	securelist.com
+fqdn	sputnik.by
+fqdn	tass.ru
+fqdn	voennovosti.ru
+fqdn	www.info-spb.com
+fqdn	www.interfax.ru
+fqdn	www.interfaxru.com
+fqdn	www.mogoogle.com
+fqdn	www.proofpoint.com
+fqdn	www.riaru.net
+fqdn	www.sophos.com
+fqdn	www.tassnews.net
+fqdn	www.voennovosti.com
+fqdn	www.welivesecurity.com
+fqdn	yahoo.com
+ip4	103.231.184.163
+ip4	103.231.184.164
+ip4	98.126.38.107
+md5	AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+sha256	1bcafa596c597868a179fe3d783b8c5bcd1b487d891b99cb90e76e8abd55a599
+sha256	3adacca54c6fe4bb905e233e48dffd8f6d03078d3d2d309d40e2e67a04a70db1
+sha256	409bb7f9faf4b7dc168f71084edb695707f22a83a2e79b810a0b4a27966d78f1
+sha256	5afcaca6f6dd6fb3bad26585f30870f71462c59e251cc76b0df5851ac2aa17de
+sha256	60386112fc4b0ddb833fc9a877a9a4f0fe76828ebab4457637b0827106b269fe
+sha256	67c994ad328cd3d8b954366b2baa5e643b31ed42280548eebbd0c30c53f9e37d
+sha256	69527b0471c2effab2d21106556ace6bd501daf7758b2ebbf3b2780d6399ecbf
+sha256	80ba8997067025dd830d49d09c57c0dcb1e2f303fa0e093069bd9cff29420692
+sha256	8e3e5b12f0964e73e4057610ce7a6aa25607c94536762128dabebf9ccfa667d4
+sha256	b3a5c562e3531fb8be476af4947eaa793a77cc61715284bfb9c380b7048da44a
+sha256	f3997f8269e4177342aec8816c28cfebaef17a86f22eef15d90b4f9e5b15d8e6
+tronix	4177342aec8816c28cfebaef17a86f22eef15d90b4
+url	http://army-news.ru/2015/01/novyj-shhit-i-novyj-mech/
+url	http://asia.nikkei.com/Business/Companies/Known-virus-linked-to-China-behind-JTB-data-breach
+url	http://researchcenter.paloaltonetworks.com/2016/06/unit42-recent-mnkit-exploit-activity-reveals-some-common-threads/
+url	http://ria.ru/world/20160420/1415455030.html
+url	http://sputnik.by/defense_safety/20160524/1022738965.html
+url	http://www.info-spb.com//worldnews/almaz-antey/no.15.02.2016.rar
+url	http://www.info-spb.com/analiz/voennye_kommentaria/n148584.rar
+url	http://www.info-spb.com/html/news/cout/Последний%20доклад.rar
+url	http://www.info-spb.com/worldnews/mfa/ua/2016-02-16.zip
+url	http://www.info-spb.com/worldnews/mfa/uz/03.02.2016.rar
+url	http://www.interfaxru.com/html/rostechnologii/20160420.rar
+url	http://www.tassnews.net/revenge/dk/downloader.asp
+url	http://www.welivesecurity.com/2014/11/12/korplug-military-targeted-attacks-afghanistan-tajikistan/
+url	https://securelist.com/blog/research/35936/nettraveler-is-running-red-star-apt-attacks-compromise-high-profile-victims/
+url	https://www.proofpoint.com/us/threat-insight/post/PlugX-in-Russia
+url	https://www.sophos.com/en-us/medialibrary/PDFs/technical%20papers/sophos-office-exploit-generators-szappanos.pdf
+url	proofpoint.com/us/threat-insight/post/nettraveler-apt-targets-russian-european-interests
+url	www.info-spb.com/analiz/voennye_kommentaria/n148584.rar

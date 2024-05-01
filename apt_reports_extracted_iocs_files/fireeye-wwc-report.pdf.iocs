@@ -1,0 +1,23 @@
+AffectedIndustry, military
+AffectedIndustry, defense
+AffectedIndustry, media
+AffectedIndustry, government
+AffectedIndustry, technology
+AffectedCountry, georgia
+AffectedCountry, iran
+AffectedCountry, russia
+AffectedCountry, usa
+AffectedCountry, india
+AffectedCountry, south korea
+AffectedCountry, japan
+AttackerCountry, poland
+AttackerCountry, brazil
+AttackerCountry, taiwan
+AttackerCountry, china
+APTGroup, moonlight maze
+APTGroup, titan rain
+
+copyright	© 2013  FireEye, Inc. All rights reserved.
+email	info@FireEye.com
+fqdn	fireeye.com
+fqdn	www.fireeye.com

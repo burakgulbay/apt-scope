@@ -1,0 +1,7 @@
+APTGroup, inception
+
+cve	CVE-2012-0158
+fqdn	webdav.cloudme.com
+fqdn	www.bluecoat.com
+md5	4a4874fa5217a8523bf4d1954efb26ef
+url	https://www.bluecoat.com/security-blog/2014-12-09/blue-coat-exposes-%E2%80%9C-

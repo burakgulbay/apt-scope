@@ -1,0 +1,22 @@
+AffectedIndustry, military
+AffectedIndustry, aerospace and defence
+AffectedIndustry, government
+AffectedCountry, russia
+AffectedCountry, usa
+AffectedCountry, ukraine
+AffectedCountry, south korea
+AffectedCountry, uae
+AffectedCountry, united kingdom
+AffectedCountry, norway
+AffectedCountry, china
+APTGroup, group-4127
+
+fqdn	bit.ly
+fqdn	secureworks.com
+fqdn	www.bit.ly
+fqdn	www.phishtank.com
+trademark	CTU™
+trademark	SecureWorks®
+trademark	Unit™
+url	bit.ly/1PXQ8zP
+url	secureworks.com/research/threat-group-4127-targets-google-accounts

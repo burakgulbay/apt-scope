@@ -1,0 +1,10 @@
+Malware, remsec
+Filename, MSAOSSPC.DLL
+AffectedCountry, russia
+AffectedCountry, china
+AffectedCountry, sweden
+AffectedCountry, belgium
+APTGroup, strider
+
+fqdn	symantec.com
+url	symantec.com/connect/blogs/strider-cyberespionage-group-turns-eye-sauron-targets

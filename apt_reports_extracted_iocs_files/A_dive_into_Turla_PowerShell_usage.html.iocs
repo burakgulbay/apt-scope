@@ -1,0 +1,35 @@
+APTGroup, turla
+AffectedCountry, western europe
+AffectedCountry, middle east
+Filename, RPCSpoofServerInstall.pdb
+Malware, carbon
+Malware, gazer
+Malware, comrat
+Filename, profile.ps1
+Filename, iCore.dat
+MitreTechnique, T1086
+MitreTechnique, T1084
+MitreTechnique, T1027
+MitreTechnique, T1140
+MitreTechnique, T1055
+MitreTechnique, T1099
+MitreTechnique, T1083
+MitreTechnique, T1120
+MitreTechnique, T1012
+MitreTechnique, T1057
+MitreTechnique, T1005
+MitreTechnique, T1025
+MitreTechnique, T1071
+MitreTechnique, T1041
+copyright	Copyright © ESET. All Rights Reserved
+email	threatintel@eset.com
+fqdn	eset.com
+fqdn	turla.br
+fqdn	turla.bs
+fqdn	turla.bz
+sha1	50C0BF9479EFC93FA9CF1AA99BDCA923273B71A1
+sha1	9CDF6D5878FC3AECF10761FD72371A2877F270D0
+sha1	9D1C563E5228B2572F5CA14F0EC33CA0DEDA3D57
+sha1	B948E25D061039D64115CFDE74D2FF4372E83765
+sha1	D3DF3F32716042404798E3E9D691ACED2F78BDD5
+sha1	EC54EF8D79BF30B63C5249AF7A8A3C652595B923

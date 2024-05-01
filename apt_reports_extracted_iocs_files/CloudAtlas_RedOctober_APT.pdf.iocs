@@ -1,0 +1,32 @@
+Malware, mevade
+Filename, FT - Ukraine Russia's new art of war.doc
+Filename, Катастрофа малайзийского лайнера.doc
+Filename, Diplomatic Car for Sale.doc
+Filename, МВКСИ.doc
+Filename, Organigrama Gobierno Rusia.doc
+Filename, Фото.doc
+Filename, Информационное письмо.doc
+Filename, Форма заявки (25-26.09.14).doc
+Filename, Информационное письмо.doc
+Filename, Письмо_Руководителям.doc
+Filename, Прилож.doc
+Filename, Car for sale.doc
+Filename, Af-Pak and Central Asia's security issues.doc
+AffectedCountry, russia
+AttackerCountry, china
+APTGroup, redoctober
+APTGroup, cloudatlas
+
+cve	CVE-2012-0158
+fqdn	cloudme.com
+fqdn	exploit.win32.cve-2012-0158.aw
+fqdn	exploit.win32.cve-2012-0158.eu
+fqdn	mydrive.ch
+md5	40e70f7f5d9cb1a669f8d8f306113485
+md5	58db8f33a9cdd321d9525d1e68c06456
+md5	649ff144aea6796679f8f9a1e9f51479
+md5	D171DB37EF28F42740644F4028BCF727
+md5	DECF56296C50BD3AE10A49747573A346
+md5	E211C2BAD9A83A6A4247EC3959E2A730
+md5	f4e15c1c2c95c651423dbb4cbe6c8fd5
+md5	f5476728deb53fe2fa98e6a33577a9da

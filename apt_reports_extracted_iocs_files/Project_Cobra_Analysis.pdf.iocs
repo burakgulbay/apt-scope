@@ -1,0 +1,29 @@
+Malware, tavdig
+Malware, wipbot
+Malware, symantec
+Filename, ipvpn.dll
+Filename, srsvc.dll
+Filename, kmsvc.dll
+Filename, carbon_system.dll
+APTGroup, project cobra
+APTGroup, uroburos, snake, turla
+
+fqdn	61paris.fr
+fqdn	a67ncodc.ax
+fqdn	asmcerts.rs
+fqdn	b9s3coff.ax
+fqdn	decrypt.py
+fqdn	getcert.rs
+fqdn	jucheafrica.com
+fqdn	microsoft.com
+fqdn	soheylistore.ir
+fqdn	tazohor.com
+fqdn	update.microsoft.com
+fqdn	windowsupdate.microsoft.com
+fqdn	www.bing.com
+fqdn	www.google.com
+fqdn	www.yahoo.com
+md5	554450c1ecb925693fedbb9e56702646
+md5	cb1b68d9971c2353c2d6a8119c49b51f
+md5	e6d1dcc6c2601e592f2b03f35b06fa8f
+uuid	5FA3BC02-920F-D42A-68BC-04F2A75BE158

@@ -1,0 +1,19 @@
+Malware, x-agent
+Filename, Попр-Д30.apk
+AffectedCountry, ukraine
+AttackerCountry, russia
+APTGroup, fancy bear
+
+fqdn	programs-art.at.ua
+fqdn	razumkov.org.ua
+fqdn	rusi.org
+fqdn	thesaker.is
+fqdn	www.bellingcat.com
+fqdn	www.crowdstrike.com
+fqdn	www.youtube.com
+url	http://programs-art.at.ua
+url	http://thesaker.is/ukrainian-army-losses-in-ato-anti-terrorist-operation-
+url	https://rusi.org/sites/default/files/201503_bp_
+url	https://www.bellingcat.com/news/uk-and-europe/2015/02/17/
+url	https://www.youtube.com/watch?v=qp-7e_ZGH8I
+url	razumkov.org.ua/upload/identi-2016.pdf

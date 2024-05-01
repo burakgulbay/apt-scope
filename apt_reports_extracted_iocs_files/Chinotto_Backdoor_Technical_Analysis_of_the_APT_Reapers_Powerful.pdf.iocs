@@ -1,0 +1,20 @@
+APTGroup, apt37, reaper
+AttackerCountry, north korea
+Malware, chinotto
+AffectedCountry, japan 
+AffectedCountry, vietnam
+Malware, olympic destroyer
+Filename, Plugin_CKUP.pdb
+Filename, proc.php
+MitreTechnique, T1059 
+MitreTechnique, T1059
+MitreTechnique, T1129
+MitreTechnique, T1027
+MitreTechnique, T1027
+MitreTechnique, T1564
+MitreTechnique, T1056
+MitreTechnique, T1010
+MitreTechnique, T1012
+ip4	172.93.193.158
+sha256	d0ec6d91cf9e7c64cf11accadf18f8b5a18a10efbecb28f797b3dbbf74ae846d
+url	http://172.93.193.158/Data/goldll/proc.php

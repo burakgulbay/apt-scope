@@ -1,0 +1,15 @@
+Malware, darkcomet
+Malware, ponydos
+
+copyright	Copyright (c) 2012 Arbor Networks 
+fqdn	darkcomet.py
+fqdn	ip.org
+fqdn	newrat2.no
+fqdn	www.contextis.com
+ip4	192.1.167.30
+ip4	192.10.8.64
+md5	1C638B4887FFE980B0B9AE72B1EA40A3
+md5	63f2ed5d2ee50e90cda809f2ac740244
+sha256	185CB63BA31EA7C967297252432E5A7CFC96B261EB7EF4742533CEBF37A9C081
+sha256	185CB63BA503B9C967297252432E5A7CFC96B261EB7EF4742533CEBF37A9C081
+url	http://www.contextis.com/research/blog/darkcometrat/

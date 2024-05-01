@@ -1,0 +1,58 @@
+Filename, mssvc32.vxd
+APTGroup, equationdrug, equation
+
+copyright	 © Microsoft Corporation. All rights reserved.
+copyright	Copyright (C) Microsoft Corp. 1981-1999
+copyright	Copyright (C) Microsoft Corp. 1981-2000
+copyright	Copyright (C) Microsoft Corp. 1981-2001
+fqdn	2fsecurelist.com
+fqdn	cdn.securelist.com
+fqdn	securelist.com
+fqdn	twitter.com
+fqdn	www.pcreview.co.uk
+fqdn	www.waeservices.com
+ip4	1.0.0.1
+ip4	213.198.79.49
+ip4	4.0.1.0
+md5	0a5e9b15014733ee7685d8c8be81fb0d
+md5	11fb08b9126cdb4668b3f5135cf7a6c5
+md5	15d39578460e878dd89e8911180494ff
+md5	20506375665a6a62f7d9dd22d1cc9870
+md5	214f7a2c95bdc265888fbcd24e3587da
+md5	21C278C88D8F6FAEA64250DF3BFFD7C6
+md5	2b444ac5209a8b4140dd6b747a996653
+md5	311D4923909E07D5C703235D83BF4479
+md5	5767b9d851d0c24e13eca1bfd16ea424
+md5	60dab5bb319281747c5863b44c5ac60d
+md5	69e7943f3d48233de4a39a924c59ed2c
+md5	74DE13B5EA68B3DA24ADDC009F84BAEE
+md5	8d87a1845122bf090b3d8656dc9d60a8
+md5	98dea1bce37bf7087360e1958400589b
+md5	9f3f6f46c67d3fad2479963361cf118b
+md5	B2C7339E87C932C491E34CDCD99FEB07
+md5	EF4405930E6071AE1F7F6FA7D4F3397D
+md5	a6662b8ebca61ca09ce89e1e4f43665d
+md5	b3487fdd1efd2d1ea1550fef5b749037
+md5	bb8f56874189d5dfe9294f0553a49b83
+md5	c17e16a54916d3838f63d208ebab9879
+md5	c3af66b9ce29efe5ee34e87b6e136e3a
+md5	c4f8671c1f00dab30f5f88d684af1927
+md5	f6bf3ed3bcd466e5fd1cbaf6ba658716
+url	http://cdn.securelist.com/�les/2015/03/EquationDrug_1.jpg
+url	http://cdn.securelist.com/�les/2015/03/EquationDrug_2.jpg
+url	http://cdn.securelist.com/�les/2015/03/EquationDrug_3.jpg
+url	http://cdn.securelist.com/�les/2015/03/EquationDrug_4.jpg
+url	http://cdn.securelist.com/�les/2015/03/EquationDrug_5_1.jpg
+url	http://securelist.com/analysis/publications/65545/the-epic-turla-operation/
+url	http://securelist.com/blog/research/67741/regin-nation-state-ownage-of-gsm-networks/
+url	http://securelist.com/blog/research/68750/equation-the-death-star-of-malware-galaxy/
+url	http://securelist.com/blog/research/69203/inside-t
+url	http://www.pcreview.co.uk
+url	http://www.pcreview.co.uk/forums/mstcp32-t1445152.html
+url	https://securelist.com/�les/2015/02/Equation_group_questions_and_answers.pdf
+url	https://twitter.com/share?url=http%3A%2F%2Fsecurelist.com%2Fblog%2Fresearch%2F69203%2Finside-
+uuid	01C482BA-BD31-4874-A08B-A93EA5BCE511
+uuid	091FD378-422D-A36E-8487-83B57ADD2109
+uuid	B6F5CD13-A74D-8B82-A6AA-6FA1BE2484C1
+uuid	D0385CB7-B834-45d1-A501-1A1700E6C34E
+uuid	F4CF0326-6DCD-EEC8-5323-01CEDB66741A

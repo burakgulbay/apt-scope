@@ -1,0 +1,13 @@
+AffectedIndustry, energy
+AttackerCountry, ukraine
+APTGroup, blackenergy
+
+email	threatintel@eset.com
+fqdn	eset.com
+fqdn	www.welivesecurity.com
+ip4	193.239.152.131
+ip4	62.210.83.213
+sha1	1DD4241835BD741F8D40BE63CA14E38BBDB0A816
+sha1	920EB07BC8321EC6DE67D02236CF1C56A90FEA7D
+sha1	BC63A99F494DE6731B7F08DD729B355341F6BF3D
+url	www.welivesecurity.com/2016/01/20/new-wave-attacks-ukrainian-power-industry/

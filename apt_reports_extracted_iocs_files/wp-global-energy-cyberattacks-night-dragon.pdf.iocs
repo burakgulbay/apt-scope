@@ -1,0 +1,42 @@
+APTGroup, night dragon
+Malware, code red
+Malware, nimda
+Malware, blaster
+Malware, sasser
+Malware, sql slammer
+Malware, conficker
+Malware, mydoom
+
+copyright	Copyright © 2011 McAfee 
+email	Virus_Research@avertlabs.com
+email	incidentresponse@foundstone.com
+email	virus_research@mcafee.com
+fqdn	avertlabs.com
+fqdn	foundstone.com
+fqdn	is-a-chef.com
+fqdn	mcafee.com
+fqdn	office-on-the.net
+fqdn	on-the.net
+fqdn	rootkin.net.cn
+fqdn	selfip.com
+fqdn	thruhere.net
+fqdn	www.hackingexposed.com
+fqdn	www.mcafee.com
+fqdn	www.webimmune.net
+md5	093640a69c8eafbc60343bf9cd1d3ad3
+md5	6E31CCA77255F9CDE228A2DB9E2A3855
+md5	85df6b3e2c1a4c6ce20fc8080e0b53e9
+md5	A6CBA73405C77FEDEAF4722AD7D35D60
+trademark	Foundstone®
+trademark	Intelligence™
+trademark	Labs™
+trademark	McAfee®
+trademark	Orchestrator®
+trademark	VirusScan®
+trademark	ePO™
+url	http://is-a-chef.com
+url	http://office-on-the.net
+url	http://selfip.com
+url	http://thruhere.net
+url	http://www.hackingexposed.com
+url	https://www.webimmune.net/default.asp

@@ -1,0 +1,24 @@
+Filename, E-Book.pdf.exe 
+Filename, BusinessWeek.pdf.exe
+Filename, Financial Times E-Paper.pdf.exe
+Filename, The Economist Print Edition.pdf.exe
+Filename, The NY Times In Print.pdf.exe
+Filename, Babylon9 - Greek.exe
+Filename, Google Desktop Translator.exe
+Filename, SMS Free Sender Desktop.exe
+Filename, BBC iPlayer.exe
+Filename, Sticky Notes Desktop.exe
+AffectedIndustry, energy
+AffectedIndustry, oil and gas
+AffectedCountry, greece
+
+copyright	Copyright  ©  2014  Symantec  Corporation.  All 
+cve	CVE-2010-2568
+fqdn	amazoaws.dyndns-office.com
+fqdn	go.symantec.com
+fqdn	msupdate.3utilities.com
+fqdn	updates.zyns.com
+fqdn	www.symantec.com
+phoneNumber	+16505278000
+url	go.symantec.com/socialmedia
+url	http://www.symantec.com/connect/symantec-blogs/sr

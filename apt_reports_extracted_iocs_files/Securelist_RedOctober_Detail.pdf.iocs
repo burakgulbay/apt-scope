@@ -1,0 +1,94 @@
+Malware, red october
+Filename, Katyn_-_opinia_Rosjan.xls
+Filename, FIEO contacts update.xls
+Filename, spisok sotrudnikov.xls
+Filename, List of shahids.xls
+Filename, Spravochnik.xls
+Filename, Telephone.xls
+Filename, BMAC Attache List - At 11 Oct_v1[1].XLS
+Filename, MERCOSUR_Imports.xls
+Filename, Cópia de guia de telefonos (2).xls
+Filename, Programme de fetes 2011.xls
+Filename, 12 05 2011 updated.xls
+Filename, telefonebi.xls
+AffectedIndustry, government
+AffectedIndustry, oil and gas
+AffectedIndustry, energy
+AffectedIndustry, military
+AffectedIndustry, defense
+AffectedIndustry, research
+AffectedCountry, russia
+AffectedCountry, kazakhstan
+AffectedCountry, azerbaijan
+AffectedCountry, belgium
+AffectedCountry, india
+AffectedCountry, afghanistan
+AffectedCountry, armenia
+AffectedCountry, iran
+AffectedCountry, turkmenistan
+AffectedCountry, ukraine
+AffectedCountry, usa
+AffectedCountry, vietnam
+AffectedCountry, belarus
+AffectedCountry, greece
+AffectedCountry, italy
+AffectedCountry, morocco
+AffectedCountry, pakistan
+AffectedCountry, switzerland
+AffectedCountry, uganda
+AffectedCountry, uae
+AffectedCountry, brazil
+AffectedCountry, france
+AffectedCountry, georgia
+AffectedCountry, germany
+AffectedCountry, jordan
+AffectedCountry, moldova
+AffectedCountry, south africa
+AffectedCountry, tajikistan
+AffectedCountry, turkey
+AffectedCountry, uzbekistan
+AffectedCountry, austria
+AffectedCountry, cyprus
+AffectedCountry, kyrgyzstan
+AffectedCountry, lebanon
+AffectedCountry, malaysia
+AffectedCountry, qatar
+AffectedCountry, saudi arabia
+AffectedCountry, congo
+AffectedCountry, indonesia
+AffectedCountry, kenya
+AffectedCountry, lithuania
+AffectedCountry, oman
+AffectedCountry, tanzania
+
+cve	CVE-2009-3129
+cve	CVE-2010-3333
+cve	CVE-2011-3544
+cve	CVE-2012-0158
+fqdn	dll-host-udate.com
+fqdn	dll-host-update.com
+fqdn	fr.wikipedia.org
+fqdn	microsoft-msdn.com
+fqdn	msgenuine.net
+fqdn	nt-windows-check.com
+fqdn	nt-windows-online.com
+fqdn	nt-windows-update.com
+fqdn	reg.ru
+fqdn	scp.pl
+fqdn	shellupdate.com
+fqdn	support.microsoft.com
+fqdn	timeweb.ru
+fqdn	update.microsoft.com
+fqdn	webdrive.ru
+fqdn	webnames.ru
+fqdn	windows-genuine.com
+fqdn	windowsonlineupdate.com
+fqdn	www.google.com
+fqdn	www.microsoft.com
+ip4	178.63.208.63
+ip4	31.41.45.139
+ip4	95.211.172.143
+url	http://178.63.208.63:40080
+url	http://31.41.45.139:40080
+url	http://www.google.com/
+url	https://fr.wikipedia.org/wiki/Acid_Cryptofiler

@@ -1,0 +1,29 @@
+Filename, btecache.dll
+Filename, svchost.dll
+AffectedIndustry, government
+AffectedCountry, usa
+APTGroup, sofacy, apt28
+
+cve	CVE-2015-1641
+fqdn	google.com
+fqdn	munimonoce.com
+fqdn	researchcenter.paloaltonetworks.com
+fqdn	servicecdp.com
+fqdn	storsvc.org
+fqdn	tabsync.net
+fqdn	wscapi.com
+fqdn	www.tabsync.net
+fqdn	www.wscapi.com
+ip4	191.101.31.6
+ip4	66.172.11.207
+sha256	03cb76bdc619fac422d2b954adfa511e7ecabc106adce804b1834581b5913bca
+sha256	12572c2fc2b0298ffd4305ca532317dc8b97ddfd0a05671066fe594997ec38f5
+sha256	57d230ddaf92e2d0504e5bb12abf52062114fb8980c5ecc413116b1d6ffedf1b
+sha256	69940a20ab9abb31a03fcefe6de92a16ed474bbdff3288498851afc12a834261
+sha256	aeeab3272a2ed2157ebf67f74c00fafc787a2b9bbaa17a03be1e23d4cb273632
+sha256	be1cfa10fcf2668ae01b98579b345ebe87dab77b6b1581c368d1aba9fd2f10a0
+sha256	c2551c4e6521ac72982cb952503a2e6f016356e02ee31dea36c713141d4f3785
+sha256	dfa8a85e26c07a348a854130c652dcc6d29b203ee230ce0603c83d9f11bbcacc
+sha256	fbd5c2cf1c1f17402cc313fe3266b097a46e08f48b971570ef4667fbfd6b7301
+tronix	4130c652dcc6d29b203ee230ce0603c83d9f11bbca
+url	researchcenter.paloaltonetworks.com/2016/06/unit42-new-sofacy-attacks-against-us-government-agency/
