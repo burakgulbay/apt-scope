@@ -1,0 +1,2064 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html class="no-js glue-flexbox  keyword-blog" lang="en-us" data-locale="en-us">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Protecting Android users from 0-Day attacks</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0" />
+        <meta name="optimize_experiments" content="[]">
+
+        
+  
+
+
+
+    
+
+
+<!--Article Specific Metadata-->
+<meta name="description" content="To protect our users, Google’s Threat Analysis Group (TAG) routinely hunts for 0-day vulnerabilities exploited in-the-wild. In 2021, we reported nine 0-days affecting Chrome, Android, Apple and Microsoft, leading to patches to protect users from these attacks.This blog is a follow up to our July 2021 post on four 0-day vulnerabilities we discovered in 2021, and details campaigns targeting Android users with five distinct 0-day vulnerabilities:CVE-2021-37973, CVE-2021-37976, CVE-2021-38000, CVE-2021-38003 in ChromeCVE-2021-1048 in AndroidWe assess with high confidence that these exploits were packaged by a single commercial surveillance company, Cytrox, and sold to different government-backed actors who used them in at least the three campaigns discussed below. Consistent with findings from CitizenLab, we assess likely government-backed actors purchasing these exploits are operating (at least) in Egypt, Armenia, Greece, Madagascar, Côte d’Ivoire, Serbia, Spain and Indonesia.The 0-day exploits were used alongside n-day exploits as the developers took advantage of the time difference between when some critical bugs were patched but not flagged as security issues and when these patches were fully deployed across the Android ecosystem. Our findings underscore the extent to which commercial surveillance vendors have proliferated capabilities historically only used by governments with the technical expertise to develop and operationalize exploits.Seven of the nine 0-days TAG discovered in 2021 fall into this category: developed by commercial providers and sold to and used by government-backed actors. TAG is actively tracking more than 30 vendors with varying levels of sophistication and public exposure selling exploits or surveillance capabilities to government-backed actors."/>
+<meta name="keywords" content="None"/>
+<meta name="article-author" content="Clement Lecigne, Christian Resell"/>
+<meta name="robots" content="max-image-preview:large">
+
+<!--Open Graph Metadata-->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Protecting Android users from 0-Day attacks"/>
+<meta property="og:description" content="" />
+<meta property="og:image" content="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Screenshot_2022-05-19_12.59.16_AM.width-1300.png" />
+<meta property="og:site_name" content="Google" />
+<meta property="og:url" content="https://blog.google/threat-analysis-group/protecting-android-users-from-0-day-attacks/" />
+<meta property="article:publisher" content="https://www.facebook.com/Google/" />
+<meta property="article:published_time" content="2022-05-19" />
+
+<!--Twitter Card Metadata-->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content="https://blog.google/threat-analysis-group/protecting-android-users-from-0-day-attacks/" />
+<meta name="twitter:title" content="Protecting Android users from 0-Day attacks"/>
+<meta name="twitter:description" content="" />
+<meta name="twitter:image:src" content="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Screenshot_2022-05-19_12.59.16_AM.width-1300.png" />
+<meta name="twitter:site" content="@google" />
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "mainEntityOfPage": "https://blog.google/threat-analysis-group/protecting-android-users-from-0-day-attacks/",
+        "headline": "Protecting Android users from 0\u002DDay attacks",
+        "datePublished": "2022-05-19T16:00:00+00:00",
+        "dateModified": "",
+        "description": "",
+        "author": {
+            "@type": "Person",
+            "name": "Clement Lecigne"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Google",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://blog.google/threat-analysis-group/protecting-android-users-from-0-day-attacks/",
+                "width": "200",
+                "height": "200"
+            }
+        },
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Screenshot_2022-05-19_12.59.16_AM.width-1300.png",
+            "width": "1440",
+            "height": "810"
+        }
+    }
+</script>
+
+  
+    <link rel="amphtml" href="https://blog.google/threat-analysis-group/protecting-android-users-from-0-day-attacks/amp/">
+  
+
+
+        
+        
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link rel="stylesheet" type="text/css" href="/static/keyword/css/blog/index.min.css?version=pr20231116-1913" />
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Google+Sans:400,500|Product+Sans:400&amp;display=swap&amp;lang=en">
+        <link href="https://www.gstatic.com/glue/cookienotificationbar/cookienotificationbar.min.css" rel="stylesheet">
+        
+
+        
+  
+            
+        
+  
+  <link rel="stylesheet" type="text/css" href="/static/keyword/css/print/index.min.css?version=pr20231116-1913" media="print" />
+
+
+        
+
+<link rel="canonical" href="https://blog.google/threat-analysis-group/protecting-android-users-from-0-day-attacks/" />
+
+<link href="/favicon.ico" rel="icon">
+<link href="/static/blogv2/images/apple-touch-icon.png" rel="apple-touch-icon">
+
+        <meta property="gtm-tag" content="GTM-TRV24V">
+
+
+
+        <!-- https://developer.mozilla.org/en-US/docs/Web/API/Trusted_Types_API -->
+<script>
+  let trustedTypePolicy = {
+      createHTML: (str) => str,
+      createScript: (str) => str,
+      createScriptURL: (url) => url
+  };
+  if (window.trustedTypes && window.trustedTypes.createPolicy) {
+      const safeScriptDomains = [
+          'blob:',
+          '/static/angularjs/',
+          '/static/blogv2/',
+          '/static/keyword/',
+          '/static/youtube/',
+          '/static/blog_youtube/',
+          '//apis.google.com/js/',
+          '//cdn.ampproject.org/',
+          '//googleads.g.doubleclick.net',
+          '//survey.g.doubleclick.net',
+          '//www.google-analytics.com/',
+          '//www.google.com',
+          '//www.googletagmanager.com',
+          '//www.gstatic.com',
+          '//www.youtube.com',
+      ];
+      const safeScripts = [
+          'google_tag_manager[""]',
+          '(function anonymous('
+      ];
+      trustedTypePolicy = window.trustedTypes.createPolicy('default', {
+          /* Enable create HTML */
+          createHTML: (str) => {
+              return str
+          },
+          /* Enable script creation */
+          createScript: (str) => {
+              const safeScriptString = safeScripts.find(
+                  (safeScript) => str.includes(safeScript)
+              );
+              if (!safeScriptString) {
+                  console.warn(
+                      `unsafe createScript: "${str}"`
+                  );
+              }
+
+              return str;
+          },
+          /* Allow for safe domains only */
+          createScriptURL: (url) => {
+              const safeDomainsUrl = safeScriptDomains.find(
+                  (safeDomain) => url.includes(safeDomain)
+              );
+              if (!safeDomainsUrl && !url.startsWith(window.location.origin)) {
+                  console.warn(
+                      `Unsafe createScriptURL: "${url}"`
+                  );
+              }
+
+              return url;
+          },
+      });
+  }
+
+  window.trustedTypePolicy = trustedTypePolicy;
+</script>
+
+    </head>
+
+    <body class="template-articlepage keyword-blog" uni-external-links>
+        
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRV24V" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+        
+
+
+
+
+<div class="data-layer-init-data" data-analytics='
+  {
+    "event": "dataLayer_initialized",
+    
+      "page_name": "Protecting Android users from 0-Day attacks",
+    
+    "experiments": "undefined",
+    "locale": "en-us",
+    "page_type": "blogv2 | article page",
+    "primary_tag": "topics - threat analysis group",
+    "secondary_tags": "undefined",
+    
+      "landing_page_tags": "undefined",
+    
+    "article_name": "Protecting Android users from 0\u002DDay attacks",
+    "author_name": "Clement Lecigne, Christian Resell",
+    "publish_date": "2022-05-19|16:00",
+    "hero_media": "none",
+    
+      "special_hero": "undefined",
+    
+    "days_since_published": "552",
+    
+      "content_category": "Topics - Threat Analysis Group",
+    
+    "word_count": "long 600+",
+    "has_audio": "no",
+    "has_video": "no"
+  }'>
+</div>
+
+<div class="page-analytics-data" data-analytics='
+    {
+        "event": "pageview",
+        
+            "slug": "protecting-android-users-from-0-day-attacks",
+        
+        
+            "contentType": "blogv2 | article page",
+        
+        
+        
+            "author": "clement lecigne, christian resell",
+        
+        
+            "primaryTag": "topics - threat analysis group",
+        
+        
+            "secondaryTags": "",
+        
+        
+            "publishDate": "2022-05-19|16:00",
+        
+        
+        
+            "tags": "",
+        
+        
+        
+            "goLiveDateTime": "2022-05-19|16:00",
+        
+        
+        
+            "wordCount": "long 600+",
+        
+        
+        
+            "contentCategory": "Announcement",
+        
+        
+          
+              "heroMedia": "none",
+          
+        
+        
+    }'>
+  </div>
+
+        <script type="text/javascript">
+  (function() {
+    var dataLayerInitElement = document.querySelector('.data-layer-init-data');
+    var dataLayerObject = JSON.parse(
+      dataLayerInitElement.getAttribute('data-analytics')
+    );
+
+    // Change undefined strings to primitive value undefined.
+    Object.entries(dataLayerObject).forEach(([key, value]) => {
+      dataLayerObject[key] = value === 'undefined' ? undefined : value;
+    });
+
+    if (!window['dataLayer']) {
+      window['dataLayer'] = [];
+    }
+    window['dataLayer'].push(dataLayerObject);
+  }());
+</script>
+
+<script type="text/javascript">
+  (function() {
+    var elem_ =  document.querySelector('.page-analytics-data');
+
+    var scrubObject = {
+      'event': 'scrubbedUrl',
+      'url': getScrubbedUrl()
+    };
+
+    var baseAnalyticsObject = JSON.parse(
+      elem_.getAttribute('data-analytics').replace(/,(?=[^,]*$)/, '')
+    );
+
+    function getScrubbedUrl() {
+      const urlParams = location.href.split('?');
+      const hostPathUrl = urlParams[0];
+      if(urlParams.length === 1) return hostPathUrl;
+
+      try {
+        const searchParams = urlParams[1].split('&');
+        const utmParams = searchParams.filter(param => param.startsWith('utm') || param.startsWith('query')).join('&');
+        if(!utmParams.length) return hostPathUrl;
+        return `${hostPathUrl}?${utmParams}`;
+      }
+      catch(error) {
+        console.error('scrubbed Url error =>', e);
+      }
+      return hostPathUrl;
+    }
+
+    function handlePublishDate(dataObj) {
+      var publishDate = dataObj['publishDate'];
+
+      if (typeof publishDate !== 'undefined') {
+        var oneDay = 24*60*60*1000;
+        var dateParts = publishDate.split('|');
+        var pubDay = new Date(dateParts[0]);
+        var today = new Date();
+        var daysSince = Math.round((today - pubDay) / oneDay);
+
+        dataObj['daysSincePublished'] = daysSince.toString();
+      }
+
+      pushData(dataObj);
+    }
+
+    function pushData(analyticsEvent) {
+      if (!window['dataLayer']) {
+        window['dataLayer'] = [];
+      }
+      window['dataLayer'].push(analyticsEvent);
+      const globalKWDimenssions = Object.assign({}, analyticsEvent);
+      if(globalKWDimenssions['event']) {
+        delete globalKWDimenssions['event'];
+      }
+      window['globalKWCustomDimensions'] = globalKWDimenssions;
+    }
+
+    pushData(scrubObject);
+    handlePublishDate(baseAnalyticsObject);
+  }());
+</script>
+
+
+        
+
+        
+            
+
+
+
+
+
+
+
+
+<div class="uni-header-content-pusher"></div>
+<header class="uni-header h-u-box-shadow-2" data-component="uni-header">
+  <div class="uni-header__hamburguer-wrapper uni-header__hamburguer-wrapper--hide">
+    <button class="uni-header__hamburguer-button">
+      <svg role="presentation" class="h-c-header__hamburger-img h-c-header__hamburger-img--standard events-off">
+            <use xlink:href="/static/blogv2/images/icons.svg#h-burger"></use>
+      </svg>
+    </button>
+  </div>
+  
+  <div class="uni-header__sitespace" site="Threat Analysis Group">
+    <figure class="uni-header__logo-google uni-header__logo-google--sitespace" title="Google" tabindex="-1">
+      
+        <svg role="img" aria-label="Google">
+          <use xlink:href="/static/blogv2/images/icons.svg#h-color-google-logo"></use>
+        </svg>
+      
+      </figure>
+
+      
+      <div class="uni-header__site-title">
+        <a class="uni-header__sitespace-text " href="https://blog.google/threat-analysis-group" target= "_self" data-analytics="{ "category": "navigation", "action": "header", "label": "navlink: home" }">
+            Updates from Threat Analysis Group (TAG)
+        </a>
+      </div>
+  </div>
+
+  
+  
+
+
+<div class="uni-article-progress-bar slide-up" data-component="uni-progress-bar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-hidden="true" role="progressbar">
+  <div class="uni-article-progress-bar__title uni-article-progress-bar__ellipsis">
+    Protecting Android users from 0-Day attacks
+  </div>
+  <div class="uni-article-progress-bar__social" aria-hidden="true"
+    data-analytics-module='{
+      "module_name": "Progress Bar",
+      "section_header": "Protecting Android users from 0\u002DDay attacks"
+    }'
+  >
+    
+
+
+<div class ="uni-social-share "
+  data-component="uni-social-share-dropdowm"
+>
+  <a aria-label="Share"
+    class="uni-social-share__trigger"
+    role="button"
+    tabindex="0"
+    aria-expanded="false"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "progress bar",
+      "action": "menu",
+      "label": "label"
+    }'>
+    <svg class="h-c-icon h-c-icon--color-text" title="Share" aria-hidden="true">
+      <use xlink:href="/static/blogv2/images/icons.svg#social-share"></use>
+    </svg>
+    <div class="uni-social-share__button">Share</div>
+  </a>
+  <div class="uni-social-share__dialog uni-social-share__content " aria-labelledby="social-share-icon">
+    
+
+
+<a aria-label="Share on Twitter"
+    class="article-share__link-text uni-click-tracker"
+    href="https://twitter.com/intent/tweet?text=Protecting%20Android%20users%20from%200-Day%20attacks%20%40google&url=https://blog.google/threat-analysis-group/protecting-android-users-from-0-day-attacks/"
+    target="_blank"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "progress bar",
+      "action": "share - progress bar",
+      "label": "twitter"
+    }'
+    data-ga4-method="twitter">
+  <svg aria-hidden="true" class="h-c-icon h-c-icon--social h-c-icon--30px" viewBox="0 0 30 30">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#social-twitter"></use>
+  </svg>
+  <div class="article-share__title">Twitter</div>
+</a>
+
+<a aria-label="Share on Facebook"
+    class="article-share__link-text uni-click-tracker"
+    href="https://www.facebook.com/sharer/sharer.php?caption=Protecting%20Android%20users%20from%200-Day%20attacks&u=https://blog.google/threat-analysis-group/protecting-android-users-from-0-day-attacks/"
+    target="_blank"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "progress bar",
+      "action": "share - progress bar",
+      "label": "facebook"
+    }'
+    data-ga4-method="facebook">
+  <svg aria-hidden="true" class="h-c-icon h-c-icon--social h-c-icon--30px" viewBox="0 0 30 30">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#social-facebook"></use>
+  </svg>
+  <div class="article-share__title">Facebook</div>
+</a>
+
+<a aria-label="Share on LinkedIn"
+    class="article-share__link-text uni-click-tracker"
+    href="https://www.linkedin.com/shareArticle?mini=true&url=https://blog.google/threat-analysis-group/protecting-android-users-from-0-day-attacks/&title=Protecting%20Android%20users%20from%200-Day%20attacks"
+    target="_blank"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "progress bar",
+      "action": "share - progress bar",
+      "label": "linkedin"
+    }'
+    data-ga4-method="linkedin">
+  <svg aria-hidden="true" class="h-c-icon h-c-icon--social h-c-icon--30px" viewBox="0 0 30 30">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#social-linkedin"></use>
+  </svg>
+  <div class="article-share__title">LinkedIn</div>
+</a>
+
+<a aria-label="Share with Email"
+    class="article-share__link-text uni-click-tracker article-share__email"
+    
+      href="mailto:?subject=Protecting%20Android%20users%20from%200-Day%20attacks&body=Check out this article on the Keyword:%0A%0AProtecting%20Android%20users%20from%200-Day%20attacks%0A%0Ahttps://blog.google/threat-analysis-group/protecting-android-users-from-0-day-attacks/"
+    
+    target="_blank"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "progress bar",
+      "action": "share - progress bar",
+      "label": "email"
+    }'
+    data-ga4-method="email">
+  <svg aria-hidden="true" class="h-c-icon h-c-icon--social h-c-icon--30px" viewBox="0 0 30 30">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#social-mail"></use>
+  </svg>
+  <div class="article-share__title">Mail</div>
+</a>
+
+    
+
+
+<div class="copy-link uni-copy-share uni-click-tracker"
+  data-component="uni-copy-popup-component"
+  data-analytics='{
+    "event": "page interaction",
+    "category": "progress bar",
+    "action": "share - progress bar",
+    "label": "copy"
+    }'
+  data-ga4-analytics-share-copy-link
+  data-ga4-method="Copy link">
+  <a class="copy-link__trigger copy-link__trigger-text"
+    href="#"
+    data-ga4-method="Copy link">
+    <svg class="h-c-icon h-c-icon--color-text" title="Share">
+      <use xlink:href="/static/blogv2/images/icons.svg#social-link"></use>
+    </svg>
+    <div class="copy-link__title">Copy link</div>
+  </a>
+  <div class="copy-link__dialog copy-link__content" aria-labelledby="copy-popover-icon" uni-options='{"copyTextButton": "COPIED TO CLIPBOARD"}'>
+    <input class="h-c-copy copy-link__url" value="https://blog.google/threat-analysis-group/protecting-android-users-from-0-day-attacks/" id="copy-link" readonly="readonly" type="text" aria-hidden="true" />
+    <div class="copy-link__copy-message" role="status" tabindex="0"></div>
+  </div>
+</div>
+
+  </div>
+</div>
+
+  </div>
+
+  <div class="uni-article-progress-bar__indicator hide-progress-bar"></div>
+</div>
+
+
+  
+  
+
+
+<form class="uni-search  sitespace"
+      role="dialog"
+      aria-label="Search box"
+      aria-hidden="true"
+      aria-expanded="false"
+      data-component="uni-search-box"
+      data-analytics-module='{
+        "module_name": "search"
+      }'>
+
+  <input class="uni-search__input"
+        type="text"
+        placeholder="Find an article..."
+        aria-label="Find an article...">
+
+  <button class="uni-search__button uni-search__button-search"
+          title="Submit"
+          type="submit">
+    <svg role="presentation" class="uni-header__kebab-search-icon">
+      <use xlink:href="/static/blogv2/images/icons.svg#mi-search"></use>
+    </svg>
+  </button>
+
+  <button class="uni-search__button uni-search__button-close"
+          title="Close"
+          type="button">
+    <svg role="presentation" class="uni-header__kebab-search-icon">
+      <use xlink:href="/static/blogv2/images/icons.svg#mi-clear"></use>
+    </svg>
+  </button>
+
+  <ul class="uni-search__auto-complete "
+      data-component="uni-search-autocomplete"
+      data-sitespace="Updates from Threat Analysis Group (TAG)"
+      data-siteid="2"
+      data-sitename="The Keyword">
+
+  </ul>
+</form>
+
+
+  
+  
+
+<div class="uni-header__kebab"
+  data-analytics-module='{
+    "module_name": "main nav",
+    "section_header": "kebab menu"
+  }'>
+  <button class="uni-header__kebab-search" title="Search">
+    <svg role="presentation" class="uni-header__kebab-search-icon">
+      <use xlink:href="/static/blogv2/images/icons.svg#mi-search"></use>
+    </svg>
+  </button>
+
+  <button class="uni-header__kebab-toggle" title="Secondary menu">
+    <svg role="presentation" class="uni-header__kebab-rss-icon">
+      <use xlink:href="/static/blogv2/images/icons.svg#mi-more-vert"></use>
+    </svg>
+  </button>
+
+  <ul class="uni-header__kebab-menu">
+    <li class="uni-header__kebab-menu-item">
+      <a class="uni-header__kebab-menu-link" href="/press" title="Press corner">
+        Press corner
+      </a>
+    </li>
+    <li class="uni-header__kebab-menu-item">
+      <a class="uni-header__kebab-menu-link" href="/rss" title="RSS feed">
+        RSS feed
+        <svg role="presentation" class="uni-header__kebab-rss-icon">
+          <use xlink:href="/static/blogv2/images/icons.svg#mi-rss-feed"></use>
+        </svg>
+      </a>
+    </li>
+  </ul>
+</div>
+
+</header>
+
+
+
+
+
+<div class="loader-mask">
+  <div class="loader-mask__loader"></div>
+</div>
+
+
+
+
+        
+
+        <main id="jump-content" class="site-content" tabindex="-1">
+            
+
+    <script async src="https://cdn.ampproject.org/amp-story-player-v0.js"></script>
+    <link href="https://cdn.ampproject.org/amp-story-player-v0.css" rel="stylesheet" type="text/css">
+
+    <article class="uni-article-wrapper" ng-init="drawerToggle = {'open': true}">
+
+    
+    
+
+
+<section class="article-hero" data-analytics-module='{
+  "module_name": "Article Hero",
+  "section_header": "Protecting Android users from 0\u002DDay attacks"
+}'>
+  <div class="article-hero__container">
+    
+    
+      <div class="article-hero__primary-tag__col">
+        <a class="h-u-mb-std article-hero__primary-tag article-hero__primary-tag--link data-analytics-onclick"
+          href="https://blog.google/threat-analysis-group/"
+          data-analytics='{
+            "category" : "landing page lead",
+            "action" : "eyebrow topic link",
+            "label" : "product Threat Analysis Group"
+          }'
+          data-ga4-analytics-eyebrow-click='{
+  "link_text": "Threat Analysis Group",
+  "link_url": "https://blog.google/threat-analysis-group/",
+  "link_type": "internal"
+}'
+
+          
+
+data-ga4-analytics-landing-lead='{
+  "event": "landing_page_lead",
+  "link_text": "Threat Analysis Group"
+}'
+
+        >
+          <p class="h-c-eyebrow article-hero__primary-tag--link__text">Threat Analysis Group</p>
+        </a>
+      </div>
+    
+    <h1 class="article-hero__h1">Protecting Android users from 0-Day attacks</h1>
+  </div>
+</section>
+
+
+    
+
+    
+      
+
+<div class="article-meta__author-container"
+  data-analytics-module='{
+    "module_name": "Hero Menu",
+    "section_header": "Protecting Android users from 0\u002DDay attacks"
+  }'>
+  <div class="article-meta__author-wrapper">
+    <div class="article-meta__abstract">
+      <div class="article-meta__abstract-container">
+        <div class="article-meta__published-wrapper article-meta__published-wrapper-long ">
+          <p class="article-meta__published-at">May 19, 2022</p>
+          
+            <p class="article-meta__read-time" data-reading-time-render><span class="article-meta__read-time--number"></span>min read</p>
+          
+        </div>
+        
+
+
+<div class ="uni-social-share uni-social-share--mobile"
+  data-component="uni-social-share-dropdowm"
+>
+  <a aria-label="Share"
+    class="uni-social-share__trigger"
+    role="button"
+    tabindex="0"
+    aria-expanded="false"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "social",
+      "action": "menu",
+      "label": "label"
+    }'>
+    <svg class="h-c-icon h-c-icon--color-text" title="Share" aria-hidden="true">
+      <use xlink:href="/static/blogv2/images/icons.svg#social-share"></use>
+    </svg>
+    <div class="uni-social-share__button">Share</div>
+  </a>
+  <div class="uni-social-share__dialog uni-social-share__content " aria-labelledby="social-share-icon">
+    
+
+
+<a aria-label="Share on Twitter"
+    class="article-share__link-text uni-click-tracker"
+    href="https://twitter.com/intent/tweet?text=Protecting%20Android%20users%20from%200-Day%20attacks%20%40google&url=https://blog.google/threat-analysis-group/protecting-android-users-from-0-day-attacks/"
+    target="_blank"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "social",
+      "action": "share",
+      "label": "twitter"
+    }'
+    data-ga4-method="twitter">
+  <svg aria-hidden="true" class="h-c-icon h-c-icon--social h-c-icon--30px" viewBox="0 0 30 30">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#social-twitter"></use>
+  </svg>
+  <div class="article-share__title">Twitter</div>
+</a>
+
+<a aria-label="Share on Facebook"
+    class="article-share__link-text uni-click-tracker"
+    href="https://www.facebook.com/sharer/sharer.php?caption=Protecting%20Android%20users%20from%200-Day%20attacks&u=https://blog.google/threat-analysis-group/protecting-android-users-from-0-day-attacks/"
+    target="_blank"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "social",
+      "action": "share",
+      "label": "facebook"
+    }'
+    data-ga4-method="facebook">
+  <svg aria-hidden="true" class="h-c-icon h-c-icon--social h-c-icon--30px" viewBox="0 0 30 30">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#social-facebook"></use>
+  </svg>
+  <div class="article-share__title">Facebook</div>
+</a>
+
+<a aria-label="Share on LinkedIn"
+    class="article-share__link-text uni-click-tracker"
+    href="https://www.linkedin.com/shareArticle?mini=true&url=https://blog.google/threat-analysis-group/protecting-android-users-from-0-day-attacks/&title=Protecting%20Android%20users%20from%200-Day%20attacks"
+    target="_blank"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "social",
+      "action": "share",
+      "label": "linkedin"
+    }'
+    data-ga4-method="linkedin">
+  <svg aria-hidden="true" class="h-c-icon h-c-icon--social h-c-icon--30px" viewBox="0 0 30 30">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#social-linkedin"></use>
+  </svg>
+  <div class="article-share__title">LinkedIn</div>
+</a>
+
+<a aria-label="Share with Email"
+    class="article-share__link-text uni-click-tracker article-share__email"
+    
+      href="mailto:?subject=Protecting%20Android%20users%20from%200-Day%20attacks&body=Check out this article on the Keyword:%0A%0AProtecting%20Android%20users%20from%200-Day%20attacks%0A%0Ahttps://blog.google/threat-analysis-group/protecting-android-users-from-0-day-attacks/"
+    
+    target="_blank"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "social",
+      "action": "share",
+      "label": "email"
+    }'
+    data-ga4-method="email">
+  <svg aria-hidden="true" class="h-c-icon h-c-icon--social h-c-icon--30px" viewBox="0 0 30 30">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#social-mail"></use>
+  </svg>
+  <div class="article-share__title">Mail</div>
+</a>
+
+    
+
+
+<div class="copy-link uni-copy-share uni-click-tracker"
+  data-component="uni-copy-popup-component"
+  data-analytics='{
+    "event": "page interaction",
+    "category": "social",
+    "action": "share",
+    "label": "copy"
+    }'
+  data-ga4-analytics-share-copy-link
+  data-ga4-method="Copy link">
+  <a class="copy-link__trigger copy-link__trigger-text"
+    href="#"
+    data-ga4-method="Copy link">
+    <svg class="h-c-icon h-c-icon--color-text" title="Share">
+      <use xlink:href="/static/blogv2/images/icons.svg#social-link"></use>
+    </svg>
+    <div class="copy-link__title">Copy link</div>
+  </a>
+  <div class="copy-link__dialog copy-link__content" aria-labelledby="copy-popover-icon" uni-options='{"copyTextButton": "COPIED TO CLIPBOARD"}'>
+    <input class="h-c-copy copy-link__url" value="https://blog.google/threat-analysis-group/protecting-android-users-from-0-day-attacks/" id="copy-link" readonly="readonly" type="text" aria-hidden="true" />
+    <div class="copy-link__copy-message" role="status" tabindex="0"></div>
+  </div>
+</div>
+
+  </div>
+</div>
+
+      </div>
+      
+    </div>
+  </div>
+  <div class="article-meta__container">
+    <div class="article-meta__content">
+      
+        
+  
+    <div class="article-meta__author">
+      
+  <div class="article-meta__author-noimage"
+        data-component="uni-monogram"
+        data-author="Clement Lecigne">
+  </div>
+
+<div class="article-meta__author-info">
+  <div class="article-meta__author-name">Clement Lecigne</div>
+  
+    <div class="article-meta__author-title">
+      Threat Analysis Group
+    </div>
+  
+  
+</div>
+
+    </div>
+  
+
+  
+    <div class="article-meta__author">
+      
+  <div class="article-meta__author-noimage"
+        data-component="uni-monogram"
+        data-author="Christian Resell">
+  </div>
+
+<div class="article-meta__author-info">
+  <div class="article-meta__author-name">Christian Resell</div>
+  
+    <div class="article-meta__author-title">
+      Threat Analysis Group
+    </div>
+  
+  
+</div>
+
+    </div>
+  
+
+
+      
+    </div>
+    <div class="article-share__wrapper"
+      data-analytics-module='{
+        "module_name": "Hero Share",
+        "section_header": "Protecting Android users from 0\u002DDay attacks"
+      }'>
+      
+
+
+<div class ="uni-social-share uni-social-share--desktop"
+  data-component="uni-social-share-dropdowm"
+>
+  <a aria-label="Share"
+    class="uni-social-share__trigger"
+    role="button"
+    tabindex="0"
+    aria-expanded="false"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "social",
+      "action": "menu",
+      "label": "label"
+    }'>
+    <svg class="h-c-icon h-c-icon--color-text" title="Share" aria-hidden="true">
+      <use xlink:href="/static/blogv2/images/icons.svg#social-share"></use>
+    </svg>
+    <div class="uni-social-share__button">Share</div>
+  </a>
+  <div class="uni-social-share__dialog uni-social-share__content " aria-labelledby="social-share-icon">
+    
+
+
+<a aria-label="Share on Twitter"
+    class="article-share__link-text uni-click-tracker"
+    href="https://twitter.com/intent/tweet?text=Protecting%20Android%20users%20from%200-Day%20attacks%20%40google&url=https://blog.google/threat-analysis-group/protecting-android-users-from-0-day-attacks/"
+    target="_blank"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "social",
+      "action": "share",
+      "label": "twitter"
+    }'
+    data-ga4-method="twitter">
+  <svg aria-hidden="true" class="h-c-icon h-c-icon--social h-c-icon--30px" viewBox="0 0 30 30">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#social-twitter"></use>
+  </svg>
+  <div class="article-share__title">Twitter</div>
+</a>
+
+<a aria-label="Share on Facebook"
+    class="article-share__link-text uni-click-tracker"
+    href="https://www.facebook.com/sharer/sharer.php?caption=Protecting%20Android%20users%20from%200-Day%20attacks&u=https://blog.google/threat-analysis-group/protecting-android-users-from-0-day-attacks/"
+    target="_blank"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "social",
+      "action": "share",
+      "label": "facebook"
+    }'
+    data-ga4-method="facebook">
+  <svg aria-hidden="true" class="h-c-icon h-c-icon--social h-c-icon--30px" viewBox="0 0 30 30">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#social-facebook"></use>
+  </svg>
+  <div class="article-share__title">Facebook</div>
+</a>
+
+<a aria-label="Share on LinkedIn"
+    class="article-share__link-text uni-click-tracker"
+    href="https://www.linkedin.com/shareArticle?mini=true&url=https://blog.google/threat-analysis-group/protecting-android-users-from-0-day-attacks/&title=Protecting%20Android%20users%20from%200-Day%20attacks"
+    target="_blank"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "social",
+      "action": "share",
+      "label": "linkedin"
+    }'
+    data-ga4-method="linkedin">
+  <svg aria-hidden="true" class="h-c-icon h-c-icon--social h-c-icon--30px" viewBox="0 0 30 30">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#social-linkedin"></use>
+  </svg>
+  <div class="article-share__title">LinkedIn</div>
+</a>
+
+<a aria-label="Share with Email"
+    class="article-share__link-text uni-click-tracker article-share__email"
+    
+      href="mailto:?subject=Protecting%20Android%20users%20from%200-Day%20attacks&body=Check out this article on the Keyword:%0A%0AProtecting%20Android%20users%20from%200-Day%20attacks%0A%0Ahttps://blog.google/threat-analysis-group/protecting-android-users-from-0-day-attacks/"
+    
+    target="_blank"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "social",
+      "action": "share",
+      "label": "email"
+    }'
+    data-ga4-method="email">
+  <svg aria-hidden="true" class="h-c-icon h-c-icon--social h-c-icon--30px" viewBox="0 0 30 30">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#social-mail"></use>
+  </svg>
+  <div class="article-share__title">Mail</div>
+</a>
+
+    
+
+
+<div class="copy-link uni-copy-share uni-click-tracker"
+  data-component="uni-copy-popup-component"
+  data-analytics='{
+    "event": "page interaction",
+    "category": "social",
+    "action": "share",
+    "label": "copy"
+    }'
+  data-ga4-analytics-share-copy-link
+  data-ga4-method="Copy link">
+  <a class="copy-link__trigger copy-link__trigger-text"
+    href="#"
+    data-ga4-method="Copy link">
+    <svg class="h-c-icon h-c-icon--color-text" title="Share">
+      <use xlink:href="/static/blogv2/images/icons.svg#social-link"></use>
+    </svg>
+    <div class="copy-link__title">Copy link</div>
+  </a>
+  <div class="copy-link__dialog copy-link__content" aria-labelledby="copy-popover-icon" uni-options='{"copyTextButton": "COPIED TO CLIPBOARD"}'>
+    <input class="h-c-copy copy-link__url" value="https://blog.google/threat-analysis-group/protecting-android-users-from-0-day-attacks/" id="copy-link" readonly="readonly" type="text" aria-hidden="true" />
+    <div class="copy-link__copy-message" role="status" tabindex="0"></div>
+  </div>
+</div>
+
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+    
+
+    
+      <div class="h-c-page uni-blog-article-no-hero">
+  <div class="h-c-grid">
+    <div class="h-c-grid__col h-c-grid__col--10 h-c-grid__col--offset-1">
+      <hr class="uni-blog-article-no-hero__line">
+      <hr class="uni-blog-article-no-hero__line">
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    <section class="uni-container article-container">
+      <div class="uni-wrapper article-container__wrapper">
+        
+          
+          
+          <div class="uni-content uni-blog-article-container article-container__content
+                      
+                      "
+              data-reading-time="true"
+              data-component="uni-drop-cap|uni-tombstone">
+            
+            
+<!--article text-->
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "Protecting Android users from 0\u002DDay attacks"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><p data-block-key="p26t5">To protect our users, Google’s Threat Analysis Group (TAG) <a href="https://blog.google/threat-analysis-group/analyzing-watering-hole-campaign-using-macos-exploits/" rt-link-type="external">routinely hunts</a> for 0-day vulnerabilities exploited in-the-wild. In 2021, we <a href="https://docs.google.com/spreadsheets/d/1lkNJ0uQwbeC1ZTRrxdtuPLCIl7mlUreoKfSIgajnSyY/view#gid=2129022708" rt-link-type="external">reported</a> nine 0-days affecting Chrome, Android, Apple and Microsoft, leading to patches to protect users from these attacks.</p><p data-block-key="do78v">This blog is a follow up to our July 2021 post on <a href="https://blog.google/threat-analysis-group/how-we-protect-users-0-day-attacks/" rt-link-type="external">four 0-day vulnerabilities we discovered</a> in 2021, and details campaigns targeting Android users with five distinct 0-day vulnerabilities:</p><ul><li data-block-key="5qd5r"><a href="https://chromereleases.googleblog.com/2021/09/stable-channel-update-for-desktop_24.html" rt-link-type="external">CVE-2021-37973</a>, <a href="https://chromereleases.googleblog.com/2021/09/stable-channel-update-for-desktop_30.html" rt-link-type="external">CVE-2021-37976</a>, <a href="https://chromereleases.googleblog.com/2021/10/stable-channel-update-for-desktop_28.html" rt-link-type="external">CVE-2021-38000</a>, <a href="https://chromereleases.googleblog.com/2021/10/stable-channel-update-for-desktop_28.html" rt-link-type="external">CVE-2021-38003</a> in Chrome</li><li data-block-key="2bp01"><a href="https://source.android.com/security/bulletin/2021-11-01#kernel-components_1" rt-link-type="external">CVE-2021-1048</a> in Android</li></ul><p data-block-key="at4a3">We assess with high confidence that these exploits were packaged by a single commercial surveillance company, Cytrox, and sold to different government-backed actors who used them in at least the three campaigns discussed below. Consistent with <a href="https://citizenlab.ca/2021/12/pegasus-vs-predator-dissidents-doubly-infected-iphone-reveals-cytrox-mercenary-spyware/" rt-link-type="external">findings</a> from CitizenLab, we assess likely government-backed actors purchasing these exploits are operating (at least) in Egypt, Armenia, Greece, Madagascar, Côte d’Ivoire, Serbia, Spain and Indonesia.</p><p data-block-key="ek3oi">The 0-day exploits were used alongside n-day exploits as the developers took advantage of the time difference between when some critical bugs were patched but not flagged as security issues and when these patches were fully deployed across the Android ecosystem. Our findings underscore the extent to which commercial surveillance vendors have proliferated capabilities historically only used by governments with the technical expertise to develop and operationalize exploits.</p><p data-block-key="9f867">Seven of the nine 0-days TAG discovered in 2021 fall into this category: developed by commercial providers and sold to and used by government-backed actors. TAG is actively tracking more than 30 vendors with varying levels of sophistication and public exposure selling exploits or surveillance capabilities to government-backed actors.</p></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "Protecting Android users from 0\u002DDay attacks"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><h3 data-block-key="p26t5">Campaign Deep Dives</h3><p data-block-key="151ih">All three campaigns delivered one-time links mimicking URL shortener services to the targeted Android users via email. The campaigns were limited — in each case, we assess the number of targets was in the tens of users. Once clicked, the link redirected the target to an attacker-owned domain that delivered the exploits before redirecting the browser to a legitimate website. If the link was not active, the user was redirected directly to a legitimate website. We&#x27;ve seen this technique used against journalists and other unidentified targets, and <a href="https://support.google.com/a/answer/9007870?hl=en#:~:text=What%20is%20a%20government%2Dbacked,alert%20is%20a%20false%20alarm." rt-link-type="external">alerted</a> those users when possible.</p><p data-block-key="dd4e0">We assess that these campaigns delivered ALIEN, a simple Android malware in charge of loading PREDATOR, an Android implant <a href="https://citizenlab.ca/2021/12/pegasus-vs-predator-dissidents-doubly-infected-iphone-reveals-cytrox-mercenary-spyware/" rt-link-type="external">described</a> by CitizenLab in December 2021. ALIEN lives inside multiple privileged processes and receives commands from PREDATOR over IPC. These commands include recording audio, adding CA certificates, and hiding apps.</p></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "Protecting Android users from 0\u002DDay attacks"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><h3 data-block-key="p26t5">Campaign #1 - redirecting to SBrowser from Chrome (CVE-2021-38000)</h3><p data-block-key="bammf">The first campaign, detected in August 2021, used Chrome on a Samsung Galaxy S21 and the web server immediately replied with a HTTP redirect (302) pointing to the following intent URL. This URL abused a logic flaw and forced Chrome to load another URL in the Samsung Browser without user interaction or warnings.</p><p data-block-key="7ojb6"></p><p data-block-key="7pta1">We did not capture the subsequent stages, but assess the attackers did not have exploits for the current version of Chrome (91.0.4472) at that time, but instead used n-day exploits targeting Samsung Browser, which was running an older and vulnerable version of Chromium.</p><p data-block-key="fgojd">We assess with high confidence this vulnerability was sold by an exploit broker and probably abused by more than one surveillance vendor.</p><p data-block-key="fm0cu">More technical details about this vulnerability are available in this <a href="https://googleprojectzero.github.io/0days-in-the-wild//0day-RCAs/2021/CVE-2021-38000.html" rt-link-type="external">RCA</a> by <a href="https://twitter.com/maddiestone" rt-link-type="external">Maddie Stone</a>.</p></div>
+      </div>
+    </div>
+  
+
+  
+    
+
+
+
+
+
+
+
+  
+      <div
+        class="article-image"
+        data-analytics-module='{
+          "module_name": "Inline Images",
+          "section_header": "Protecting Android users from 0\u002DDay attacks"
+        }'>
+  
+
+  <div class="article-image__no-caption
+      ">
+
+      
+      
+        
+          <img alt="hash"
+            src=" https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Screenshot_2022-05-19_12.44.56_AM.width-100.format-webp.webp "
+             class="article-image--large" 
+            
+              loading="lazy"
+              data-loading='{
+                "mobile": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Screenshot_2022-05-19_12.44.56_AM.width-500.format-webp.webp",
+                "desktop": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Screenshot_2022-05-19_12.44.56_A.width-1000.format-webp.webp"
+              }'
+            
+          >
+        
+      
+    
+    </div>
+    
+  
+    </div>
+  
+
+
+
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "Protecting Android users from 0\u002DDay attacks"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><p data-block-key="p26t5"><b>Related IOCs</b></p><ul><li data-block-key="57lpi">s.bit-li[.]com - landing page</li><li data-block-key="ckmra">getupdatesnow[.]xyz - exploit delivery server</li></ul></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "Protecting Android users from 0\u002DDay attacks"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><h3 data-block-key="p26t5">Campaign #2 - Chrome sandbox escape (CVE-2021-37973, CVE-2021-37976)</h3><p data-block-key="8ike7">In September 2021, TAG detected a campaign where the exploit chain was delivered to a fully up-to-date Samsung Galaxy S10 running the latest version of Chrome. We recovered the exploit used to escape the Chrome Sandbox, but not the initial RCE exploit.</p><p data-block-key="fimfl">The sandbox escape was loaded directly as an ELF binary embedding libchrome.so and a custom libmojo_bridge.so was used to ease the communication with the Mojo IPCs. This means the renderer exploit did not enable MojoJS bindings like we often see in public exploits.</p><p data-block-key="3ckk">Analysis of the exploit identified two different vulnerabilities in Chrome:</p><ul><li data-block-key="92u4g"><a href="https://bugs.chromium.org/p/chromium/issues/detail?id=1251727" rt-link-type="external">CVE-2021-37973</a>: A use-after-free in the handling of <a href="https://web.dev/hands-on-portals/" rt-link-type="external">Portals</a> API and <a href="https://github.com/shivanigithub/fenced-frame" rt-link-type="external">Fenced</a> subframes.</li><li data-block-key="78q4h"><a href="https://bugs.chromium.org/p/chromium/issues/detail?id=1251787" rt-link-type="external">CVE-2021-37976</a>: An information leak in memory_instrumentation.mojom.Coordinator where <a href="https://chromium.googlesource.com/chromium/src.git/+/refs/heads/main/docs/memory/tools.md#global-memory-dumps" rt-link-type="external">Global Memory Dumps</a> can be acquired for privileged processes. These dumps include sensitive information (addresses) which can be used for ASLR bypass.</li></ul><p data-block-key="83fii">After escaping the sandbox, the exploit downloaded another exploit in /data/data/com.android.chrome/p.so to elevate privileges and install the implant. We haven’t retrieved a copy of the exploit.</p><p data-block-key="2dfjt"><b>Related IOCs</b></p><ul><li data-block-key="5g55f">shorten[.]fi - landing page</li><li data-block-key="ce6v9">contents-domain[.]com - exploit delivery and C2 server</li></ul></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "Protecting Android users from 0\u002DDay attacks"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><h3 data-block-key="p26t5">Campaign #3 - Full Android 0-day exploit chain (CVE-2021-38003, CVE-2021-1048)</h3><p data-block-key="mhd9">In October 2021, we detected a full chain exploit from an up-to-date Samsung phone running the latest version of Chrome.</p><p data-block-key="48fv0">The chain included two 0-day exploits:</p><ul><li data-block-key="5e4l2"><a href="https://chromereleases.googleblog.com/2021/10/stable-channel-update-for-desktop_28.html" rt-link-type="external">CVE-2021-38003</a>: A Chrome renderer 0-day in JSON.stringify allowing the attacker to leak <a href="https://stackoverflow.com/questions/61420580/can-anyone-explain-v8-bytecode-ldathehole" rt-link-type="external">TheHole</a> value and fully compromise the renderer.</li><li data-block-key="1gvpc"><a href="https://source.android.com/security/bulletin/2021-11-01" rt-link-type="external">CVE-2021-1048</a>: Unlike the previous campaign, the sandbox escape used a Linux kernel bug in the epoll() system call. This system call is reachable from the BPF sandbox and allows the attacker to escape the sandbox and compromise the system by injecting code into privileged processes. More information can be found in this <a href="https://googleprojectzero.github.io/0days-in-the-wild/0day-RCAs/2021/CVE-2021-1048.html" rt-link-type="external">RCA</a> by <a href="https://twitter.com/tehjh" rt-link-type="external">Jann Horn</a>.</li></ul><p data-block-key="4l0k4">Of note, CVE-2021-1048 was fixed in the Linux kernel in September 2020, over a year before this campaign. The <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=77f4689de17c0887775bb77896f4cc11a39bf848" rt-link-type="external">commit</a> was not flagged as a security issue and therefore the patch was not backported in most Android kernels. At the time of the exploit, all Samsung kernels were vulnerable; <a href="https://source.android.com/devices/architecture/kernel/releases#long-term-stable-kernels" rt-link-type="external">LTS kernels</a> running on Pixel phones were recent enough and included the fix for this bug. Unfortunately, this is not the first time we have seen this happen with exploits in the wild; the 2019 <a href="https://googleprojectzero.blogspot.com/2019/11/bad-binder-android-in-wild-exploit.html" rt-link-type="external">Bad Binder</a> vulnerability is another example. In both cases, the fix was not flagged as a security issue and thus not backported to all (or any) Android kernels. Attackers are actively looking for and profiting from such slowly-fixed vulnerabilities.</p></div>
+      </div>
+    </div>
+  
+
+  
+    
+
+
+
+
+
+
+
+  
+      <div
+        class="article-image"
+        data-analytics-module='{
+          "module_name": "Inline Images",
+          "section_header": "Protecting Android users from 0\u002DDay attacks"
+        }'>
+  
+
+  <div class="article-image__no-caption
+      ">
+
+      
+      
+        
+          <img alt="sample image"
+            src=" https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Untitled_13_Gqok7TC.width-100.format-webp.webp "
+             class="article-image--large" 
+            
+              loading="lazy"
+              data-loading='{
+                "mobile": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Untitled_13_Gqok7TC.width-500.format-webp.webp",
+                "desktop": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Untitled_13_Gqok7TC.width-1000.format-webp.webp"
+              }'
+            
+          >
+        
+      
+    
+    </div>
+    
+  
+    </div>
+  
+
+
+
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "Protecting Android users from 0\u002DDay attacks"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><p data-block-key="p26t5"><b>Related IOCs</b></p><ul><li data-block-key="3810r">shorten[.]fi - landing page</li><li data-block-key="4b81j">redirecting[.]page - exploit delivery and C2 server</li><li data-block-key="779rg">8e4edb1e07ebb86784f65dccb14ab71dfd72f2be1203765b85461e65b7ed69c6 - ALIEN</li></ul></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "Protecting Android users from 0\u002DDay attacks"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><h3 data-block-key="p26t5">Conclusion</h3><p data-block-key="ejdqa">We’d be remiss if we did not acknowledge the quick response and patching of these vulnerabilities by Google’s Chrome and Android teams. We would also like to thank Project Zero for their technical assistance in helping analyze these bugs. TAG continues to track more than 30 vendors with varying levels of sophistication and public exposure selling exploits or surveillance capabilities to government-backed actors. We remain committed to updating the community as we uncover these campaigns.</p><p data-block-key="9c9fv">Tackling the harmful practices of the commercial surveillance industry will require a robust, comprehensive approach that includes cooperation among threat intelligence teams, network defenders, academic researchers and technology platforms. We look forward to continuing our work in this space and advancing the safety and security of our users around the world.</p><p data-block-key="5o68p"></p><p data-block-key="ah755"><i>NOTE: On May 20th, we updated our attribution to more precisely describe our findings.</i></p></div>
+      </div>
+    </div>
+  
+
+
+            
+            
+
+            
+              
+
+
+<div class="uni-blog-article-tags article-tags"
+     data-analytics-module='{
+       "module_name": "Article Tags",
+       "section_header": "Protecting Android users from 0\u002DDay attacks"
+     }'>
+  <div class="uni-blog-article-tags__wrapper">
+    <span class="uni-blog-article-tags__label">POSTED IN:</span>
+    <nav class="uni-blog-article-tags__container uni-click-tracker"
+        data-analytics='{
+                    "category": "landing page lead",
+                    "action": "article tag"
+                  }'>
+      <ul class="uni-blog-article-tags__tags-list">
+      
+          <li>
+            
+            
+            
+
+
+  <a class="uni-blog-article-tags-value uni-link-active"
+     href=" https://blog.google/threat-analysis-group/ "
+      
+
+data-ga4-analytics-landing-lead='{
+  "event": "landing_page_lead",
+  "link_text": "Threat Analysis Group"
+}'
+
+     
+        
+          data-analytics='{"label": "topics: Threat Analysis Group"}'
+        
+     
+     >
+
+
+Threat Analysis Group
+
+
+  </a>
+
+
+          </li>
+      
+
+        
+      </ul>
+    </nav>
+  </div>
+</div>
+
+            
+          </div>
+        
+      </div>
+    </section>
+  </article>
+  
+
+
+
+
+  
+
+  
+
+
+<div class="uni-related-articles-cards ga4-carousel"
+  data-analytics-module='{
+    "module_name": "Article Footer Related Stories",
+    "section_header": "Related stories"
+  }'
+>
+  <div class="uni-related-articles-cards-container" data-component="uni-related-articles">
+    <div class="uni-related-articles-grid-title">
+      <div class="uni-related-articles-grid-wrapper">
+        <h3 class="uni-related-articles-cards__title">
+          <div class="uni-related-articles-cards__title-content
+            ">
+            Related stories
+          </div>
+        </h3>
+      </div>
+    </div>
+    <div class="uni-related-articles-cards__track">
+      <ul aria-role="menu" aria-label="Related articles" class="uni-related-articles-cards__wrap
+                ">
+        
+          <li class="uni-related-articles-cards__item
+             uni-related-articles-cards__item--img
+            ">
+            <a href="https://blog.google/threat-analysis-group/zimbra-0-day-used-to-target-international-government-organizations/" class="uni-related-articles-cards__link"
+              data-index="1"
+              data-target="card"
+              data-primaryTag = "topics - threat analysis group"
+              data-image="true"
+              data-ga4-analytics-footer-lead-click='{
+                "link_text": "Zimbra 0\u002Dday used to target international government organizations",
+                "link_url":  "https://blog.google/threat-analysis-group/zimbra-0-day-used-to-target-international-government-organizations/",
+                "source_content": "Related stories",
+                "related_index": "1",
+                "related_article_tag": "topics - threat analysis group",
+                "article_name": "Zimbra 0\u002Dday used to target international government organizations",
+                "author_name": "Clement Lecigne, Maddie Stone"
+              }'
+              >
+              <div
+                class="uni-related-articles-cards__item-top-info"
+                data-target="card">
+                
+                  <div class="uni-related-articles-cards__img">
+                    
+    <figure class="">
+        <picture>
+            
+
+
+    
+
+    
+        <source media="(max-resolution: 1.5dppx)"
+                sizes="600px"
+                srcset="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/TAG_rYhcbet.png 600w">
+    
+        <source media="(min-resolution: 1.5dppx)"
+                sizes="1200px"
+                srcset="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/TAG_rYhcbet.png 1200w">
+    
+
+    <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/TAG_rYhcbet.png"
+
+         
+            alt="TAG"
+         
+
+         sizes=" 600px,  1200px"
+         srcset="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/TAG_rYhcbet.png 600w, https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/TAG_rYhcbet.png 1200w"
+         data-target="image"
+         loading="lazy">
+
+    
+
+
+        </picture>
+    </figure>
+
+
+                  </div>
+                
+                <span class="h-c-eyebrow  uni-related-articles-cards__category" data-target="eyebrow">Threat Analysis Group</span>
+                <h4 class="uni-related-articles-cards__headline" data-target="title">Zimbra 0-day used to target international government organizations</h4>
+                
+              </div>
+              <div class="uni-related-articles-cards__info">
+                
+                <div class="uni-related-articles-cards__author">
+                  By
+                  
+                    <span class="uni-related-articles-cards__author--name" data-target="author">
+                    Clement Lecigne
+                    </span>
+                  
+                    <span class="uni-related-articles-cards__author--name" data-target="author">
+                    Maddie Stone
+                    </span>
+                  
+                </div>
+                
+                <span class="uni-related-articles-cards__date" data-target="date"> Nov 16, 2023</span>
+              </div>
+              <svg role="presentation" class="uni-related-articles-cards__item-arrow" data-target="arrow">
+                <use xlink:href="/static/blogv2/images/icons.svg#mi-arrow-forward-no-bg"></use>
+              </svg>
+            </a>
+          </li>
+        
+          <li class="uni-related-articles-cards__item
+             uni-related-articles-cards__item--abstract
+            ">
+            <a href="https://blog.google/threat-analysis-group/government-backed-actors-exploiting-winrar-vulnerability/" class="uni-related-articles-cards__link"
+              data-index="2"
+              data-target="card"
+              data-primaryTag = "topics - threat analysis group"
+              data-image="false"
+              data-ga4-analytics-footer-lead-click='{
+                "link_text": "Government\u002Dbacked actors exploiting WinRAR vulnerability",
+                "link_url":  "https://blog.google/threat-analysis-group/government-backed-actors-exploiting-winrar-vulnerability/",
+                "source_content": "Related stories",
+                "related_index": "2",
+                "related_article_tag": "topics - threat analysis group",
+                "article_name": "Government\u002Dbacked actors exploiting WinRAR vulnerability",
+                "author_name": "Kate Morgan"
+              }'
+              >
+              <div
+                class="uni-related-articles-cards__item-top-info"
+                data-target="card">
+                
+                <span class="h-c-eyebrow  uni-related-articles-cards__category" data-target="eyebrow">Threat Analysis Group</span>
+                <h4 class="uni-related-articles-cards__headline" data-target="title">Government-backed actors exploiting WinRAR vulnerability</h4>
+                
+                  <p class="uni-related-articles-cards__abstract" data-target="abstract">Google's Threat Analysis Group analyzes recent state-sponsored campaigns exploiting the WinRAR vulnerability, CVE-2023-38831.</p>
+                
+              </div>
+              <div class="uni-related-articles-cards__info">
+                
+                <div class="uni-related-articles-cards__author">
+                  By
+                  
+                    <span class="uni-related-articles-cards__author--name" data-target="author">
+                    Kate Morgan
+                    </span>
+                  
+                </div>
+                
+                <span class="uni-related-articles-cards__date" data-target="date"> Oct 18, 2023</span>
+              </div>
+              <svg role="presentation" class="uni-related-articles-cards__item-arrow" data-target="arrow">
+                <use xlink:href="/static/blogv2/images/icons.svg#mi-arrow-forward-no-bg"></use>
+              </svg>
+            </a>
+          </li>
+        
+          <li class="uni-related-articles-cards__item
+             uni-related-articles-cards__item--abstract
+            ">
+            <a href="https://blog.google/threat-analysis-group/tag-bulletin-q3-2023/" class="uni-related-articles-cards__link"
+              data-index="3"
+              data-target="card"
+              data-primaryTag = "topics - threat analysis group"
+              data-image="false"
+              data-ga4-analytics-footer-lead-click='{
+                "link_text": "TAG Bulletin: Q3 2023",
+                "link_url":  "https://blog.google/threat-analysis-group/tag-bulletin-q3-2023/",
+                "source_content": "Related stories",
+                "related_index": "3",
+                "related_article_tag": "topics - threat analysis group",
+                "article_name": "TAG Bulletin: Q3 2023",
+                "author_name": "Shane Huntley"
+              }'
+              >
+              <div
+                class="uni-related-articles-cards__item-top-info"
+                data-target="card">
+                
+                <span class="h-c-eyebrow  uni-related-articles-cards__category" data-target="eyebrow">Threat Analysis Group</span>
+                <h4 class="uni-related-articles-cards__headline" data-target="title">TAG Bulletin: Q3 2023</h4>
+                
+                  <p class="uni-related-articles-cards__abstract" data-target="abstract">This bulletin includes coordinated influence operation campaigns terminated on our platforms in Q3 2023. It was last updated on November 8, 2023.</p>
+                
+              </div>
+              <div class="uni-related-articles-cards__info">
+                
+                <div class="uni-related-articles-cards__author">
+                  By
+                  
+                    <span class="uni-related-articles-cards__author--name" data-target="author">
+                    Shane Huntley
+                    </span>
+                  
+                </div>
+                
+                <span class="uni-related-articles-cards__date" data-target="date"> Oct 05, 2023</span>
+              </div>
+              <svg role="presentation" class="uni-related-articles-cards__item-arrow" data-target="arrow">
+                <use xlink:href="/static/blogv2/images/icons.svg#mi-arrow-forward-no-bg"></use>
+              </svg>
+            </a>
+          </li>
+        
+          <li class="uni-related-articles-cards__item
+             uni-related-articles-cards__item--abstract
+            ">
+            <a href="https://blog.google/threat-analysis-group/0-days-exploited-by-commercial-surveillance-vendor-in-egypt/" class="uni-related-articles-cards__link"
+              data-index="4"
+              data-target="card"
+              data-primaryTag = "topics - threat analysis group"
+              data-image="false"
+              data-ga4-analytics-footer-lead-click='{
+                "link_text": "0\u002Ddays exploited by commercial surveillance vendor in Egypt",
+                "link_url":  "https://blog.google/threat-analysis-group/0-days-exploited-by-commercial-surveillance-vendor-in-egypt/",
+                "source_content": "Related stories",
+                "related_index": "4",
+                "related_article_tag": "topics - threat analysis group",
+                "article_name": "0\u002Ddays exploited by commercial surveillance vendor in Egypt",
+                "author_name": "Maddie Stone"
+              }'
+              >
+              <div
+                class="uni-related-articles-cards__item-top-info"
+                data-target="card">
+                
+                <span class="h-c-eyebrow  uni-related-articles-cards__category" data-target="eyebrow">Threat Analysis Group</span>
+                <h4 class="uni-related-articles-cards__headline" data-target="title">0-days exploited by commercial surveillance vendor in Egypt</h4>
+                
+                  <p class="uni-related-articles-cards__abstract" data-target="abstract">Last week Google’s Threat Analysis Group (TAG), in partnership with The Citizen Lab, discovered an in-the-wild 0-day exploit chain for iPhones. Developed by the commerci…</p>
+                
+              </div>
+              <div class="uni-related-articles-cards__info">
+                
+                <div class="uni-related-articles-cards__author">
+                  By
+                  
+                    <span class="uni-related-articles-cards__author--name" data-target="author">
+                    Maddie Stone
+                    </span>
+                  
+                </div>
+                
+                <span class="uni-related-articles-cards__date" data-target="date"> Sep 22, 2023</span>
+              </div>
+              <svg role="presentation" class="uni-related-articles-cards__item-arrow" data-target="arrow">
+                <use xlink:href="/static/blogv2/images/icons.svg#mi-arrow-forward-no-bg"></use>
+              </svg>
+            </a>
+          </li>
+        
+          <li class="uni-related-articles-cards__item
+             uni-related-articles-cards__item--abstract
+            ">
+            <a href="https://blog.google/threat-analysis-group/active-north-korean-campaign-targeting-security-researchers/" class="uni-related-articles-cards__link"
+              data-index="5"
+              data-target="card"
+              data-primaryTag = "topics - threat analysis group"
+              data-image="false"
+              data-ga4-analytics-footer-lead-click='{
+                "link_text": "Active North Korean campaign targeting security researchers",
+                "link_url":  "https://blog.google/threat-analysis-group/active-north-korean-campaign-targeting-security-researchers/",
+                "source_content": "Related stories",
+                "related_index": "5",
+                "related_article_tag": "topics - threat analysis group",
+                "article_name": "Active North Korean campaign targeting security researchers",
+                "author_name": "Clement Lecigne, Maddie Stone"
+              }'
+              >
+              <div
+                class="uni-related-articles-cards__item-top-info"
+                data-target="card">
+                
+                <span class="h-c-eyebrow  uni-related-articles-cards__category" data-target="eyebrow">Threat Analysis Group</span>
+                <h4 class="uni-related-articles-cards__headline" data-target="title">Active North Korean campaign targeting security researchers</h4>
+                
+                  <p class="uni-related-articles-cards__abstract" data-target="abstract">Threat Analysis Group shares findings on a new campaign by North Korean actors targeting security researchers.</p>
+                
+              </div>
+              <div class="uni-related-articles-cards__info">
+                
+                <div class="uni-related-articles-cards__author">
+                  By
+                  
+                    <span class="uni-related-articles-cards__author--name" data-target="author">
+                    Clement Lecigne
+                    </span>
+                  
+                    <span class="uni-related-articles-cards__author--name" data-target="author">
+                    Maddie Stone
+                    </span>
+                  
+                </div>
+                
+                <span class="uni-related-articles-cards__date" data-target="date"> Sep 07, 2023</span>
+              </div>
+              <svg role="presentation" class="uni-related-articles-cards__item-arrow" data-target="arrow">
+                <use xlink:href="/static/blogv2/images/icons.svg#mi-arrow-forward-no-bg"></use>
+              </svg>
+            </a>
+          </li>
+        
+          <li class="uni-related-articles-cards__item
+             uni-related-articles-cards__item--abstract
+            ">
+            <a href="https://blog.google/threat-analysis-group/tag-bulletin-q2-2023/" class="uni-related-articles-cards__link"
+              data-index="6"
+              data-target="card"
+              data-primaryTag = "topics - threat analysis group"
+              data-image="false"
+              data-ga4-analytics-footer-lead-click='{
+                "link_text": "TAG Bulletin: Q2 2023",
+                "link_url":  "https://blog.google/threat-analysis-group/tag-bulletin-q2-2023/",
+                "source_content": "Related stories",
+                "related_index": "6",
+                "related_article_tag": "topics - threat analysis group",
+                "article_name": "TAG Bulletin: Q2 2023",
+                "author_name": "Shane Huntley"
+              }'
+              >
+              <div
+                class="uni-related-articles-cards__item-top-info"
+                data-target="card">
+                
+                <span class="h-c-eyebrow  uni-related-articles-cards__category" data-target="eyebrow">Threat Analysis Group</span>
+                <h4 class="uni-related-articles-cards__headline" data-target="title">TAG Bulletin: Q2 2023</h4>
+                
+                  <p class="uni-related-articles-cards__abstract" data-target="abstract">Threat Analysis Group shares their Q2 2023 bulletin.</p>
+                
+              </div>
+              <div class="uni-related-articles-cards__info">
+                
+                <div class="uni-related-articles-cards__author">
+                  By
+                  
+                    <span class="uni-related-articles-cards__author--name" data-target="author">
+                    Shane Huntley
+                    </span>
+                  
+                </div>
+                
+                <span class="uni-related-articles-cards__date" data-target="date"> Jul 31, 2023</span>
+              </div>
+              <svg role="presentation" class="uni-related-articles-cards__item-arrow" data-target="arrow">
+                <use xlink:href="/static/blogv2/images/icons.svg#mi-arrow-forward-no-bg"></use>
+              </svg>
+            </a>
+          </li>
+        
+        <li class="uni-related-articles-cards__item--placeholder">.</li>
+      </ul>
+    </div>
+    
+      <button class="uni-related-articles-cards__arrow uni-related-articles-cards__arrow--prev "
+        aria-controls="Previous" aria-label="Previous"
+        data-ga4-analytics-carousel-scroll-click='{
+  "toggle_type_direction": "arrow - left",
+  "position": ""
+}'
+>
+        <span class="uni-related-articles-cards__arrow--fig"></span>
+      </button>
+      <button class="uni-related-articles-cards__arrow uni-related-articles-cards__arrow--next "
+        aria-controls="Next" aria-label="Next"
+        data-ga4-analytics-carousel-scroll-click='{
+  "toggle_type_direction": "arrow - right",
+  "position": ""
+}'
+>
+        <span class="uni-related-articles-cards__arrow--fig"></span>
+      </button>
+      <fieldset class="uni-related-articles-cards__pagination ga4-bullets
+        " aria-label="Pagination">
+        
+          <label for="uni-related-articles-cards__pagination-dot-1" data-index="1" class="dot"
+            data-ga4-analytics-carousel-scroll-click='{
+  "toggle_type_direction": "bullet",
+  "position": "1"
+}'
+>
+            <input type="radio" class="dot-label" name="uni-related-articles-cards__pagination" id="uni-related-articles-cards__pagination-dot-1">
+          </label>
+        
+          <label for="uni-related-articles-cards__pagination-dot-2" data-index="2" class="dot"
+            data-ga4-analytics-carousel-scroll-click='{
+  "toggle_type_direction": "bullet",
+  "position": "2"
+}'
+>
+            <input type="radio" class="dot-label" name="uni-related-articles-cards__pagination" id="uni-related-articles-cards__pagination-dot-2">
+          </label>
+        
+          <label for="uni-related-articles-cards__pagination-dot-3" data-index="3" class="dot"
+            data-ga4-analytics-carousel-scroll-click='{
+  "toggle_type_direction": "bullet",
+  "position": "3"
+}'
+>
+            <input type="radio" class="dot-label" name="uni-related-articles-cards__pagination" id="uni-related-articles-cards__pagination-dot-3">
+          </label>
+        
+          <label for="uni-related-articles-cards__pagination-dot-4" data-index="4" class="dot"
+            data-ga4-analytics-carousel-scroll-click='{
+  "toggle_type_direction": "bullet",
+  "position": "4"
+}'
+>
+            <input type="radio" class="dot-label" name="uni-related-articles-cards__pagination" id="uni-related-articles-cards__pagination-dot-4">
+          </label>
+        
+          <label for="uni-related-articles-cards__pagination-dot-5" data-index="5" class="dot"
+            data-ga4-analytics-carousel-scroll-click='{
+  "toggle_type_direction": "bullet",
+  "position": "5"
+}'
+>
+            <input type="radio" class="dot-label" name="uni-related-articles-cards__pagination" id="uni-related-articles-cards__pagination-dot-5">
+          </label>
+        
+          <label for="uni-related-articles-cards__pagination-dot-6" data-index="6" class="dot"
+            data-ga4-analytics-carousel-scroll-click='{
+  "toggle_type_direction": "bullet",
+  "position": "6"
+}'
+>
+            <input type="radio" class="dot-label" name="uni-related-articles-cards__pagination" id="uni-related-articles-cards__pagination-dot-6">
+          </label>
+        
+      </fieldset>
+    
+ </div>
+ 
+
+
+        </main>
+
+        
+          
+
+          
+        
+        
+
+<footer class="h-c-footer h-c-footer--topmargin h-c-footer--standard h-has-social"
+        id="footer-standard"
+        data-component="uni-footer-component"
+        data-analytics-module='{
+          "module_name": "footer",
+          "section_header": "Protecting Android users from 0\u002DDay attacks"
+        }'>
+  
+    <section class="h-c-footer__global">
+        <div class="h-c-footer__logo">
+          <a class="uni-click-tracker" href="https://www.google.com" title="Google"
+            data-analytics='{
+              "category": "navigation",
+              "action": "footer",
+              "label": "logo",
+              "pagePath": "https://www.google.com"
+            }'>
+            <svg aria-hidden="true" class="h-c-footer__logo-img" viewBox="0 0 396 130">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#google-logo"></use>
+            </svg>
+          </a>
+        </div>
+        <ul class="h-c-footer__global-links h-no-bullet">
+          <li class="h-c-footer__global-links-list-item">
+            
+            <a class="h-c-footer__link uni-click-tracker" href="https://policies.google.com/privacy"
+              data-analytics='{
+                "category": "navigation",
+                "action": "footer",
+                "label": "{name}",
+                "pagePath": "https://policies.google.com/privacy"
+              }'>Privacy
+            </a>
+          </li>
+          <li class="h-c-footer__global-links-list-item">
+            
+            <a class="h-c-footer__link uni-click-tracker" href="https://policies.google.com/terms"
+              data-analytics='{
+                "category": "navigation",
+                "action": "footer",
+                "label": "{name}",
+                "pagePath": "https://policies.google.com/terms"
+              }'>Terms
+            </a>
+          </li>
+          <li class="h-c-footer__global-links-list-item">
+            
+            <a class="h-c-footer__link uni-click-tracker" href="https://about.google/"
+              data-analytics='{
+                "category": "navigation",
+                "action": "footer",
+                "label": "{name}",
+                "pagePath": "https://about.google/"
+              }'>About Google
+            </a>
+          </li>
+          <li class="h-c-footer__global-links-list-item">
+            
+            <a class="h-c-footer__link uni-click-tracker" href="https://about.google/products/"
+              data-analytics='{
+                "category": "navigation",
+                "action": "footer",
+                "label": "{name}",
+                "pagePath": "https://about.google/products/"
+              }'>Google Products
+            </a>
+          </li>
+          
+        </ul>
+        <ul class="h-c-footer__global-links h-c-footer__global-links--extra h-no-bullet">
+          <li class="h-c-footer__global-links-list-item h-c-footer__global-links-list-item--extra">
+            
+            <a class="h-c-footer__link uni-click-tracker" href="https://support.google.com"
+              data-analytics='{
+                "category": "navigation",
+                "action": "footer",
+                "label": "{name}",
+                "pagePath": "https://support.google.com"
+              }'>
+              <svg aria-hidden="true" class="h-c-icon h-c-icon--24px h-c-icon--footer">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#mi-help"></use>
+              </svg>
+              Help
+            </a>
+          </li>
+          <li class="h-c-footer__global-links-list-item h-c-footer__global-links-list-item--extra uni-footer-language">
+            
+
+
+<div class="uni-picker" data-component="uni-lang-picker">
+  <select name="language"
+          class="uni-picker__order-menu"
+          aria-label="Select a language">
+    
+      <option label="Deutsch"
+              value="/intl/de-de/"
+              class="uni-picker__item"
+              >
+        Deutsch
+      </option>
+    
+      <option label="English"
+              value="/"
+              class="uni-picker__item"
+               selected="selected" >
+        English
+      </option>
+    
+      <option label="English (Africa)"
+              value="/intl/en-africa/"
+              class="uni-picker__item"
+              >
+        English (Africa)
+      </option>
+    
+      <option label="English (Australia)"
+              value="/intl/en-au/"
+              class="uni-picker__item"
+              >
+        English (Australia)
+      </option>
+    
+      <option label="English (Canada)"
+              value="/intl/en-ca/"
+              class="uni-picker__item"
+              >
+        English (Canada)
+      </option>
+    
+      <option label="English (India)"
+              value="/intl/en-in/"
+              class="uni-picker__item"
+              >
+        English (India)
+      </option>
+    
+      <option label="English (MENA)"
+              value="/intl/en-mena/"
+              class="uni-picker__item"
+              >
+        English (MENA)
+      </option>
+    
+      <option label="Español (Latinoamérica)"
+              value="/intl/es-419/"
+              class="uni-picker__item"
+              >
+        Español (Latinoamérica)
+      </option>
+    
+      <option label="Français (Canada)"
+              value="/intl/fr-ca/"
+              class="uni-picker__item"
+              >
+        Français (Canada)
+      </option>
+    
+      <option label="Français (France)"
+              value="/intl/fr-fr/"
+              class="uni-picker__item"
+              >
+        Français (France)
+      </option>
+    
+      <option label="Italiano"
+              value="/intl/it-it/"
+              class="uni-picker__item"
+              >
+        Italiano
+      </option>
+    
+      <option label="Polski"
+              value="/intl/pl-pl/"
+              class="uni-picker__item"
+              >
+        Polski
+      </option>
+    
+      <option label="Português (Brasil)"
+              value="/intl/pt-br/"
+              class="uni-picker__item"
+              >
+        Português (Brasil)
+      </option>
+    
+      <option label="اللغة العربية (MENA)"
+              value="/intl/ar-mena/"
+              class="uni-picker__item"
+              >
+        اللغة العربية (MENA)
+      </option>
+    
+  </select>
+</div>
+
+          </li>
+        </ul>
+    </section>
+</footer>
+
+
+        
+        <div id="base-scripts" data-scripts='[
+              { "url": "/static/blogv2/js/csp/reloadCachedPage.js?version=pr20231116-1913",
+                "options": {
+                  "async": false,
+                  "defer": false
+                }
+              },
+              { "url": "/static/blogv2/js/csp/gtm.js",
+                "options": {
+                  "async": false,
+                  "defer": false
+                }
+              },
+              { "url": "/static/angularjs/1.6.4/angular.min.js",
+                "options": {
+                  "async": false,
+                  "defer": false
+                }
+              },
+              { "url": "/static/angularjs/1.6.4/angular-animate.min.js",
+                "options": {
+                  "async": false,
+                  "defer": false
+                }
+              },
+              { "url": "/static/angularjs/1.6.4/angular-touch.min.js",
+                "options": {
+                  "async": false,
+                  "defer": false
+                }
+              },
+              { "url": "/static/blogv2/js/blogv2.js?version=pr20231116-1913",
+                "options": {
+                  "async": false,
+                  "defer": false
+                }
+              },
+              { "url": "/static/blogv2/js/soy-templates.js?version=pr20231116-1913",
+                "options": {
+                  "async": false,
+                  "defer": false
+                }
+              },
+              { "url": "/static/blogv2/js/glue-app.min.js?version=pr20231116-1913",
+                "options": {
+                  "async": false,
+                  "defer": false
+                }
+              },
+              { "url": "/static/blogv2/js/vendors.js",
+                "options": {
+                  "async": false,
+                  "defer": false
+                }
+              },
+              { "url": "/static/keyword/js/all/index.js?version=pr20231116-1913",
+                "options": {
+                  "async": false,
+                  "defer": false
+                }
+              }
+            ]'></div>
+        <div id="extra-scripts"
+             data-scripts="">
+        </div>
+
+        <script>
+            var base_scripts = document.querySelector("#base-scripts").getAttribute('data-scripts');
+            base_scripts = JSON.parse(base_scripts);
+            var extra_scripts = document.querySelector("#extra-scripts").getAttribute('data-scripts');
+            if (extra_scripts) {
+              extra_scripts = JSON.parse(extra_scripts);
+            } else {
+              extra_scripts = [];
+            }
+            var scripts = base_scripts.concat(extra_scripts);
+            scripts.forEach(function(scriptObj) {
+              var s = document.createElement('script');
+              s.async = scriptObj.options.async;
+              s.defer = scriptObj.options.defer;
+              s.src = scriptObj.url;
+              document.head.appendChild(s);
+            });
+        </script>
+
+        
+          <script src="https://www.gstatic.com/glue/cookienotificationbar/cookienotificationbar.min.js"
+            data-glue-cookie-notification-bar-category="2B"
+            data-glue-cookie-notification-bar-site-id="blog.google">
+          </script>
+        
+
+        <!--[if gt IE 9]><!-->
+        <!--<script async type="text/javascript" src="/static/blogv2/js/vendors.js"></script>-->
+        <!--<![endif]-->
+    </body>
+</html>

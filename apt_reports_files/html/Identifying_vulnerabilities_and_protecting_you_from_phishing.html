@@ -1,0 +1,2032 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html class="no-js glue-flexbox  keyword-blog" lang="en-us" data-locale="en-us">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Identifying vulnerabilities and protecting you from phishing</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0" />
+        <meta name="optimize_experiments" content="[]">
+
+        
+  
+
+
+
+    
+
+
+<!--Article Specific Metadata-->
+<meta name="description" content="Sharing the latest work from Google’s Threat Analyst Group to fight phishing attacks and identify attacks against zero-day vulnerabilities."/>
+<meta name="keywords" content="None"/>
+<meta name="article-author" content="Toni Gidwani"/>
+<meta name="robots" content="max-image-preview:large">
+
+<!--Open Graph Metadata-->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Identifying vulnerabilities and protecting you from phishing"/>
+<meta property="og:description" content="Sharing the latest work from Google’s Threat Analyst Group to fight phishing attacks and identify attacks against zero-day vulnerabilities." />
+<meta property="og:image" content="https://blog.google/static/blogv2/images/google-1000x1000.png" />
+<meta property="og:site_name" content="Google" />
+<meta property="og:url" content="https://blog.google/threat-analysis-group/identifying-vulnerabilities-and-protecting-you-phishing/" />
+<meta property="article:publisher" content="https://www.facebook.com/Google/" />
+<meta property="article:published_time" content="2020-03-26" />
+
+<!--Twitter Card Metadata-->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content="https://blog.google/threat-analysis-group/identifying-vulnerabilities-and-protecting-you-phishing/" />
+<meta name="twitter:title" content="Identifying vulnerabilities and protecting you from phishing"/>
+<meta name="twitter:description" content="Sharing the latest work from Google’s Threat Analyst Group to fight phishing attacks and identify attacks against zero-day vulnerabilities." />
+<meta name="twitter:image:src" content="https://blog.google/static/blogv2/images/google-1000x1000.png" />
+<meta name="twitter:site" content="@google" />
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "mainEntityOfPage": "https://blog.google/threat-analysis-group/identifying-vulnerabilities-and-protecting-you-phishing/",
+        "headline": "Identifying vulnerabilities and protecting you from phishing",
+        "datePublished": "2020-03-26T16:00:00+00:00",
+        "dateModified": "",
+        "description": "Sharing the latest work from Google’s Threat Analyst Group to fight phishing attacks and identify attacks against zero-day vulnerabilities.",
+        "author": {
+            "@type": "Person",
+            "name": "Toni Gidwani"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Google",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://blog.google/static/blogv2/images/google-1000x1000.png",
+                "width": "200",
+                "height": "200"
+            }
+        },
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://blog.google/static/blogv2/images/google-1000x1000.png",
+            "width": "1440",
+            "height": "810"
+        }
+    }
+</script>
+
+  
+    <link rel="amphtml" href="https://blog.google/threat-analysis-group/identifying-vulnerabilities-and-protecting-you-phishing/amp/">
+  
+
+
+        
+        
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link rel="stylesheet" type="text/css" href="/static/keyword/css/blog/index.min.css?version=pr20231116-1913" />
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Google+Sans:400,500|Product+Sans:400&amp;display=swap&amp;lang=en">
+        <link href="https://www.gstatic.com/glue/cookienotificationbar/cookienotificationbar.min.css" rel="stylesheet">
+        
+
+        
+  
+            
+        
+  
+  <link rel="stylesheet" type="text/css" href="/static/keyword/css/print/index.min.css?version=pr20231116-1913" media="print" />
+
+
+        
+
+<link rel="canonical" href="https://blog.google/threat-analysis-group/identifying-vulnerabilities-and-protecting-you-phishing/" />
+
+<link href="/favicon.ico" rel="icon">
+<link href="/static/blogv2/images/apple-touch-icon.png" rel="apple-touch-icon">
+
+        <meta property="gtm-tag" content="GTM-TRV24V">
+
+
+
+        <!-- https://developer.mozilla.org/en-US/docs/Web/API/Trusted_Types_API -->
+<script>
+  let trustedTypePolicy = {
+      createHTML: (str) => str,
+      createScript: (str) => str,
+      createScriptURL: (url) => url
+  };
+  if (window.trustedTypes && window.trustedTypes.createPolicy) {
+      const safeScriptDomains = [
+          'blob:',
+          '/static/angularjs/',
+          '/static/blogv2/',
+          '/static/keyword/',
+          '/static/youtube/',
+          '/static/blog_youtube/',
+          '//apis.google.com/js/',
+          '//cdn.ampproject.org/',
+          '//googleads.g.doubleclick.net',
+          '//survey.g.doubleclick.net',
+          '//www.google-analytics.com/',
+          '//www.google.com',
+          '//www.googletagmanager.com',
+          '//www.gstatic.com',
+          '//www.youtube.com',
+      ];
+      const safeScripts = [
+          'google_tag_manager[""]',
+          '(function anonymous('
+      ];
+      trustedTypePolicy = window.trustedTypes.createPolicy('default', {
+          /* Enable create HTML */
+          createHTML: (str) => {
+              return str
+          },
+          /* Enable script creation */
+          createScript: (str) => {
+              const safeScriptString = safeScripts.find(
+                  (safeScript) => str.includes(safeScript)
+              );
+              if (!safeScriptString) {
+                  console.warn(
+                      `unsafe createScript: "${str}"`
+                  );
+              }
+
+              return str;
+          },
+          /* Allow for safe domains only */
+          createScriptURL: (url) => {
+              const safeDomainsUrl = safeScriptDomains.find(
+                  (safeDomain) => url.includes(safeDomain)
+              );
+              if (!safeDomainsUrl && !url.startsWith(window.location.origin)) {
+                  console.warn(
+                      `Unsafe createScriptURL: "${url}"`
+                  );
+              }
+
+              return url;
+          },
+      });
+  }
+
+  window.trustedTypePolicy = trustedTypePolicy;
+</script>
+
+    </head>
+
+    <body class="template-articlepage keyword-blog" uni-external-links>
+        
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRV24V" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+        
+
+
+
+
+<div class="data-layer-init-data" data-analytics='
+  {
+    "event": "dataLayer_initialized",
+    
+      "page_name": "Identifying vulnerabilities and protecting you from phishing",
+    
+    "experiments": "undefined",
+    "locale": "en-us",
+    "page_type": "blogv2 | article page",
+    "primary_tag": "topics - threat analysis group",
+    "secondary_tags": "undefined",
+    
+      "landing_page_tags": "undefined",
+    
+    "article_name": "Identifying vulnerabilities and protecting you from phishing",
+    "author_name": "Toni Gidwani",
+    "publish_date": "2020-03-26|16:00",
+    "hero_media": "none",
+    
+      "special_hero": "undefined",
+    
+    "days_since_published": "1336",
+    
+      "content_category": "Topics - Threat Analysis Group",
+    
+    "word_count": "long 600+",
+    "has_audio": "no",
+    "has_video": "no"
+  }'>
+</div>
+
+<div class="page-analytics-data" data-analytics='
+    {
+        "event": "pageview",
+        
+            "slug": "identifying-vulnerabilities-and-protecting-you-phishing",
+        
+        
+            "contentType": "blogv2 | article page",
+        
+        
+        
+            "author": "toni gidwani",
+        
+        
+            "primaryTag": "topics - threat analysis group",
+        
+        
+            "secondaryTags": "",
+        
+        
+            "publishDate": "2020-03-26|16:00",
+        
+        
+        
+            "tags": "",
+        
+        
+        
+            "goLiveDateTime": "2020-03-26|16:00",
+        
+        
+        
+            "wordCount": "long 600+",
+        
+        
+        
+            "contentCategory": "Announcement",
+        
+        
+          
+              "heroMedia": "none",
+          
+        
+        
+    }'>
+  </div>
+
+        <script type="text/javascript">
+  (function() {
+    var dataLayerInitElement = document.querySelector('.data-layer-init-data');
+    var dataLayerObject = JSON.parse(
+      dataLayerInitElement.getAttribute('data-analytics')
+    );
+
+    // Change undefined strings to primitive value undefined.
+    Object.entries(dataLayerObject).forEach(([key, value]) => {
+      dataLayerObject[key] = value === 'undefined' ? undefined : value;
+    });
+
+    if (!window['dataLayer']) {
+      window['dataLayer'] = [];
+    }
+    window['dataLayer'].push(dataLayerObject);
+  }());
+</script>
+
+<script type="text/javascript">
+  (function() {
+    var elem_ =  document.querySelector('.page-analytics-data');
+
+    var scrubObject = {
+      'event': 'scrubbedUrl',
+      'url': getScrubbedUrl()
+    };
+
+    var baseAnalyticsObject = JSON.parse(
+      elem_.getAttribute('data-analytics').replace(/,(?=[^,]*$)/, '')
+    );
+
+    function getScrubbedUrl() {
+      const urlParams = location.href.split('?');
+      const hostPathUrl = urlParams[0];
+      if(urlParams.length === 1) return hostPathUrl;
+
+      try {
+        const searchParams = urlParams[1].split('&');
+        const utmParams = searchParams.filter(param => param.startsWith('utm') || param.startsWith('query')).join('&');
+        if(!utmParams.length) return hostPathUrl;
+        return `${hostPathUrl}?${utmParams}`;
+      }
+      catch(error) {
+        console.error('scrubbed Url error =>', e);
+      }
+      return hostPathUrl;
+    }
+
+    function handlePublishDate(dataObj) {
+      var publishDate = dataObj['publishDate'];
+
+      if (typeof publishDate !== 'undefined') {
+        var oneDay = 24*60*60*1000;
+        var dateParts = publishDate.split('|');
+        var pubDay = new Date(dateParts[0]);
+        var today = new Date();
+        var daysSince = Math.round((today - pubDay) / oneDay);
+
+        dataObj['daysSincePublished'] = daysSince.toString();
+      }
+
+      pushData(dataObj);
+    }
+
+    function pushData(analyticsEvent) {
+      if (!window['dataLayer']) {
+        window['dataLayer'] = [];
+      }
+      window['dataLayer'].push(analyticsEvent);
+      const globalKWDimenssions = Object.assign({}, analyticsEvent);
+      if(globalKWDimenssions['event']) {
+        delete globalKWDimenssions['event'];
+      }
+      window['globalKWCustomDimensions'] = globalKWDimenssions;
+    }
+
+    pushData(scrubObject);
+    handlePublishDate(baseAnalyticsObject);
+  }());
+</script>
+
+
+        
+
+        
+            
+
+
+
+
+
+
+
+
+<div class="uni-header-content-pusher"></div>
+<header class="uni-header h-u-box-shadow-2" data-component="uni-header">
+  <div class="uni-header__hamburguer-wrapper uni-header__hamburguer-wrapper--hide">
+    <button class="uni-header__hamburguer-button">
+      <svg role="presentation" class="h-c-header__hamburger-img h-c-header__hamburger-img--standard events-off">
+            <use xlink:href="/static/blogv2/images/icons.svg#h-burger"></use>
+      </svg>
+    </button>
+  </div>
+  
+  <div class="uni-header__sitespace" site="Threat Analysis Group">
+    <figure class="uni-header__logo-google uni-header__logo-google--sitespace" title="Google" tabindex="-1">
+      
+        <svg role="img" aria-label="Google">
+          <use xlink:href="/static/blogv2/images/icons.svg#h-color-google-logo"></use>
+        </svg>
+      
+      </figure>
+
+      
+      <div class="uni-header__site-title">
+        <a class="uni-header__sitespace-text " href="https://blog.google/threat-analysis-group" target= "_self" data-analytics="{ "category": "navigation", "action": "header", "label": "navlink: home" }">
+            Updates from Threat Analysis Group (TAG)
+        </a>
+      </div>
+  </div>
+
+  
+  
+
+
+<div class="uni-article-progress-bar slide-up" data-component="uni-progress-bar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-hidden="true" role="progressbar">
+  <div class="uni-article-progress-bar__title uni-article-progress-bar__ellipsis">
+    Identifying vulnerabilities and protecting you from phishing
+  </div>
+  <div class="uni-article-progress-bar__social" aria-hidden="true"
+    data-analytics-module='{
+      "module_name": "Progress Bar",
+      "section_header": "Identifying vulnerabilities and protecting you from phishing"
+    }'
+  >
+    
+
+
+<div class ="uni-social-share "
+  data-component="uni-social-share-dropdowm"
+>
+  <a aria-label="Share"
+    class="uni-social-share__trigger"
+    role="button"
+    tabindex="0"
+    aria-expanded="false"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "progress bar",
+      "action": "menu",
+      "label": "label"
+    }'>
+    <svg class="h-c-icon h-c-icon--color-text" title="Share" aria-hidden="true">
+      <use xlink:href="/static/blogv2/images/icons.svg#social-share"></use>
+    </svg>
+    <div class="uni-social-share__button">Share</div>
+  </a>
+  <div class="uni-social-share__dialog uni-social-share__content " aria-labelledby="social-share-icon">
+    
+
+
+<a aria-label="Share on Twitter"
+    class="article-share__link-text uni-click-tracker"
+    href="https://twitter.com/intent/tweet?text=Identifying%20vulnerabilities%20and%20protecting%20you%20from%20phishing%20%40google&url=https://blog.google/threat-analysis-group/identifying-vulnerabilities-and-protecting-you-phishing/"
+    target="_blank"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "progress bar",
+      "action": "share - progress bar",
+      "label": "twitter"
+    }'
+    data-ga4-method="twitter">
+  <svg aria-hidden="true" class="h-c-icon h-c-icon--social h-c-icon--30px" viewBox="0 0 30 30">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#social-twitter"></use>
+  </svg>
+  <div class="article-share__title">Twitter</div>
+</a>
+
+<a aria-label="Share on Facebook"
+    class="article-share__link-text uni-click-tracker"
+    href="https://www.facebook.com/sharer/sharer.php?caption=Identifying%20vulnerabilities%20and%20protecting%20you%20from%20phishing&u=https://blog.google/threat-analysis-group/identifying-vulnerabilities-and-protecting-you-phishing/"
+    target="_blank"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "progress bar",
+      "action": "share - progress bar",
+      "label": "facebook"
+    }'
+    data-ga4-method="facebook">
+  <svg aria-hidden="true" class="h-c-icon h-c-icon--social h-c-icon--30px" viewBox="0 0 30 30">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#social-facebook"></use>
+  </svg>
+  <div class="article-share__title">Facebook</div>
+</a>
+
+<a aria-label="Share on LinkedIn"
+    class="article-share__link-text uni-click-tracker"
+    href="https://www.linkedin.com/shareArticle?mini=true&url=https://blog.google/threat-analysis-group/identifying-vulnerabilities-and-protecting-you-phishing/&title=Identifying%20vulnerabilities%20and%20protecting%20you%20from%20phishing"
+    target="_blank"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "progress bar",
+      "action": "share - progress bar",
+      "label": "linkedin"
+    }'
+    data-ga4-method="linkedin">
+  <svg aria-hidden="true" class="h-c-icon h-c-icon--social h-c-icon--30px" viewBox="0 0 30 30">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#social-linkedin"></use>
+  </svg>
+  <div class="article-share__title">LinkedIn</div>
+</a>
+
+<a aria-label="Share with Email"
+    class="article-share__link-text uni-click-tracker article-share__email"
+    
+      href="mailto:?subject=Identifying%20vulnerabilities%20and%20protecting%20you%20from%20phishing&body=Check out this article on the Keyword:%0A%0AIdentifying%20vulnerabilities%20and%20protecting%20you%20from%20phishing%0A%0ASharing the latest work from Google’s Threat Analyst Group to fight phishing attacks and identify attacks against zero-day vulnerabilities.%0A%0Ahttps://blog.google/threat-analysis-group/identifying-vulnerabilities-and-protecting-you-phishing/"
+    
+    target="_blank"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "progress bar",
+      "action": "share - progress bar",
+      "label": "email"
+    }'
+    data-ga4-method="email">
+  <svg aria-hidden="true" class="h-c-icon h-c-icon--social h-c-icon--30px" viewBox="0 0 30 30">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#social-mail"></use>
+  </svg>
+  <div class="article-share__title">Mail</div>
+</a>
+
+    
+
+
+<div class="copy-link uni-copy-share uni-click-tracker"
+  data-component="uni-copy-popup-component"
+  data-analytics='{
+    "event": "page interaction",
+    "category": "progress bar",
+    "action": "share - progress bar",
+    "label": "copy"
+    }'
+  data-ga4-analytics-share-copy-link
+  data-ga4-method="Copy link">
+  <a class="copy-link__trigger copy-link__trigger-text"
+    href="#"
+    data-ga4-method="Copy link">
+    <svg class="h-c-icon h-c-icon--color-text" title="Share">
+      <use xlink:href="/static/blogv2/images/icons.svg#social-link"></use>
+    </svg>
+    <div class="copy-link__title">Copy link</div>
+  </a>
+  <div class="copy-link__dialog copy-link__content" aria-labelledby="copy-popover-icon" uni-options='{"copyTextButton": "COPIED TO CLIPBOARD"}'>
+    <input class="h-c-copy copy-link__url" value="https://blog.google/threat-analysis-group/identifying-vulnerabilities-and-protecting-you-phishing/" id="copy-link" readonly="readonly" type="text" aria-hidden="true" />
+    <div class="copy-link__copy-message" role="status" tabindex="0"></div>
+  </div>
+</div>
+
+  </div>
+</div>
+
+  </div>
+
+  <div class="uni-article-progress-bar__indicator hide-progress-bar"></div>
+</div>
+
+
+  
+  
+
+
+<form class="uni-search  sitespace"
+      role="dialog"
+      aria-label="Search box"
+      aria-hidden="true"
+      aria-expanded="false"
+      data-component="uni-search-box"
+      data-analytics-module='{
+        "module_name": "search"
+      }'>
+
+  <input class="uni-search__input"
+        type="text"
+        placeholder="Find an article..."
+        aria-label="Find an article...">
+
+  <button class="uni-search__button uni-search__button-search"
+          title="Submit"
+          type="submit">
+    <svg role="presentation" class="uni-header__kebab-search-icon">
+      <use xlink:href="/static/blogv2/images/icons.svg#mi-search"></use>
+    </svg>
+  </button>
+
+  <button class="uni-search__button uni-search__button-close"
+          title="Close"
+          type="button">
+    <svg role="presentation" class="uni-header__kebab-search-icon">
+      <use xlink:href="/static/blogv2/images/icons.svg#mi-clear"></use>
+    </svg>
+  </button>
+
+  <ul class="uni-search__auto-complete "
+      data-component="uni-search-autocomplete"
+      data-sitespace="Updates from Threat Analysis Group (TAG)"
+      data-siteid="2"
+      data-sitename="The Keyword">
+
+  </ul>
+</form>
+
+
+  
+  
+
+<div class="uni-header__kebab"
+  data-analytics-module='{
+    "module_name": "main nav",
+    "section_header": "kebab menu"
+  }'>
+  <button class="uni-header__kebab-search" title="Search">
+    <svg role="presentation" class="uni-header__kebab-search-icon">
+      <use xlink:href="/static/blogv2/images/icons.svg#mi-search"></use>
+    </svg>
+  </button>
+
+  <button class="uni-header__kebab-toggle" title="Secondary menu">
+    <svg role="presentation" class="uni-header__kebab-rss-icon">
+      <use xlink:href="/static/blogv2/images/icons.svg#mi-more-vert"></use>
+    </svg>
+  </button>
+
+  <ul class="uni-header__kebab-menu">
+    <li class="uni-header__kebab-menu-item">
+      <a class="uni-header__kebab-menu-link" href="/press" title="Press corner">
+        Press corner
+      </a>
+    </li>
+    <li class="uni-header__kebab-menu-item">
+      <a class="uni-header__kebab-menu-link" href="/rss" title="RSS feed">
+        RSS feed
+        <svg role="presentation" class="uni-header__kebab-rss-icon">
+          <use xlink:href="/static/blogv2/images/icons.svg#mi-rss-feed"></use>
+        </svg>
+      </a>
+    </li>
+  </ul>
+</div>
+
+</header>
+
+
+
+
+
+<div class="loader-mask">
+  <div class="loader-mask__loader"></div>
+</div>
+
+
+
+
+        
+
+        <main id="jump-content" class="site-content" tabindex="-1">
+            
+
+    <script async src="https://cdn.ampproject.org/amp-story-player-v0.js"></script>
+    <link href="https://cdn.ampproject.org/amp-story-player-v0.css" rel="stylesheet" type="text/css">
+
+    <article class="uni-article-wrapper" ng-init="drawerToggle = {'open': true}">
+
+    
+    
+
+
+<section class="article-hero" data-analytics-module='{
+  "module_name": "Article Hero",
+  "section_header": "Identifying vulnerabilities and protecting you from phishing"
+}'>
+  <div class="article-hero__container">
+    
+    
+      <div class="article-hero__primary-tag__col">
+        <a class="h-u-mb-std article-hero__primary-tag article-hero__primary-tag--link data-analytics-onclick"
+          href="https://blog.google/threat-analysis-group/"
+          data-analytics='{
+            "category" : "landing page lead",
+            "action" : "eyebrow topic link",
+            "label" : "product Threat Analysis Group"
+          }'
+          data-ga4-analytics-eyebrow-click='{
+  "link_text": "Threat Analysis Group",
+  "link_url": "https://blog.google/threat-analysis-group/",
+  "link_type": "internal"
+}'
+
+          
+
+data-ga4-analytics-landing-lead='{
+  "event": "landing_page_lead",
+  "link_text": "Threat Analysis Group"
+}'
+
+        >
+          <p class="h-c-eyebrow article-hero__primary-tag--link__text">Threat Analysis Group</p>
+        </a>
+      </div>
+    
+    <h1 class="article-hero__h1">Identifying vulnerabilities and protecting you from phishing</h1>
+  </div>
+</section>
+
+
+    
+
+    
+      
+
+<div class="article-meta__author-container"
+  data-analytics-module='{
+    "module_name": "Hero Menu",
+    "section_header": "Identifying vulnerabilities and protecting you from phishing"
+  }'>
+  <div class="article-meta__author-wrapper">
+    <div class="article-meta__abstract">
+      <div class="article-meta__abstract-container">
+        <div class="article-meta__published-wrapper article-meta__published-wrapper-long ">
+          <p class="article-meta__published-at">Mar 26, 2020</p>
+          
+            <p class="article-meta__read-time" data-reading-time-render><span class="article-meta__read-time--number"></span>min read</p>
+          
+        </div>
+        
+
+
+<div class ="uni-social-share uni-social-share--mobile"
+  data-component="uni-social-share-dropdowm"
+>
+  <a aria-label="Share"
+    class="uni-social-share__trigger"
+    role="button"
+    tabindex="0"
+    aria-expanded="false"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "social",
+      "action": "menu",
+      "label": "label"
+    }'>
+    <svg class="h-c-icon h-c-icon--color-text" title="Share" aria-hidden="true">
+      <use xlink:href="/static/blogv2/images/icons.svg#social-share"></use>
+    </svg>
+    <div class="uni-social-share__button">Share</div>
+  </a>
+  <div class="uni-social-share__dialog uni-social-share__content " aria-labelledby="social-share-icon">
+    
+
+
+<a aria-label="Share on Twitter"
+    class="article-share__link-text uni-click-tracker"
+    href="https://twitter.com/intent/tweet?text=Identifying%20vulnerabilities%20and%20protecting%20you%20from%20phishing%20%40google&url=https://blog.google/threat-analysis-group/identifying-vulnerabilities-and-protecting-you-phishing/"
+    target="_blank"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "social",
+      "action": "share",
+      "label": "twitter"
+    }'
+    data-ga4-method="twitter">
+  <svg aria-hidden="true" class="h-c-icon h-c-icon--social h-c-icon--30px" viewBox="0 0 30 30">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#social-twitter"></use>
+  </svg>
+  <div class="article-share__title">Twitter</div>
+</a>
+
+<a aria-label="Share on Facebook"
+    class="article-share__link-text uni-click-tracker"
+    href="https://www.facebook.com/sharer/sharer.php?caption=Identifying%20vulnerabilities%20and%20protecting%20you%20from%20phishing&u=https://blog.google/threat-analysis-group/identifying-vulnerabilities-and-protecting-you-phishing/"
+    target="_blank"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "social",
+      "action": "share",
+      "label": "facebook"
+    }'
+    data-ga4-method="facebook">
+  <svg aria-hidden="true" class="h-c-icon h-c-icon--social h-c-icon--30px" viewBox="0 0 30 30">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#social-facebook"></use>
+  </svg>
+  <div class="article-share__title">Facebook</div>
+</a>
+
+<a aria-label="Share on LinkedIn"
+    class="article-share__link-text uni-click-tracker"
+    href="https://www.linkedin.com/shareArticle?mini=true&url=https://blog.google/threat-analysis-group/identifying-vulnerabilities-and-protecting-you-phishing/&title=Identifying%20vulnerabilities%20and%20protecting%20you%20from%20phishing"
+    target="_blank"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "social",
+      "action": "share",
+      "label": "linkedin"
+    }'
+    data-ga4-method="linkedin">
+  <svg aria-hidden="true" class="h-c-icon h-c-icon--social h-c-icon--30px" viewBox="0 0 30 30">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#social-linkedin"></use>
+  </svg>
+  <div class="article-share__title">LinkedIn</div>
+</a>
+
+<a aria-label="Share with Email"
+    class="article-share__link-text uni-click-tracker article-share__email"
+    
+      href="mailto:?subject=Identifying%20vulnerabilities%20and%20protecting%20you%20from%20phishing&body=Check out this article on the Keyword:%0A%0AIdentifying%20vulnerabilities%20and%20protecting%20you%20from%20phishing%0A%0ASharing the latest work from Google’s Threat Analyst Group to fight phishing attacks and identify attacks against zero-day vulnerabilities.%0A%0Ahttps://blog.google/threat-analysis-group/identifying-vulnerabilities-and-protecting-you-phishing/"
+    
+    target="_blank"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "social",
+      "action": "share",
+      "label": "email"
+    }'
+    data-ga4-method="email">
+  <svg aria-hidden="true" class="h-c-icon h-c-icon--social h-c-icon--30px" viewBox="0 0 30 30">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#social-mail"></use>
+  </svg>
+  <div class="article-share__title">Mail</div>
+</a>
+
+    
+
+
+<div class="copy-link uni-copy-share uni-click-tracker"
+  data-component="uni-copy-popup-component"
+  data-analytics='{
+    "event": "page interaction",
+    "category": "social",
+    "action": "share",
+    "label": "copy"
+    }'
+  data-ga4-analytics-share-copy-link
+  data-ga4-method="Copy link">
+  <a class="copy-link__trigger copy-link__trigger-text"
+    href="#"
+    data-ga4-method="Copy link">
+    <svg class="h-c-icon h-c-icon--color-text" title="Share">
+      <use xlink:href="/static/blogv2/images/icons.svg#social-link"></use>
+    </svg>
+    <div class="copy-link__title">Copy link</div>
+  </a>
+  <div class="copy-link__dialog copy-link__content" aria-labelledby="copy-popover-icon" uni-options='{"copyTextButton": "COPIED TO CLIPBOARD"}'>
+    <input class="h-c-copy copy-link__url" value="https://blog.google/threat-analysis-group/identifying-vulnerabilities-and-protecting-you-phishing/" id="copy-link" readonly="readonly" type="text" aria-hidden="true" />
+    <div class="copy-link__copy-message" role="status" tabindex="0"></div>
+  </div>
+</div>
+
+  </div>
+</div>
+
+      </div>
+      
+    </div>
+  </div>
+  <div class="article-meta__container">
+    <div class="article-meta__content">
+      
+        
+  
+    <div class="article-meta__author">
+      
+  <div class="article-meta__author-noimage"
+        data-component="uni-monogram"
+        data-author="Toni Gidwani">
+  </div>
+
+<div class="article-meta__author-info">
+  <div class="article-meta__author-name">Toni Gidwani</div>
+  
+    <div class="article-meta__author-title">
+      Security Engineering Manager, Threat Analysis Group
+    </div>
+  
+  
+</div>
+
+    </div>
+  
+
+
+      
+    </div>
+    <div class="article-share__wrapper"
+      data-analytics-module='{
+        "module_name": "Hero Share",
+        "section_header": "Identifying vulnerabilities and protecting you from phishing"
+      }'>
+      
+
+
+<div class ="uni-social-share uni-social-share--desktop"
+  data-component="uni-social-share-dropdowm"
+>
+  <a aria-label="Share"
+    class="uni-social-share__trigger"
+    role="button"
+    tabindex="0"
+    aria-expanded="false"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "social",
+      "action": "menu",
+      "label": "label"
+    }'>
+    <svg class="h-c-icon h-c-icon--color-text" title="Share" aria-hidden="true">
+      <use xlink:href="/static/blogv2/images/icons.svg#social-share"></use>
+    </svg>
+    <div class="uni-social-share__button">Share</div>
+  </a>
+  <div class="uni-social-share__dialog uni-social-share__content " aria-labelledby="social-share-icon">
+    
+
+
+<a aria-label="Share on Twitter"
+    class="article-share__link-text uni-click-tracker"
+    href="https://twitter.com/intent/tweet?text=Identifying%20vulnerabilities%20and%20protecting%20you%20from%20phishing%20%40google&url=https://blog.google/threat-analysis-group/identifying-vulnerabilities-and-protecting-you-phishing/"
+    target="_blank"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "social",
+      "action": "share",
+      "label": "twitter"
+    }'
+    data-ga4-method="twitter">
+  <svg aria-hidden="true" class="h-c-icon h-c-icon--social h-c-icon--30px" viewBox="0 0 30 30">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#social-twitter"></use>
+  </svg>
+  <div class="article-share__title">Twitter</div>
+</a>
+
+<a aria-label="Share on Facebook"
+    class="article-share__link-text uni-click-tracker"
+    href="https://www.facebook.com/sharer/sharer.php?caption=Identifying%20vulnerabilities%20and%20protecting%20you%20from%20phishing&u=https://blog.google/threat-analysis-group/identifying-vulnerabilities-and-protecting-you-phishing/"
+    target="_blank"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "social",
+      "action": "share",
+      "label": "facebook"
+    }'
+    data-ga4-method="facebook">
+  <svg aria-hidden="true" class="h-c-icon h-c-icon--social h-c-icon--30px" viewBox="0 0 30 30">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#social-facebook"></use>
+  </svg>
+  <div class="article-share__title">Facebook</div>
+</a>
+
+<a aria-label="Share on LinkedIn"
+    class="article-share__link-text uni-click-tracker"
+    href="https://www.linkedin.com/shareArticle?mini=true&url=https://blog.google/threat-analysis-group/identifying-vulnerabilities-and-protecting-you-phishing/&title=Identifying%20vulnerabilities%20and%20protecting%20you%20from%20phishing"
+    target="_blank"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "social",
+      "action": "share",
+      "label": "linkedin"
+    }'
+    data-ga4-method="linkedin">
+  <svg aria-hidden="true" class="h-c-icon h-c-icon--social h-c-icon--30px" viewBox="0 0 30 30">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#social-linkedin"></use>
+  </svg>
+  <div class="article-share__title">LinkedIn</div>
+</a>
+
+<a aria-label="Share with Email"
+    class="article-share__link-text uni-click-tracker article-share__email"
+    
+      href="mailto:?subject=Identifying%20vulnerabilities%20and%20protecting%20you%20from%20phishing&body=Check out this article on the Keyword:%0A%0AIdentifying%20vulnerabilities%20and%20protecting%20you%20from%20phishing%0A%0ASharing the latest work from Google’s Threat Analyst Group to fight phishing attacks and identify attacks against zero-day vulnerabilities.%0A%0Ahttps://blog.google/threat-analysis-group/identifying-vulnerabilities-and-protecting-you-phishing/"
+    
+    target="_blank"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "social",
+      "action": "share",
+      "label": "email"
+    }'
+    data-ga4-method="email">
+  <svg aria-hidden="true" class="h-c-icon h-c-icon--social h-c-icon--30px" viewBox="0 0 30 30">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#social-mail"></use>
+  </svg>
+  <div class="article-share__title">Mail</div>
+</a>
+
+    
+
+
+<div class="copy-link uni-copy-share uni-click-tracker"
+  data-component="uni-copy-popup-component"
+  data-analytics='{
+    "event": "page interaction",
+    "category": "social",
+    "action": "share",
+    "label": "copy"
+    }'
+  data-ga4-analytics-share-copy-link
+  data-ga4-method="Copy link">
+  <a class="copy-link__trigger copy-link__trigger-text"
+    href="#"
+    data-ga4-method="Copy link">
+    <svg class="h-c-icon h-c-icon--color-text" title="Share">
+      <use xlink:href="/static/blogv2/images/icons.svg#social-link"></use>
+    </svg>
+    <div class="copy-link__title">Copy link</div>
+  </a>
+  <div class="copy-link__dialog copy-link__content" aria-labelledby="copy-popover-icon" uni-options='{"copyTextButton": "COPIED TO CLIPBOARD"}'>
+    <input class="h-c-copy copy-link__url" value="https://blog.google/threat-analysis-group/identifying-vulnerabilities-and-protecting-you-phishing/" id="copy-link" readonly="readonly" type="text" aria-hidden="true" />
+    <div class="copy-link__copy-message" role="status" tabindex="0"></div>
+  </div>
+</div>
+
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+    
+
+    
+      <div class="h-c-page uni-blog-article-no-hero">
+  <div class="h-c-grid">
+    <div class="h-c-grid__col h-c-grid__col--10 h-c-grid__col--offset-1">
+      <hr class="uni-blog-article-no-hero__line">
+      <hr class="uni-blog-article-no-hero__line">
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    <section class="uni-container article-container">
+      <div class="uni-wrapper article-container__wrapper">
+        
+          
+          
+          <div class="uni-content uni-blog-article-container article-container__content
+                      
+                      "
+              data-reading-time="true"
+              data-component="uni-drop-cap|uni-tombstone">
+            
+            
+<!--article text-->
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "Identifying vulnerabilities and protecting you from phishing"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><p>Google’s Threat Analysis Group (TAG) works to counter targeted and government-backed hacking against Google and the people who use our products. Following our <a href="https://www.blog.google/technology/safety-security/threat-analysis-group/protecting-users-government-backed-hacking-and-disinformation/" rt-link-type="external">November update</a>, today we’re sharing the latest insights to fight phishing, and for security teams, providing more details about our work identifying attacks against zero-day vulnerabilities. </p></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "Identifying vulnerabilities and protecting you from phishing"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><h3>Protecting you from phishing</h3><p></p><p>We have a long-standing policy to send you a warning if we detect that your account is a target of government-backed phishing or malware attempts. In 2019, we sent almost 40,000 warnings, a nearly 25 percent drop from 2018. One reason for this decline is that our new protections are working—attackers&#39; efforts have been slowed down and they’re more deliberate in their attempts, meaning attempts are happening less frequently as attackers adapt.</p><p></p></div>
+      </div>
+    </div>
+  
+
+  
+    
+
+
+
+
+
+
+
+  
+      <div
+        class="article-image"
+        data-analytics-module='{
+          "module_name": "Inline Images",
+          "section_header": "Identifying vulnerabilities and protecting you from phishing"
+        }'>
+  
+
+  <div class="article-image__is-caption
+      ">
+
+      
+      
+        
+          <img alt="Distribution of the targets of government-backed phishing in 2019"
+            src=" https://storage.googleapis.com/gweb-uniblog-publish-prod/images/pasted_image_0_7_myO1Lgf.width-100.format-webp.webp "
+             class="article-image--large" 
+            
+              loading="lazy"
+              data-loading='{
+                "mobile": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/pasted_image_0_7_myO1Lgf.width-500.format-webp.webp",
+                "desktop": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/pasted_image_0_7_myO1Lgf.width-1000.format-webp.webp"
+              }'
+            
+          >
+        
+      
+    
+    </div>
+    
+      <figcaption class="article-image__caption article-image__is-caption-image "><div class="rich-text"><p>Distribution of the targets of government-backed phishing in 2019.</p></div></figcaption>
+    
+  
+    </div>
+  
+
+
+
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "Identifying vulnerabilities and protecting you from phishing"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><p>We’ve detected a few emerging trends in recent months.</p></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "Identifying vulnerabilities and protecting you from phishing"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><h3>Impersonating news outlets and journalists is on the rise</h3><p>Upon reviewing phishing attempts since the beginning of this year, we’ve seen a rising number of attackers, including those from Iran and North Korea, impersonating news outlets or journalists. For example, attackers impersonate a journalist to seed false stories with other reporters to spread disinformation. In other cases, attackers will send several benign emails to build a rapport with a journalist or foreign policy expert before sending a malicious attachment in a follow up email. Government-backed attackers regularly target foreign policy experts for their research, access to the organizations they work with, and connection to fellow researchers or policymakers for subsequent attacks. </p></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "Identifying vulnerabilities and protecting you from phishing"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><h3>Heavily targeted sectors are (mostly) not surprising</h3><p>Government-backed attackers continue to consistently target geopolitical rivals, government officials, journalists, dissidents and activists. The chart below details the Russian threat actor group SANDWORM’s targeting efforts (by sector) over the last three years.</p></div>
+      </div>
+    </div>
+  
+
+  
+    
+
+
+
+
+
+
+
+  
+      <div
+        class="article-image"
+        data-analytics-module='{
+          "module_name": "Inline Images",
+          "section_header": "Identifying vulnerabilities and protecting you from phishing"
+        }'>
+  
+
+  <div class="article-image__no-caption
+      ">
+
+      
+      
+        
+          <img alt="Distribution of targets by sector by the Russian threat actor known as SANDWORM"
+            src=" https://storage.googleapis.com/gweb-uniblog-publish-prod/images/BINK_keyword_targetschart_blog_4.width-100.format-webp.webp "
+             class="article-image--large" 
+            
+              loading="lazy"
+              data-loading='{
+                "mobile": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/BINK_keyword_targetschart_blog_4.width-500.format-webp.webp",
+                "desktop": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/BINK_keyword_targetschart_blog_4.width-1000.format-webp.webp"
+              }'
+            
+          >
+        
+      
+    
+    </div>
+    
+  
+    </div>
+  
+
+
+
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "Identifying vulnerabilities and protecting you from phishing"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><h3>Government-backed attackers repeatedly go after their targets</h3><p>In 2019, one in five accounts that received a warning was targeted multiple times by attackers. If at first the attacker does not succeed, they’ll try again using a different lure, different account, or trying to compromise an associate of their target.</p><p>We’ve yet to see people successfully phished if they participate in Google’s <a href="https://landing.google.com/advancedprotection/" rt-link-type="external">Advanced Protection Program (APP)</a>, even if they are repeatedly targeted. APP provides the strongest protections available against phishing and account hijacking and is specifically designed for the highest-risk accounts. </p></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "Identifying vulnerabilities and protecting you from phishing"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><h3>Finding attacks that leverage zero-day vulnerabilities</h3><p>Zero-day vulnerabilities are unknown software flaws. Until they’re identified and fixed, they can be exploited by attackers. TAG actively hunts for these types of attacks because they are particularly dangerous and have a high rate of success, although they account for a small number of the overall total. When we find an attack that takes advantage of  a zero-day vulnerability, we report the vulnerability to the vendor and give them <a href="https://www.google.com/about/appsecurity/" rt-link-type="external">seven days to patch or produce an advisory</a> or we <a href="https://security.googleblog.com/2019/03/disclosing-vulnerabilities-to-protect.html" rt-link-type="external">release an advisory ourselves</a>. </p><p>We work across all platforms, and in 2019 TAG discovered zero-day vulnerabilities affecting Android, Chrome, iOS, Internet Explorer and Windows. Most recently, TAG was acknowledged in January 2020 for our contribution in identifying <a href="https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/ADV200001#ID0EWIAC" rt-link-type="external">CVE-2020-0674</a>, a remote code execution vulnerability in Internet Explorer. </p><p>Last year, TAG discovered that a single threat actor was capitalizing on five zero-day vulnerabilities. Finding this many zero-day exploits from the same actor in a relatively short time frame is rare. The exploits were delivered via compromised legitimate websites (e.g. watering hole attacks), links to malicious websites, and email attachments in limited spear phishing campaigns. The majority of targets we observed were from North Korea or individuals who worked on North Korea-related issues.</p><p>For security teams interested in learning more, here are additional details about the exploits and our work in 2019:</p><p>The vulnerabilities underlying these exploits included:</p><ul><li><p>Internet Explorer - <a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2018-8653" rt-link-type="external">CVE-2018-8653</a></p></li><li><p>Internet Explorer - <a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0676" rt-link-type="external">CVE-2019-0676</a></p></li><li><p>Chrome - <a href="https://chromereleases.googleblog.com/2019/03/stable-channel-update-for-desktop.html" rt-link-type="external">CVE-2019-5786</a></p></li><li><p>Windows Kernel - <a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0808" rt-link-type="external">CVE-2019-0808</a></p></li><li><p>Internet Explorer - <a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1367" rt-link-type="external">CVE-2019-1367</a></p></li><li><p>Internet Explorer - <a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1429" rt-link-type="external">CVE-2019-1429</a></p></li></ul><p>The following technical details are associated with the exploits and can be used for teams interested in conducting further research on these attacks:</p><ul><li><p>CVE-2018-8653, CVE-2019-1367 and CVE-2020-0674 are vulnerabilities inside jscript.dll, therefore all exploits enabled IE8 rendering and used JScript.Compact as JS engine.</p></li></ul><ul><li><p>In most Internet Explorer exploits, attackers abused the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Microsoft_Extensions/Enumerator" rt-link-type="external">Enumerator</a> object in order to gain remote code execution. </p></li></ul><ul><li><p>To escape from the Internet Explorer EPM sandbox, exploits used a <a href="https://github.com/hacksysteam/WpadEscape" rt-link-type="external">technique</a> consisting of replaying the same vulnerability inside svchost by abusing Web Proxy Auto-Discovery (WPad) Service. Attackers abused this technique with CVE-2020-0674 on Firefox to escape the sandbox after exploiting <a href="https://www.mozilla.org/en-US/security/advisories/mfsa2020-03/#CVE-2019-17026" rt-link-type="external">CVE-2019-17026</a>.</p></li></ul><ul><li><p>CVE-2019-0676 is a variant of CVE-2017-0022, CVE-2016-3298, CVE-2016-0162 and CVE-2016-3351 where the vulnerability resided inside the handling of “res://” URI scheme. Exploiting CVE-2019-0676 enabled attackers to reveal presence or non-presence of files on the victim’s computer; this information was later used to decide whether or not a second stage exploit should be delivered.</p></li></ul><ul><li><p>The attack vector for CVE-2019-1367 was rather atypical as the exploit was delivered from an Office document abusing the online video embedding feature to load an external URL conducting the exploitation.</p></li></ul><p>Our Threat Analyst Group will continue to identify bad actors and share relevant information with others in the industry. Our goal is to bring awareness to these issues to protect you and fight bad actors to prevent future attacks. In a future update, we’ll provide details on attackers using lures related to COVID-19 and expected behavior we’re observing (all within the normal range of attacker activity). </p></div>
+      </div>
+    </div>
+  
+
+
+            
+            
+
+            
+              
+
+
+<div class="uni-blog-article-tags article-tags"
+     data-analytics-module='{
+       "module_name": "Article Tags",
+       "section_header": "Identifying vulnerabilities and protecting you from phishing"
+     }'>
+  <div class="uni-blog-article-tags__wrapper">
+    <span class="uni-blog-article-tags__label">POSTED IN:</span>
+    <nav class="uni-blog-article-tags__container uni-click-tracker"
+        data-analytics='{
+                    "category": "landing page lead",
+                    "action": "article tag"
+                  }'>
+      <ul class="uni-blog-article-tags__tags-list">
+      
+          <li>
+            
+            
+            
+
+
+  <a class="uni-blog-article-tags-value uni-link-active"
+     href=" https://blog.google/threat-analysis-group/ "
+      
+
+data-ga4-analytics-landing-lead='{
+  "event": "landing_page_lead",
+  "link_text": "Threat Analysis Group"
+}'
+
+     
+        
+          data-analytics='{"label": "topics: Threat Analysis Group"}'
+        
+     
+     >
+
+
+Threat Analysis Group
+
+
+  </a>
+
+
+          </li>
+      
+
+        
+      </ul>
+    </nav>
+  </div>
+</div>
+
+            
+          </div>
+        
+      </div>
+    </section>
+  </article>
+  
+
+
+
+
+  
+
+  
+
+
+<div class="uni-related-articles-cards ga4-carousel"
+  data-analytics-module='{
+    "module_name": "Article Footer Related Stories",
+    "section_header": "Related stories"
+  }'
+>
+  <div class="uni-related-articles-cards-container" data-component="uni-related-articles">
+    <div class="uni-related-articles-grid-title">
+      <div class="uni-related-articles-grid-wrapper">
+        <h3 class="uni-related-articles-cards__title">
+          <div class="uni-related-articles-cards__title-content
+            ">
+            Related stories
+          </div>
+        </h3>
+      </div>
+    </div>
+    <div class="uni-related-articles-cards__track">
+      <ul aria-role="menu" aria-label="Related articles" class="uni-related-articles-cards__wrap
+                ">
+        
+          <li class="uni-related-articles-cards__item
+             uni-related-articles-cards__item--img
+            ">
+            <a href="https://blog.google/threat-analysis-group/zimbra-0-day-used-to-target-international-government-organizations/" class="uni-related-articles-cards__link"
+              data-index="1"
+              data-target="card"
+              data-primaryTag = "topics - threat analysis group"
+              data-image="true"
+              data-ga4-analytics-footer-lead-click='{
+                "link_text": "Zimbra 0\u002Dday used to target international government organizations",
+                "link_url":  "https://blog.google/threat-analysis-group/zimbra-0-day-used-to-target-international-government-organizations/",
+                "source_content": "Related stories",
+                "related_index": "1",
+                "related_article_tag": "topics - threat analysis group",
+                "article_name": "Zimbra 0\u002Dday used to target international government organizations",
+                "author_name": "Clement Lecigne, Maddie Stone"
+              }'
+              >
+              <div
+                class="uni-related-articles-cards__item-top-info"
+                data-target="card">
+                
+                  <div class="uni-related-articles-cards__img">
+                    
+    <figure class="">
+        <picture>
+            
+
+
+    
+
+    
+        <source media="(max-resolution: 1.5dppx)"
+                sizes="600px"
+                srcset="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/TAG_rYhcbet.png 600w">
+    
+        <source media="(min-resolution: 1.5dppx)"
+                sizes="1200px"
+                srcset="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/TAG_rYhcbet.png 1200w">
+    
+
+    <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/TAG_rYhcbet.png"
+
+         
+            alt="TAG"
+         
+
+         sizes=" 600px,  1200px"
+         srcset="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/TAG_rYhcbet.png 600w, https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/TAG_rYhcbet.png 1200w"
+         data-target="image"
+         loading="lazy">
+
+    
+
+
+        </picture>
+    </figure>
+
+
+                  </div>
+                
+                <span class="h-c-eyebrow  uni-related-articles-cards__category" data-target="eyebrow">Threat Analysis Group</span>
+                <h4 class="uni-related-articles-cards__headline" data-target="title">Zimbra 0-day used to target international government organizations</h4>
+                
+              </div>
+              <div class="uni-related-articles-cards__info">
+                
+                <div class="uni-related-articles-cards__author">
+                  By
+                  
+                    <span class="uni-related-articles-cards__author--name" data-target="author">
+                    Clement Lecigne
+                    </span>
+                  
+                    <span class="uni-related-articles-cards__author--name" data-target="author">
+                    Maddie Stone
+                    </span>
+                  
+                </div>
+                
+                <span class="uni-related-articles-cards__date" data-target="date"> Nov 16, 2023</span>
+              </div>
+              <svg role="presentation" class="uni-related-articles-cards__item-arrow" data-target="arrow">
+                <use xlink:href="/static/blogv2/images/icons.svg#mi-arrow-forward-no-bg"></use>
+              </svg>
+            </a>
+          </li>
+        
+          <li class="uni-related-articles-cards__item
+             uni-related-articles-cards__item--abstract
+            ">
+            <a href="https://blog.google/threat-analysis-group/government-backed-actors-exploiting-winrar-vulnerability/" class="uni-related-articles-cards__link"
+              data-index="2"
+              data-target="card"
+              data-primaryTag = "topics - threat analysis group"
+              data-image="false"
+              data-ga4-analytics-footer-lead-click='{
+                "link_text": "Government\u002Dbacked actors exploiting WinRAR vulnerability",
+                "link_url":  "https://blog.google/threat-analysis-group/government-backed-actors-exploiting-winrar-vulnerability/",
+                "source_content": "Related stories",
+                "related_index": "2",
+                "related_article_tag": "topics - threat analysis group",
+                "article_name": "Government\u002Dbacked actors exploiting WinRAR vulnerability",
+                "author_name": "Kate Morgan"
+              }'
+              >
+              <div
+                class="uni-related-articles-cards__item-top-info"
+                data-target="card">
+                
+                <span class="h-c-eyebrow  uni-related-articles-cards__category" data-target="eyebrow">Threat Analysis Group</span>
+                <h4 class="uni-related-articles-cards__headline" data-target="title">Government-backed actors exploiting WinRAR vulnerability</h4>
+                
+                  <p class="uni-related-articles-cards__abstract" data-target="abstract">Google's Threat Analysis Group analyzes recent state-sponsored campaigns exploiting the WinRAR vulnerability, CVE-2023-38831.</p>
+                
+              </div>
+              <div class="uni-related-articles-cards__info">
+                
+                <div class="uni-related-articles-cards__author">
+                  By
+                  
+                    <span class="uni-related-articles-cards__author--name" data-target="author">
+                    Kate Morgan
+                    </span>
+                  
+                </div>
+                
+                <span class="uni-related-articles-cards__date" data-target="date"> Oct 18, 2023</span>
+              </div>
+              <svg role="presentation" class="uni-related-articles-cards__item-arrow" data-target="arrow">
+                <use xlink:href="/static/blogv2/images/icons.svg#mi-arrow-forward-no-bg"></use>
+              </svg>
+            </a>
+          </li>
+        
+          <li class="uni-related-articles-cards__item
+             uni-related-articles-cards__item--abstract
+            ">
+            <a href="https://blog.google/threat-analysis-group/tag-bulletin-q3-2023/" class="uni-related-articles-cards__link"
+              data-index="3"
+              data-target="card"
+              data-primaryTag = "topics - threat analysis group"
+              data-image="false"
+              data-ga4-analytics-footer-lead-click='{
+                "link_text": "TAG Bulletin: Q3 2023",
+                "link_url":  "https://blog.google/threat-analysis-group/tag-bulletin-q3-2023/",
+                "source_content": "Related stories",
+                "related_index": "3",
+                "related_article_tag": "topics - threat analysis group",
+                "article_name": "TAG Bulletin: Q3 2023",
+                "author_name": "Shane Huntley"
+              }'
+              >
+              <div
+                class="uni-related-articles-cards__item-top-info"
+                data-target="card">
+                
+                <span class="h-c-eyebrow  uni-related-articles-cards__category" data-target="eyebrow">Threat Analysis Group</span>
+                <h4 class="uni-related-articles-cards__headline" data-target="title">TAG Bulletin: Q3 2023</h4>
+                
+                  <p class="uni-related-articles-cards__abstract" data-target="abstract">This bulletin includes coordinated influence operation campaigns terminated on our platforms in Q3 2023. It was last updated on November 8, 2023.</p>
+                
+              </div>
+              <div class="uni-related-articles-cards__info">
+                
+                <div class="uni-related-articles-cards__author">
+                  By
+                  
+                    <span class="uni-related-articles-cards__author--name" data-target="author">
+                    Shane Huntley
+                    </span>
+                  
+                </div>
+                
+                <span class="uni-related-articles-cards__date" data-target="date"> Oct 05, 2023</span>
+              </div>
+              <svg role="presentation" class="uni-related-articles-cards__item-arrow" data-target="arrow">
+                <use xlink:href="/static/blogv2/images/icons.svg#mi-arrow-forward-no-bg"></use>
+              </svg>
+            </a>
+          </li>
+        
+          <li class="uni-related-articles-cards__item
+             uni-related-articles-cards__item--abstract
+            ">
+            <a href="https://blog.google/threat-analysis-group/0-days-exploited-by-commercial-surveillance-vendor-in-egypt/" class="uni-related-articles-cards__link"
+              data-index="4"
+              data-target="card"
+              data-primaryTag = "topics - threat analysis group"
+              data-image="false"
+              data-ga4-analytics-footer-lead-click='{
+                "link_text": "0\u002Ddays exploited by commercial surveillance vendor in Egypt",
+                "link_url":  "https://blog.google/threat-analysis-group/0-days-exploited-by-commercial-surveillance-vendor-in-egypt/",
+                "source_content": "Related stories",
+                "related_index": "4",
+                "related_article_tag": "topics - threat analysis group",
+                "article_name": "0\u002Ddays exploited by commercial surveillance vendor in Egypt",
+                "author_name": "Maddie Stone"
+              }'
+              >
+              <div
+                class="uni-related-articles-cards__item-top-info"
+                data-target="card">
+                
+                <span class="h-c-eyebrow  uni-related-articles-cards__category" data-target="eyebrow">Threat Analysis Group</span>
+                <h4 class="uni-related-articles-cards__headline" data-target="title">0-days exploited by commercial surveillance vendor in Egypt</h4>
+                
+                  <p class="uni-related-articles-cards__abstract" data-target="abstract">Last week Google’s Threat Analysis Group (TAG), in partnership with The Citizen Lab, discovered an in-the-wild 0-day exploit chain for iPhones. Developed by the commerci…</p>
+                
+              </div>
+              <div class="uni-related-articles-cards__info">
+                
+                <div class="uni-related-articles-cards__author">
+                  By
+                  
+                    <span class="uni-related-articles-cards__author--name" data-target="author">
+                    Maddie Stone
+                    </span>
+                  
+                </div>
+                
+                <span class="uni-related-articles-cards__date" data-target="date"> Sep 22, 2023</span>
+              </div>
+              <svg role="presentation" class="uni-related-articles-cards__item-arrow" data-target="arrow">
+                <use xlink:href="/static/blogv2/images/icons.svg#mi-arrow-forward-no-bg"></use>
+              </svg>
+            </a>
+          </li>
+        
+          <li class="uni-related-articles-cards__item
+             uni-related-articles-cards__item--abstract
+            ">
+            <a href="https://blog.google/threat-analysis-group/active-north-korean-campaign-targeting-security-researchers/" class="uni-related-articles-cards__link"
+              data-index="5"
+              data-target="card"
+              data-primaryTag = "topics - threat analysis group"
+              data-image="false"
+              data-ga4-analytics-footer-lead-click='{
+                "link_text": "Active North Korean campaign targeting security researchers",
+                "link_url":  "https://blog.google/threat-analysis-group/active-north-korean-campaign-targeting-security-researchers/",
+                "source_content": "Related stories",
+                "related_index": "5",
+                "related_article_tag": "topics - threat analysis group",
+                "article_name": "Active North Korean campaign targeting security researchers",
+                "author_name": "Clement Lecigne, Maddie Stone"
+              }'
+              >
+              <div
+                class="uni-related-articles-cards__item-top-info"
+                data-target="card">
+                
+                <span class="h-c-eyebrow  uni-related-articles-cards__category" data-target="eyebrow">Threat Analysis Group</span>
+                <h4 class="uni-related-articles-cards__headline" data-target="title">Active North Korean campaign targeting security researchers</h4>
+                
+                  <p class="uni-related-articles-cards__abstract" data-target="abstract">Threat Analysis Group shares findings on a new campaign by North Korean actors targeting security researchers.</p>
+                
+              </div>
+              <div class="uni-related-articles-cards__info">
+                
+                <div class="uni-related-articles-cards__author">
+                  By
+                  
+                    <span class="uni-related-articles-cards__author--name" data-target="author">
+                    Clement Lecigne
+                    </span>
+                  
+                    <span class="uni-related-articles-cards__author--name" data-target="author">
+                    Maddie Stone
+                    </span>
+                  
+                </div>
+                
+                <span class="uni-related-articles-cards__date" data-target="date"> Sep 07, 2023</span>
+              </div>
+              <svg role="presentation" class="uni-related-articles-cards__item-arrow" data-target="arrow">
+                <use xlink:href="/static/blogv2/images/icons.svg#mi-arrow-forward-no-bg"></use>
+              </svg>
+            </a>
+          </li>
+        
+          <li class="uni-related-articles-cards__item
+             uni-related-articles-cards__item--abstract
+            ">
+            <a href="https://blog.google/threat-analysis-group/tag-bulletin-q2-2023/" class="uni-related-articles-cards__link"
+              data-index="6"
+              data-target="card"
+              data-primaryTag = "topics - threat analysis group"
+              data-image="false"
+              data-ga4-analytics-footer-lead-click='{
+                "link_text": "TAG Bulletin: Q2 2023",
+                "link_url":  "https://blog.google/threat-analysis-group/tag-bulletin-q2-2023/",
+                "source_content": "Related stories",
+                "related_index": "6",
+                "related_article_tag": "topics - threat analysis group",
+                "article_name": "TAG Bulletin: Q2 2023",
+                "author_name": "Shane Huntley"
+              }'
+              >
+              <div
+                class="uni-related-articles-cards__item-top-info"
+                data-target="card">
+                
+                <span class="h-c-eyebrow  uni-related-articles-cards__category" data-target="eyebrow">Threat Analysis Group</span>
+                <h4 class="uni-related-articles-cards__headline" data-target="title">TAG Bulletin: Q2 2023</h4>
+                
+                  <p class="uni-related-articles-cards__abstract" data-target="abstract">Threat Analysis Group shares their Q2 2023 bulletin.</p>
+                
+              </div>
+              <div class="uni-related-articles-cards__info">
+                
+                <div class="uni-related-articles-cards__author">
+                  By
+                  
+                    <span class="uni-related-articles-cards__author--name" data-target="author">
+                    Shane Huntley
+                    </span>
+                  
+                </div>
+                
+                <span class="uni-related-articles-cards__date" data-target="date"> Jul 31, 2023</span>
+              </div>
+              <svg role="presentation" class="uni-related-articles-cards__item-arrow" data-target="arrow">
+                <use xlink:href="/static/blogv2/images/icons.svg#mi-arrow-forward-no-bg"></use>
+              </svg>
+            </a>
+          </li>
+        
+        <li class="uni-related-articles-cards__item--placeholder">.</li>
+      </ul>
+    </div>
+    
+      <button class="uni-related-articles-cards__arrow uni-related-articles-cards__arrow--prev "
+        aria-controls="Previous" aria-label="Previous"
+        data-ga4-analytics-carousel-scroll-click='{
+  "toggle_type_direction": "arrow - left",
+  "position": ""
+}'
+>
+        <span class="uni-related-articles-cards__arrow--fig"></span>
+      </button>
+      <button class="uni-related-articles-cards__arrow uni-related-articles-cards__arrow--next "
+        aria-controls="Next" aria-label="Next"
+        data-ga4-analytics-carousel-scroll-click='{
+  "toggle_type_direction": "arrow - right",
+  "position": ""
+}'
+>
+        <span class="uni-related-articles-cards__arrow--fig"></span>
+      </button>
+      <fieldset class="uni-related-articles-cards__pagination ga4-bullets
+        " aria-label="Pagination">
+        
+          <label for="uni-related-articles-cards__pagination-dot-1" data-index="1" class="dot"
+            data-ga4-analytics-carousel-scroll-click='{
+  "toggle_type_direction": "bullet",
+  "position": "1"
+}'
+>
+            <input type="radio" class="dot-label" name="uni-related-articles-cards__pagination" id="uni-related-articles-cards__pagination-dot-1">
+          </label>
+        
+          <label for="uni-related-articles-cards__pagination-dot-2" data-index="2" class="dot"
+            data-ga4-analytics-carousel-scroll-click='{
+  "toggle_type_direction": "bullet",
+  "position": "2"
+}'
+>
+            <input type="radio" class="dot-label" name="uni-related-articles-cards__pagination" id="uni-related-articles-cards__pagination-dot-2">
+          </label>
+        
+          <label for="uni-related-articles-cards__pagination-dot-3" data-index="3" class="dot"
+            data-ga4-analytics-carousel-scroll-click='{
+  "toggle_type_direction": "bullet",
+  "position": "3"
+}'
+>
+            <input type="radio" class="dot-label" name="uni-related-articles-cards__pagination" id="uni-related-articles-cards__pagination-dot-3">
+          </label>
+        
+          <label for="uni-related-articles-cards__pagination-dot-4" data-index="4" class="dot"
+            data-ga4-analytics-carousel-scroll-click='{
+  "toggle_type_direction": "bullet",
+  "position": "4"
+}'
+>
+            <input type="radio" class="dot-label" name="uni-related-articles-cards__pagination" id="uni-related-articles-cards__pagination-dot-4">
+          </label>
+        
+          <label for="uni-related-articles-cards__pagination-dot-5" data-index="5" class="dot"
+            data-ga4-analytics-carousel-scroll-click='{
+  "toggle_type_direction": "bullet",
+  "position": "5"
+}'
+>
+            <input type="radio" class="dot-label" name="uni-related-articles-cards__pagination" id="uni-related-articles-cards__pagination-dot-5">
+          </label>
+        
+          <label for="uni-related-articles-cards__pagination-dot-6" data-index="6" class="dot"
+            data-ga4-analytics-carousel-scroll-click='{
+  "toggle_type_direction": "bullet",
+  "position": "6"
+}'
+>
+            <input type="radio" class="dot-label" name="uni-related-articles-cards__pagination" id="uni-related-articles-cards__pagination-dot-6">
+          </label>
+        
+      </fieldset>
+    
+ </div>
+ 
+
+
+        </main>
+
+        
+          
+
+          
+        
+        
+
+<footer class="h-c-footer h-c-footer--topmargin h-c-footer--standard h-has-social"
+        id="footer-standard"
+        data-component="uni-footer-component"
+        data-analytics-module='{
+          "module_name": "footer",
+          "section_header": "Identifying vulnerabilities and protecting you from phishing"
+        }'>
+  
+    <section class="h-c-footer__global">
+        <div class="h-c-footer__logo">
+          <a class="uni-click-tracker" href="https://www.google.com" title="Google"
+            data-analytics='{
+              "category": "navigation",
+              "action": "footer",
+              "label": "logo",
+              "pagePath": "https://www.google.com"
+            }'>
+            <svg aria-hidden="true" class="h-c-footer__logo-img" viewBox="0 0 396 130">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#google-logo"></use>
+            </svg>
+          </a>
+        </div>
+        <ul class="h-c-footer__global-links h-no-bullet">
+          <li class="h-c-footer__global-links-list-item">
+            
+            <a class="h-c-footer__link uni-click-tracker" href="https://policies.google.com/privacy"
+              data-analytics='{
+                "category": "navigation",
+                "action": "footer",
+                "label": "{name}",
+                "pagePath": "https://policies.google.com/privacy"
+              }'>Privacy
+            </a>
+          </li>
+          <li class="h-c-footer__global-links-list-item">
+            
+            <a class="h-c-footer__link uni-click-tracker" href="https://policies.google.com/terms"
+              data-analytics='{
+                "category": "navigation",
+                "action": "footer",
+                "label": "{name}",
+                "pagePath": "https://policies.google.com/terms"
+              }'>Terms
+            </a>
+          </li>
+          <li class="h-c-footer__global-links-list-item">
+            
+            <a class="h-c-footer__link uni-click-tracker" href="https://about.google/"
+              data-analytics='{
+                "category": "navigation",
+                "action": "footer",
+                "label": "{name}",
+                "pagePath": "https://about.google/"
+              }'>About Google
+            </a>
+          </li>
+          <li class="h-c-footer__global-links-list-item">
+            
+            <a class="h-c-footer__link uni-click-tracker" href="https://about.google/products/"
+              data-analytics='{
+                "category": "navigation",
+                "action": "footer",
+                "label": "{name}",
+                "pagePath": "https://about.google/products/"
+              }'>Google Products
+            </a>
+          </li>
+          
+        </ul>
+        <ul class="h-c-footer__global-links h-c-footer__global-links--extra h-no-bullet">
+          <li class="h-c-footer__global-links-list-item h-c-footer__global-links-list-item--extra">
+            
+            <a class="h-c-footer__link uni-click-tracker" href="https://support.google.com"
+              data-analytics='{
+                "category": "navigation",
+                "action": "footer",
+                "label": "{name}",
+                "pagePath": "https://support.google.com"
+              }'>
+              <svg aria-hidden="true" class="h-c-icon h-c-icon--24px h-c-icon--footer">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#mi-help"></use>
+              </svg>
+              Help
+            </a>
+          </li>
+          <li class="h-c-footer__global-links-list-item h-c-footer__global-links-list-item--extra uni-footer-language">
+            
+
+
+<div class="uni-picker" data-component="uni-lang-picker">
+  <select name="language"
+          class="uni-picker__order-menu"
+          aria-label="Select a language">
+    
+      <option label="Deutsch"
+              value="/intl/de-de/"
+              class="uni-picker__item"
+              >
+        Deutsch
+      </option>
+    
+      <option label="English"
+              value="/"
+              class="uni-picker__item"
+               selected="selected" >
+        English
+      </option>
+    
+      <option label="English (Africa)"
+              value="/intl/en-africa/"
+              class="uni-picker__item"
+              >
+        English (Africa)
+      </option>
+    
+      <option label="English (Australia)"
+              value="/intl/en-au/"
+              class="uni-picker__item"
+              >
+        English (Australia)
+      </option>
+    
+      <option label="English (Canada)"
+              value="/intl/en-ca/"
+              class="uni-picker__item"
+              >
+        English (Canada)
+      </option>
+    
+      <option label="English (India)"
+              value="/intl/en-in/"
+              class="uni-picker__item"
+              >
+        English (India)
+      </option>
+    
+      <option label="English (MENA)"
+              value="/intl/en-mena/"
+              class="uni-picker__item"
+              >
+        English (MENA)
+      </option>
+    
+      <option label="Español (Latinoamérica)"
+              value="/intl/es-419/"
+              class="uni-picker__item"
+              >
+        Español (Latinoamérica)
+      </option>
+    
+      <option label="Français (Canada)"
+              value="/intl/fr-ca/"
+              class="uni-picker__item"
+              >
+        Français (Canada)
+      </option>
+    
+      <option label="Français (France)"
+              value="/intl/fr-fr/"
+              class="uni-picker__item"
+              >
+        Français (France)
+      </option>
+    
+      <option label="Italiano"
+              value="/intl/it-it/"
+              class="uni-picker__item"
+              >
+        Italiano
+      </option>
+    
+      <option label="Polski"
+              value="/intl/pl-pl/"
+              class="uni-picker__item"
+              >
+        Polski
+      </option>
+    
+      <option label="Português (Brasil)"
+              value="/intl/pt-br/"
+              class="uni-picker__item"
+              >
+        Português (Brasil)
+      </option>
+    
+      <option label="اللغة العربية (MENA)"
+              value="/intl/ar-mena/"
+              class="uni-picker__item"
+              >
+        اللغة العربية (MENA)
+      </option>
+    
+  </select>
+</div>
+
+          </li>
+        </ul>
+    </section>
+</footer>
+
+
+        
+        <div id="base-scripts" data-scripts='[
+              { "url": "/static/blogv2/js/csp/reloadCachedPage.js?version=pr20231116-1913",
+                "options": {
+                  "async": false,
+                  "defer": false
+                }
+              },
+              { "url": "/static/blogv2/js/csp/gtm.js",
+                "options": {
+                  "async": false,
+                  "defer": false
+                }
+              },
+              { "url": "/static/angularjs/1.6.4/angular.min.js",
+                "options": {
+                  "async": false,
+                  "defer": false
+                }
+              },
+              { "url": "/static/angularjs/1.6.4/angular-animate.min.js",
+                "options": {
+                  "async": false,
+                  "defer": false
+                }
+              },
+              { "url": "/static/angularjs/1.6.4/angular-touch.min.js",
+                "options": {
+                  "async": false,
+                  "defer": false
+                }
+              },
+              { "url": "/static/blogv2/js/blogv2.js?version=pr20231116-1913",
+                "options": {
+                  "async": false,
+                  "defer": false
+                }
+              },
+              { "url": "/static/blogv2/js/soy-templates.js?version=pr20231116-1913",
+                "options": {
+                  "async": false,
+                  "defer": false
+                }
+              },
+              { "url": "/static/blogv2/js/glue-app.min.js?version=pr20231116-1913",
+                "options": {
+                  "async": false,
+                  "defer": false
+                }
+              },
+              { "url": "/static/blogv2/js/vendors.js",
+                "options": {
+                  "async": false,
+                  "defer": false
+                }
+              },
+              { "url": "/static/keyword/js/all/index.js?version=pr20231116-1913",
+                "options": {
+                  "async": false,
+                  "defer": false
+                }
+              }
+            ]'></div>
+        <div id="extra-scripts"
+             data-scripts="">
+        </div>
+
+        <script>
+            var base_scripts = document.querySelector("#base-scripts").getAttribute('data-scripts');
+            base_scripts = JSON.parse(base_scripts);
+            var extra_scripts = document.querySelector("#extra-scripts").getAttribute('data-scripts');
+            if (extra_scripts) {
+              extra_scripts = JSON.parse(extra_scripts);
+            } else {
+              extra_scripts = [];
+            }
+            var scripts = base_scripts.concat(extra_scripts);
+            scripts.forEach(function(scriptObj) {
+              var s = document.createElement('script');
+              s.async = scriptObj.options.async;
+              s.defer = scriptObj.options.defer;
+              s.src = scriptObj.url;
+              document.head.appendChild(s);
+            });
+        </script>
+
+        
+          <script src="https://www.gstatic.com/glue/cookienotificationbar/cookienotificationbar.min.js"
+            data-glue-cookie-notification-bar-category="2B"
+            data-glue-cookie-notification-bar-site-id="blog.google">
+          </script>
+        
+
+        <!--[if gt IE 9]><!-->
+        <!--<script async type="text/javascript" src="/static/blogv2/js/vendors.js"></script>-->
+        <!--<![endif]-->
+    </body>
+</html>

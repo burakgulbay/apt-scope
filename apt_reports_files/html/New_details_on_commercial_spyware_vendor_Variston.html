@@ -1,0 +1,2652 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html class="no-js glue-flexbox  keyword-blog" lang="en-us" data-locale="en-us">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>New details on commercial spyware vendor Variston</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0" />
+        <meta name="optimize_experiments" content="[]">
+
+        
+  
+
+
+
+    
+
+
+<!--Article Specific Metadata-->
+<meta name="description" content="The Threat Analysis Group shares new information on the commercial spyware vendor Variston."/>
+<meta name="keywords" content="None"/>
+<meta name="article-author" content="Clement Lecigne, Benoit Sevens"/>
+<meta name="robots" content="max-image-preview:large">
+
+<!--Open Graph Metadata-->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="New details on commercial spyware vendor Variston"/>
+<meta property="og:description" content="The Threat Analysis Group shares new information on the commercial spyware vendor Variston." />
+<meta property="og:image" content="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/TAG_Social_Share_Card.width-1300.jpg" />
+<meta property="og:site_name" content="Google" />
+<meta property="og:url" content="https://blog.google/threat-analysis-group/new-details-on-commercial-spyware-vendor-variston/" />
+<meta property="article:publisher" content="https://www.facebook.com/Google/" />
+<meta property="article:published_time" content="2022-11-30" />
+
+<!--Twitter Card Metadata-->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content="https://blog.google/threat-analysis-group/new-details-on-commercial-spyware-vendor-variston/" />
+<meta name="twitter:title" content="New details on commercial spyware vendor Variston"/>
+<meta name="twitter:description" content="The Threat Analysis Group shares new information on the commercial spyware vendor Variston." />
+<meta name="twitter:image:src" content="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/TAG_Social_Share_Card.width-1300.jpg" />
+<meta name="twitter:site" content="@google" />
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "mainEntityOfPage": "https://blog.google/threat-analysis-group/new-details-on-commercial-spyware-vendor-variston/",
+        "headline": "New details on commercial spyware vendor Variston",
+        "datePublished": "2022-11-30T17:00:00+00:00",
+        "dateModified": "",
+        "description": "The Threat Analysis Group shares new information on the commercial spyware vendor Variston.",
+        "author": {
+            "@type": "Person",
+            "name": "Clement Lecigne"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Google",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://blog.google/threat-analysis-group/new-details-on-commercial-spyware-vendor-variston/",
+                "width": "200",
+                "height": "200"
+            }
+        },
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/TAG_Social_Share_Card.width-1300.jpg",
+            "width": "1440",
+            "height": "810"
+        }
+    }
+</script>
+
+  
+    <link rel="amphtml" href="https://blog.google/threat-analysis-group/new-details-on-commercial-spyware-vendor-variston/amp/">
+  
+
+
+        
+        
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link rel="stylesheet" type="text/css" href="/static/keyword/css/blog/index.min.css?version=pr20231116-1913" />
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Google+Sans:400,500|Product+Sans:400&amp;display=swap&amp;lang=en">
+        <link href="https://www.gstatic.com/glue/cookienotificationbar/cookienotificationbar.min.css" rel="stylesheet">
+        
+
+        
+  
+            
+        
+  
+  <link rel="stylesheet" type="text/css" href="/static/keyword/css/print/index.min.css?version=pr20231116-1913" media="print" />
+
+
+        
+
+<link rel="canonical" href="https://blog.google/threat-analysis-group/new-details-on-commercial-spyware-vendor-variston/" />
+
+<link href="/favicon.ico" rel="icon">
+<link href="/static/blogv2/images/apple-touch-icon.png" rel="apple-touch-icon">
+
+        <meta property="gtm-tag" content="GTM-TRV24V">
+
+
+
+        <!-- https://developer.mozilla.org/en-US/docs/Web/API/Trusted_Types_API -->
+<script>
+  let trustedTypePolicy = {
+      createHTML: (str) => str,
+      createScript: (str) => str,
+      createScriptURL: (url) => url
+  };
+  if (window.trustedTypes && window.trustedTypes.createPolicy) {
+      const safeScriptDomains = [
+          'blob:',
+          '/static/angularjs/',
+          '/static/blogv2/',
+          '/static/keyword/',
+          '/static/youtube/',
+          '/static/blog_youtube/',
+          '//apis.google.com/js/',
+          '//cdn.ampproject.org/',
+          '//googleads.g.doubleclick.net',
+          '//survey.g.doubleclick.net',
+          '//www.google-analytics.com/',
+          '//www.google.com',
+          '//www.googletagmanager.com',
+          '//www.gstatic.com',
+          '//www.youtube.com',
+      ];
+      const safeScripts = [
+          'google_tag_manager[""]',
+          '(function anonymous('
+      ];
+      trustedTypePolicy = window.trustedTypes.createPolicy('default', {
+          /* Enable create HTML */
+          createHTML: (str) => {
+              return str
+          },
+          /* Enable script creation */
+          createScript: (str) => {
+              const safeScriptString = safeScripts.find(
+                  (safeScript) => str.includes(safeScript)
+              );
+              if (!safeScriptString) {
+                  console.warn(
+                      `unsafe createScript: "${str}"`
+                  );
+              }
+
+              return str;
+          },
+          /* Allow for safe domains only */
+          createScriptURL: (url) => {
+              const safeDomainsUrl = safeScriptDomains.find(
+                  (safeDomain) => url.includes(safeDomain)
+              );
+              if (!safeDomainsUrl && !url.startsWith(window.location.origin)) {
+                  console.warn(
+                      `Unsafe createScriptURL: "${url}"`
+                  );
+              }
+
+              return url;
+          },
+      });
+  }
+
+  window.trustedTypePolicy = trustedTypePolicy;
+</script>
+
+    </head>
+
+    <body class="template-articlepage keyword-blog" uni-external-links>
+        
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRV24V" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+        
+
+
+
+
+<div class="data-layer-init-data" data-analytics='
+  {
+    "event": "dataLayer_initialized",
+    
+      "page_name": "New details on commercial spyware vendor Variston",
+    
+    "experiments": "undefined",
+    "locale": "en-us",
+    "page_type": "blogv2 | article page",
+    "primary_tag": "topics - threat analysis group",
+    "secondary_tags": "Safety &amp; Security",
+    
+      "landing_page_tags": "topics - safety &amp; security",
+    
+    "article_name": "New details on commercial spyware vendor Variston",
+    "author_name": "Clement Lecigne, Benoit Sevens",
+    "publish_date": "2022-11-30|17:00",
+    "hero_media": "none",
+    
+      "special_hero": "undefined",
+    
+    "days_since_published": "357",
+    
+      "content_category": "Topics - Threat Analysis Group",
+    
+    "word_count": "long 600+",
+    "has_audio": "no",
+    "has_video": "no"
+  }'>
+</div>
+
+<div class="page-analytics-data" data-analytics='
+    {
+        "event": "pageview",
+        
+            "slug": "new-details-on-commercial-spyware-vendor-variston",
+        
+        
+            "contentType": "blogv2 | article page",
+        
+        
+        
+            "author": "clement lecigne, benoit sevens",
+        
+        
+            "primaryTag": "topics - threat analysis group",
+        
+        
+            "secondaryTags": "topics - safety &amp; security",
+        
+        
+            "publishDate": "2022-11-30|17:00",
+        
+        
+        
+            "tags": "topics - safety &amp; security",
+        
+        
+        
+            "goLiveDateTime": "2022-11-30|17:00",
+        
+        
+        
+            "wordCount": "long 600+",
+        
+        
+        
+            "contentCategory": "Announcement",
+        
+        
+          
+              "heroMedia": "none",
+          
+        
+        
+    }'>
+  </div>
+
+        <script type="text/javascript">
+  (function() {
+    var dataLayerInitElement = document.querySelector('.data-layer-init-data');
+    var dataLayerObject = JSON.parse(
+      dataLayerInitElement.getAttribute('data-analytics')
+    );
+
+    // Change undefined strings to primitive value undefined.
+    Object.entries(dataLayerObject).forEach(([key, value]) => {
+      dataLayerObject[key] = value === 'undefined' ? undefined : value;
+    });
+
+    if (!window['dataLayer']) {
+      window['dataLayer'] = [];
+    }
+    window['dataLayer'].push(dataLayerObject);
+  }());
+</script>
+
+<script type="text/javascript">
+  (function() {
+    var elem_ =  document.querySelector('.page-analytics-data');
+
+    var scrubObject = {
+      'event': 'scrubbedUrl',
+      'url': getScrubbedUrl()
+    };
+
+    var baseAnalyticsObject = JSON.parse(
+      elem_.getAttribute('data-analytics').replace(/,(?=[^,]*$)/, '')
+    );
+
+    function getScrubbedUrl() {
+      const urlParams = location.href.split('?');
+      const hostPathUrl = urlParams[0];
+      if(urlParams.length === 1) return hostPathUrl;
+
+      try {
+        const searchParams = urlParams[1].split('&');
+        const utmParams = searchParams.filter(param => param.startsWith('utm') || param.startsWith('query')).join('&');
+        if(!utmParams.length) return hostPathUrl;
+        return `${hostPathUrl}?${utmParams}`;
+      }
+      catch(error) {
+        console.error('scrubbed Url error =>', e);
+      }
+      return hostPathUrl;
+    }
+
+    function handlePublishDate(dataObj) {
+      var publishDate = dataObj['publishDate'];
+
+      if (typeof publishDate !== 'undefined') {
+        var oneDay = 24*60*60*1000;
+        var dateParts = publishDate.split('|');
+        var pubDay = new Date(dateParts[0]);
+        var today = new Date();
+        var daysSince = Math.round((today - pubDay) / oneDay);
+
+        dataObj['daysSincePublished'] = daysSince.toString();
+      }
+
+      pushData(dataObj);
+    }
+
+    function pushData(analyticsEvent) {
+      if (!window['dataLayer']) {
+        window['dataLayer'] = [];
+      }
+      window['dataLayer'].push(analyticsEvent);
+      const globalKWDimenssions = Object.assign({}, analyticsEvent);
+      if(globalKWDimenssions['event']) {
+        delete globalKWDimenssions['event'];
+      }
+      window['globalKWCustomDimensions'] = globalKWDimenssions;
+    }
+
+    pushData(scrubObject);
+    handlePublishDate(baseAnalyticsObject);
+  }());
+</script>
+
+
+        
+
+        
+            
+
+
+
+
+
+
+
+
+<div class="uni-header-content-pusher"></div>
+<header class="uni-header h-u-box-shadow-2" data-component="uni-header">
+  <div class="uni-header__hamburguer-wrapper uni-header__hamburguer-wrapper--hide">
+    <button class="uni-header__hamburguer-button">
+      <svg role="presentation" class="h-c-header__hamburger-img h-c-header__hamburger-img--standard events-off">
+            <use xlink:href="/static/blogv2/images/icons.svg#h-burger"></use>
+      </svg>
+    </button>
+  </div>
+  
+  <div class="uni-header__sitespace" site="Threat Analysis Group">
+    <figure class="uni-header__logo-google uni-header__logo-google--sitespace" title="Google" tabindex="-1">
+      
+        <svg role="img" aria-label="Google">
+          <use xlink:href="/static/blogv2/images/icons.svg#h-color-google-logo"></use>
+        </svg>
+      
+      </figure>
+
+      
+      <div class="uni-header__site-title">
+        <a class="uni-header__sitespace-text " href="https://blog.google/threat-analysis-group" target= "_self" data-analytics="{ "category": "navigation", "action": "header", "label": "navlink: home" }">
+            Updates from Threat Analysis Group (TAG)
+        </a>
+      </div>
+  </div>
+
+  
+  
+
+
+<div class="uni-article-progress-bar slide-up" data-component="uni-progress-bar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-hidden="true" role="progressbar">
+  <div class="uni-article-progress-bar__title uni-article-progress-bar__ellipsis">
+    New details on commercial spyware vendor Variston
+  </div>
+  <div class="uni-article-progress-bar__social" aria-hidden="true"
+    data-analytics-module='{
+      "module_name": "Progress Bar",
+      "section_header": "New details on commercial spyware vendor Variston"
+    }'
+  >
+    
+
+
+<div class ="uni-social-share "
+  data-component="uni-social-share-dropdowm"
+>
+  <a aria-label="Share"
+    class="uni-social-share__trigger"
+    role="button"
+    tabindex="0"
+    aria-expanded="false"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "progress bar",
+      "action": "menu",
+      "label": "label"
+    }'>
+    <svg class="h-c-icon h-c-icon--color-text" title="Share" aria-hidden="true">
+      <use xlink:href="/static/blogv2/images/icons.svg#social-share"></use>
+    </svg>
+    <div class="uni-social-share__button">Share</div>
+  </a>
+  <div class="uni-social-share__dialog uni-social-share__content " aria-labelledby="social-share-icon">
+    
+
+
+<a aria-label="Share on Twitter"
+    class="article-share__link-text uni-click-tracker"
+    href="https://twitter.com/intent/tweet?text=New%20details%20on%20commercial%20spyware%20vendor%20Variston%20%40google&url=https://blog.google/threat-analysis-group/new-details-on-commercial-spyware-vendor-variston/"
+    target="_blank"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "progress bar",
+      "action": "share - progress bar",
+      "label": "twitter"
+    }'
+    data-ga4-method="twitter">
+  <svg aria-hidden="true" class="h-c-icon h-c-icon--social h-c-icon--30px" viewBox="0 0 30 30">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#social-twitter"></use>
+  </svg>
+  <div class="article-share__title">Twitter</div>
+</a>
+
+<a aria-label="Share on Facebook"
+    class="article-share__link-text uni-click-tracker"
+    href="https://www.facebook.com/sharer/sharer.php?caption=New%20details%20on%20commercial%20spyware%20vendor%20Variston&u=https://blog.google/threat-analysis-group/new-details-on-commercial-spyware-vendor-variston/"
+    target="_blank"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "progress bar",
+      "action": "share - progress bar",
+      "label": "facebook"
+    }'
+    data-ga4-method="facebook">
+  <svg aria-hidden="true" class="h-c-icon h-c-icon--social h-c-icon--30px" viewBox="0 0 30 30">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#social-facebook"></use>
+  </svg>
+  <div class="article-share__title">Facebook</div>
+</a>
+
+<a aria-label="Share on LinkedIn"
+    class="article-share__link-text uni-click-tracker"
+    href="https://www.linkedin.com/shareArticle?mini=true&url=https://blog.google/threat-analysis-group/new-details-on-commercial-spyware-vendor-variston/&title=New%20details%20on%20commercial%20spyware%20vendor%20Variston"
+    target="_blank"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "progress bar",
+      "action": "share - progress bar",
+      "label": "linkedin"
+    }'
+    data-ga4-method="linkedin">
+  <svg aria-hidden="true" class="h-c-icon h-c-icon--social h-c-icon--30px" viewBox="0 0 30 30">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#social-linkedin"></use>
+  </svg>
+  <div class="article-share__title">LinkedIn</div>
+</a>
+
+<a aria-label="Share with Email"
+    class="article-share__link-text uni-click-tracker article-share__email"
+    
+      href="mailto:?subject=New%20details%20on%20commercial%20spyware%20vendor%20Variston&body=Check out this article on the Keyword:%0A%0ANew%20details%20on%20commercial%20spyware%20vendor%20Variston%0A%0AThe Threat Analysis Group shares new information on the commercial spyware vendor Variston.%0A%0Ahttps://blog.google/threat-analysis-group/new-details-on-commercial-spyware-vendor-variston/"
+    
+    target="_blank"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "progress bar",
+      "action": "share - progress bar",
+      "label": "email"
+    }'
+    data-ga4-method="email">
+  <svg aria-hidden="true" class="h-c-icon h-c-icon--social h-c-icon--30px" viewBox="0 0 30 30">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#social-mail"></use>
+  </svg>
+  <div class="article-share__title">Mail</div>
+</a>
+
+    
+
+
+<div class="copy-link uni-copy-share uni-click-tracker"
+  data-component="uni-copy-popup-component"
+  data-analytics='{
+    "event": "page interaction",
+    "category": "progress bar",
+    "action": "share - progress bar",
+    "label": "copy"
+    }'
+  data-ga4-analytics-share-copy-link
+  data-ga4-method="Copy link">
+  <a class="copy-link__trigger copy-link__trigger-text"
+    href="#"
+    data-ga4-method="Copy link">
+    <svg class="h-c-icon h-c-icon--color-text" title="Share">
+      <use xlink:href="/static/blogv2/images/icons.svg#social-link"></use>
+    </svg>
+    <div class="copy-link__title">Copy link</div>
+  </a>
+  <div class="copy-link__dialog copy-link__content" aria-labelledby="copy-popover-icon" uni-options='{"copyTextButton": "COPIED TO CLIPBOARD"}'>
+    <input class="h-c-copy copy-link__url" value="https://blog.google/threat-analysis-group/new-details-on-commercial-spyware-vendor-variston/" id="copy-link" readonly="readonly" type="text" aria-hidden="true" />
+    <div class="copy-link__copy-message" role="status" tabindex="0"></div>
+  </div>
+</div>
+
+  </div>
+</div>
+
+  </div>
+
+  <div class="uni-article-progress-bar__indicator hide-progress-bar"></div>
+</div>
+
+
+  
+  
+
+
+<form class="uni-search  sitespace"
+      role="dialog"
+      aria-label="Search box"
+      aria-hidden="true"
+      aria-expanded="false"
+      data-component="uni-search-box"
+      data-analytics-module='{
+        "module_name": "search"
+      }'>
+
+  <input class="uni-search__input"
+        type="text"
+        placeholder="Find an article..."
+        aria-label="Find an article...">
+
+  <button class="uni-search__button uni-search__button-search"
+          title="Submit"
+          type="submit">
+    <svg role="presentation" class="uni-header__kebab-search-icon">
+      <use xlink:href="/static/blogv2/images/icons.svg#mi-search"></use>
+    </svg>
+  </button>
+
+  <button class="uni-search__button uni-search__button-close"
+          title="Close"
+          type="button">
+    <svg role="presentation" class="uni-header__kebab-search-icon">
+      <use xlink:href="/static/blogv2/images/icons.svg#mi-clear"></use>
+    </svg>
+  </button>
+
+  <ul class="uni-search__auto-complete "
+      data-component="uni-search-autocomplete"
+      data-sitespace="Updates from Threat Analysis Group (TAG)"
+      data-siteid="2"
+      data-sitename="The Keyword">
+
+  </ul>
+</form>
+
+
+  
+  
+
+<div class="uni-header__kebab"
+  data-analytics-module='{
+    "module_name": "main nav",
+    "section_header": "kebab menu"
+  }'>
+  <button class="uni-header__kebab-search" title="Search">
+    <svg role="presentation" class="uni-header__kebab-search-icon">
+      <use xlink:href="/static/blogv2/images/icons.svg#mi-search"></use>
+    </svg>
+  </button>
+
+  <button class="uni-header__kebab-toggle" title="Secondary menu">
+    <svg role="presentation" class="uni-header__kebab-rss-icon">
+      <use xlink:href="/static/blogv2/images/icons.svg#mi-more-vert"></use>
+    </svg>
+  </button>
+
+  <ul class="uni-header__kebab-menu">
+    <li class="uni-header__kebab-menu-item">
+      <a class="uni-header__kebab-menu-link" href="/press" title="Press corner">
+        Press corner
+      </a>
+    </li>
+    <li class="uni-header__kebab-menu-item">
+      <a class="uni-header__kebab-menu-link" href="/rss" title="RSS feed">
+        RSS feed
+        <svg role="presentation" class="uni-header__kebab-rss-icon">
+          <use xlink:href="/static/blogv2/images/icons.svg#mi-rss-feed"></use>
+        </svg>
+      </a>
+    </li>
+  </ul>
+</div>
+
+</header>
+
+
+
+
+
+<div class="loader-mask">
+  <div class="loader-mask__loader"></div>
+</div>
+
+
+
+
+        
+
+        <main id="jump-content" class="site-content" tabindex="-1">
+            
+
+    <script async src="https://cdn.ampproject.org/amp-story-player-v0.js"></script>
+    <link href="https://cdn.ampproject.org/amp-story-player-v0.css" rel="stylesheet" type="text/css">
+
+    <article class="uni-article-wrapper" ng-init="drawerToggle = {'open': true}">
+
+    
+    
+
+
+<section class="article-hero" data-analytics-module='{
+  "module_name": "Article Hero",
+  "section_header": "New details on commercial spyware vendor Variston"
+}'>
+  <div class="article-hero__container">
+    
+    
+      <div class="article-hero__primary-tag__col">
+        <a class="h-u-mb-std article-hero__primary-tag article-hero__primary-tag--link data-analytics-onclick"
+          href="https://blog.google/threat-analysis-group/"
+          data-analytics='{
+            "category" : "landing page lead",
+            "action" : "eyebrow topic link",
+            "label" : "product Threat Analysis Group"
+          }'
+          data-ga4-analytics-eyebrow-click='{
+  "link_text": "Threat Analysis Group",
+  "link_url": "https://blog.google/threat-analysis-group/",
+  "link_type": "internal"
+}'
+
+          
+
+data-ga4-analytics-landing-lead='{
+  "event": "landing_page_lead",
+  "link_text": "Threat Analysis Group"
+}'
+
+        >
+          <p class="h-c-eyebrow article-hero__primary-tag--link__text">Threat Analysis Group</p>
+        </a>
+      </div>
+    
+    <h1 class="article-hero__h1">New details on commercial spyware vendor Variston</h1>
+  </div>
+</section>
+
+
+    
+
+    
+      
+
+<div class="article-meta__author-container"
+  data-analytics-module='{
+    "module_name": "Hero Menu",
+    "section_header": "New details on commercial spyware vendor Variston"
+  }'>
+  <div class="article-meta__author-wrapper">
+    <div class="article-meta__abstract">
+      <div class="article-meta__abstract-container">
+        <div class="article-meta__published-wrapper article-meta__vertical-line ">
+          <p class="article-meta__published-at">Nov 30, 2022</p>
+          
+            <p class="article-meta__read-time" data-reading-time-render><span class="article-meta__read-time--number"></span>min read</p>
+          
+        </div>
+        
+
+
+<div class ="uni-social-share uni-social-share--mobile"
+  data-component="uni-social-share-dropdowm"
+>
+  <a aria-label="Share"
+    class="uni-social-share__trigger"
+    role="button"
+    tabindex="0"
+    aria-expanded="false"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "social",
+      "action": "menu",
+      "label": "label"
+    }'>
+    <svg class="h-c-icon h-c-icon--color-text" title="Share" aria-hidden="true">
+      <use xlink:href="/static/blogv2/images/icons.svg#social-share"></use>
+    </svg>
+    <div class="uni-social-share__button">Share</div>
+  </a>
+  <div class="uni-social-share__dialog uni-social-share__content " aria-labelledby="social-share-icon">
+    
+
+
+<a aria-label="Share on Twitter"
+    class="article-share__link-text uni-click-tracker"
+    href="https://twitter.com/intent/tweet?text=New%20details%20on%20commercial%20spyware%20vendor%20Variston%20%40google&url=https://blog.google/threat-analysis-group/new-details-on-commercial-spyware-vendor-variston/"
+    target="_blank"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "social",
+      "action": "share",
+      "label": "twitter"
+    }'
+    data-ga4-method="twitter">
+  <svg aria-hidden="true" class="h-c-icon h-c-icon--social h-c-icon--30px" viewBox="0 0 30 30">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#social-twitter"></use>
+  </svg>
+  <div class="article-share__title">Twitter</div>
+</a>
+
+<a aria-label="Share on Facebook"
+    class="article-share__link-text uni-click-tracker"
+    href="https://www.facebook.com/sharer/sharer.php?caption=New%20details%20on%20commercial%20spyware%20vendor%20Variston&u=https://blog.google/threat-analysis-group/new-details-on-commercial-spyware-vendor-variston/"
+    target="_blank"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "social",
+      "action": "share",
+      "label": "facebook"
+    }'
+    data-ga4-method="facebook">
+  <svg aria-hidden="true" class="h-c-icon h-c-icon--social h-c-icon--30px" viewBox="0 0 30 30">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#social-facebook"></use>
+  </svg>
+  <div class="article-share__title">Facebook</div>
+</a>
+
+<a aria-label="Share on LinkedIn"
+    class="article-share__link-text uni-click-tracker"
+    href="https://www.linkedin.com/shareArticle?mini=true&url=https://blog.google/threat-analysis-group/new-details-on-commercial-spyware-vendor-variston/&title=New%20details%20on%20commercial%20spyware%20vendor%20Variston"
+    target="_blank"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "social",
+      "action": "share",
+      "label": "linkedin"
+    }'
+    data-ga4-method="linkedin">
+  <svg aria-hidden="true" class="h-c-icon h-c-icon--social h-c-icon--30px" viewBox="0 0 30 30">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#social-linkedin"></use>
+  </svg>
+  <div class="article-share__title">LinkedIn</div>
+</a>
+
+<a aria-label="Share with Email"
+    class="article-share__link-text uni-click-tracker article-share__email"
+    
+      href="mailto:?subject=New%20details%20on%20commercial%20spyware%20vendor%20Variston&body=Check out this article on the Keyword:%0A%0ANew%20details%20on%20commercial%20spyware%20vendor%20Variston%0A%0AThe Threat Analysis Group shares new information on the commercial spyware vendor Variston.%0A%0Ahttps://blog.google/threat-analysis-group/new-details-on-commercial-spyware-vendor-variston/"
+    
+    target="_blank"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "social",
+      "action": "share",
+      "label": "email"
+    }'
+    data-ga4-method="email">
+  <svg aria-hidden="true" class="h-c-icon h-c-icon--social h-c-icon--30px" viewBox="0 0 30 30">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#social-mail"></use>
+  </svg>
+  <div class="article-share__title">Mail</div>
+</a>
+
+    
+
+
+<div class="copy-link uni-copy-share uni-click-tracker"
+  data-component="uni-copy-popup-component"
+  data-analytics='{
+    "event": "page interaction",
+    "category": "social",
+    "action": "share",
+    "label": "copy"
+    }'
+  data-ga4-analytics-share-copy-link
+  data-ga4-method="Copy link">
+  <a class="copy-link__trigger copy-link__trigger-text"
+    href="#"
+    data-ga4-method="Copy link">
+    <svg class="h-c-icon h-c-icon--color-text" title="Share">
+      <use xlink:href="/static/blogv2/images/icons.svg#social-link"></use>
+    </svg>
+    <div class="copy-link__title">Copy link</div>
+  </a>
+  <div class="copy-link__dialog copy-link__content" aria-labelledby="copy-popover-icon" uni-options='{"copyTextButton": "COPIED TO CLIPBOARD"}'>
+    <input class="h-c-copy copy-link__url" value="https://blog.google/threat-analysis-group/new-details-on-commercial-spyware-vendor-variston/" id="copy-link" readonly="readonly" type="text" aria-hidden="true" />
+    <div class="copy-link__copy-message" role="status" tabindex="0"></div>
+  </div>
+</div>
+
+  </div>
+</div>
+
+      </div>
+      
+        <p class="article-meta__abstract-text">
+          Heliconia exploitation frameworks capable of deploying spyware
+        </p>
+      
+    </div>
+  </div>
+  <div class="article-meta__container">
+    <div class="article-meta__content">
+      
+        
+  
+    <div class="article-meta__author">
+      
+  <div class="article-meta__author-noimage"
+        data-component="uni-monogram"
+        data-author="Clement Lecigne">
+  </div>
+
+<div class="article-meta__author-info">
+  <div class="article-meta__author-name">Clement Lecigne</div>
+  
+    <div class="article-meta__author-title">
+      Threat Analysis Group
+    </div>
+  
+  
+</div>
+
+    </div>
+  
+
+  
+    <div class="article-meta__author">
+      
+  <div class="article-meta__author-noimage"
+        data-component="uni-monogram"
+        data-author="Benoit Sevens">
+  </div>
+
+<div class="article-meta__author-info">
+  <div class="article-meta__author-name">Benoit Sevens</div>
+  
+    <div class="article-meta__author-title">
+      Threat Analysis Group
+    </div>
+  
+  
+</div>
+
+    </div>
+  
+
+
+      
+    </div>
+    <div class="article-share__wrapper"
+      data-analytics-module='{
+        "module_name": "Hero Share",
+        "section_header": "New details on commercial spyware vendor Variston"
+      }'>
+      
+
+
+<div class ="uni-social-share uni-social-share--desktop"
+  data-component="uni-social-share-dropdowm"
+>
+  <a aria-label="Share"
+    class="uni-social-share__trigger"
+    role="button"
+    tabindex="0"
+    aria-expanded="false"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "social",
+      "action": "menu",
+      "label": "label"
+    }'>
+    <svg class="h-c-icon h-c-icon--color-text" title="Share" aria-hidden="true">
+      <use xlink:href="/static/blogv2/images/icons.svg#social-share"></use>
+    </svg>
+    <div class="uni-social-share__button">Share</div>
+  </a>
+  <div class="uni-social-share__dialog uni-social-share__content " aria-labelledby="social-share-icon">
+    
+
+
+<a aria-label="Share on Twitter"
+    class="article-share__link-text uni-click-tracker"
+    href="https://twitter.com/intent/tweet?text=New%20details%20on%20commercial%20spyware%20vendor%20Variston%20%40google&url=https://blog.google/threat-analysis-group/new-details-on-commercial-spyware-vendor-variston/"
+    target="_blank"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "social",
+      "action": "share",
+      "label": "twitter"
+    }'
+    data-ga4-method="twitter">
+  <svg aria-hidden="true" class="h-c-icon h-c-icon--social h-c-icon--30px" viewBox="0 0 30 30">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#social-twitter"></use>
+  </svg>
+  <div class="article-share__title">Twitter</div>
+</a>
+
+<a aria-label="Share on Facebook"
+    class="article-share__link-text uni-click-tracker"
+    href="https://www.facebook.com/sharer/sharer.php?caption=New%20details%20on%20commercial%20spyware%20vendor%20Variston&u=https://blog.google/threat-analysis-group/new-details-on-commercial-spyware-vendor-variston/"
+    target="_blank"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "social",
+      "action": "share",
+      "label": "facebook"
+    }'
+    data-ga4-method="facebook">
+  <svg aria-hidden="true" class="h-c-icon h-c-icon--social h-c-icon--30px" viewBox="0 0 30 30">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#social-facebook"></use>
+  </svg>
+  <div class="article-share__title">Facebook</div>
+</a>
+
+<a aria-label="Share on LinkedIn"
+    class="article-share__link-text uni-click-tracker"
+    href="https://www.linkedin.com/shareArticle?mini=true&url=https://blog.google/threat-analysis-group/new-details-on-commercial-spyware-vendor-variston/&title=New%20details%20on%20commercial%20spyware%20vendor%20Variston"
+    target="_blank"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "social",
+      "action": "share",
+      "label": "linkedin"
+    }'
+    data-ga4-method="linkedin">
+  <svg aria-hidden="true" class="h-c-icon h-c-icon--social h-c-icon--30px" viewBox="0 0 30 30">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#social-linkedin"></use>
+  </svg>
+  <div class="article-share__title">LinkedIn</div>
+</a>
+
+<a aria-label="Share with Email"
+    class="article-share__link-text uni-click-tracker article-share__email"
+    
+      href="mailto:?subject=New%20details%20on%20commercial%20spyware%20vendor%20Variston&body=Check out this article on the Keyword:%0A%0ANew%20details%20on%20commercial%20spyware%20vendor%20Variston%0A%0AThe Threat Analysis Group shares new information on the commercial spyware vendor Variston.%0A%0Ahttps://blog.google/threat-analysis-group/new-details-on-commercial-spyware-vendor-variston/"
+    
+    target="_blank"
+    data-analytics='{
+      "event": "page interaction",
+      "category": "social",
+      "action": "share",
+      "label": "email"
+    }'
+    data-ga4-method="email">
+  <svg aria-hidden="true" class="h-c-icon h-c-icon--social h-c-icon--30px" viewBox="0 0 30 30">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#social-mail"></use>
+  </svg>
+  <div class="article-share__title">Mail</div>
+</a>
+
+    
+
+
+<div class="copy-link uni-copy-share uni-click-tracker"
+  data-component="uni-copy-popup-component"
+  data-analytics='{
+    "event": "page interaction",
+    "category": "social",
+    "action": "share",
+    "label": "copy"
+    }'
+  data-ga4-analytics-share-copy-link
+  data-ga4-method="Copy link">
+  <a class="copy-link__trigger copy-link__trigger-text"
+    href="#"
+    data-ga4-method="Copy link">
+    <svg class="h-c-icon h-c-icon--color-text" title="Share">
+      <use xlink:href="/static/blogv2/images/icons.svg#social-link"></use>
+    </svg>
+    <div class="copy-link__title">Copy link</div>
+  </a>
+  <div class="copy-link__dialog copy-link__content" aria-labelledby="copy-popover-icon" uni-options='{"copyTextButton": "COPIED TO CLIPBOARD"}'>
+    <input class="h-c-copy copy-link__url" value="https://blog.google/threat-analysis-group/new-details-on-commercial-spyware-vendor-variston/" id="copy-link" readonly="readonly" type="text" aria-hidden="true" />
+    <div class="copy-link__copy-message" role="status" tabindex="0"></div>
+  </div>
+</div>
+
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+    
+
+    
+      <div class="h-c-page uni-blog-article-no-hero">
+  <div class="h-c-grid">
+    <div class="h-c-grid__col h-c-grid__col--10 h-c-grid__col--offset-1">
+      <hr class="uni-blog-article-no-hero__line">
+      <hr class="uni-blog-article-no-hero__line">
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    <section class="uni-container article-container">
+      <div class="uni-wrapper article-container__wrapper">
+        
+          
+          
+          <div class="uni-content uni-blog-article-container article-container__content
+                      
+                      "
+              data-reading-time="true"
+              data-component="uni-drop-cap|uni-tombstone">
+            
+            
+<!--article text-->
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "New details on commercial spyware vendor Variston"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><p data-block-key="o4fqa">Threat Analysis Group (TAG) has been tracking the activities of commercial spyware vendors for years, using our research to improve the safety and security of Google’s products and share intelligence with our industry peers. TAG’s research underscores that the commercial surveillance industry is thriving and has expanded significantly in recent years, creating risk for Internet users around the globe. Commercial spyware puts advanced surveillance capabilities in the hands of governments who use them to spy on journalists, human rights activists, political opposition and dissidents. Google and TAG are committed to disrupting these threats, protecting users, and raising awareness of the risks posed by the growing commercial spyware industry.</p></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "New details on commercial spyware vendor Variston"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><p data-block-key="o4fqa">Continuing this work, today, we’re sharing findings on an exploitation framework with likely ties to Variston IT, a company in Barcelona, Spain that claims to be a provider of custom security solutions. Their Heliconia framework exploits n-day vulnerabilities in Chrome, Firefox and Microsoft Defender and provides all the tools necessary to deploy a payload to a target device. Google, Microsoft and Mozilla fixed the affected vulnerabilities in 2021 and early 2022. While we have not detected active exploitation, based on the research below, it appears likely these were utilized as zero-days in the wild. TAG has created detections in Safe Browsing to warn users when they attempt to navigate to dangerous sites or download dangerous files. To ensure full protection against Heliconia and other exploits, it’s essential to keep Chrome and other software fully up-to-date.</p></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "New details on commercial spyware vendor Variston"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><p data-block-key="o4fqa">TAG became aware of the Heliconia framework when Google received an anonymous submission to the Chrome bug reporting program. The submitter filed three bugs, each with instructions and an archive that contained source code. They used unique names in the bug reports including, “Heliconia Noise,” “Heliconia Soft” and “Files.” TAG analyzed the submissions and found they contained frameworks for deploying exploits in the wild and a script in the source code included clues pointing to the possible developer of the exploitation frameworks, Variston IT.</p></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "New details on commercial spyware vendor Variston"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><p data-block-key="o4fqa">The exploitation frameworks, listed below, included mature source code capable of deploying exploits for Chrome, Windows Defender and Firefox. Although the vulnerabilities are now patched, we assess it is likely the exploits were used as 0-days before they were fixed.</p></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "New details on commercial spyware vendor Variston"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><ul><li data-block-key="o4fqa"><b>Heliconia Noise:</b> a web framework for deploying an exploit for a Chrome renderer bug followed by a sandbox escape</li><li data-block-key="br06b"><b>Heliconia Soft:</b> a web framework that deploys a PDF containing a Windows Defender exploit</li><li data-block-key="e13bt"><b>Files:</b> a set of Firefox exploits for Linux and Windows.</li></ul></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "New details on commercial spyware vendor Variston"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><p data-block-key="o4fqa">Below, we share our findings on the exploitation frameworks and how they work. This analysis was done in collaboration with our colleagues, Ivan Fratric and Maddie Stone from Project Zero, and Stephen Röttger from the V8 Security Team.</p></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "New details on commercial spyware vendor Variston"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><h3 data-block-key="o4fqa">Heliconia Noise</h3></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "New details on commercial spyware vendor Variston"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><p data-block-key="o4fqa">Heliconia Noise is a web framework for deploying a Chrome renderer exploit, followed by a Chrome sandbox escape and agent installation. A manifest file in the source code provides a product description:</p></div>
+      </div>
+    </div>
+  
+
+  
+    
+
+
+
+
+
+
+
+  
+      <div
+        class="article-image"
+        data-analytics-module='{
+          "module_name": "Inline Images",
+          "section_header": "New details on commercial spyware vendor Variston"
+        }'>
+  
+
+  <div class="article-image__no-caption
+      ">
+
+      
+      
+        
+          <img alt="image of a manifest file in source code"
+            src=" https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Windows_10...Medium_Integrity.width-100.format-webp.webp "
+             class="article-image--full" 
+            
+              loading="lazy"
+              data-loading='{
+                "mobile": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Windows_10...Medium_Integrity.width-500.format-webp.webp",
+                "desktop": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Windows_10...Medium_Integrity.width-1000.format-webp.webp"
+              }'
+            
+          >
+        
+      
+    
+    </div>
+    
+  
+    </div>
+  
+
+
+
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "New details on commercial spyware vendor Variston"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><p data-block-key="77rdd">The Chrome renderer exploit supports Chrome versions 90.0.4430.72 (April 2021) to 91.0.4472.106 (June 2021). It takes advantage of a V8 deoptimizer bug <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=1228036" rt-link-type="external">fixed</a> in August 2021. As is currently normal for internally found Chrome bugs, no CVE was assigned.</p></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "New details on commercial spyware vendor Variston"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><p data-block-key="77rdd">The source code contains references to a sandbox escape called chrome-sbx-gen. This component was maintained in a separate Git submodule, and was not present in the obtained source code.</p></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "New details on commercial spyware vendor Variston"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><p data-block-key="77rdd">To obfuscate the JavaScript code, the framework uses minobf, likely a custom tool that was also not included in the source code.</p></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "New details on commercial spyware vendor Variston"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><p data-block-key="77rdd">Heliconia Noise includes a pre-commit cleaning script that leaks the name of the company that likely develops this project, Variston IT. The script, shown below, checks that binaries produced by the framework do not contain sensitive strings such as “Variston,” developer aliases or server names. Variston Information Technology is a small company based in Barcelona that describes itself as offering “tailor made Information Security Solutions.”</p></div>
+      </div>
+    </div>
+  
+
+  
+    
+
+
+
+
+
+
+
+  
+      <div
+        class="article-image"
+        data-analytics-module='{
+          "module_name": "Inline Images",
+          "section_header": "New details on commercial spyware vendor Variston"
+        }'>
+  
+
+  <div class="article-image__is-caption
+      ">
+
+      
+      
+        
+          <img alt="image of code"
+            src=" https://storage.googleapis.com/gweb-uniblog-publish-prod/images/6DG5bkHnJTZxuWX.width-100.format-webp.webp "
+             class="article-image--full" 
+            
+              loading="lazy"
+              data-loading='{
+                "mobile": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/6DG5bkHnJTZxuWX.width-500.format-webp.webp",
+                "desktop": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/6DG5bkHnJTZxuWX.width-1000.format-webp.webp"
+              }'
+            
+          >
+        
+      
+    
+    </div>
+    
+      <figcaption class="article-image__caption article-image__is-caption-image "><div class="rich-text"><p data-block-key="gacly">Pre-commit cleaning script commented with &quot;project name,&quot; &quot;developer names,&quot; and &quot;company name.&quot;</p></div></figcaption>
+    
+  
+    </div>
+  
+
+
+
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "New details on commercial spyware vendor Variston"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><p data-block-key="77rdd">Heliconia Noise is configurable using a JSON file that enables customers to set various parameters, including:</p><ul><li data-block-key="1s3ah">attackExecution: maximum number of times to serve the exploit</li><li data-block-key="5eij">expiration: server does not work after this date</li><li data-block-key="8nv56">redirectUrl: redirect URL in case of a failed exploit or disallowed visitor</li><li data-block-key="dkdr0">targetValidator: custom rules specifying when visitors are considered valid targets</li><li data-block-key="990sd">dnsMirrors: mirrors where the iframe is fetched from</li></ul></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "New details on commercial spyware vendor Variston"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><p data-block-key="77rdd">The framework runs a Flask web server to host the exploit chain. A full infection performs requests to six different web endpoints during the different stages of the exploit chain:</p></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "New details on commercial spyware vendor Variston"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><p data-block-key="psxxo"><b>Stage 1: Remote code execution (RCE)</b></p><ul><li data-block-key="fjl0">index.py: the landing page</li><li data-block-key="4e9c3">iframe.py: the iframe that runs the RCE exploit</li><li data-block-key="6tggs">wasm.py: a dummy WebAssembly (Wasm) module</li></ul></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "New details on commercial spyware vendor Variston"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><p data-block-key="zoqrn"><b>Stage 2: Sandbox escape</b></p><ul><li data-block-key="234di">sbx.py: the sandbox escape shellcode</li></ul></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "New details on commercial spyware vendor Variston"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><p data-block-key="26fl5"><b>Stage 3: Post-exploitation</b></p><ul><li data-block-key="4mgsq">launcher.py: the agent launcher</li><li data-block-key="2858k">agent.py: the agent</li></ul></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "New details on commercial spyware vendor Variston"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><p data-block-key="77rdd">The file names for each endpoint are randomized during server deployment, except for the first endpoint, which is served by a URL specified in the configuration file.</p></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "New details on commercial spyware vendor Variston"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><p data-block-key="77rdd">The framework allows setting parameters to validate visitors of the web server. Customers can configure target validations based on user agent, client country, client IP, and a client identifier used to track individual visitors. If any of the validation checks fail, the user is redirected to the preconfigured redirect URL.</p></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "New details on commercial spyware vendor Variston"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><h3 data-block-key="77rdd">Heliconia Noise Infection Chain</h3></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "New details on commercial spyware vendor Variston"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><p data-block-key="77rdd"><b>Stage 1: Remote code execution</b></p><p data-block-key="4jb1l">The infection chain starts with a client visiting the landing page URL defined in the configuration file. If the validation checks succeed, the landing page is served and 2 cookies are set:</p><ul><li data-block-key="fnips">A cookie with name wp_blog and value 1 to detect and redirect recurring visitors.</li><li data-block-key="5458t">A “client identifier” cookie with:<ul><li data-block-key="45pvt">A name that is randomly generated during server deployment and is constant for the entire deployment (referred to as cookie_client_identifier and formatted [A-Za-z]{16})</li><li data-block-key="blnkd">A value that is uniquely generated per visitor (referred to as cid and in <a href="https://en.wikipedia.org/wiki/Universally_unique_identifier#Format" rt-link-type="external">UUID format</a>).</li></ul></li></ul><p data-block-key="cs07q">The JavaScript in the landing page then creates an iframe for every mirror configured in the configuration file. The iframe URLs have the following format:</p><p data-block-key="2n677">&lt;url&gt;/&lt;iframe_url&gt;?&lt;cookie_client_identifier&gt;=&lt;cid&gt;</p><p data-block-key="51a7n">The &lt;iframe_url&gt; string is a random path formatted [a-f0-9]{16}.</p><p data-block-key="csda9">The main script communicates with the iframes through messages using the postMessage method.</p><p data-block-key="6pbvr">The iframes in their turn launch web workers that run exploit code. Communication with the workers happens again through messages.</p><p data-block-key="ffju4">Once the exploit obtains an arbitrary read and write primitive, a dummy Wasm module is fetched as a method for creating a memory area with read-write-execute permissions. The URL format is similar to the iframe URL above.</p><p data-block-key="2a8sn">The Wasm area is then overwritten with the stage 1 shellcode. This shellcode is executed via a call from JavaScript to the exported Wasm function hello().</p><p data-block-key="bg410">The first time the stage 1 shellcode is called it resolves the address of chrome.dll, VirtualAlloc, NdrServerCall2 and the ntdll timestamp. It also allocates memory for the upcoming sandbox escape shellcode. The resulting information is returned to the JavaScript.</p></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "New details on commercial spyware vendor Variston"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><p data-block-key="77rdd"><b>Stage 2: Sandbox escape</b></p><p data-block-key="2mhfa">The JavaScript then fetches the sandbox escape shellcode from a URL with a format similar to the iframe and Wasm URL, but with 5 extra GET parameters which are used by the server to prepare the sandbox escape shellcode:</p><ul><li data-block-key="5o74c">address of VirtualAlloc function</li><li data-block-key="2dcvu">address of NdrServerCall2 function</li><li data-block-key="1h6p0">address of chrome.dll</li><li data-block-key="2tv5k">address of the allocated memory for the sandbox escape</li><li data-block-key="585lk">timestamp of ntdll</li></ul><p data-block-key="7hdi4">The fetched sandbox escape is written to the previously allocated memory. It is executed via a second call to the stage 1 shellcode, which now calls into the sandbox escape shellcode.</p><p data-block-key="aeemf">Since TAG did not have access to the chrome-sbx-gen module, we do not have specific details on how the sandbox escape works.</p></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "New details on commercial spyware vendor Variston"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><p data-block-key="77rdd"><b>Stage 3: Post-exploitation</b></p><p data-block-key="67hki">After a successful sandbox escape, the launcher is executed. The goal of the launcher is to launch the (final) agent. The launcher is served as a DLL that is prepended with a PE loader shellcode.</p><p data-block-key="bc02k">The launcher has its own configuration, which contains following fields of interest:</p><ul><li data-block-key="ahikq">URL to retrieve the agent</li><li data-block-key="76d5q">Path on the system to store data</li><li data-block-key="3mhv7">If the agent should be dropped to disk</li><li data-block-key="ccaav">Filename of the agent on disk</li></ul><p data-block-key="5rqtn">The configuration is stored as an RC4 encrypted tar archive in the binary. The launcher fetches and runs the agent, and based on the exit code of the agent, it can uninstall the agent, upgrade it, run it again or exit.</p><p data-block-key="dqsle">The agent_simple provided in this archive is a dummy agent and it randomly selects the exit code. In a real deployment, we believe the customer using the framework may provide their own agent, or the agent may be part of a different project.</p></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "New details on commercial spyware vendor Variston"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><h3 data-block-key="77rdd">Heliconia Soft</h3></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "New details on commercial spyware vendor Variston"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><p data-block-key="77rdd">Heliconia Soft is a web framework that deploys a PDF containing a Windows Defender exploit. It exploits CVE-2021-42298, a bug in the JavaScript engine of Microsoft Defender Malware Protection that was fixed in November 2021. The manifest in the source code describes Heliconia Soft as:</p></div>
+      </div>
+    </div>
+  
+
+  
+    
+
+
+
+
+
+
+
+  
+      <div
+        class="article-image"
+        data-analytics-module='{
+          "module_name": "Inline Images",
+          "section_header": "New details on commercial spyware vendor Variston"
+        }'>
+  
+
+  <div class="article-image__no-caption
+      ">
+
+      
+      
+        
+          <img alt="A description of Heliconia Soft in the manifest in the source code."
+            src=" https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Windows_Chrome...SYSTEM_integrity.width-100.format-webp.webp "
+             class="article-image--full" 
+            
+              loading="lazy"
+              data-loading='{
+                "mobile": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Windows_Chrome...SYSTEM_integrity.width-500.format-webp.webp",
+                "desktop": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Windows_Chrome...SYSTEM_integrit.width-1000.format-webp.webp"
+              }'
+            
+          >
+        
+      
+    
+    </div>
+    
+  
+    </div>
+  
+
+
+
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "New details on commercial spyware vendor Variston"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><p data-block-key="77rdd">The exploit achieves SYSTEM privileges with a single vulnerability and the only action required by the user is to download a PDF, which triggers a scan by Windows Defender.</p></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "New details on commercial spyware vendor Variston"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><p data-block-key="77rdd">The Heliconia Soft framework sets up an infection chain with two endpoints on the web server:</p><ul><li data-block-key="qmis">index.py: the weaponized PDF file</li><li data-block-key="fn5fi">agent.py: the agent</li></ul></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "New details on commercial spyware vendor Variston"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><p data-block-key="77rdd">In the first stage, a PDF is served when a user visits the attack URL. The PDF contains some decoy content, plus JavaScript that contains the exploit. Like Heliconia Noise, it uses the custom JavaScript obfuscator minobf. The framework code performs checks to confirm that common exploit strings (“spray”, “leak”, “addr”, etc.) are not present in the obfuscated JavaScript. The framework inserts the PE loader shellcode and the launcher DLL as strings in the exploit JavaScript.</p></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "New details on commercial spyware vendor Variston"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><p data-block-key="77rdd">The PE loader is similar to the one described above for Heliconia Noise. The launcher also has the same functionality, with a few notable differences. The launcher tries to “defuse” the exploit PDF by replacing the JavaScript in the PDF with spaces, likely to protect the exploit code from forensics. Similar to Heliconia Noise, the launcher retrieves the agent from a configured URL, runs it and acts based on its exit code.</p></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "New details on commercial spyware vendor Variston"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><p data-block-key="77rdd">A dummy agent agent_simple is provided in the archive. As with Heliconia Noise, we believe the framework is likely designed for the customer to replace the dummy agent with their own agent.</p></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "New details on commercial spyware vendor Variston"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><h3 data-block-key="77rdd">Heliconia Files</h3></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "New details on commercial spyware vendor Variston"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><p data-block-key="77rdd">The “Files” package contained a fully documented Firefox exploit chain for Windows and Linux. For remote code execution it exploits <a href="https://www.mozilla.org/en-US/security/advisories/mfsa2022-09/#CVE-2022-26485" rt-link-type="external">CVE-2022-26485</a>, a use after free vulnerability in the XSLT processor that was reported in March 2022 as being exploited in the wild. TAG assesses that the Heliconia Files package likely exploited this RCE vulnerability since at least 2019, well before the bug was publicly known and patched. The Heliconia exploit is effective against Firefox versions 64 to 68, suggesting it may have been in use as early as December 2018 when version 64 was first released. Additionally, when Mozilla patched the vulnerability, the exploit code in their <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1758062" rt-link-type="external">bug report</a> shared striking similarities with the Heliconia exploit, including the same variable names and markers. These overlaps suggest the exploit author is the same for both the Heliconia exploit and the sample exploit code Mozilla shared when they patched the bug.</p></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "New details on commercial spyware vendor Variston"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><p data-block-key="77rdd">The sandbox escape is specific to the Windows version of Firefox and was <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1530709" rt-link-type="external">fixed</a> without a CVE in September 2019. The vulnerability abused the fact that user-controlled CSS values can be rendered inside the privileged content process using the Forms:ShowDropDown IPC. Code execution is achieved by injecting <a href="https://en.wikipedia.org/wiki/XBL" rt-link-type="external">XBL bindings</a> to resolve Windows APIs and call WinExec. The exploit code spawns a new calculator, and unlike the other Heliconia frameworks, does not include a launcher capability or dummy agent.</p></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "New details on commercial spyware vendor Variston"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><h3 data-block-key="77rdd">Conclusion</h3></div>
+      </div>
+    </div>
+  
+
+  
+    <div class="module--text module--text__article"
+         data-analytics-module='{
+           "module_name": "Paragraph",
+           "section_header": "New details on commercial spyware vendor Variston"
+         }'>
+      <div class="uni-paragraph article-paragraph"
+            data-component="uni-article-paragraph">
+        <div class="rich-text"><p data-block-key="77rdd">TAG&#x27;s research has shown the proliferation of commercial surveillance and the extent to which commercial spyware vendors have developed capabilities that were previously only available to governments with deep pockets and technical expertise. The growth of the spyware industry puts users at risk and makes the Internet less safe, and while surveillance technology may be legal under national or international laws, they are often used in harmful ways to conduct digital espionage against a range of groups. These abuses represent a serious risk to online safety which is why Google and TAG will continue to take action against, and publish research about, the commercial spyware industry.</p></div>
+      </div>
+    </div>
+  
+
+
+            
+            
+
+            
+              
+
+
+<div class="uni-blog-article-tags article-tags"
+     data-analytics-module='{
+       "module_name": "Article Tags",
+       "section_header": "New details on commercial spyware vendor Variston"
+     }'>
+  <div class="uni-blog-article-tags__wrapper">
+    <span class="uni-blog-article-tags__label">POSTED IN:</span>
+    <nav class="uni-blog-article-tags__container uni-click-tracker"
+        data-analytics='{
+                    "category": "landing page lead",
+                    "action": "article tag"
+                  }'>
+      <ul class="uni-blog-article-tags__tags-list">
+      
+          <li>
+            
+            
+            
+
+
+  <a class="uni-blog-article-tags-value uni-link-active"
+     href=" https://blog.google/threat-analysis-group/ "
+      
+
+data-ga4-analytics-landing-lead='{
+  "event": "landing_page_lead",
+  "link_text": "Threat Analysis Group"
+}'
+
+     
+        
+          data-analytics='{"label": "topics: Threat Analysis Group"}'
+        
+     
+     >
+
+
+Threat Analysis Group
+
+
+  </a>
+
+
+          </li>
+      
+
+        
+          <li>
+            
+            
+            
+
+
+  <a class="uni-blog-article-tags-value uni-link-active"
+     href=" https://blog.google/technology/safety-security/ "
+      
+
+data-ga4-analytics-landing-lead='{
+  "event": "landing_page_lead",
+  "link_text": "Threat Analysis Group"
+}'
+
+     
+        
+          data-analytics='{"label": "topics: Safety &amp; Security"}'
+        
+     
+     >
+
+
+Safety &amp; Security
+
+
+  </a>
+
+
+          </li>
+        
+      </ul>
+    </nav>
+  </div>
+</div>
+
+            
+          </div>
+        
+      </div>
+    </section>
+  </article>
+  
+
+
+
+
+  
+
+  
+
+
+<div class="uni-related-articles-cards ga4-carousel"
+  data-analytics-module='{
+    "module_name": "Article Footer Related Stories",
+    "section_header": "Related stories"
+  }'
+>
+  <div class="uni-related-articles-cards-container" data-component="uni-related-articles">
+    <div class="uni-related-articles-grid-title">
+      <div class="uni-related-articles-grid-wrapper">
+        <h3 class="uni-related-articles-cards__title">
+          <div class="uni-related-articles-cards__title-content
+            ">
+            Related stories
+          </div>
+        </h3>
+      </div>
+    </div>
+    <div class="uni-related-articles-cards__track">
+      <ul aria-role="menu" aria-label="Related articles" class="uni-related-articles-cards__wrap
+                ">
+        
+          <li class="uni-related-articles-cards__item
+             uni-related-articles-cards__item--img
+            ">
+            <a href="https://blog.google/threat-analysis-group/zimbra-0-day-used-to-target-international-government-organizations/" class="uni-related-articles-cards__link"
+              data-index="1"
+              data-target="card"
+              data-primaryTag = "topics - threat analysis group"
+              data-image="true"
+              data-ga4-analytics-footer-lead-click='{
+                "link_text": "Zimbra 0\u002Dday used to target international government organizations",
+                "link_url":  "https://blog.google/threat-analysis-group/zimbra-0-day-used-to-target-international-government-organizations/",
+                "source_content": "Related stories",
+                "related_index": "1",
+                "related_article_tag": "topics - threat analysis group",
+                "article_name": "Zimbra 0\u002Dday used to target international government organizations",
+                "author_name": "Clement Lecigne, Maddie Stone"
+              }'
+              >
+              <div
+                class="uni-related-articles-cards__item-top-info"
+                data-target="card">
+                
+                  <div class="uni-related-articles-cards__img">
+                    
+    <figure class="">
+        <picture>
+            
+
+
+    
+
+    
+        <source media="(max-resolution: 1.5dppx)"
+                sizes="600px"
+                srcset="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/TAG_rYhcbet.png 600w">
+    
+        <source media="(min-resolution: 1.5dppx)"
+                sizes="1200px"
+                srcset="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/TAG_rYhcbet.png 1200w">
+    
+
+    <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/TAG_rYhcbet.png"
+
+         
+            alt="TAG"
+         
+
+         sizes=" 600px,  1200px"
+         srcset="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/TAG_rYhcbet.png 600w, https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/TAG_rYhcbet.png 1200w"
+         data-target="image"
+         loading="lazy">
+
+    
+
+
+        </picture>
+    </figure>
+
+
+                  </div>
+                
+                <span class="h-c-eyebrow  uni-related-articles-cards__category" data-target="eyebrow">Threat Analysis Group</span>
+                <h4 class="uni-related-articles-cards__headline" data-target="title">Zimbra 0-day used to target international government organizations</h4>
+                
+              </div>
+              <div class="uni-related-articles-cards__info">
+                
+                <div class="uni-related-articles-cards__author">
+                  By
+                  
+                    <span class="uni-related-articles-cards__author--name" data-target="author">
+                    Clement Lecigne
+                    </span>
+                  
+                    <span class="uni-related-articles-cards__author--name" data-target="author">
+                    Maddie Stone
+                    </span>
+                  
+                </div>
+                
+                <span class="uni-related-articles-cards__date" data-target="date"> Nov 16, 2023</span>
+              </div>
+              <svg role="presentation" class="uni-related-articles-cards__item-arrow" data-target="arrow">
+                <use xlink:href="/static/blogv2/images/icons.svg#mi-arrow-forward-no-bg"></use>
+              </svg>
+            </a>
+          </li>
+        
+          <li class="uni-related-articles-cards__item
+             uni-related-articles-cards__item--img
+            ">
+            <a href="https://blog.google/technology/safety-security/titan-security-key-google-store/" class="uni-related-articles-cards__link"
+              data-index="2"
+              data-target="card"
+              data-primaryTag = "topics - safety &amp; security"
+              data-image="true"
+              data-ga4-analytics-footer-lead-click='{
+                "link_text": "The latest Titan Security Key is in the Google Store",
+                "link_url":  "https://blog.google/technology/safety-security/titan-security-key-google-store/",
+                "source_content": "Related stories",
+                "related_index": "2",
+                "related_article_tag": "topics - safety &amp; security",
+                "article_name": "The latest Titan Security Key is in the Google Store",
+                "author_name": "Christiaan Brand, Grace Hoyt"
+              }'
+              >
+              <div
+                class="uni-related-articles-cards__item-top-info"
+                data-target="card">
+                
+                  <div class="uni-related-articles-cards__img">
+                    
+    <figure class="">
+        <picture>
+            
+
+
+    
+
+    
+        <source media="(max-resolution: 1.5dppx)"
+                sizes="600px"
+                srcset="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/image_TMC2_2023Q2_23H091x001_01.max-600x208.format-webp.webp 600w">
+    
+        <source media="(min-resolution: 1.5dppx)"
+                sizes="1200px"
+                srcset="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/image_TMC2_2023Q2_23H091x001_0.max-1200x416.format-webp.webp 1200w">
+    
+
+    <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/image_TMC2_2023Q2_23H091x001_0.max-1200x416.format-webp.webp"
+
+         
+            alt="image_TMC2_2023Q2_23H091x001_01_Titan_Gold_USB_and_Silver_USB-C_TTQ_R02_SIMP"
+         
+
+         sizes=" 600px,  1200px"
+         srcset="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/image_TMC2_2023Q2_23H091x001_01.max-600x208.format-webp.webp 600w, https://storage.googleapis.com/gweb-uniblog-publish-prod/images/image_TMC2_2023Q2_23H091x001_0.max-1200x416.format-webp.webp 1200w"
+         data-target="image"
+         loading="lazy">
+
+    
+
+
+        </picture>
+    </figure>
+
+
+                  </div>
+                
+                <span class="h-c-eyebrow  uni-related-articles-cards__category" data-target="eyebrow">Safety &amp; Security</span>
+                <h4 class="uni-related-articles-cards__headline" data-target="title">The latest Titan Security Key is in the Google Store</h4>
+                
+              </div>
+              <div class="uni-related-articles-cards__info">
+                
+                <div class="uni-related-articles-cards__author">
+                  By
+                  
+                    <span class="uni-related-articles-cards__author--name" data-target="author">
+                    Christiaan Brand
+                    </span>
+                  
+                    <span class="uni-related-articles-cards__author--name" data-target="author">
+                    Grace Hoyt
+                    </span>
+                  
+                </div>
+                
+                <span class="uni-related-articles-cards__date" data-target="date"> Nov 15, 2023</span>
+              </div>
+              <svg role="presentation" class="uni-related-articles-cards__item-arrow" data-target="arrow">
+                <use xlink:href="/static/blogv2/images/icons.svg#mi-arrow-forward-no-bg"></use>
+              </svg>
+            </a>
+          </li>
+        
+          <li class="uni-related-articles-cards__item
+             uni-related-articles-cards__item--img
+            ">
+            <a href="https://blog.google/outreach-initiatives/public-policy/taking-legal-action-to-protect-users-of-ai-and-small-businesses/" class="uni-related-articles-cards__link"
+              data-index="3"
+              data-target="card"
+              data-primaryTag = "topics - public policy"
+              data-image="true"
+              data-ga4-analytics-footer-lead-click='{
+                "link_text": "Taking legal action to protect users of AI and small businesses",
+                "link_url":  "https://blog.google/outreach-initiatives/public-policy/taking-legal-action-to-protect-users-of-ai-and-small-businesses/",
+                "source_content": "Related stories",
+                "related_index": "3",
+                "related_article_tag": "topics - public policy",
+                "article_name": "Taking legal action to protect users of AI and small businesses",
+                "author_name": "Halimah DeLaine Prado"
+              }'
+              >
+              <div
+                class="uni-related-articles-cards__item-top-info"
+                data-target="card">
+                
+                  <div class="uni-related-articles-cards__img">
+                    
+    <figure class="">
+        <picture>
+            
+
+
+    
+
+    
+        <source media="(max-resolution: 1.5dppx)"
+                sizes="600px"
+                srcset="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Protect-users-small-business-Up.max-600x208.format-webp.webp 600w">
+    
+        <source media="(min-resolution: 1.5dppx)"
+                sizes="1200px"
+                srcset="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Protect-users-small-business-U.max-1200x416.format-webp.webp 1200w">
+    
+
+    <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Protect-users-small-business-U.max-1200x416.format-webp.webp"
+
+         
+            alt="Taking legal action to protect users of AI and small businesses"
+         
+
+         sizes=" 600px,  1200px"
+         srcset="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Protect-users-small-business-Up.max-600x208.format-webp.webp 600w, https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Protect-users-small-business-U.max-1200x416.format-webp.webp 1200w"
+         data-target="image"
+         loading="lazy">
+
+    
+
+
+        </picture>
+    </figure>
+
+
+                  </div>
+                
+                <span class="h-c-eyebrow  uni-related-articles-cards__category" data-target="eyebrow">Public Policy</span>
+                <h4 class="uni-related-articles-cards__headline" data-target="title">Taking legal action to protect users of AI and small businesses</h4>
+                
+              </div>
+              <div class="uni-related-articles-cards__info">
+                
+                <div class="uni-related-articles-cards__author">
+                  By
+                  
+                    <span class="uni-related-articles-cards__author--name" data-target="author">
+                    Halimah DeLaine Prado
+                    </span>
+                  
+                </div>
+                
+                <span class="uni-related-articles-cards__date" data-target="date"> Nov 13, 2023</span>
+              </div>
+              <svg role="presentation" class="uni-related-articles-cards__item-arrow" data-target="arrow">
+                <use xlink:href="/static/blogv2/images/icons.svg#mi-arrow-forward-no-bg"></use>
+              </svg>
+            </a>
+          </li>
+        
+          <li class="uni-related-articles-cards__item
+             uni-related-articles-cards__item--img
+            ">
+            <a href="https://blog.google/technology/safety-security/google-ai-security-expansion/" class="uni-related-articles-cards__link"
+              data-index="4"
+              data-target="card"
+              data-primaryTag = "topics - safety &amp; security"
+              data-image="true"
+              data-ga4-analytics-footer-lead-click='{
+                "link_text": "Acting on our commitment to safe and secure AI",
+                "link_url":  "https://blog.google/technology/safety-security/google-ai-security-expansion/",
+                "source_content": "Related stories",
+                "related_index": "4",
+                "related_article_tag": "topics - safety &amp; security",
+                "article_name": "Acting on our commitment to safe and secure AI",
+                "author_name": "Laurie Richardson, Royal Hansen"
+              }'
+              >
+              <div
+                class="uni-related-articles-cards__item-top-info"
+                data-target="card">
+                
+                  <div class="uni-related-articles-cards__img">
+                    
+    <figure class="">
+        <picture>
+            
+
+
+    
+
+    
+        <source media="(max-resolution: 1.5dppx)"
+                sizes="600px"
+                srcset="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/security-ai-1.max-600x208.format-webp.webp 600w">
+    
+        <source media="(min-resolution: 1.5dppx)"
+                sizes="1200px"
+                srcset="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/security-ai-1.max-1200x416.format-webp.webp 1200w">
+    
+
+    <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/security-ai-1.max-1200x416.format-webp.webp"
+
+         
+            alt="security-ai-1"
+         
+
+         sizes=" 600px,  1200px"
+         srcset="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/security-ai-1.max-600x208.format-webp.webp 600w, https://storage.googleapis.com/gweb-uniblog-publish-prod/images/security-ai-1.max-1200x416.format-webp.webp 1200w"
+         data-target="image"
+         loading="lazy">
+
+    
+
+
+        </picture>
+    </figure>
+
+
+                  </div>
+                
+                <span class="h-c-eyebrow  uni-related-articles-cards__category" data-target="eyebrow">Safety &amp; Security</span>
+                <h4 class="uni-related-articles-cards__headline" data-target="title">Acting on our commitment to safe and secure AI</h4>
+                
+              </div>
+              <div class="uni-related-articles-cards__info">
+                
+                <div class="uni-related-articles-cards__author">
+                  By
+                  
+                    <span class="uni-related-articles-cards__author--name" data-target="author">
+                    Laurie Richardson
+                    </span>
+                  
+                    <span class="uni-related-articles-cards__author--name" data-target="author">
+                    Royal Hansen
+                    </span>
+                  
+                </div>
+                
+                <span class="uni-related-articles-cards__date" data-target="date"> Oct 26, 2023</span>
+              </div>
+              <svg role="presentation" class="uni-related-articles-cards__item-arrow" data-target="arrow">
+                <use xlink:href="/static/blogv2/images/icons.svg#mi-arrow-forward-no-bg"></use>
+              </svg>
+            </a>
+          </li>
+        
+          <li class="uni-related-articles-cards__item
+             uni-related-articles-cards__item--img
+            ">
+            <a href="https://blog.google/technology/safety-security/google-account-recover/" class="uni-related-articles-cards__link"
+              data-index="5"
+              data-target="card"
+              data-primaryTag = "topics - safety &amp; security"
+              data-image="true"
+              data-ga4-analytics-footer-lead-click='{
+                "link_text": "How to make sure you can easily regain access to your Google Account",
+                "link_url":  "https://blog.google/technology/safety-security/google-account-recover/",
+                "source_content": "Related stories",
+                "related_index": "5",
+                "related_article_tag": "topics - safety &amp; security",
+                "article_name": "How to make sure you can easily regain access to your Google Account",
+                "author_name": "Eben Carle"
+              }'
+              >
+              <div
+                class="uni-related-articles-cards__item-top-info"
+                data-target="card">
+                
+                  <div class="uni-related-articles-cards__img">
+                    
+    <figure class="">
+        <picture>
+            
+
+
+    
+
+    
+        <source media="(max-resolution: 1.5dppx)"
+                sizes="600px"
+                srcset="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/STEPS_REGAIN_ACCESS_TO_GOOGLE_A.max-600x208.format-webp.webp 600w">
+    
+        <source media="(min-resolution: 1.5dppx)"
+                sizes="1200px"
+                srcset="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/STEPS_REGAIN_ACCESS_TO_GOOGLE_.max-1200x416.format-webp.webp 1200w">
+    
+
+    <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/STEPS_REGAIN_ACCESS_TO_GOOGLE_.max-1200x416.format-webp.webp"
+
+         
+            alt="STEPS REGAIN ACCESS TO GOOGLE ACCOUNT-02"
+         
+
+         sizes=" 600px,  1200px"
+         srcset="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/STEPS_REGAIN_ACCESS_TO_GOOGLE_A.max-600x208.format-webp.webp 600w, https://storage.googleapis.com/gweb-uniblog-publish-prod/images/STEPS_REGAIN_ACCESS_TO_GOOGLE_.max-1200x416.format-webp.webp 1200w"
+         data-target="image"
+         loading="lazy">
+
+    
+
+
+        </picture>
+    </figure>
+
+
+                  </div>
+                
+                <span class="h-c-eyebrow  uni-related-articles-cards__category" data-target="eyebrow">Safety &amp; Security</span>
+                <h4 class="uni-related-articles-cards__headline" data-target="title">How to make sure you can easily regain access to your Google Account</h4>
+                
+              </div>
+              <div class="uni-related-articles-cards__info">
+                
+                <div class="uni-related-articles-cards__author">
+                  By
+                  
+                    <span class="uni-related-articles-cards__author--name" data-target="author">
+                    Eben Carle
+                    </span>
+                  
+                </div>
+                
+                <span class="uni-related-articles-cards__date" data-target="date"> Oct 24, 2023</span>
+              </div>
+              <svg role="presentation" class="uni-related-articles-cards__item-arrow" data-target="arrow">
+                <use xlink:href="/static/blogv2/images/icons.svg#mi-arrow-forward-no-bg"></use>
+              </svg>
+            </a>
+          </li>
+        
+          <li class="uni-related-articles-cards__item
+             uni-related-articles-cards__item--abstract
+            ">
+            <a href="https://blog.google/threat-analysis-group/government-backed-actors-exploiting-winrar-vulnerability/" class="uni-related-articles-cards__link"
+              data-index="6"
+              data-target="card"
+              data-primaryTag = "topics - threat analysis group"
+              data-image="false"
+              data-ga4-analytics-footer-lead-click='{
+                "link_text": "Government\u002Dbacked actors exploiting WinRAR vulnerability",
+                "link_url":  "https://blog.google/threat-analysis-group/government-backed-actors-exploiting-winrar-vulnerability/",
+                "source_content": "Related stories",
+                "related_index": "6",
+                "related_article_tag": "topics - threat analysis group",
+                "article_name": "Government\u002Dbacked actors exploiting WinRAR vulnerability",
+                "author_name": "Kate Morgan"
+              }'
+              >
+              <div
+                class="uni-related-articles-cards__item-top-info"
+                data-target="card">
+                
+                <span class="h-c-eyebrow  uni-related-articles-cards__category" data-target="eyebrow">Threat Analysis Group</span>
+                <h4 class="uni-related-articles-cards__headline" data-target="title">Government-backed actors exploiting WinRAR vulnerability</h4>
+                
+                  <p class="uni-related-articles-cards__abstract" data-target="abstract">Google's Threat Analysis Group analyzes recent state-sponsored campaigns exploiting the WinRAR vulnerability, CVE-2023-38831.</p>
+                
+              </div>
+              <div class="uni-related-articles-cards__info">
+                
+                <div class="uni-related-articles-cards__author">
+                  By
+                  
+                    <span class="uni-related-articles-cards__author--name" data-target="author">
+                    Kate Morgan
+                    </span>
+                  
+                </div>
+                
+                <span class="uni-related-articles-cards__date" data-target="date"> Oct 18, 2023</span>
+              </div>
+              <svg role="presentation" class="uni-related-articles-cards__item-arrow" data-target="arrow">
+                <use xlink:href="/static/blogv2/images/icons.svg#mi-arrow-forward-no-bg"></use>
+              </svg>
+            </a>
+          </li>
+        
+        <li class="uni-related-articles-cards__item--placeholder">.</li>
+      </ul>
+    </div>
+    
+      <button class="uni-related-articles-cards__arrow uni-related-articles-cards__arrow--prev "
+        aria-controls="Previous" aria-label="Previous"
+        data-ga4-analytics-carousel-scroll-click='{
+  "toggle_type_direction": "arrow - left",
+  "position": ""
+}'
+>
+        <span class="uni-related-articles-cards__arrow--fig"></span>
+      </button>
+      <button class="uni-related-articles-cards__arrow uni-related-articles-cards__arrow--next "
+        aria-controls="Next" aria-label="Next"
+        data-ga4-analytics-carousel-scroll-click='{
+  "toggle_type_direction": "arrow - right",
+  "position": ""
+}'
+>
+        <span class="uni-related-articles-cards__arrow--fig"></span>
+      </button>
+      <fieldset class="uni-related-articles-cards__pagination ga4-bullets
+        " aria-label="Pagination">
+        
+          <label for="uni-related-articles-cards__pagination-dot-1" data-index="1" class="dot"
+            data-ga4-analytics-carousel-scroll-click='{
+  "toggle_type_direction": "bullet",
+  "position": "1"
+}'
+>
+            <input type="radio" class="dot-label" name="uni-related-articles-cards__pagination" id="uni-related-articles-cards__pagination-dot-1">
+          </label>
+        
+          <label for="uni-related-articles-cards__pagination-dot-2" data-index="2" class="dot"
+            data-ga4-analytics-carousel-scroll-click='{
+  "toggle_type_direction": "bullet",
+  "position": "2"
+}'
+>
+            <input type="radio" class="dot-label" name="uni-related-articles-cards__pagination" id="uni-related-articles-cards__pagination-dot-2">
+          </label>
+        
+          <label for="uni-related-articles-cards__pagination-dot-3" data-index="3" class="dot"
+            data-ga4-analytics-carousel-scroll-click='{
+  "toggle_type_direction": "bullet",
+  "position": "3"
+}'
+>
+            <input type="radio" class="dot-label" name="uni-related-articles-cards__pagination" id="uni-related-articles-cards__pagination-dot-3">
+          </label>
+        
+          <label for="uni-related-articles-cards__pagination-dot-4" data-index="4" class="dot"
+            data-ga4-analytics-carousel-scroll-click='{
+  "toggle_type_direction": "bullet",
+  "position": "4"
+}'
+>
+            <input type="radio" class="dot-label" name="uni-related-articles-cards__pagination" id="uni-related-articles-cards__pagination-dot-4">
+          </label>
+        
+          <label for="uni-related-articles-cards__pagination-dot-5" data-index="5" class="dot"
+            data-ga4-analytics-carousel-scroll-click='{
+  "toggle_type_direction": "bullet",
+  "position": "5"
+}'
+>
+            <input type="radio" class="dot-label" name="uni-related-articles-cards__pagination" id="uni-related-articles-cards__pagination-dot-5">
+          </label>
+        
+          <label for="uni-related-articles-cards__pagination-dot-6" data-index="6" class="dot"
+            data-ga4-analytics-carousel-scroll-click='{
+  "toggle_type_direction": "bullet",
+  "position": "6"
+}'
+>
+            <input type="radio" class="dot-label" name="uni-related-articles-cards__pagination" id="uni-related-articles-cards__pagination-dot-6">
+          </label>
+        
+      </fieldset>
+    
+ </div>
+ 
+
+
+        </main>
+
+        
+          
+
+          
+        
+        
+
+<footer class="h-c-footer h-c-footer--topmargin h-c-footer--standard h-has-social"
+        id="footer-standard"
+        data-component="uni-footer-component"
+        data-analytics-module='{
+          "module_name": "footer",
+          "section_header": "New details on commercial spyware vendor Variston"
+        }'>
+  
+    <section class="h-c-footer__global">
+        <div class="h-c-footer__logo">
+          <a class="uni-click-tracker" href="https://www.google.com" title="Google"
+            data-analytics='{
+              "category": "navigation",
+              "action": "footer",
+              "label": "logo",
+              "pagePath": "https://www.google.com"
+            }'>
+            <svg aria-hidden="true" class="h-c-footer__logo-img" viewBox="0 0 396 130">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#google-logo"></use>
+            </svg>
+          </a>
+        </div>
+        <ul class="h-c-footer__global-links h-no-bullet">
+          <li class="h-c-footer__global-links-list-item">
+            
+            <a class="h-c-footer__link uni-click-tracker" href="https://policies.google.com/privacy"
+              data-analytics='{
+                "category": "navigation",
+                "action": "footer",
+                "label": "{name}",
+                "pagePath": "https://policies.google.com/privacy"
+              }'>Privacy
+            </a>
+          </li>
+          <li class="h-c-footer__global-links-list-item">
+            
+            <a class="h-c-footer__link uni-click-tracker" href="https://policies.google.com/terms"
+              data-analytics='{
+                "category": "navigation",
+                "action": "footer",
+                "label": "{name}",
+                "pagePath": "https://policies.google.com/terms"
+              }'>Terms
+            </a>
+          </li>
+          <li class="h-c-footer__global-links-list-item">
+            
+            <a class="h-c-footer__link uni-click-tracker" href="https://about.google/"
+              data-analytics='{
+                "category": "navigation",
+                "action": "footer",
+                "label": "{name}",
+                "pagePath": "https://about.google/"
+              }'>About Google
+            </a>
+          </li>
+          <li class="h-c-footer__global-links-list-item">
+            
+            <a class="h-c-footer__link uni-click-tracker" href="https://about.google/products/"
+              data-analytics='{
+                "category": "navigation",
+                "action": "footer",
+                "label": "{name}",
+                "pagePath": "https://about.google/products/"
+              }'>Google Products
+            </a>
+          </li>
+          
+        </ul>
+        <ul class="h-c-footer__global-links h-c-footer__global-links--extra h-no-bullet">
+          <li class="h-c-footer__global-links-list-item h-c-footer__global-links-list-item--extra">
+            
+            <a class="h-c-footer__link uni-click-tracker" href="https://support.google.com"
+              data-analytics='{
+                "category": "navigation",
+                "action": "footer",
+                "label": "{name}",
+                "pagePath": "https://support.google.com"
+              }'>
+              <svg aria-hidden="true" class="h-c-icon h-c-icon--24px h-c-icon--footer">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/blogv2/images/icons.svg#mi-help"></use>
+              </svg>
+              Help
+            </a>
+          </li>
+          <li class="h-c-footer__global-links-list-item h-c-footer__global-links-list-item--extra uni-footer-language">
+            
+
+
+<div class="uni-picker" data-component="uni-lang-picker">
+  <select name="language"
+          class="uni-picker__order-menu"
+          aria-label="Select a language">
+    
+      <option label="Deutsch"
+              value="/intl/de-de/"
+              class="uni-picker__item"
+              >
+        Deutsch
+      </option>
+    
+      <option label="English"
+              value="/"
+              class="uni-picker__item"
+               selected="selected" >
+        English
+      </option>
+    
+      <option label="English (Africa)"
+              value="/intl/en-africa/"
+              class="uni-picker__item"
+              >
+        English (Africa)
+      </option>
+    
+      <option label="English (Australia)"
+              value="/intl/en-au/"
+              class="uni-picker__item"
+              >
+        English (Australia)
+      </option>
+    
+      <option label="English (Canada)"
+              value="/intl/en-ca/"
+              class="uni-picker__item"
+              >
+        English (Canada)
+      </option>
+    
+      <option label="English (India)"
+              value="/intl/en-in/"
+              class="uni-picker__item"
+              >
+        English (India)
+      </option>
+    
+      <option label="English (MENA)"
+              value="/intl/en-mena/"
+              class="uni-picker__item"
+              >
+        English (MENA)
+      </option>
+    
+      <option label="Español (Latinoamérica)"
+              value="/intl/es-419/"
+              class="uni-picker__item"
+              >
+        Español (Latinoamérica)
+      </option>
+    
+      <option label="Français (Canada)"
+              value="/intl/fr-ca/"
+              class="uni-picker__item"
+              >
+        Français (Canada)
+      </option>
+    
+      <option label="Français (France)"
+              value="/intl/fr-fr/"
+              class="uni-picker__item"
+              >
+        Français (France)
+      </option>
+    
+      <option label="Italiano"
+              value="/intl/it-it/"
+              class="uni-picker__item"
+              >
+        Italiano
+      </option>
+    
+      <option label="Polski"
+              value="/intl/pl-pl/"
+              class="uni-picker__item"
+              >
+        Polski
+      </option>
+    
+      <option label="Português (Brasil)"
+              value="/intl/pt-br/"
+              class="uni-picker__item"
+              >
+        Português (Brasil)
+      </option>
+    
+      <option label="اللغة العربية (MENA)"
+              value="/intl/ar-mena/"
+              class="uni-picker__item"
+              >
+        اللغة العربية (MENA)
+      </option>
+    
+  </select>
+</div>
+
+          </li>
+        </ul>
+    </section>
+</footer>
+
+
+        
+        <div id="base-scripts" data-scripts='[
+              { "url": "/static/blogv2/js/csp/reloadCachedPage.js?version=pr20231116-1913",
+                "options": {
+                  "async": false,
+                  "defer": false
+                }
+              },
+              { "url": "/static/blogv2/js/csp/gtm.js",
+                "options": {
+                  "async": false,
+                  "defer": false
+                }
+              },
+              { "url": "/static/angularjs/1.6.4/angular.min.js",
+                "options": {
+                  "async": false,
+                  "defer": false
+                }
+              },
+              { "url": "/static/angularjs/1.6.4/angular-animate.min.js",
+                "options": {
+                  "async": false,
+                  "defer": false
+                }
+              },
+              { "url": "/static/angularjs/1.6.4/angular-touch.min.js",
+                "options": {
+                  "async": false,
+                  "defer": false
+                }
+              },
+              { "url": "/static/blogv2/js/blogv2.js?version=pr20231116-1913",
+                "options": {
+                  "async": false,
+                  "defer": false
+                }
+              },
+              { "url": "/static/blogv2/js/soy-templates.js?version=pr20231116-1913",
+                "options": {
+                  "async": false,
+                  "defer": false
+                }
+              },
+              { "url": "/static/blogv2/js/glue-app.min.js?version=pr20231116-1913",
+                "options": {
+                  "async": false,
+                  "defer": false
+                }
+              },
+              { "url": "/static/blogv2/js/vendors.js",
+                "options": {
+                  "async": false,
+                  "defer": false
+                }
+              },
+              { "url": "/static/keyword/js/all/index.js?version=pr20231116-1913",
+                "options": {
+                  "async": false,
+                  "defer": false
+                }
+              }
+            ]'></div>
+        <div id="extra-scripts"
+             data-scripts="">
+        </div>
+
+        <script>
+            var base_scripts = document.querySelector("#base-scripts").getAttribute('data-scripts');
+            base_scripts = JSON.parse(base_scripts);
+            var extra_scripts = document.querySelector("#extra-scripts").getAttribute('data-scripts');
+            if (extra_scripts) {
+              extra_scripts = JSON.parse(extra_scripts);
+            } else {
+              extra_scripts = [];
+            }
+            var scripts = base_scripts.concat(extra_scripts);
+            scripts.forEach(function(scriptObj) {
+              var s = document.createElement('script');
+              s.async = scriptObj.options.async;
+              s.defer = scriptObj.options.defer;
+              s.src = scriptObj.url;
+              document.head.appendChild(s);
+            });
+        </script>
+
+        
+          <script src="https://www.gstatic.com/glue/cookienotificationbar/cookienotificationbar.min.js"
+            data-glue-cookie-notification-bar-category="2B"
+            data-glue-cookie-notification-bar-site-id="blog.google">
+          </script>
+        
+
+        <!--[if gt IE 9]><!-->
+        <!--<script async type="text/javascript" src="/static/blogv2/js/vendors.js"></script>-->
+        <!--<![endif]-->
+    </body>
+</html>
