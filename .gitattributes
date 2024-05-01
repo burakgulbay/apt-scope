@@ -1,1 +1,15 @@
 *.jar filter=lfs diff=lfs merge=lfs -text
+*.db filter=lfs diff=lfs merge=lfs -text
+*.propertystore.db.strings filter=lfs diff=lfs merge=lfs -text
+*.db.strings filter=lfs diff=lfs merge=lfs -text
+*.strings filter=lfs diff=lfs merge=lfs -text
+*.relationshipstore.db filter=lfs diff=lfs merge=lfs -text
+*.transaction.db.4 filter=lfs diff=lfs merge=lfs -text
+*.transaction.db.5 filter=lfs diff=lfs merge=lfs -text
+*.transaction.db.6 filter=lfs diff=lfs merge=lfs -text
+*.db.4 filter=lfs diff=lfs merge=lfs -text
+*.db.5 filter=lfs diff=lfs merge=lfs -text
+*.db.6 filter=lfs diff=lfs merge=lfs -text
+*.4 filter=lfs diff=lfs merge=lfs -text
+*.5 filter=lfs diff=lfs merge=lfs -text
+*.6 filter=lfs diff=lfs merge=lfs -text
