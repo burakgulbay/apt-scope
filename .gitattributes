@@ -13,3 +13,4 @@
 *.4 filter=lfs diff=lfs merge=lfs -text
 *.5 filter=lfs diff=lfs merge=lfs -text
 *.6 filter=lfs diff=lfs merge=lfs -text
+*.counts.db filter=lfs diff=lfs merge=lfs -text
