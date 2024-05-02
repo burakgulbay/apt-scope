@@ -1,0 +1,26 @@
+AffectedIndustry, defense
+AffectedCountry, india
+MitreTechnique, T1204
+MitreTechnique, T1547
+MitreTechnique, T1057
+MitreTechnique, T1124
+MitreTechnique, T1033
+MitreTechnique, T1082
+MitreTechnique, T1095
+MitreTechnique, T1571
+APTGroup, transparent tribe
+APTGroup, sidecopy
+
+fqdn	afd.csdindia.gov.in
+fqdn	icanhazip.com
+fqdn	secure256.net
+fqdn	www.cyble.com
+ip4	45.147.228.195
+sha256	124023c0cf0524a73dabd6e5bb3f7d61d42dfd3867d699c59770846aae1231ce
+sha256	5e645eb1a828cef61f70ecbd651dba5433e250b4724e1408702ac13d2b6ab836
+sha256	84841490ea2b637494257e9fe23922e5f827190ae3e4c32134cadb81319ebc34
+trademark	CK®
+tronix	41490ea2b637494257e9fe23922e5f827190ae3e4c
+url	http://icanhazip.com
+url	http://secure256.net/
+url	secure256.net/ver4.mp3

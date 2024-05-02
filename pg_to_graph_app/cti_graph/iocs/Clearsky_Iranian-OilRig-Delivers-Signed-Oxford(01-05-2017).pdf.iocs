@@ -1,0 +1,64 @@
+Malware, helminth
+Filename, DnE.ps1
+Filename, backup.vbs
+Filename, schtasks.exe
+Filename, powershell.exe
+Filename, OxfordSymposiumRegTool.exe
+Filename, Salary Employee 2016.xls
+Filename, People List.xls
+Filename, cv.xls
+Filename, users.xls
+Filename, Employee Engagement Survey.xls
+Filename, JuniperSetupClientInstaller.exe
+Filename, Project_Domain_No337.chm
+Filename, gcaa_report_series15561.chm
+AffectedIndustry, government
+AffectedIndustry, finance
+AffectedCountry, israel
+AffectedCountry, turkey
+AffectedCountry, qatar
+AffectedCountry, kuwait
+AffectedCountry, uae
+AffectedCountry, saudi arabia
+AffectedCountry, lebanon
+AttackerCountry, iran
+APTGroup, oilrig
+
+fqdn	87pqxz159.dockerjsbin.com
+fqdn	clearskysec.com
+fqdn	ls4.do
+fqdn	oxford-careers.com
+fqdn	oxford-employee.com
+fqdn	oxford-symposia.com
+fqdn	oxford.in
+fqdn	tecsupport.in
+fqdn	updater.li
+fqdn	www.oxford-careers.com
+ip4	83.142.230.138
+md5	1792cdd0c5397ff5df445d73276d1a50
+md5	197c018922237828683783654d3c632a
+md5	1c23b3f11f933d98febfd5a92eb5c715
+md5	262bc259682cb48ce66a80dcc9a5d587
+md5	3920c11797ed7d489ca2a40201c66dd4
+md5	3a5fcba80c1fd685c4b5085d9d474118
+md5	5713c3c01067c91771ac70e193ef5419
+md5	6a65d762fb548d2dc56cfde4842a4d3c
+md5	726175e9aba421aa0f96cfc005664302
+md5	72e046753f0496140b4aa389aee2e300
+md5	7528c387f853d96420cf7e20f2ad1d32
+md5	7fe0cb5edc11861bc4313a6b04aeedb2
+md5	bd7d2efdb2a0f352c4b74f2b82e3c7bc
+md5	d50ab63f4034c6f5eb356e3326320e66
+md5	dcac79d7dc4365c6d742a49244e81fd0
+md5	f76443385fef159e6b73ad6bf7f086d6
+md5	f77ee804de304f7c3ea6b87824684b33
+md5	f8ce7e356e09de6a48dca9e51421b6f6
+sha1	92B8C0872BACDC226B9CE4D783D5CCAD61C6158A
+sha1	F340C0D841F9D99DBC289151C13391000366631C
+url	clearskysec.com/oilrig/
+url	http://oxford.in/downloads/ls1.doc
+url	http://oxford.in/downloads/ls2.doc
+url	http://oxford.in/downloads/ls3.doc
+url	http://oxford.in/downloads/ls4.do
+url	http://www.oxford-careers.com/Files/OxfordCVCreator.exe
+uuid	2ED05C38-D464-4188-BC7F-F6915DE8D764

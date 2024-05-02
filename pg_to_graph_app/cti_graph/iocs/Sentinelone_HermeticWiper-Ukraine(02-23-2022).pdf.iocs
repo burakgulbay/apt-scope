@@ -1,0 +1,13 @@
+Malware, hermeticwiper
+
+fqdn	sentinelone.com
+fqdn	youtu.be
+md5	095a1678021b034903c85dd5acb447ad
+md5	231b3385ac17e41c5bb1b1fcb59599c4
+md5	a952e288a1ead66490b3275a807f52e5
+md5	eb845b7a16ed82bd248e395d9852f467
+sha1	61b25d11392172e587d8da3045812a66c3385451
+sha1	912342f1c840a42f6b74132f8a7c4ffe7d40fb77
+sha256	1bc44eef75779e3ca1eefb8ff5a64807dbc942b1e4a2672d77b9f6928d292591
+url	https://youtu.be/keWfVA6F4IM
+url	sentinelone.com/labs/hermetic-wiper-ukraine-under-attack

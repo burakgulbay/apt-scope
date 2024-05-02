@@ -1,0 +1,12 @@
+Malware, island hopping
+Malware, plugx
+AffectedIndustry, aerospace and defence
+AffectedIndustry, automotive
+AffectedIndustry, energy
+AffectedIndustry, nuclear
+C2ServerCountry, singapore
+C2ServerCountry, japan
+APTGroup, avivore, apt10
+
+fqdn	contextis.com
+url	contextis.com/en/blog/avivore

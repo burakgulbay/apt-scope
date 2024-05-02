@@ -1,0 +1,25 @@
+Malware, pupyrat
+AffectedIndustry, healthcare
+AffectedIndustry, government
+AffectedIndustry, technology
+AffectedIndustry, telecommunication
+AffectedCountry, saudi arabia
+AttackerCountry, iran
+
+fqdn	secureworks.com
+md5	03ea9457bf71d51d8109e737158be888
+md5	1b5e33e5a244d2d67d7a09c4ccf16e56
+md5	43fad2d62bc23ffdc6d301571135222c
+md5	97cb7dc1395918c2f3018c109ab4ea5b
+sha1	3215021976b933ff76ce3436e828286e124e2527
+sha1	735f5d7ef0c5129f0574bec3cf3d6b06b052744a
+sha1	934c51ff1ea00af2cb3b8465f0a3effcf759d866
+sha1	d20168c523058c7a82f6d79ef63ea546c794e57b
+sha256	66d24a529308d8ab7b27ddd43a6c2db84107b831257efb664044ec4437f9487b
+sha256	6c195ea18c05bbf091f09873ed9cd533ec7c8de7a831b85690e48290b579634b
+sha256	8d89f53b0a6558d6bb9cdbc9f218ef699f3c87dd06bc03dd042290dedc18cb71
+sha256	e5b643cb6ec30d0d0b458e3f2800609f260a5f15c4ac66faf4ebf384f7976df6
+trademark	CTU™
+trademark	SecureWorks®
+trademark	Unit™
+url	secureworks.com/blog/iranian-pupyrat-bites-middle-eastern-organizations

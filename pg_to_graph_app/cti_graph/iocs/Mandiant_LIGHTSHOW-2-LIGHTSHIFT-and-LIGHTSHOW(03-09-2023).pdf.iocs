@@ -1,0 +1,16 @@
+Malware, lightshow
+Filename, _SB_SMBUS_SDK.dll
+Filename, Share.DAT
+AttackerCountry, north korea
+APTGroup, unc2970
+
+cve	CVE-2022-42455
+fqdn	mandiant.com
+md5	7e6e2ed880c7ab115fca68136051f9ce
+md5	9176f177bd88686c6beb29d8bb05f20c
+md5	ad452d161782290ad5004b2c9497074f
+md5	def6f91614cb47888f03658b28a1bda6
+sha256	175eed7a4c6de9c3156c7ae16ae85c554959ec350f1c8aaa6dfe8c7e99de3347
+sha256	ce501fd5c96223fb17d3fed0da310ea121ad83c463849059418639d211933aa4
+sha256	ee5057da3e38b934dae15644c6eb24507fb5a187630c75725075b24a70065452
+url	mandiant.com/resources/blog/lightshift-and-lightshow

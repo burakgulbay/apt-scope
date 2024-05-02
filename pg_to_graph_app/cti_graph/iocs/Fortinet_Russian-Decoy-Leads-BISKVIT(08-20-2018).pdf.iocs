@@ -1,0 +1,22 @@
+Malware, biskvit
+Filename, Выставка.ppsx
+Filename, Exhibition.ppsx
+AffectedIndustry, military
+AffectedIndustry, technology
+AttackerCountry, russia
+
+copyright	Copyright © 2019 Fortinet, Inc. All Rights Reserved
+cve	CVE-2017-0199
+fqdn	bigboss.x24hr.com
+fqdn	fortinet.com
+fqdn	secured-links.org
+md5	083c57797944468895820bf711e3624f
+md5	534faf1cb8c04dc881a3fbd69d4bc762
+sha256	23a286d14de1f51c5073caf0fd40a7636c287f578f32ae5e05ed331741fde572
+sha256	934542905f018ecb495027906af13cc96e3f55e11751799f39ef4a3dceff562b
+sha256	a87daccbb260c5c68aaac3fcd6528f9ba16d4f284f94bc1b6307bbb3c6a2e379
+sha256	b4a1f0603f49db9eea6bc98de24b6fc0034f3b374a00a815b5c906041028ddf3
+sha256	be7459722bd25c5b4d57af0769cc708ebf3910648debc52be3929406609997cf
+url	fortinet.com/blog/threat-research/russian-army-exhibition-decoy-leads-to-new-biskvit-malware.html
+url	http://bigboss.x24hr.com
+url	http://secured-links.org/

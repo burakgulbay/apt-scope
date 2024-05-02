@@ -1,0 +1,29 @@
+Malware, riptide
+Malware, threebyte
+Malware, waterspout
+AffectedCountry, taiwan
+AffectedCountry, japan
+AffectedCountry, china
+APTGroup, apt12, uxeshe, dyncalc, dnscalc
+
+cve	CVE-2012-0158
+email	lilywang823@gmail.com
+fqdn	gmail.com
+fqdn	icc.ignorelist.com
+fqdn	video.csmcpr.com
+ip4	141.108.2.157
+md5	00a95fb30be2d6271c491545f6c6a707
+md5	06da4eb2ab6412c0dc7f295920eb61c4
+md5	16e627dbe730488b1c3d448bfc9096e2
+md5	499bec15ac83f2c8998f03917b63652e
+md5	4ab6bf7e6796bb930be2dd0141128d06
+md5	53baedf3765e27fb465057c48387c9b6
+md5	6e59861931fa2796ee107dc27bfdd480
+md5	73f493f6a2b0da23a79b50765c164e88
+md5	864cd776c24a3c653fd89899ca32fe0b
+md5	dcfaa2650d29ec1bd88e262d11d3236f
+md5	e009b95ff7b69cbbebc538b2c5728b11
+md5	eaa6e03d9dae356481215e3a9d2914dc
+md5	ead55ef2b18a80c00786c25211981570
+md5	f6fafb7c30b1114befc93f39d0698560
+md5	f9cfda6062a8ac9e332186a7ec0e706a

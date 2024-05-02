@@ -1,0 +1,14 @@
+APTGroup, apt29, the dukes, cozybear, yttrium
+AffectedCountry, usa
+AffectedCountry, united kingdom
+AffectedCountry, canada
+AttackerCountry, russia
+Malware, wellmess
+cve	CVE-2019-19781
+email	CISAServiceDesk@cisa.dhs.gov
+email	CyWatch@fbi.gov
+fqdn	cisa.dhs.gov
+fqdn	cock.li
+fqdn	fbi.gov
+fqdn	www.fbi.gov
+url	www.fbi.gov/contact-us/field

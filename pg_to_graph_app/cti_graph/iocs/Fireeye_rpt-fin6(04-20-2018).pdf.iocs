@@ -1,0 +1,13 @@
+Malware, grabnew
+Malware, hardtack
+AffectedIndustry, finance
+APTGroup, fin6
+
+copyright	© 2016 FireEye, Inc. All rights reserved.
+cve	CVE-2010-4398
+cve	CVE-2011-2005
+cve	CVE-2013-3660
+email	info@FireEye.com
+fqdn	fireeye.com
+fqdn	www.fireeye.com
+url	www.fireeye.com/reports.html

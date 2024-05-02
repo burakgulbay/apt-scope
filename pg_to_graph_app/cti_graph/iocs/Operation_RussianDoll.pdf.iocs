@@ -1,0 +1,9 @@
+AttackerCountry, russia
+APTGroup, apt28
+
+fqdn	fireeye.com
+fqdn	icloud.com
+ip4	17.0.0.134
+ip4	87.236.215.0
+ip4	87.236.215.246
+ip4Net	87.236.215.0/24

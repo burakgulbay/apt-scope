@@ -1,0 +1,23 @@
+AffectedCountry, brazil
+AffectedCountry, usa
+AffectedCountry, france
+AffectedCountry, kazakhstan
+AffectedCountry, uae
+AffectedCountry, india
+AffectedCountry, russia
+APTGroup, poseidon
+
+email	intelreports@kaspersky.com
+fqdn	akamaihub.com
+fqdn	igdata.net
+fqdn	kaspersky.com
+fqdn	mozillacdn.com
+fqdn	msupdatecdn.com
+fqdn	sslverification.net
+md5	0a870c900e6db25a0e0a65b8545656d4
+md5	2c4aeacd3f7b587c599c2c4b5c1475da
+md5	2ce818518ca5fd03cbacb26173aa60ce
+md5	2fd8bb121a048e7c9e29040f9a9a6eee
+md5	4cc1b23daaaac6bf94f99f309854ea10
+md5	f3499a9d9ce3de5dc10de3d7831d0938
+md5	f821eb4be9840feaf77983eb7d55e5f6

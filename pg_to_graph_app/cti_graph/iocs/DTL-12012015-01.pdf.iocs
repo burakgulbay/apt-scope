@@ -1,0 +1,26 @@
+Malware, swisyn
+Filename, plug.exe
+Filename, z1.exe
+AffectedIndustry, government
+
+cve	CVE-2014-6332
+email	dragonthreatlabs@gmail.com
+email	lim.kiu@hotmail.com
+fqdn	aoemvp.com
+fqdn	c.aoemvp.com
+fqdn	dragonthreat.blogspot.hk
+fqdn	gmail.com
+fqdn	hotmail.com
+ip4	103.229.127.104
+ip4	45.64.74.101
+ip6	::F
+md5	279ef79f904476ba0f9f44c87358bb1f
+md5	42b76c0503a6bf21f1ea86e0b14d67ea
+md5	55f84d88d84c221437cd23cdbc541d2e
+md5	a6a18c846e5179259eba9de238f67e41
+md5	ad17eff26994df824be36db246c8fb6a
+md5	cff25fe24a90ef63eaa168c07008c2bb
+md5	ec532bbe9d0882d403473102e9724557
+md5	efd9dc39682312d6576468f5c0eb6236
+md5	f66b64ef984ac46ac7395358059979bc
+url	http://dragonthreat.blogspot.hk

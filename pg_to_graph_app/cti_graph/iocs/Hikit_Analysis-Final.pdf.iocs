@@ -1,0 +1,13 @@
+Malware, hikit
+
+fqdn	en.pudn.com
+fqdn	forum.eviloctal.com
+fqdn	www.ndis.com
+fqdn	www.oberhumer.com
+ip6	a::
+sha1	7c4da9deff3e5c7611b9e1bd67d0e74aa7d2d0f6
+sha1	b04de6c417b6f8836e3f2d8822be2e68f4f9722b
+url	http://en.pudn.com/downloads74/sourcecode/windows/vxd/detail265112_en.html
+url	http://forum.eviloctal.com/archiver/tid-
+url	http://www.ndis.com/ndis-
+url	http://www.oberhumer.com/opensource/lzo/

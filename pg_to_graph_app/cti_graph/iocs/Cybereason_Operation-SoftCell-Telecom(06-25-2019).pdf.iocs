@@ -1,0 +1,10 @@
+Malware, powerless
+AffectedIndustry, telecommunication
+AttackerCountry, china
+APTGroup, apt10
+
+fqdn	cybereason.com
+fqdn	samsclass.info
+fqdn	youtu.be
+url	cybereason.com/blog/operation-soft-cell-a-worldwide-campaign-against-telecommunications-providers
+url	https://youtu.be/Ihpn2-4jTvc

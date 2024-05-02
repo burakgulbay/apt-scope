@@ -1,0 +1,15 @@
+Filename, netwf.bat
+Filename, netwf.dll
+Filename, rundll32.exe
+AttackerCountry, russia
+APTGroup, group 74, tsar team, sofacy, apt28, fancy bear
+fqdn	blog.talosintelligence.com
+fqdn	myinvestgroup.com
+fqdn	snort.org
+sha1	e338d49c270baf64363879e5eecb8fa6bdde8ad9
+sha256	522fd9b35323af55113455d823571f71332e53dde988c2eb41395cf6b0c15805
+sha256	c4be15f9ccfecf7a463f3b1d4a17e7b4f95de939e057662c3f97b52f7fa3c52f
+sha256	e5511b22245e26a003923ba476d7c36029939b2d1936e17a9b35b396467179ae
+sha256	ef027405492bc0719437eb58c3d2774cc87845f30c40040bbebbcc09a4e3dd18
+sha256	efb235776851502672dba5ef45d96cc65cb9ebba1b49949393a6a85b9c822f52
+url	blog.talosintelligence.com/2017/10/cyber-conflict-decoy-document.html

@@ -1,0 +1,19 @@
+AffectedCountry, ukraine 
+APTGroup, uac-0056, saintbear, unc2589, ta471
+
+fqdn	dictionary-translator.eu
+fqdn	sentinelone.com
+ip4	91.242.229.35
+md5	15c525b74b7251cfa1f7c471975f3f95
+md5	2a60b4e1eb806f02031fe5f143c7e3b7
+md5	4f11abdb96be36e3806bada5b8b2b8f8
+md5	9ea3aaaeb15a074cd617ee1dfdda2c26
+md5	c8bf238641621212901517570e96fae7
+sha1	3847ca79b3fd52b105c5e43b7fc080aac7c5d909
+sha1	3eec65c8ac25682d9e7d293ca9033c8a841f4958
+sha1	d77421caae67f4955529f91f229b31317dff0a95
+sha1	ef5400f6dbf32bae79edb16c8f73a59999e605c7
+url	91.242.229.35:443/i
+url	http://91.242.229.35:443/i
+url	https://dictionary-translator.eu/program/dictionary-
+url	sentinelone.com/blog/threat-actor-uac-0056-targeting-ukraine-with-fake-translation-software

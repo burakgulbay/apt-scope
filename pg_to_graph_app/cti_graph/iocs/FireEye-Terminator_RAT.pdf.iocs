@@ -1,0 +1,23 @@
+Malware, terminatorrat
+Malware, aumlib
+Malware, taidoor
+Malware, fakemrat
+Filename, 103.doc
+Filename, DW20.exe
+Filename, svchost_.exe
+Filename, sss.exe
+AffectedCountry, taiwan
+
+cve	CVE-2012-0158
+fqdn	catlovers.25u.com
+fqdn	liumingzhen.myftp.org
+fqdn	liumingzhen.zapto.org
+ip4	123.51.208.142
+ip4	123.51.208.69
+ip4	6.0.1.3
+md5	01da7213940a74c292d09ebe17f1bd01
+md5	50d5e73ff8a0693ed2ee2d320af3b304
+md5	7B18E1F0CE0CB7EEA990859EF6DB810C
+md5	93F51B957DA86BDE1B82934E73B10D9D
+md5	a130b2e578d82409021b3c9ceda657b7
+md5	bfc96694731f3cf39bcad6e0716c5746

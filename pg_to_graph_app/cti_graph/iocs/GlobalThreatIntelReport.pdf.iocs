@@ -1,0 +1,121 @@
+Malware, plugx
+Malware, gameover zeus
+Malware, flying kitten
+AffectedCountry, vietnam
+AffectedCountry, usa
+AffectedCountry, india
+AffectedCountry, russia
+AffectedCountry, philippines
+AffectedCountry, taiwan
+AffectedCountry, tibet
+AffectedCountry, japan
+AffectedCountry, france
+AffectedCountry, myanmar
+AffectedCountry, thailand
+AffectedCountry, united kingdom
+AffectedCountry, south korea
+AffectedCountry, mongolia
+AffectedCountry, saudi arabia
+AffectedCountry, turkey
+AffectedCountry, maldives
+AffectedCountry, pakistan
+AffectedCountry, iran
+AffectedCountry, germany
+AffectedCountry, laos
+AffectedCountry, brazil
+AffectedCountry, canada
+AffectedCountry, australia
+AttackerCountry, north korea
+AttackerCountry, iran
+AttackerCountry, russia
+APTGroup, charming kitten
+APTGroup, goblin panda
+APTGroup, vixen panda
+APTGroup, deep panda
+APTGroup, emissary panda
+APTGroup, energetic bear
+APTGroup, pirate panda
+APTGroup, flying kitten
+APTGroup, numbered panda
+APTGroup, lotus panda
+APTGroup, viceroy tiger
+APTGroup, extreme jackal
+APTGroup, pitty panda
+APTGroup, gothic panda
+APTGroup, deadeye jackal
+APTGroup, predator panda
+APTGroup, dynamite panda
+APTGroup, temper panda
+APTGroup, pale panda
+APTGroup, violin panda
+APTGroup, silent cholimma
+APTGroup, hurricane panda
+APTGroup, sabre panda
+APTGroup, samurai panda
+APTGroup, dagger panda
+APTGroup, aurora panda
+APTGroup, maverick panda
+APTGroup, keyhole panda
+APTGroup, stone panda
+APTGroup, spicy panda
+
+cve	CVE-2014-0322
+cve	CVE-2014-4113
+email	ajaxtm@gmail.com
+email	info@usa.gov.us
+email	sales@crowdstrike.com
+fqdn	adobe.com
+fqdn	authorizeddns.org
+fqdn	blog.crowdstrike.com
+fqdn	crowdstrike.com
+fqdn	dns.dubkill.com
+fqdn	ello.co
+fqdn	gifas.assso.net
+fqdn	github.com
+fqdn	gmail.com
+fqdn	googlesupport.proxydns.com
+fqdn	icbcqsz.com
+fqdn	instagram.com
+fqdn	mail.ru
+fqdn	newss.effers.com
+fqdn	oa.ameteksen.com
+fqdn	parmanpower.com
+fqdn	pastebin.com
+fqdn	proxyme.net
+fqdn	resources.crowdstrike.com
+fqdn	savmpet.com
+fqdn	sea.sy
+fqdn	techworm.net
+fqdn	todaynews.dns-dns.com
+fqdn	twitter.com
+fqdn	usa.gov.us
+fqdn	verizon.proxydns.com
+fqdn	vk.com
+fqdn	www.crowdstrike.com
+fqdn	www.gobackto.net
+fqdn	www.ibtimes.com
+fqdn	www.pinterest.com
+fqdn	www.youtube.com
+instagramHandle	official_sea2
+ip4	199.91.173.45
+ip4	202.181.133.237
+ip4	203.135.134.243
+ip4	223.29.248.9
+ip4	61.78.34.179
+pinterestHandle	officialsea
+trademark	crowdstrike™
+twitterHandle	official_sea16
+url	http://blog.crowdstrike.com/
+url	http://blog.crowdstrike.com/adver-
+url	http://blog.crowdstrike.com/crowd-
+url	http://instagram.com/official_sea2
+url	http://resources.crowdstrike.com/putterpanda/
+url	http://sea.sy/rss/en
+url	http://vk.com/syrianelectronicarmy
+url	http://www.ibtimes.com/
+url	https://ello.co/syrianelectronicarmy
+url	https://twitter.com/official_sea16
+url	https://www.pinterest.com/officialsea/
+url	https://www.youtube.com/user/SEAOfficialChannel
+url	techworm.net/2014/12/syrian-electronic-ar-
+youtubeHandle	SEAOfficialChannel

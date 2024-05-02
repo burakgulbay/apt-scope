@@ -1,0 +1,22 @@
+AffectedCountry, france
+AffectedCountry, germany
+AffectedCountry, montenegro
+AffectedCountry, turkey
+AffectedCountry, ukraine
+AffectedCountry, usa
+APTGroup, pawn storm
+
+fqdn	adfs-senate.email
+fqdn	adfs-senate.services
+fqdn	adfs.senate.group
+fqdn	adfs.senate.qov.info
+fqdn	biathlovvorld.com
+fqdn	blog.trendmicro.com
+fqdn	chmail.ir
+fqdn	chmail.ir.udelivered.tk
+fqdn	fil-luge.com
+fqdn	fisski.ca
+fqdn	iihf.eu
+fqdn	mail-ibu.eu
+fqdn	webmail-ibsf.org
+url	blog.trendmicro.com/trendlabs-security-intelligence/update-pawn-storm-new-targets-politically-motivated-campaigns/

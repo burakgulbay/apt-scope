@@ -1,0 +1,33 @@
+Malware, elirks, lstudio
+AffectedIndustry, 
+AffectedCountry, taiwan
+
+email	benson.wu@xecure-lab.com
+email	f@plurk.com
+email	jeremy.chiu@xecure-lab.com
+email	pk@hitcon.org
+fqdn	blog.yam.com
+fqdn	blogs.yahoo.co.jp
+fqdn	diary.blog.yam.com
+fqdn	github.com
+fqdn	hitcon.org
+fqdn	lab.com
+fqdn	plurk.com
+fqdn	tw.myblog.yahoo.com
+fqdn	www.plurk.com
+fqdn	www.secureworks.com
+fqdn	xecure-lab.com
+githubHandle	fygrave
+githubHandle	kevthehermit
+url	http://blog.yam.com/minzhu0906/arLcle/54726977
+url	http://blogs.yahoo.co.jp/sakasesi2013/31805794.html
+url	http://diary.blog.yam.com/bigtree20130514/arLcle/10173342
+url	http://tw.myblog.yahoo.com/jw
+url	http://tw.myblog.yahoo.com/jw!uzrxZwSGHxowPMGZAaj4I5
+url	http://www.plurk.com/mdbmdb
+url	https://github.com/aol/moloch
+url	https://github.com/fygrave/
+url	https://github.com/fygrave/eyepkﬂow
+url	https://github.com/kevthehermit/YaraPcap
+url	https://github.com/kevthehermit/yaraMail
+url	www.secureworks.com/cyber-­‐threat-­‐intelligence/threats/

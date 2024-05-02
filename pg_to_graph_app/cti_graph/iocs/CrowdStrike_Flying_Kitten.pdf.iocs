@@ -1,0 +1,12 @@
+AffectedIndustry, defense
+AffectedCountry, usa
+AttackerCountry, iran
+APTGroup, flying kitten
+
+email	intelligence@crowdstrike.com
+email	keyvan.ajaxtm@gmail.com
+fqdn	aeroconf2014.org
+fqdn	crowdstrike.com
+fqdn	gmail.com
+fqdn	parmanpower.com
+fqdn	usa.gov.us

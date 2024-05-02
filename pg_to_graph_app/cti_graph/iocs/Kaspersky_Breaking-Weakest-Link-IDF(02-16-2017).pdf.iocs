@@ -1,0 +1,34 @@
+AffectedCountry, canada
+AffectedCountry, germany
+AffectedCountry, switzerland
+APTGroup, gaza strip
+
+fqdn	androidbak.com
+fqdn	droidback.com
+fqdn	endpointup.com
+fqdn	goodydaddy.com
+fqdn	securelist.com
+fqdn	siteanalysto.com
+ip6	10:33:C9:7A:D9:4F:3A:73
+ip6	10:EB:7D:03:2A:B9:15:32
+ip6	28:CB:50:C7:33:05:E3:DE
+ip6	44:52:E6:4C:97:4B:6D:6A
+ip6	54:A0:4A:53:D6:56:C8:2D
+ip6	67:43:9B:EE:39:81:F3:5E
+ip6	7C:40:AD:1E:E0:17:08:33
+ip6	89:C8:E2:E3:4A:23:3C:A0
+ip6	8A:B3:F2:49:35:F8:58:FE
+ip6	8F:BF:68:37:C6:07:45:FB
+ip6	9E:52:71:F3:D2:1D:C3:22
+ip6	B4:D5:0C:8B:73:CB:A9:06
+sha1	03b404c8f4ead4aa3970b26eeeb268c594b1bb47
+sha1	09c3af7b0a6957d5c7c80f67ab3b9cd8bef88813
+sha1	0a5dc47b06de545d8236d70efee801ca573115e7
+sha1	0b58c883efe44ff010f1703db00c9ff4645b59df
+sha1	10f27d243adb082ce0f842c7a4a3784b01f7248e
+sha1	5f71a8a50964dae688404ce8b3fbd83d6e36e5cd
+sha1	782a0e5208c3d9e8942b928857a24183655e7470
+sha1	9b923303f580c999f0fdc25cad600dd3550fe4e0
+sha1	b8237782486a26d5397b75eeea7354a777bff63a
+url	http://droidback.com/pockemon/squirtle/functions.php
+url	http://endpointup.com/update/upfolder/updatefun.php

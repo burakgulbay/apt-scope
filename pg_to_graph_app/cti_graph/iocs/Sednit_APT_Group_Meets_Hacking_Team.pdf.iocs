@@ -1,0 +1,11 @@
+Filename, flash_video_x86.swf
+Filename, fvecer.bat
+APTGroup, sednit
+
+cve	CVE-2015-5119
+fqdn	osce-press.org
+fqdn	osce.org
+sha1	51B0E3CD6360D50424BF776B3CD673DD45FD0F97
+sha1	B8B3F53CA2CD64BD101CB59C6553F6289A72D9BB
+sha1	D43FD6579AB8B9C40524CC8E4B7BD05BE6674F6C
+url	osce.org/press

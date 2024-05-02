@@ -1,0 +1,27 @@
+Filename, INISafeWebSSO.exe
+Filename, inicore_v2.3.30.dll
+Filename, inicore_v2.3.30.bin
+Filename, rc.exe
+Filename, rcdll.dll
+Filename, rcdll.bin
+Filename, dlpumgr32.exe
+Filename, DLPPREM32.dll
+Filename, sv.bin
+Filename, GDFInstall.exe
+Filename, GameuxInstallHelper.DLL
+Filename, sysconfig.bin
+Filename, route-null.exe
+Filename, libwazuhshared.dll
+Filename, wazuhext.bin
+Filename, wazuh-agent.exe
+Filename, libwinpthread-1.dll
+Filename, agent-config.bin
+APTGroup, iron tiger
+
+fqdn	dev.gitlabs.me
+fqdn	multi-user.target
+fqdn	trendmicro.com
+fqdn	xinda.im
+ip4	8.8.8.8
+sha256	e24b29a1df287fe947018c33590a0b443d6967944b281b70fba7ea6556d00109
+url	trendmicro.com/en_us/research/23/c/iron-tiger-sysupdate-adds-linux-targeting.html

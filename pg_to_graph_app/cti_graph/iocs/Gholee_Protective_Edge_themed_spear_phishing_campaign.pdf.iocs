@@ -1,0 +1,20 @@
+Filename, Operation Protective Edge.xlsb
+Filename, svchost 67.exe
+AffectedCountry, israel
+
+fqdn	coreimpactagent.net
+fqdn	ntuser.data
+fqdn	www.clearskysec.com
+ip4	83.170.33.37
+ip4	83.170.33.60
+md5	48573a150562c57742230583456b4c02
+md5	916be1b609ed3dc80e5039a1d8102e82
+md5	d0c3f4c9896d41a7c42737134ffb4c2e
+url	http://www.clearskysec.com/gholee-a-protective-
+url	http://www.clearskysec.com/wp-content/uploads/2014/09/1.png
+url	http://www.clearskysec.com/wp-content/uploads/2014/09/2.png
+url	http://www.clearskysec.com/wp-content/uploads/2014/09/5.png
+url	http://www.clearskysec.com/wp-content/uploads/2014/09/6.png
+url	http://www.clearskysec.com/wp-content/uploads/2014/09/7.png
+url	http://www.clearskysec.com/wp-content/uploads/2014/09/8.png
+url	http://www.clearskysec.com/wp-content/uploads/2014/09/9.png

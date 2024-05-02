@@ -1,0 +1,18 @@
+AffectedIndustry, government
+AffectedCountry, usa
+AttackerCountry, russia
+APTGroup, group-4127, apt28, sofacy, sednit, pawn storm
+
+fqdn	aspmx.l.google.com
+fqdn	dnc.org
+fqdn	donaldjtrump.com
+fqdn	gmail.com
+fqdn	gop.com
+fqdn	hillaryclinton.com
+fqdn	johnkasich.com
+fqdn	www.hillaryclinton.com
+fqdn	www.phishtank.com
+fqdn	www.secureworks.com
+trademark	CTU™
+trademark	SecureWorks®
+trademark	Unit™

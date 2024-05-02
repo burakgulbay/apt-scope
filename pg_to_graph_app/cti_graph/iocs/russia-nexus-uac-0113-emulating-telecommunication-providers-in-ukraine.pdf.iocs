@@ -1,0 +1,82 @@
+Malware, warzonerat
+Malware, colibri loader
+Malware, raccoon stealer
+Malware, redline stealer
+Malware, socelars
+Malware, nymaim
+Malware, privateloader
+Malware, dark crystal
+Malware, djvu ransomware
+Malware, vidar stealer
+Filename, jfilyg7.exe
+Filename, Documents:ApplicationData
+Filename, Get-Variable.exe
+Filename, MSCommonDriver.exe
+Filename, conhost.exe
+Filename, jfilyg7.exe
+Filename, programs.bat
+AffectedIndustry, government
+C2ServerCountry, ukraine
+APTGroup, insikt
+
+fqdn	account.adfs.kyivstar.online
+fqdn	adfs.kyivstar.online
+fqdn	darkett.ddns.net
+fqdn	darkfox.ddns.net
+fqdn	darksea.ddns.net
+fqdn	datagroup.ddns.net
+fqdn	ddns.net
+fqdn	ett.ddns.net
+fqdn	ett.hopto.org
+fqdn	ett.ua
+fqdn	fr3d.hk
+fqdn	ghbbgyv.cx
+fqdn	hopto.org
+fqdn	jkvgvcguygytfigj.cc
+fqdn	kievstar.online
+fqdn	kyiv-star.ddns.net
+fqdn	kyivstar.online
+fqdn	login.adfs.kyivstar.online
+fqdn	login.kyivstar.online
+fqdn	outlook.adfs.kyivstar.online
+fqdn	porodicno.ba
+fqdn	recordedfuture.com
+fqdn	shodan.io
+fqdn	star-cz.ddns.net
+fqdn	star-link.ddns.net
+fqdn	warzone.ws
+fqdn	whatportis.com
+fqdn	www.kyivstar.online
+fqdn	www.recordedfuture.com
+fqdn	yugyuvyugguitgyuigtfyutdtoghghbbgyv.cx
+fqdn	zpltcmgodhvvedxtfcygvbgjkvgvcguygytfigj.cc
+ip4	1.2.3.4
+ip4	103.150.187.121
+ip4	103.27.202.127
+ip4	217.77.221.199
+ip4	31.7.58.82
+ip4	65.108.213.210
+ip4	91.200.114.141
+ip4	94.153.171.42
+ip4	94.158.156.4
+sha1	a5a20063c8699c66f5292ed1da7c860360baf6cf
+sha1	bc4cab14e4b378a7b98185367b4778f92eb4335f
+sha256	1c6643b479614340097a8071c9f880688af5a82db7b6e755beafe7301eea1abf
+sha256	44673a8ff098f12910c441c5697d27889dd1c5fd4aef875d4cf381227eac3a2b
+sha256	722c36abd195cce70ee25b48d6e64873262e046eae7433976120a1496f01487d
+sha256	98c9e85c013d0404e2c595958a77f4d1cafeb122efde9efc3a83a59b1233b58f
+sha256	a5a20063c8699c66f5292ed1da7c860360baf6cf2a52f33c2c0b8873a995397c
+sha256	aa2d97b5be06be67ec04774ad681da6113ee2b4929c0539929bbac19926682c8
+sha256	bc4cab14e4b378a7b98185367b4778f92eb4335faba1a4503f4cfb7aba8f13e7
+sha256	ed8894af2c305e46c5fc8cdefa21e4535a601aa58d06d1beed17bb2c9e51b271
+trademark	Future ®
+trademark	Future®
+trademark	Group®
+tronix	41c5697d27889dd1c5fd4aef875d4cf381227eac3a
+url	fr3d.hk/blog/colibri-loader-back-to-basics
+url	ghbbgyv.cx/gate.php
+url	https://porodicno.ba/wp-content/
+url	https://porodicno.ba/wp-content/Agenda.html
+url	https://whatportis.com/ports/8291_winbox-default-on-a-mikrotik-
+url	jkvgvcguygytfigj.cc/gate.php
+uuid	3ad05575-8857-4850-9277-11b85bdb8e09

@@ -1,0 +1,8 @@
+Malware, updatesee
+AffectedIndustry, government
+AffectedIndustry, military
+AffectedCountry, india
+AttackerCountry, pakistan
+
+cve	CVE-2012-0158
+ip4	5.189.145.248

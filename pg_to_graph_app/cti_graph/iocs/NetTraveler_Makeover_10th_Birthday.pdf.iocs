@@ -1,0 +1,29 @@
+Filename, Sabiq sot xadimi gulnar abletning qeyin-Qistaqta olgenlikiashkarilanmaqta.doc
+Filename, WINDOWSUPDATANEY.DLL
+AffectedIndustry, government
+AffectedIndustry, finance
+AffectedIndustry, healthcare
+AffectedCountry, china
+C2ServerCountry, hong kong
+APTGroup, nettraveler
+
+cve	CVE-2012-0158
+fqdn	angellost.net
+fqdn	gobackto.net
+fqdn	husden.com
+fqdn	jojomic.com
+fqdn	samedone.com
+fqdn	ssdcru.com
+fqdn	todaynic.com
+fqdn	uyghurinfo.com
+fqdn	uygurinfo.com
+fqdn	worksware.net
+ip4	103.1.42.1
+ip4	103.17.117.201
+ip4	103.30.7.76
+ip4	103.30.7.77
+ip4	122.10.17.130
+ip4	202.146.219.14
+ip4	216.83.32.29
+md5	b2385963d3afece16bd7478b4cf290ce
+md5	c13c79ad874215cfec8d318468e3d116

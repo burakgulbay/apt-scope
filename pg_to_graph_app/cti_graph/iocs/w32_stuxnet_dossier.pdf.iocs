@@ -1,0 +1,26 @@
+Malware, stuxnet
+AffectedIndustry, energy industry
+AffectedCountry, iran
+AffectedCountry, indonesia
+AffectedCountry, india
+AffectedCountry, azerbaijan
+AffectedCountry, pakistan
+AffectedCountry, malaysia
+AttackerCountry, usa
+AttackerCountry, uzbekistan
+AttackerCountry, russia
+AttackerCountry, great britain
+C2ServerCountry, malaysia
+C2ServerCountry, denmark
+
+copyright	Copyright © 2011 Symantec Corporation. All rights reserved.
+cve	CVE-2010-2568
+fqdn	1.zip
+fqdn	msn.com
+fqdn	windowsupdate.com
+fqdn	www.msn.com
+fqdn	www.mypremierfutbol.com
+fqdn	www.symantec.com
+fqdn	www.todaysfutbol.com
+fqdn	www.windowsupdate.com
+phoneNumber	+14085178000

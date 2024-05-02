@@ -1,0 +1,20 @@
+Filename, install.vbs
+Filename, update.vbs
+Filename, activate.vbs
+Filename, unactivate.vbs
+Filename, stopedge.bat
+Filename, resolvedns.bat
+Filename, versioninfo.bat
+AffectedCountry, south korea
+MitreTechnique, T1566
+MitreTechnique, T1059
+MitreTechnique, T1053
+MitreTechnique, T1140
+MitreTechnique, T1070
+MitreTechnique, T1082
+MitreTechnique, T1083
+MitreTechnique, T1057
+MitreTechnique, T1041
+MitreTechnique, T1071
+MitreTechnique, T1560
+APTGroup, konni

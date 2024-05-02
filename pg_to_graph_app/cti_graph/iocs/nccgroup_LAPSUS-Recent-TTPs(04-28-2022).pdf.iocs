@@ -1,0 +1,10 @@
+Malware, vultr
+APTGroup, lapsus$
+
+fqdn	filetransfer.io
+fqdn	research.nccgroup.com
+ip4	104.238.222.158
+ip4	108.61.173.214
+ip4	185.169.255.74
+url	https://filetransfer.io
+url	research.nccgroup.com/2022/04/28/lapsus-recent-techniques-tactics-and-procedures

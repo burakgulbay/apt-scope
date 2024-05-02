@@ -1,0 +1,16 @@
+Malware, deputydog
+
+cve	CVE-2013-3893
+fqdn	ad04.bounceme.net
+fqdn	dll.freshdns.org
+fqdn	grado.selfip.com
+fqdn	ieee.boeing-job.com
+fqdn	usa-mail.scieron.com
+fqdn	usc-data.suroot.com
+ip4	111.68.9.93
+ip4	58.64.143.244
+ip4	58.64.213.104
+md5	104130d666ab3f640255140007f0b12d
+md5	20854f54b0d03118681410245be39bd8
+md5	90a37e54c53ffb78969644b1a7038e8c
+md5	acbc249061a6a2fb09271a68d53567d9

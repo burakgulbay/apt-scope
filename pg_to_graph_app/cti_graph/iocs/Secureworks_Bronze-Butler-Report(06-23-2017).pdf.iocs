@@ -1,0 +1,25 @@
+APTGroup, bronze butler
+
+copyright	Copyright (c) 1993-2007 Alexander Roshal   22 May 2007 
+copyright	© 2017 SecureWorks Inc. All rights reserved.
+copyright	© 2017 SecureWorks, Inc. All rights reserved.
+fqdn	microsoft.net
+fqdn	technet.microsoft.com
+fqdn	www.jpcert.or.jp
+fqdn	www.lac.co.jp
+fqdn	www.nca.gr.jp
+fqdn	www.nenkin.go.jp
+fqdn	www.npa.go.jp
+fqdn	www.secureworks.jp
+fqdn	www.symantec.com
+trademark	Unit™
+url	http://www.jpcert.or.jp/research/AD.html
+url	http://www.nenkin.go.jp/oshirase/topics/2015/0104.html
+url	https://technet.microsoft.com/en-us/sysinternals/sysmon.aspx
+url	https://www.jpcert.or.jp/magazine/acreport-wincommand.html
+url	https://www.lac.co.jp/lacwatch/report/20160802_000385.html
+url	https://www.npa.go.jp/cyberpolice/detect/pdf/20170330.pdf
+url	https://www.secureworks.jp/capabilities/incident-response/incident-
+url	https://www.secureworks.jp/capabilities/managed-security/endpoint-
+url	https://www.secureworks.jp/capabilities/managed-security/network-
+url	https://www.symantec.com/connect/nl/blogs/tick?page=1

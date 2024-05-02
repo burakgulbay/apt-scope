@@ -1,0 +1,17 @@
+Malware, clayslide
+Malware, almacommunicator
+Malware, mimikatz
+Filename, SystemSyncs.exe
+Filename, m6.e
+Filename, cfg
+APTGroup, oilrig
+
+fqdn	prosalar.com
+fqdn	researchcenter.paloaltonetworks.com
+ip4	33.33.94.94
+ip4	36.37.94.33
+md5	35ead98470edf86a1c5a1c5fb2f14e02
+sha256	2d6f06d8ee0da16d2335f26eb18cd1f620c4db3e880efa6a5999eff53b12415c
+sha256	2fc7810a316863a5a5076bf3078ac6fad246bc8773a5fb835e0993609e5bb62e
+sha256	f37b1bbf5a07759f10e0298b861b354cee13f325bc76fbddfaacd1ea7505e111
+url	researchcenter.paloaltonetworks.com/2017/11/unit42-oilrig-deploys-alma-communicator-dns-tunneling-trojan/

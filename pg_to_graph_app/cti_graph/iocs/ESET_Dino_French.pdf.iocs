@@ -1,0 +1,18 @@
+Malware, dino
+Filename, Dino.exe
+AffectedCountry, iran
+AttackerCountry, france
+
+fqdn	dneprorudnoe.info
+fqdn	www.azhar.bf
+fqdn	www.google.com
+fqdn	www.rsvniima.org
+md5	12FEB4A9EEDEE411B283000C29FD2872
+md5	A88E8181CA5CE35AE70C76145DFB820D
+sha1	BF551FBDCF5A982705C01094436883A6AD3B75BD
+url	http://dneprorudnoe.info//…[REDACTED]…/postal.php
+url	http://dneprorudnoe.info/sxd/lang/i18n/charcodes/postal.php
+url	http://www.azhar.bf/modules/mod_search/found/cache/postal.php
+url	http://www.azhar.bf/…[REDACTED]…/postal.php
+url	http://www.rsvniima.org/templates/rsv/icons/din12/postal.php
+url	http://www.rsvniima.org/…[REDACTED]…/din12/postal.php

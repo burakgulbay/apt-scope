@@ -1,0 +1,15 @@
+Malware, malumpos
+AffectedIndustry, finance
+APTGroup, carbanak
+
+email	USFraudControl@visa.com
+email	VIFraudControl@visa.com
+email	paymentintelligence@visa.com
+fqdn	visa.com
+sha1	2cf2f41d2454b59641a84f8180fd7e32135a0dbc
+sha1	757ae5eed0c5e229ad9bae586f1281b5de053767
+sha1	798bc2d91293c18af7e99ba7c9a4fd3010051741
+sha1	90e85b471b64667dbcde3aee3fa504c0d4b0ad35
+sha1	d0b3562d868694fd1147e15483f88f3a78ebedfb
+sha1	f728bf7d6dbfc4c7bea21d6a3fd0b88f4fe52a4a
+sha1	fe713f9bb90b999250c3b6a3bba965d603de32a3

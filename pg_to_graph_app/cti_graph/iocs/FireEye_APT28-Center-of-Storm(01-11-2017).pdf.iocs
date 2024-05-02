@@ -1,0 +1,28 @@
+Malware, chopstick
+Malware, eviltoss
+Malware, gamefish
+Malware, sourface
+Malware, oldbait
+Malware, coreshell
+AffectedCountry, usa
+AttackerCountry, russia
+APTGroup, apt28
+
+copyright	© 2016 FireEye, Inc. All rights reserved.
+cve	CVE-2015-1701
+cve	CVE-2015-2424
+cve	CVE-2015-2590
+cve	CVE-2015-3043
+cve	CVE-2015-5119
+cve	CVE-2016-7255
+cve	CVE-2016-7855
+email	info@FireEye.com
+fqdn	0nedrive-0ffice365.com
+fqdn	bbc-news.org
+fqdn	fancybear.net
+fqdn	fireeye.com
+fqdn	nato-news.com
+fqdn	theguardiannews.org
+fqdn	www.fireeye.com
+fqdn	www.tas-cas.org
+url	www.fireeye.com/reports.html

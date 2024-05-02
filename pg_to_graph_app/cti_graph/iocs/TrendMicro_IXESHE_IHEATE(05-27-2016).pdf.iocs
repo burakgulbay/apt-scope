@@ -1,0 +1,12 @@
+AffectedIndustry, government
+AffectedIndustry, telecommunication
+AffectedIndustry, manufacturing
+AffectedCountry, usa
+AffectedCountry, germany
+APTGroup, iheate
+
+fqdn	blog.trendmicro.com
+fqdn	gimeover.psp-moscow.com
+fqdn	ipv6pro.root.sx
+fqdn	skype.silksky.com
+ip4	200.93.193.163

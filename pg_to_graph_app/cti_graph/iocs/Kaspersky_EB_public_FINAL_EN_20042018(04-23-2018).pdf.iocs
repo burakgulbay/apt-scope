@@ -1,0 +1,49 @@
+Filename, ini.php
+Filename, mysql.php
+Filename, opts.php
+Filename, error_log.php
+Filename, code29.php
+Filename, proxy87.php
+Filename, theme.php
+Filename, sma.php
+Filename, media.php
+AffectedIndustry, oil and gas
+AffectedIndustry, finance
+AffectedIndustry, aerospace and defence
+AffectedIndustry, technology
+AffectedIndustry, cryptocurrency
+AffectedCountry, russia
+AffectedCountry, ukraine
+AffectedCountry, united kingdom
+AffectedCountry, germany
+AffectedCountry, turkey
+AffectedCountry, greece
+AffectedCountry, usa
+AffectedCountry, brazil
+APTGroup, energetic bear, crouching yeti
+
+copyright	© Kaspersky Lab, 1997 – 2018 
+email	Ics-cert@kaspersky.com
+fqdn	ftpchecker.py
+fqdn	github.com
+fqdn	kashey.ru
+fqdn	kaspersky.com
+fqdn	www.esodedi.ru
+fqdn	www.i-stroy.ru
+fqdn	www.saledoor.ru
+githubHandle	bediger4000
+githubHandle	jivoi
+githubHandle	sqlmapproject
+githubHandle	wso-shell
+md5	155385cc19e3092765bcfed034b82ccb
+md5	1644af9b6424e8f58f39c7fa5e76de51
+md5	2292f5db385068e161ae277531b2e114
+md5	428c5fcf495396df04a459e317b70ca2
+md5	78c31eff38fdb72ea3b1800ea917940f
+md5	7ec514bbdc6dd8f606f803d39af8883f
+md5	c76470e85b7f3da46539b40e5c552712
+md5	f3e3e25a822012023c6e81b206711865
+url	https://github.com/bediger4000/php-malware-analysis/tree/master/db-config.php
+url	https://github.com/jivoi/openssh-backdoor-kit
+url	https://github.com/sqlmapproject/sqlmap.git
+url	https://github.com/wso-shell/WSO

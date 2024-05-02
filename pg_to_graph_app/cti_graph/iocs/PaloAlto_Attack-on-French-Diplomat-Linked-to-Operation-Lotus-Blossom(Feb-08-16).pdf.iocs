@@ -1,0 +1,24 @@
+Filename, ishelp.dll
+Filename, A08E81B411.DAT
+Filename, 75BD50EC.DAT
+AffectedCountry, france
+AffectedCountry, taiwan
+APTGroup, lotus blossom
+
+fqdn	appletree.onthenetas.com
+fqdn	dnt5b.myfw.us
+fqdn	researchcenter.paloaltonetworks.com
+fqdn	shell.run
+fqdn	showip.net
+fqdn	ustar5.passas.us
+fqdn	wscript.shell
+ip4	203.124.14.229
+md5	06f1d2be5e981dee056c231d184db908
+md5	6278fc8c7bf14514353797b229d562e8
+md5	748feae269d561d80563eae551ef7bfd
+md5	9fd6f702763a9840bd1b3a898eb9c62d
+md5	e9f51a4e835929e513c3f30299567abc
+url	http://203.124.14.229/default.aspx
+url	http://dnt5b.myfw.us/default.aspx
+url	http://researchcenter.paloaltonetworks.com/2015/12/attack­on­french­diplomat­linked­to­operation­lotus­blossom/
+url	http://ustar5.PassAs.us/default.aspx

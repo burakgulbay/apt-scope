@@ -1,0 +1,24 @@
+Malware, plugx
+Malware, smokeloader
+Filename, DW20.DLL
+
+copyright	© 2013 Sophos Ltd. All rights reserved.
+cve	CVE-2012-0158
+fqdn	dtl.dnsd.me
+fqdn	dtl.eauto.com
+fqdn	dtl6.moo.com
+fqdn	nakedsecurity.sophos.com
+fqdn	podcasts.sophos.com
+fqdn	www.cve.mitre.org
+fqdn	www.sophos.com
+sha1	56e8c76cd88996da9b88901520f72ebb743e55ff
+sha1	a99b73b56fe94375ec46e51903f815d86afbd78d
+sha1	b2f854e9987bce5d110349a354588568ab49726b
+sha1	b84a133cf02eaa7b8a8096e997bda28fc482cf78
+sha1	c093d4cd2390617da58bd412c9219e013de503a3
+url	http://nakedsecurity.sophos.com/
+url	http://nakedsecurity.sophos.com/inside-the-plugx-malware
+url	http://podcasts.sophos.com/
+url	http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0158
+url	http://www.sophos.com/why-sophos/our-people/technical-papers.aspx
+url	www.sophos.com/legal

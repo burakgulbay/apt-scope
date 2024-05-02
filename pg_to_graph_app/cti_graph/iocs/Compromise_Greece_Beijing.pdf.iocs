@@ -1,0 +1,24 @@
+AffectedCountry, greece
+AffectedCountry, china
+Filename, 1.jar
+
+fqdn	20beijing.zip
+fqdn	buy.miraclecz.com
+fqdn	defense.miraclecz.com
+fqdn	twitter.com
+fqdn	www.dropbox.com
+fqdn	www.grpressbeijing.com
+fqdn	www.motobit.com
+ip4	208.115.124.83
+ip4	74.121.191.33
+sha256	a4863f44f48d1c4c050dd7baad767a86b348dd4d33924acf4e0a3cd40c6ae29f
+sha256	b832e4b5a4829c8df6de7b42c5cb32ef25b5ab59072b4c2a7838404cd0dd5e5f
+twitterHandle	PhysicalDrive0
+url	defense.miraclecz.com/index.asp?id=50100
+url	http://buy.miraclecz.com
+url	http://www.grpressbeijing.com/1.jar
+url	http://www.motobit.com/util/base64-decoder-encoder.asp
+url	https://twitter.com/PhysicalDrive0/status/479921770838102017
+url	https://www.dropbox.com/s/ckr7p5kka62cc7s/Embassy%20of%20Greece%20-%20Beijing.zip
+uuid	d30c1661-cdaf-11d0-8a3e-00c04fc9e26e
+uuid	dc12a687-737f-11cf-884d-00aa004b2e24

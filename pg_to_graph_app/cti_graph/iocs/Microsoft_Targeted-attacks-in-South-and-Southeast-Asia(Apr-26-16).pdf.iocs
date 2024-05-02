@@ -1,0 +1,104 @@
+Filename, Gambar gambar Rumah Gay Didiet Prabowo di Sentul Bogor.doc
+Filename, The real reason Prabowo wants to be President.doc
+Filename, Malaysia a victim of American irregular warfare ops.doc
+Filename, Tu Vi Nam Tan Mao 2011.doc
+Filename, Indians having fun.doc
+Filename, Gerakan Anti SBY II.doc
+Filename, Mao_2011.doc
+Filename, Wikileaks Indonesia.doc
+Filename, Surveillance Devices.doc
+Filename, SEMBOYAN_1.doc
+AffectedIndustry, government
+AffectedIndustry, intelligence
+AffectedIndustry, defense
+AffectedCountry, malaysia
+AffectedCountry, indonesia
+AffectedCountry, china
+AffectedCountry, singapore
+AffectedCountry, india
+AffectedCountry, thailand
+APTGroup, platinum
+APTGroup, strontium
+
+copyright	Copyright © 2016 Microsoft Corporation. All rights reserved.
+cve	CVE-2013-1331
+cve	CVE-2013-7331
+cve	CVE-2015-2545
+cve	CVE-2015-2546
+fqdn	box62.a-inet.net
+fqdn	bpl.blogsite.org
+fqdn	eclipse.a-inet.net
+fqdn	geocities.efnet.at
+fqdn	intent.nofrillspace.com
+fqdn	joomlastats.a-inet.net
+fqdn	mister.nofrillspace.com
+fqdn	mobileworld.darktech.org
+fqdn	plusvic.github.io
+fqdn	scienceweek.scieron.com
+fqdn	server.joomlastats.co.cc
+fqdn	updates.joomlastats.co.cc
+fqdn	wiki.servebbs.net
+fqdn	www.police28122011.0fees.net
+fqdn	www.yumpu.com
+githubHandle	plusvic
+ip4	190.96.47.9
+ip4	192.192.114.1
+ip4	200.61.248.8
+ip4	209.45.65.163
+ip4	61.31.203.98
+sha1	0096a3e0c97b85ca75164f48230ae530c94a2b77
+sha1	09e0dfbb5543c708c0dd6a89fd22bbb96dc4ca1c
+sha1	0bc08dca86bd95f43ccc78ef4b27d81f28b4b769
+sha1	1b542dd0dacfcd4200879221709f5fa9683cdcda
+sha1	1bdc1a0bc995c1beb363b11b71c14324be8577c9
+sha1	2155c20483528377b5e3fde004bb604198463d29
+sha1	29cb81dbe491143b2f8b67beaeae6557d8944ab4
+sha1	2a33542038a85db4911d7b846573f6b251e16b2d
+sha1	2abb8e1e9cac24be474e4955c63108ff86d1a034
+sha1	2fe3c80e98bbb0cf5a0c4da286cd48ec78130a24
+sha1	3119de80088c52bd8097394092847cd984606c88
+sha1	3907a9e41df805f912f821a47031164b6636bd04
+sha1	3a678b5c9c46b5b87bfcb18306ed50fadfc6372e
+sha1	3acb8fe2a5eb3478b4553907a571b6614eb5455c
+sha1	3d17828632e8ff1560f6094703ece5433bc69586
+sha1	3f2ce812c38ff5ac3d813394291a5867e2cddcf2
+sha1	48b89f61d58b57dba6a0ca857bce97bab636af65
+sha1	6a1412daaa9bdc553689537df0a004d44f8a45fd
+sha1	6d1169775a552230302131f9385135d385efd166
+sha1	6dccf88d89ad7b8611b1bc2e9fb8baea41bdb65a
+sha1	831a5a29d47ab85ee3216d4e75f18d93641a9819
+sha1	88ff852b1b8077ad5a19cc438afb2402462fbd1a
+sha1	92a3ece981bb5e0a3ee4277f08236c1d38b54053
+sha1	960feeb15a0939ec0b53dcb6815adbf7ac1e7bb2
+sha1	99c08d31af211a0e17f92dd312ec7ca2b9469ecb
+sha1	99dcb148b053f4cef6df5fa1ec5d33971a58bd1e
+sha1	9a4e82ba371cd2fedea0b889c879daee7a01e1b1
+sha1	a80051d5ae124fd9e5cc03e699dd91c2b373978b
+sha1	bbd4992ee3f3a3267732151636359cf94fb4575d
+sha1	bf944eb70a382bd77ee5b47548ea9a4969de0527
+sha1	c1c950bc6a2ad67488e675da4dfc8916831239a7
+sha1	ca3bda30a3cdc15afb78e54fa1bbb9300d268d66
+sha1	ccaf36c2d02c3c5ca24eeeb7b1eae7742a23a86a
+sha1	d3ad0933e1b114b14c2b3a2c59d7f8a95ea0bcbd
+sha1	d6a795e839f51c1a5aeabf5c10664936ebbef8ea
+sha1	d807648ddecc4572c7b04405f496d25700e0be6e
+sha1	dc991ef598825daabd9e70bac92c79154363bab2
+sha1	dcb6cf7cf7c8fdfc89656a042f81136bda354ba6
+sha1	dff2fee984ba9f5a8f5d97582c83fca4fa1fe131
+sha1	e0ac2ae221328313a7eee33e9be0924c46e2beb9
+sha1	e18750207ddbd939975466a0e01bd84e75327dda
+sha1	e9f900b5d01320ccd4990fd322a459d709d43e4b
+sha1	f362feedc046899a78c4480c32dda4ea82a3e8c0
+sha1	f4af574124e9020ef3d0a7be9f1e42c2261e97e6
+sha1	f751cdfaef99c6184f45a563f3d81ff1ada25565
+sha1	fa083d744d278c6f4865f095cfd2feabee558056
+sha1	fa087986697e4117c394c9a58cb9f316b2d9f7d8
+sha1	ff7f949da665ba8ce9fb01da357b51415634eaad
+url	https://plusvic.github.io/yara/
+url	https://www.yumpu.com/en/document/view/14255220/alexsyscan13/23
+url	intent.nofrillspace.com/users/web11_focus/3807/space.gif
+url	intent.nofrillspace.com/users/web11_focus/4307/space.gif
+url	mister.nofrillspace.com/users/web8_dice/3791/space.gif
+url	mister.nofrillspace.com/users/web8_dice/4226/space.gif
+url	www.police28122011.0fees.net/pages/013/space.gif
+uuid	74ba9ce4-fbf1-4097-32b8-34f446f037d8

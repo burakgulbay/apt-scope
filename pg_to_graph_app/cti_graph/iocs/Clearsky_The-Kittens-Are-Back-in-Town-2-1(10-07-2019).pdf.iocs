@@ -1,0 +1,23 @@
+AffectedIndustry, government
+AffectedCountry, usa
+AffectedCountry, france
+AttackerCountry, iran
+APTGroup, charming kitten, apt35, ajax, phosphorus
+APTGroup, apt28, fancy bear
+
+fqdn	blogs.microsoft.com
+fqdn	noticeofpleadings.com
+fqdn	unsplash.com
+fqdn	www.bleepingcomputer.com
+fqdn	www.clearskysec.com
+fqdn	www.niacouncil.org
+url	https://blogs.microsoft.com/on-the-issues/2019/03/27/new-steps-to-protect-customers-from-
+url	https://blogs.microsoft.com/on-the-issues/2019/10/04/recent-cyberattacks-require-
+url	https://noticeofpleadings.com/phosphorus/files/Complaint.pdf
+url	https://noticeofpleadings.com/strontium/files/prop_ord_dj_pi_appc.pdf
+url	https://unsplash.com/photos/OE7H8Zp1
+url	https://www.bleepingcomputer.com/news/security/iranian-apt-poses-as-israeli-cyber-
+url	https://www.clearskysec.com/charmingkitten/
+url	https://www.clearskysec.com/thamar-reservoir/
+url	https://www.clearskysec.com/the-kittens-are-back-in-town/
+url	https://www.niacouncil.org/about-niac/staff-board/nooshin-sadegh-samimi/

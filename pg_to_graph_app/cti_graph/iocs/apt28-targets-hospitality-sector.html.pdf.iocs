@@ -1,0 +1,15 @@
+APTGroup, apt28
+AttackerCountry, russia
+AffectedIndustry, hotels
+Malware, eternalblue
+Malware, gamefish
+Filename, Hotel_Reservation_Form.doc
+APTGroup, darkhotel
+APTGroup, nexus fallout team
+Malware, duqu 2.0
+copyright	Copyright © 2017 FireEye, Inc. All rights reserved.
+fqdn	mvband.net
+fqdn	mvtband.net
+md5	1421419d1be31f1f9ea60e8ed87277db
+md5	9b10685b774a783eabfecdb6119a8aa3
+phoneNumber	+18882272721

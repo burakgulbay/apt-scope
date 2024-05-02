@@ -1,0 +1,14 @@
+Filename, RR143TB.doc
+AffectedCountry, ukraine
+APTGroup, blackenergy
+
+email	intelreports@kaspersky.com
+fqdn	kaspersky.com
+fqdn	securelist.com
+fqdn	www.stb.ua
+ip4	5.149.254.114
+md5	3fa9130c9ec44e36e52142f3688313ff
+md5	ac2d7f21c826ce0c449481f79138aebd
+md5	e15b36c2e394d599a8ab352159089dd2
+url	http://www.stb.ua/ru/
+url	https://securelist.com/blog/research/73440/blackenergy-apt-attacks-in-ukraine-employ-spearphishing-with-word-documents/

@@ -1,0 +1,34 @@
+Malware, china chopper
+Filename, caidao.exe
+AffectedCountry, china
+
+copyright	© 2013  FireEye, Inc. All rights reserved.
+email	info@FireEye.com
+fqdn	fiddler2.com
+fqdn	fireeye.com
+fqdn	google.com.hk
+fqdn	informationonsecurity.blogspot.com
+fqdn	malware-hunters.net
+fqdn	www.aldeid.com
+fqdn	www.fireeye.com
+fqdn	www.gnu.org
+fqdn	www.google.com.hk
+fqdn	www.maicaidao.com
+fqdn	www.snort.org
+fqdn	www.tekdefense.com
+fqdn	www.wireshark.org
+md5	5001ef50c7e869253a7c152a638eab8a
+md5	8aa603ee2454da64f4c70f24cc0b5e08
+md5	acba8115d027529763ea5c7ed6621499
+md5	ad8288227240477a95fb023551773c84
+trademark	Platform™
+url	http://fiddler2.com/
+url	http://informationonsecurity.blogspot.com/2012/11/china-chopper-webshell.html
+url	http://malware-hunters.net/all-downloads/
+url	http://www.aldeid.com/wiki/PEiD
+url	http://www.fireeye.com/blog/technical/botnet-activities-
+url	http://www.gnu.org/software/wget/
+url	http://www.snort.org/
+url	http://www.tekdefense.com/news/2012/10/21/tektip-ep12-regex-basics.html
+url	http://www.tekdefense.com/news/2013/1/6/tektip-ep19-using-regex-with-notepad.html
+url	http://www.wireshark.org/

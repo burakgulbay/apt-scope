@@ -1,0 +1,22 @@
+Malware, uroburos
+Filename, inj_snake_Win32.dll
+Filename, inj_snake_Win64.dll
+AffectedIndustry, defense
+AffectedCountry, usa
+AttackerCountry, russia
+
+copyright	Copyright © 2014 G Data Software AG 
+email	intelligence@gdata.de
+fqdn	en.wikipedia.org
+fqdn	gdata.de
+fqdn	vnd.ms
+fqdn	www.mspaintadventures.com
+fqdn	www.reuters.com
+md5	320F4E6EE421C1616BD058E73CFEA282
+sha256	BF1CFC65B78F5222D35DC3BD2F0A87C9798BCE5A48348649DD271CE395656341
+url	http://en.wikipedia.org/wiki/2008_cyberattack_on_United_States
+url	http://en.wikipedia.org/wiki/CAST-128
+url	http://en.wikipedia.org/wiki/Pass_the_hash
+url	http://en.wikipedia.org/wiki/Pcap
+url	http://www.mspaintadventures.com/?s=6
+url	http://www.reuters.com/article/2011/06/17/us-usa-cybersecurity-worm-idUSTRE75F5TB20110617

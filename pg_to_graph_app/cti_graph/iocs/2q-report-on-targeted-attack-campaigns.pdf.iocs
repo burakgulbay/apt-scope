@@ -1,0 +1,74 @@
+APTGroup, comment panda
+C2ServerCountry, australia
+C2ServerCountry, south korea
+C2ServerCountry, germany
+C2ServerCountry, japan
+C2ServerCountry, italy
+C2ServerCountry, taiwan
+C2ServerCountry, india
+C2ServerCountry, usa
+C2ServerCountry, vietnam
+C2ServerCountry, netherlands
+C2ServerCountry, china
+C2ServerCountry, south africa
+C2ServerCountry, thailand
+C2ServerCountry, canada
+Malware, ixeshe
+Malware, elise
+Malware, zegost
+Malware, beebus
+Malware, mutter
+Malware, travnet
+AffectedIndustry, government
+AffectedIndustry, computer
+AffectedIndustry, telecommunication
+AffectedIndustry, internet
+AffectedIndustry, finance
+AffectedIndustry, aerospace and defence
+Malware, evilgrab
+Filename, IEChecker.lnk
+Filename, Live360.exe
+Filename, fxsst.dll
+Filename, svchost.dll
+Filename, avp.exe
+Filename, klwtblfs.exe
+Filename, wmifw.exe
+Filename, pstorec.dll
+Filename, index.dat
+Filename, kav.exe
+Filename, starter.exe
+copyright	©2013  by  Trend  Micro,  Incorporated. All  rights  reserved.  Trend  Micro  and  the  Trend 
+cve	CVE-2012-0158
+cve	CVE-2012-2543
+cve	CVE-2013-0640
+fqdn	micoosofts.com
+fqdn	microsoft.com
+fqdn	msdn.microsoft.com
+fqdn	qtds1979.gicp.net
+fqdn	www.trendmicro.com
+fqdn	server1.micoosofts.com
+fqdn	sxl1979.gicp.net
+fqdn	webmonder.gicp.net
+fqdn	webposter.gicp.net
+fqdn	www.yahooip.net
+fqdn	yahooprotect.com
+fqdn	www.yahooprotect.com
+fqdn	www .yahooprotect.net
+fqdn	yacooll.com
+fqdn	yahooip.net
+fqdn	yahooprotect.com
+ip4	111.222.123.132
+ip4	112.121.182.150
+ip4	113.10.190.55
+ip4	113.10.246.46
+ip4	202.130.112.231
+trademark	Discovery™
+trademark	Excel®
+trademark	Microsoft®
+trademark	Micro™
+trademark	Network™
+trademark	Word®
+url	http://msdn.microsoft.com/en-us/library/aa446573.aspx#waveinout_topic_006
+url	http://msdn.microsoft.com/en-us/library/windows/desktop/dd407288(v=vs.85).aspx
+url	http://www.trendmicro.com/cloud-content/us/pdfs/security-intelligence/
+url	microsoft.com/en-us/security/advisory/2269637

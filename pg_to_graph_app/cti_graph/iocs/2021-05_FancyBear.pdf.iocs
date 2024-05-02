@@ -1,0 +1,43 @@
+Malware, skinnyboy
+APTGroup, apt28, fancy bear, pawn storm, strontium
+Filename, tpd1.exe
+Filename, devtmrn.exe
+Filename, TermSrvClt.dll
+Filename, devtmrn.lnk
+Filename, systeminfo.exe
+Filename, tasklist.exe
+MitreTechnique, T1059
+MitreTechnique, T1204
+MitreTechnique, T1547
+MitreTechnique, T1140
+MitreTechnique, T1057
+MitreTechnique, T1082
+MitreTechnique, T1083
+MitreTechnique, T1005
+MitreTechnique, T1119
+MitreTechnique, T1071
+MitreTechnique, T1132
+MitreTechnique, T1020
+MitreTechnique, T1041
+copyright	© Cluster25
+copyright	©2021  Cluster25.  All  rights  reserved.  All  materials  are  intended  for  the  original  recipient  only.  The 
+fqdn	cluster25.io
+fqdn	getstatpro.com
+fqdn	updaterweb.com
+fqdn	www.cluster25.io
+ip4	194.33.40.72
+ip4	5.149.253.45
+md5	3537ed6d4038ca7dbc054308c40fc3e3
+md5	4f3ac4c7b5932f11662d4d22fa5d88ec
+md5	ae1e587d19250deb40e92587b8a2188c
+md5	fa4b1efd428bbf47f9c8395ca91eff25
+sha1	45d607109d1a12a279664eec8f4bd604287b62c7
+sha1	a13cb50e2405440ec984dd3fc340bceea4a81cfc
+sha1	e15c665f02fb288fc4bdef9d23b2dc802b3aca0d
+sha1	efa4fa5ddee99853c32b321496f9369f2db119eb
+sha256	04e1772997b884540d5728a2069c3cc93b8f29478e306d341120f789ea8ec79e
+sha256	12331809c3e03d84498f428a37a28cf6cbb1dafe98c36463593ad12898c588c9
+sha256	2a652721243f29e82bdf57b565208c59937bbb6af4ab51e7b6ba7ed270ea6bce
+sha256	ae0bc3358fef0ca2a103e694aa556f55a3fed4e98ba57d16f5ae7ad4ad583698
+url	https://updaterweb.com/
+uuid	000214F9-0000-0000-C000-000000000046

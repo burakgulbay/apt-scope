@@ -1,0 +1,23 @@
+Malware, roaming mantis
+Malware, wroba.g
+Malware, moqhao
+Malware, xloader
+AffectedIndustry, defense
+AffectedIndustry, media
+AffectedCountry, france
+AffectedCountry, germany
+AffectedCountry, japan
+AffectedCountry, taiwan
+AffectedCountry, korea
+APTGroup, roaming mantis
+
+fqdn	libdf.so
+fqdn	securelist.com
+md5	0aaf6aa859fbdb84de20bf4bf28a02f1
+md5	19c4be7d5d8bf759771f35dec45f267a
+md5	2942ca2996a80ab807be08e7120c2556
+md5	4fbc28088b9bf82dcb3bf42fe1fc1f6d
+md5	527b5eebb6dbd3d0b777c714e707659c
+md5	5bafe0e5a96b1a0db291cf9d57aab0bc
+md5	ddd131d7f0918ece86cc7a68cbacb37d
+url	securelist.com/roaming-mantis-reaches-europe/105596

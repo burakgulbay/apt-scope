@@ -1,0 +1,8 @@
+Malware, updatesee
+AffectedIndustry, government
+AffectedCountry, india
+AttackerCountry, pakistan
+APTGroup, transparent tribe
+
+cve	CVE-2012-0158
+ip4	5.189.145.248

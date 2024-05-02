@@ -1,0 +1,24 @@
+Malware, plugx
+Malware, redleaves
+Malware, koadic
+APTGroup, chessmaster
+
+cve	CVE-2017-8759
+fqdn	blog.trendmicro.com
+ip4	62.75.197.131
+ip4	89.18.27.159
+sha256	af1b2cd8580650d826f48ad824deef3749a7db6fde1c7e1dc115c6b0a7dfa0dd
+trademark	Discovery™
+trademark	Free™
+trademark	Micro™
+trademark	OfficeScan™
+trademark	Protection™
+trademark	XGen™
+url	89.18.27.159/FA347FEiwq.jpg
+url	89.18.27.159/img.db
+url	89.18.27.159:8080/lK0RS
+url	blog.trendmicro.com/trendlabs-security-intelligence/chessmasters-new-strategy-evolving-tools-tactics/
+url	http://62.75.197.131/page/?[random
+url	http://89.18.27.159/FA347FEiwq.jpg
+url	http://89.18.27.159/img.db
+url	http://89.18.27.159:8080/lK0RS

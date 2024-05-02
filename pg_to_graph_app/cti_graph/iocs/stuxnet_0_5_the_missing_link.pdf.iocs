@@ -1,0 +1,29 @@
+Malware, stuxnet
+
+copyright	Copyright © 2013 Symantec Corporation. All rights reserved.
+cve	CVE-2008-4250
+cve	CVE-2010-2568
+cve	CVE-2010-2729
+cve	CVE-2010-2743
+cve	CVE-2010-2772
+cve	CVE-2010-3888
+cve	CVE-2012-3015
+fqdn	ad-marketing.net
+fqdn	best-advertising.net
+fqdn	go.symantec.com
+fqdn	internetadvertising4u.com
+fqdn	smartclick.org
+fqdn	v1.xxx
+fqdn	www.securityfocus.com
+fqdn	www.symantec.com
+phoneNumber	+16505278000
+url	go.symantec.com/socialmedia
+url	http://www.securityfocus.com/bid/54651
+url	http://www.symantec.com/connect/blogs/stuxnet-05-command-and-control-capabilities
+url	http://www.symantec.com/connect/blogs/stuxnet-05-disrupting-uranium-processing-natanz
+url	http://www.symantec.com/connect/blogs/stuxnet-05-how-it-evolved
+url	http://www.symantec.com/connect/blogs/stuxnet-05-missing-link
+url	http://www.symantec.com/security_response/writeup.jsp?docid=2010-071400-3123-99
+url	http://www.symantec.com/security_response/writeup.jsp?docid=2011-101814-1119-99
+url	http://www.symantec.com/security_response/writeup.jsp?docid=2012-052811-0308-99
+uuid	6F716D8C-398F-11D3-85E1-005004838609

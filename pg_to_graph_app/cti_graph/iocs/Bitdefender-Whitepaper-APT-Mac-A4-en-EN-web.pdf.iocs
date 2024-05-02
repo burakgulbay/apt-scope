@@ -1,0 +1,36 @@
+APTGroup, apt28, sofacy
+Malware, coreshell
+Malware, komplex
+Malware, jhuhugit
+Malware, azzy
+Malware, xagent
+Malware, komplex
+Filename, roskosmos_2015-2025.app
+copyright	 © 2015 Bitdefender. All trademarks, trade names, and products referenced herein are property of their respective owners.   
+fqdn	-2025.app
+fqdn	apple-checker.org
+fqdn	apple-iclods.net
+fqdn	apple-iclods.org
+fqdn	apple-search.info
+fqdn	apple-uptoday.org
+fqdn	enterprise.bitdefender.com
+fqdn	preview.app
+fqdn	start.sh
+fqdn	www.bitdefender.com
+ip4	23.227.196.215
+ip4	8.8.8.8
+ip6	::
+ip6	::b64D
+ip6	::b64E
+ip6	::ba
+ip6	::c
+ip6	::dec
+md5	4fe4b9560e99e33dabca553e2eeee510
+url	http://23.227.196.215
+url	http://23.227.196.215/watch/?itwm=7FJcXOPyN_Znh7quXfh4WAaKquNzY
+url	http://apple-checker.org
+url	http://apple-iclods.org
+url	http://apple-iclods.org/close/?itwm=LO6iN-
+url	http://apple-search.info
+url	http://apple-uptoday.org
+url	http://www.bitdefender.com/

@@ -1,0 +1,49 @@
+Malware, zehir asp shell
+Filename, zehir4.asp
+Filename, ZHC_Shell_1.0.aspx
+AffectedIndustry, oil and gas
+AffectedIndustry, defense
+APTGroup, stteam
+
+copyright	Copyright © 2014 General Dynamics Fidelis Cybersecurity Solutions 
+email	stylish_boy6@yahoo.com
+email	zehirhacker@hotmail.com
+fqdn	0.zip
+fqdn	a6.sphotos.ak.fbcdn.net
+fqdn	asp.net
+fqdn	hotmail.com
+fqdn	i.in
+fqdn	img851.imageshack.us
+fqdn	pastebin.com
+fqdn	vnd.ms
+fqdn	window.open
+fqdn	www.fidelissecurity.com
+fqdn	www.threatgeek.com
+fqdn	www.turkhackteam.net
+fqdn	www.virustotal.com
+fqdn	www.w3.org
+fqdn	www.zone-hack.com
+fqdn	yahoo.com
+fqdn	zone-hack.com
+ip4	46.165.220.223
+md5	5b496a61363d304532bcf52ee21f5d55
+md5	99c056056df9104fc547d9d274bbc8a2
+phoneNumber	+18006524020
+sha1	1d9b78b5b14b821139541cc0deb4cbbd994ce157
+sha1	917f80730fcd158a5203c37a289bd7542670dd50
+sha256	b57bf397984545f419045391b56dcaf7b0bed8b6ee331b5c46cee35c92ffa13d
+sha256	cc608a7103d320eff5e02a220b309df948df60efd177c9a670f186d4248f7e42
+trademark	XPS™
+tronix	419045391b56dcaf7b0bed8b6ee331b5c46cee35c9
+url	http://a6.sphotos.ak.fbcdn.net/hphotos-ak-
+url	http://img851.imageshack.us/img851/2304/bismillahus.jpg
+url	http://pastebin.com/XAG1Hnfd
+url	http://pastebin.com/dRvNbLb5
+url	http://pastebin.com/eMjgsLA5
+url	http://pastebin.com/m44e60e60
+url	http://www.turkhackteam.net
+url	http://www.w3.org/TR/html4/loose.dtd
+url	http://www.zone-hack.com
+url	http://www.zone-hack.com/
+url	https://www.virustotal.com/en/file/b57bf397984545f419045391b56dcaf7b0bed8b6ee331b5c44ce
+url	https://www.virustotal.com/en/file/cc608a7103d320eff5e02a220b309df948df60efd177c9a670f186d42

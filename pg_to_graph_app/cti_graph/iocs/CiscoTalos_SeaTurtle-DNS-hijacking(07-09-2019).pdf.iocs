@@ -1,0 +1,34 @@
+AffectedIndustry, government
+AffectedIndustry, energy
+AffectedCountry, turkey
+AffectedCountry, greece
+AffectedCountry, cyprus
+AffectedCountry, albania
+AffectedCountry, lebanon
+AffectedCountry, armenia
+AffectedCountry, syria
+AffectedCountry, iraq
+AffectedCountry, jordan
+AffectedCountry, libya
+AffectedCountry, egypt
+AffectedCountry, sudan
+AffectedCountry, usa
+APTGroup, sea turtle
+
+fqdn	blog.talosintelligence.com
+fqdn	ncsc.gov.uk
+fqdn	ns1.intersecdns.com
+fqdn	ns1.rootdnservers.com
+fqdn	ns2.intersecdns.com
+fqdn	ns2.rootdnservers.com
+fqdn	rootdnservers.com
+ip4	140.82.58.253
+ip4	178.17.167.51
+ip4	185.64.105.100
+ip4	188.226.192.35
+ip4	196.29.187.100
+ip4	45.32.100.62
+ip4	95.179.131.225
+ip4	95.179.150.101
+ip4	95.179.156.61
+url	blog.talosintelligence.com/2019/07/sea-turtle-keeps-on-swimming.html

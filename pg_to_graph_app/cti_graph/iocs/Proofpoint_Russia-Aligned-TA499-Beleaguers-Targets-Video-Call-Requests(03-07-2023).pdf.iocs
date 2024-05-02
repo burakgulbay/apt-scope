@@ -1,0 +1,23 @@
+AffectedIndustry, government
+AffectedCountry, ukraine
+AttackerCountry, russia
+APTGroup, ta499, vovan, lexus
+
+email	embassy.chernysh@ukr.net
+email	embassy.us@ukr.net
+email	embassy.usa@ukr.net
+email	julia@navalny.team
+email	lvolkov@navalny.team
+email	office@iaea.co.uk
+email	office@oleksandrmerezhko.com
+email	s.dorenko@ukr.net
+email	secretary.mfa@gmail.com
+fqdn	embassy.us
+fqdn	gmail.com
+fqdn	iaea.co.uk
+fqdn	iaea.com.uk
+fqdn	navalny.team
+fqdn	oleksandrmerezhko.com
+fqdn	proofpoint.com
+fqdn	ukr.net
+url	proofpoint.com/us/blog/threat-insight/dont-answer-russia-aligned-ta499-beleaguers-targets-video-call-requests

@@ -1,0 +1,45 @@
+Malware, cadelspy
+Malware, remexi
+Malware, cadelle
+Malware, chafer
+AffectedCountry, saudi arabia
+AffectedCountry, afghanistan
+AffectedCountry, usa
+AttackerCountry, iran
+
+copyright	© 2016 Symantec Corporation
+facebookHandle	Symantec
+fqdn	cdn2.hubspot.net
+fqdn	en.wikipedia.org
+fqdn	secure.symantec.com
+fqdn	twitter.com
+fqdn	us.norton.com
+fqdn	www.cnet.com
+fqdn	www.facebook.com
+fqdn	www.linkedin.com
+fqdn	www.surveymonkey.com
+fqdn	www.symantec.com
+linkedinHandle	symantec
+twitterHandle	symantec
+twitterHandle	threatintel
+url	http://cdn2.hubspot.net/hubfs/270968/assets/Cleaver/Cylance_Operation_Cleaver_Report.pdf
+url	http://www.cnet.com/news/iranians­find­ways­to­bypass­net
+url	http://www.symantec.com/about/profile/policies/privacy.jsp
+url	http://www.symantec.com/connect/item­feeds/blog/2261/feed/all/en/all
+url	http://www.symantec.com/content/en/us/enterprise/media/security_response/docs/CadelSpy
+url	http://www.symantec.com/products­solutions/
+url	http://www.symantec.com/security_response/attacksignatures/detail.jsp?asid=28849
+url	http://www.symantec.com/security_response/attacksignatures/detail.jsp?asid=28967
+url	https://en.wikipedia.org/wiki/Solar_Hijri_calendar
+url	https://twitter.com/symantec
+url	https://twitter.com/threatintel
+url	https://us.norton.com/
+url	https://www.facebook.com/Symantec
+url	https://www.linkedin.com/company/symantec
+url	https://www.surveymonkey.com/r/G7KVZWQ
+url	https://www.symantec.com/endpoint­protection/
+url	https://www.symantec.com/security_response/writeup.jsp
+url	https://www.symantec.com/security_response/writeup.jsp?docid=2015
+url	https://www.symantec.com/security_response/writeup.jsp?docid=2015­090808­1754­99
+url	https://www.symantec.com/security_response/writeup.jsp?docid=2015­110911­3433­99
+url	secure.symantec.com/connect/user/register?destination=node%2F3551201

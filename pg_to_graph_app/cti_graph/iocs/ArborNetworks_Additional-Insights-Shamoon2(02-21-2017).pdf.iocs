@@ -1,0 +1,29 @@
+Malware, shamoon2
+Malware, shamoon
+Filename, sloo.exe
+AttackerCountry, iran
+APTGroup, magic hound
+APTGroup, rocket kitten
+Malware, puppyrat
+AffectedCountry, saudi arabia
+fqdn	analytics-google.org
+fqdn	arbornetworks.com
+fqdn	get.adobe.go-microstf.com
+fqdn	go-microstf.com
+ip4	104.218.120.128
+ip4	104.238.184.252
+ip4	45.63.10.99
+ip4	5.254.100.200
+ip4	69.87.223.26
+md5	07d6406036d6e06dc8019e3ade6ee7de
+md5	2a0df97277ddb361cecf8726df6d78ac
+md5	5e5ea1a67c2538dbc01df28e4ea87472
+md5	83be35956e5d409306a81e88a1dc89fd
+md5	d30b8468d16b631cafe458fd94cc3196
+url	69.87.223.26:8080/eiloShaegae1
+url	69.87.223.26:8080/p
+url	analytics-google.org:69/checkFile.aspx
+url	arbornetworks.com/blog/asert/additional-insights-shamoon2/
+url	go-microstf.com/checkfile.aspx
+url	http://69.87.223.26:8080/eiloShaegae1
+url	http://69.87.223.26:8080/p

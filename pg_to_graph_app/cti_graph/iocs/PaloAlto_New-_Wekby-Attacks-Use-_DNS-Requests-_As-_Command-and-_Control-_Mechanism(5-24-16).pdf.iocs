@@ -1,0 +1,37 @@
+APTGroup, wekby
+
+copyright	Copyright (c) 2009 Microsoft Corporation. All rights reserved.
+fqdn	blog.anomali.com
+fqdn	glb.it-desktop.com
+fqdn	globalprint-us.com
+fqdn	hi.getgo2.com
+fqdn	intranetwabcam.com
+fqdn	local.it-desktop.com
+fqdn	login.access-mail.com
+fqdn	ns1.logitech-usa.com
+fqdn	www.secureworks.com
+fqdn	www.volexity.com
+fqdn	www.zscaler.com
+md5	07B9B62FB3B1C068837C188FEFBD5DE9
+md5	E4968C8060EA017B5E5756C16B80B012
+md5	E8D58AA76DD97536AC225949A2767E05
+sha256	1b341dab023de64598d80456349db146aafe9b9e2ec24490c7d0ac881cecc094
+sha256	456FFFC256422AD667CA023D694494881BAED1496A3067485D56ECC8FEFBFAEB
+sha256	456fffc256422ad667ca023d694494881baed1496a3067485d56ecc8fefbfaeb
+sha256	4d62caef1ca8f4f9aead7823c95228a52852a1145ca6aaa58ad8493e042aed16
+sha256	6852ba95720af64809995e04f4818517ca1bd650bc42ea86d9adfdb018d6b274
+sha256	8FFBB7A80EFA9EE79E996ABDE7A95CF8DC6F9A41F9026672A8DBD95539FEA82A
+sha256	9200f80c08b21ebae065141f0367f9c88f8fed896b0b4af9ec30fc98c606129b
+sha256	930772d6af8f43f62ea78092914fa8d6b03e8e3360dd4678eec1a3dda17206ed
+sha256	DA3261C332E72E4C1641CA0DE439AF280E064B224D950817A11922A8078B11F1
+sha256	da3261c332e72e4c1641ca0de439af280e064b224d950817a11922a8078b11f1
+tronix	41CA0DE439AF280E064B224D950817A11922A8078B
+tronix	41ca0de439af280e064b224d950817a11922a8078b
+tronix	41dab023de64598d80456349db146aafe9b9e2ec24
+tronix	41f0367f9c88f8fed896b0b4af9ec30fc98c606129
+url	http://globalprint-us.com/proxy_plugin.exe
+url	http://globalprint-us.com/proxy_web_plugin.exe
+url	http://www.volexity.com/blog/?p=158
+url	https://blog.anomali.com/evasive-maneuvers-the-wekby-group-attempts-to-evade-analysis-via-
+url	https://www.secureworks.com/research/threat-group-3390-targets-organizations-for-cyberespionage
+url	https://www.zscaler.com/blogs/research/chinese-cyber-espionage-apt-group-leveraging-recently-

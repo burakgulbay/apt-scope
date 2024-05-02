@@ -1,0 +1,20 @@
+AttackerCountry, russia
+Filename, Covid.html
+Filename, Covid.iso
+Filename, DeleteDateConnectionPosition.dll
+MitreTechnique, T1566
+MitreTechnique, T1059
+MitreTechnique, T1204
+MitreTechnique, T1612
+MitreTechnique, T1140
+MitreTechnique, T1027
+MitreTechnique, T1071
+MitreTechnique, T1496
+APTGroup, nobelium, apt29, cozy bear
+
+fqdn	fortinet.com
+fqdn	sinitude.com
+sha256	3CB0D2CFF9DB85C8E816515DDC380EA73850846317B0BB73EA6145C026276948
+sha256	6EE1E629494D7B5138386D98BD718B010EE774FE4A4C9D0E069525408BB7B1F7
+sha256	A896C2D16CADCDEDD10390C3AF3399361914DB57BDE1673E46180244E806A1D0
+url	fortinet.com/blog/threat-research/nobelium-returns-to-the-political-world-stage

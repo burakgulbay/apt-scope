@@ -1,0 +1,14 @@
+Malware, troj_sloth
+AffectedIndustry, telecommunication
+AffectedIndustry, energy
+AffectedIndustry, finance
+AffectedIndustry, security
+AffectedIndustry, defense
+AffectedIndustry, healthcare
+AffectedIndustry, transport
+AffectedIndustry, media
+APTGroup, siesta
+
+fqdn	163.com
+sha1	014542eafb792b98196954373b3fd13e60cb94fe
+trademark	Micro™

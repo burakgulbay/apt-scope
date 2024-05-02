@@ -1,0 +1,35 @@
+APTGroup, apt37
+AffectedCountry, south korea
+Filename, ¦¤Ãa ¢+-Ô¬_.exe
+Filename, HncChecker.dll
+Filename, 190101- 1⁄2Å3â»ç_Æò°¡.hwp
+Filename, userdata.cab
+MitreTechnique, T1193
+MitreTechnique, T1129
+MitreTechnique, T1059
+MitreTechnique, T1050
+MitreTechnique, T1027
+MitreTechnique, T1055
+MitreTechnique, T1045
+MitreTechnique, T1119
+MitreTechnique, T1056
+MitreTechnique, T1102
+email	info@cyberstruggle.org
+fqdn	cyberstruggle.org
+fqdn	serial.info
+fqdn	userdata.cab
+fqdn	www.cyberstruggle.org
+md5	07fba69097eff4f0773cff8414f72a80
+md5	34f3d1e4a2927676f669b90f2c157561
+md5	564d9be0c62a0ea837e794ffb8ddedb8
+md5	6c8ff14aea5d965d3dd9a5bbb9a07512
+md5	8058beb593166f1cc16d6cd3f6784577
+md5	8a57b5e599a3b5f4121f328b42e9fb16
+md5	8d19678981eac0f477f873dda1a86877
+md5	95b124da70660628261879c6ee701224
+md5	9e1834cb74f3a3d2112b89886d57a298
+md5	a65b5e6f104d01916feadd180c8161c2
+md5	bf619eac0cdf3f68d496ea9344137e8b
+md5	e9c1dec196441577816d85dc304d702d
+phoneNumber	+908508852121
+url	https://cyberstruggle.org

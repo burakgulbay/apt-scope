@@ -1,0 +1,52 @@
+Filename, Выписка по счету.docx
+Filename, Выписка по карте.docx
+Filename, Персональные данные.docx
+Filename, Выписка по карте клиента.docx
+Filename, Выписка.docx
+Filename, kernel32.dll
+AffectedIndustry, finance
+AffectedCountry, russia
+
+cve	CVE-2015-2545
+cve	CVE-2017-0261
+cve	CVE-2017-0262
+email	Kevin.Douglas2@rsa.com
+fqdn	community.rsa.com
+fqdn	mail.com
+fqdn	rsa.com
+fqdn	schemas.openxmlformats.org
+fqdn	www.thecaliforniacourier.com
+ip4	137.74.224.142
+ip4	158.69.218.119
+md5	00b470090cc3cdb30128c9460d9441f8
+md5	0c718531890dc54ad68ee33ed349b839
+md5	104913aa3bd6d06677c622dfd45b6c6d
+md5	18c29bc2bd0c8baa9ea7399c5822e9f2
+md5	1bb8eec542cfafcb131cda4ace4b7584
+md5	3be61ecba597022dc2dbec4efeb57608
+md5	4c1bc95dd648d9b4d1363da2bad0e172
+md5	57f51443a8d6b8882b0c6afbd368e40e
+md5	5df8067a6fcb6c45c3b5c14adb944806
+md5	630db8d3e0cb939508910bd5c93e09fe
+md5	68e190efe7a5c6f1b88f866fc1dc5b88
+md5	69de4a5060671ce36d4b6cdb7ca750ce
+md5	7743e239c6e4b3912c5ccba04b7a287c
+md5	7c80fb8ba6cf094e709b2d9010f972ba
+md5	9c7e70f0369215004403b1b289111099
+md5	b57dff91eeb527d9b858fcec2fa5c27c
+md5	c43f1716d6dbb243f0b8cd92944a04bd
+md5	cfc0b41a7cde01333f10d48e9997d293
+md5	d9a5834bde6e65065dc82b36ead45ca5
+md5	df0f8fb172ee663f6f190b0b01acb7bf
+md5	e589ae71722ac452a7b6dd657f31c060
+md5	e8ea2ce5050b5c038e3de727e266705c
+md5	ed74331131da5ac4e8b8a1c818373031
+md5	f8ce877622f7675c12cda38389511f57
+sha256	2c86a55cefd05352793c603421b2d815f0e1ddf08e598e7a3f0f6b1d3928aca8
+tronix	4127d3a451c7d71614e6c7e124f6b7e441f3b7e0f3
+tronix	413eaf351bc81004c65490f3667fe61eeb1c651c7f
+tronix	41571deb4e5666062604c4f4c4b454b588945fc8b4
+tronix	415a3b374e1e3b314e0e7d6f104a7d2d431b313b46
+url	http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes
+url	http://schemas.openxmlformats.org/officeDocument/2006/extended-properties
+url	http://www.thecaliforniacourier.com

@@ -1,0 +1,53 @@
+Malware, poison ivy
+AffectedIndustry, government
+AffectedCountry, usa
+AffectedCountry, united kingdom
+APTGroup, molerats
+
+copyright	©  2006-­2013  FireEye,  Inc.  All  rights  reserved.  Privacy  &  Cookies  Policy  
+fqdn	blog.trendmicro.com
+fqdn	dl.dropboxusercontent.com
+fqdn	download01.norman.no
+fqdn	egypttv.sytes.net
+fqdn	egypttv.sytes.nettoornt.servegame.com
+fqdn	good.zapto.org
+fqdn	hint.zapto.org
+fqdn	ip.net
+fqdn	ip.netgood.zapto.orghint.zapto.orgtoornt.servegame.comomagle.serveblog.netskype.servemp3.com
+fqdn	ip.nethint.zapto.org
+fqdn	ip.netskype.servemp3.comgood.zapto.orghint.zapto.org
+fqdn	natco2.no
+fqdn	skype.servemp3.com
+fqdn	toornt.servegame.com
+fqdn	toornt.servegame.comnatco2.no
+fqdn	updateo.servegame.com
+fqdn	www.fireeye.com
+fqdn	www.haaretz.com
+fqdn	www.timesofisrael.com
+ip4	173.225.126.103
+ip4	173.225.126.166
+ip4	173.225.126.179
+ip4	209.200.39.220
+ip4	209.200.39.48
+ip4	209.200.39.88
+md5	16346b95e6deef9da7fe796c31b9dec4
+md5	5b740b4623b2d1049c0036a6aae684b0
+md5	6350d1039742b87b7917a5e26de2c25c
+md5	7084f3a2d63a16a191b7fcb2b19f0e0d
+md5	973b5f2a5608d243e7305ee4f9249302
+md5	9dff139bbbe476770294fb86f4e156ac
+md5	9ef9a631160b96322010a5238defc673
+md5	a60873e364a01870b2010518d05a62df
+md5	a8714aac274a18f1724d9702d40030bf
+md5	b05603938a888018d4dcdc551c4be8ac
+md5	b0a9abc76a2b4335074a13939c59bfc9
+md5	cf31aea415e7013e85d1687a1c0f5daa
+md5	d9a7c4a100cfefef995785f707be895c
+md5	e85fc76362c2e9dc7329fddda8acc89e
+md5	fc554a0ad7cf9d4f47ec4f297dbde375
+url	http://blog.trendmicro.com/trendlabs-­security-­intelligence/new-­xtreme-­rat-­attacks-­on-­usisrael-­and-­other-­foreign-
+url	http://download01.norman.no/whitepapers/Cyberattack_against_Israeli_and_Palestinian_targets.pdf
+url	http://www.fireeye.com/resources/pdfs/fireeye-­poison-­ivy-­report.pdf
+url	http://www.haaretz.com/blogs/diplomania/israel-­s-­foreign-­ministry-­targeted-­by-­computer-­virus-­bearing-­idf-­chief-­s-
+url	http://www.timesofisrael.com/how-­israel-­police-­computers-­were-­hacked-­the-­inside-­story/
+url	https://dl.dropboxusercontent.com/s/uiod7orcpykx2g8/Ramadan.rar?token_hash=AAHAVuiXpTkOKwar9e0WH-

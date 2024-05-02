@@ -1,0 +1,52 @@
+Malware, crouching yeti
+Malware, havex
+Malware, sysmain trojan
+Malware, the clientx
+Malware, karagany backdoor
+AffectedIndustry, industrial
+AffectedIndustry, education
+AffectedIndustry, manufacturing
+AffectedIndustry, information technology
+AffectedIndustry, healthcare
+AffectedCountry, germany
+AffectedCountry, spain
+AffectedCountry, azerbaijan
+AffectedCountry, india
+AffectedCountry, italy
+AffectedCountry, iraq
+AffectedCountry, qatar
+AffectedCountry, argentina
+AffectedCountry, taiwan
+AffectedCountry, vietnam
+AffectedCountry, china
+AffectedCountry, brazil
+AffectedCountry, malaysia
+AffectedCountry, united kingdom
+AffectedCountry, ecuador
+AffectedCountry, republic of korea
+AffectedCountry, colombia
+AffectedCountry, czech republic
+AffectedCountry, iran
+C2ServerCountry, usa
+C2ServerCountry, germany
+C2ServerCountry, russia
+C2ServerCountry, united kingdom
+APTGroup, energetic bear
+
+cve	CVE-2011-0611
+cve	CVE-2012-1723
+cve	CVE-2013-1347
+cve	CVE-2013-2465
+email	intelreports@kaspersky.com
+fqdn	kaspersky.com
+fqdn	kinoporno.org
+fqdn	nahoonservices.com
+fqdn	securityxploded.com
+fqdn	www.ducklink.com
+fqdn	www.ewon.biz
+fqdn	www.mbconnectline.com
+ip4	91.203.6.71
+url	http://securityxploded.com/browser-password-decryptor.php
+url	http://www.ducklink.com/
+url	http://www.ewon.biz/software/eCatcher/eCatcherSetup.exe
+url	http://www.mbconnectline.com/index.php/en/

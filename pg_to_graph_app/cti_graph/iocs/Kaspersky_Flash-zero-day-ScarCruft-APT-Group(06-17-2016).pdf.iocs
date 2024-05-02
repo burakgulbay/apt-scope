@@ -1,0 +1,25 @@
+AffectedCountry, russia
+AffectedCountry, nepal
+AffectedCountry, south korea
+AffectedCountry, china
+AffectedCountry, india
+AffectedCountry, kuwait
+AffectedCountry, romania
+APTGroup, scarcruft
+
+cve	CVE-2016-0147
+cve	CVE-2016-1010
+cve	CVE-2016-4117
+cve	CVE-2016-4171
+fqdn	reg.flnet.org
+fqdn	securelist.com
+fqdn	webconncheck.myfw.us
+ip4	212.7.217.10
+md5	067681b79756156ba26c12bc36bf835c
+md5	3e5ac6bbf108feec97e1cc36560ab0b6
+md5	8844a537e7f533192ca8e81886e70fbc
+md5	a6f14b547d9a7190a1f9f1c06f906063
+md5	e51ce28c2e2d226365bc5315d3e5f83e
+md5	f8a2d4ddf9dc2de750c8b4b7ee45ba3f
+url	http://webconncheck.myfw.us:8080/8xrss.php
+url	securelist.com/operation-daybreak/75100/

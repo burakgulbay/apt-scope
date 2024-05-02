@@ -1,0 +1,26 @@
+Malware, royalcli
+Malware, royaldns
+APTGroup, apt15
+
+fqdn	andspurs.com
+fqdn	cavanic9.net
+fqdn	dnsapp.info
+fqdn	github.com
+fqdn	log.autocount.org
+fqdn	micakiz.wikaba.org
+fqdn	nccgroup.trust
+fqdn	news.memozilla.org
+fqdn	ridingduck.com
+fqdn	run.linodepower.com
+fqdn	singa.linodepower.com
+fqdn	video.memozilla.org
+fqdn	zipcodeterm.com
+githubHandle	nccgroup
+sha256	16b868d1bef6be39f69b4e976595e7bd46b6c0595cf6bc482229dbb9e64f1bce
+sha256	6df9b712ff56009810c4000a0ad47e41b7a6183b69416251e060b5c80cd05785
+sha256	6ea9cc475d41ca07fa206eb84b10cf2bbd2392366890de5ae67241afa2f4269f
+sha256	750d9eecd533f89b8aa13aeab173a1cf813b021b6824bc30e60f5db6fa7b950b
+sha256	bc937f6e958b339f6925023bc2af375d669084e9551fd3753e501ef26e36b39d
+tronix	41ca07fa206eb84b10cf2bbd2392366890de5ae672
+url	https://github.com/nccgroup/Royal_APT
+url	nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2018/march/apt15-is-alive-and-strong-an-analysis-of-royalcli-and-

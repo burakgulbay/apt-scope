@@ -1,0 +1,32 @@
+Malware, poison ivy
+Filename, diff.exe
+Filename, setup.exe
+Filename, AppletLow.jar
+AffectedIndustry, education
+AffectedIndustry, technology
+AffectedCountry, china
+AffectedCountry, usa
+APTGroup, th3bug
+
+fqdn	app.qohub.info
+fqdn	diff.exewww.npec.com
+fqdn	diff.qohub.info
+fqdn	uyghurweb.net
+fqdn	www.aanon.com
+fqdn	www.ep66.com
+fqdn	www.npec.com
+ip4	115.23.172.151
+ip4	203.69.42.22
+ip4	203.69.42.23
+md5	0cabd6aec2555e64bdf39320f338e027
+md5	18ad696f3459bf47f97734f2f14506e3
+md5	1ea41812a0114e5c6ae76330e7b4af69
+md5	7b0cb4d14d3d8b6ccc7453f7ddb33997
+md5	efad656db0f9cc92b1e15dc9c540e407
+sha256	7f39e5b9d46386dd8142ef40ae526343274bdd5f27e38c07b457d290a277e807
+sha256	9d149baceaaff2a67161fec9b8978abc22f0a73a1c8ce87edf6e2fb673ac7374
+sha256	ba509a1d752f3165dc2821e0b1c6543c15988fd7abd4e56c6155de09d1640ce9
+sha256	ccfe61a28f35161c19340541dfd839075e31cd3b661f0936a4c667d805a65136
+sha256	e3d02e5f69d3c2092657d64c39aa0aea2a16ce804a47f3b5cf44774cde3166fe
+tronix	41dfd839075e31cd3b661f0936a4c667d805a65136
+url	uyghurweb.net/player/gmuweb.exe

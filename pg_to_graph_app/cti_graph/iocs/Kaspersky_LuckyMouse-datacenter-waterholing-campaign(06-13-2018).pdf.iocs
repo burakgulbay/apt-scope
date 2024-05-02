@@ -1,0 +1,22 @@
+Malware, shikata_ga_nai
+Malware, lznt1
+Malware, hyperbro
+APTGroup, luckymouse, apt27, emissarypanda
+
+cve	CVE-2017-11882
+email	intelligence@kaspersky.com
+fqdn	bbs.sonypsps.com
+fqdn	google-updata.tk
+fqdn	kaspersky.com
+fqdn	securelist.com
+fqdn	sonypsps.com
+fqdn	update.iaacstudio.com
+fqdn	wh0am1.itbaydns.com
+fqdn	windows-updata.tk
+md5	04dece2662f648f619d9c0377a7ba7c0
+md5	0D0320878946A73749111E6C94BF1525
+md5	22CBE2B0F1EF3F2B18B4C5AED6D7BB79
+md5	ac337bd5f6f18b8fe009e45d65a2b09b
+url	https://google-updata.tk:443/hook.js
+url	https://windows-updata.tk:443/scanv1.8/i/?1
+url	securelist.com/luckymouse-hits-national-data-center/86083

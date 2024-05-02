@@ -1,0 +1,25 @@
+Malware, china chopper
+Malware, highnoon
+Filename, 64.dat
+Filename, Uns64.exe
+AffectedIndustry, security
+AffectedIndustry, defense
+AttackerCountry, china
+APTGroup, apt41
+APTGroup, double dragon
+
+cve	CVE-2019-3396
+fqdn	f64.data
+fqdn	fireeye.com
+fqdn	github.com
+ip4	67.229.97.229
+ip6	a::
+ip6	e::deb
+md5	51e06382a88eb09639e1bc3565b444a6
+md5	846cdb921841ac671c86350d494abf9c
+md5	84d6e4ba1f4268e50810dacc7bbc3935
+md5	a919b4454679ef60b39c82bd686ed141
+md5	e42555b218248d1a2ba92c1532ef6786
+url	67.229.97.229/pass_sqzr.jsp
+url	fireeye.com/blog/threat-research/2019/08/game-over-detecting-and-stopping-an-apt41-operation.html
+url	github.com/Yt1g3r/CVE-2019-3396_EXP/blob/master/cmd.vm

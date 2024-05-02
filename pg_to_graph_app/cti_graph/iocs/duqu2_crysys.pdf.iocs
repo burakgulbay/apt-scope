@@ -1,0 +1,23 @@
+Malware, duqu
+
+email	bencsath@crysys.hu
+email	boldi@crysys.hu
+fqdn	crysys.hu
+fqdn	gpl3.selfsigned.org
+fqdn	securelist.com
+fqdn	www.crysys.hu
+fqdn	www.kaspersky.com
+fqdn	www.symantec.com
+ip4	1.9.1.16
+ip4	1.9.2.9
+ip4	5.0.1.6
+ip6	::
+ip6	::e
+md5	3f52ea949f2bd98f1e6ee4ea1320e80d
+md5	c7c647a14cb1b8bc141b089775130834
+url	http://www.crysys.hu/
+url	http://www.crysys.hu/publications/files/bencsathPBF11duqu.pdf
+url	http://www.kaspersky.com/about/press/major_malware_outbreaks/duqu
+url	http://www.symantec.com/content/en/us/enterprise/media/security_response/white
+url	https://securelist.com/blog/research/70504/the-mystery-of-duqu-
+url	https://securelist.com/blog/research/70504/the-mystery-of-duqu-2-0-a-sophisticated-

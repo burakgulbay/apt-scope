@@ -1,0 +1,5 @@
+fqdn	check.torproject.org
+fqdn	patchingcheck.py
+ip4	78.24.222.229
+sha1	8361A794DFA231D863E109FC9EEEF21F4CF09DDD
+url	https://check.torproject.org/exit-addresses

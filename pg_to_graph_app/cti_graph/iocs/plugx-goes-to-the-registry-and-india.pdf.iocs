@@ -1,0 +1,72 @@
+Malware, plugx
+Malware, omdork
+Malware, sybin
+Filename, Calling Off India-Pak Talks.doc
+Filename, Minutes of meeting.doc
+Filename, U.S.,_India_to_formulate_smart_city_action_plans_in_three_months.doc
+Filename, Draft contract CMS Trg System.doc
+Filename, paris_declaration january_final.doc
+C2ServerCountry, china
+C2ServerCountry, hong kong
+
+copyright	© Copyright 2014. Sophos Ltd. All rights reserved.
+cve	CVE-2012-0158
+cve	CVE-2014-1761
+email	battuya_2002@yahoo.com
+email	bitumberls@163.com
+email	nasales@sophos.com
+email	sales@sophos.com
+email	sales@sophos.com.au
+email	salesasia@sophos.com
+email	stanlee@gmail.com
+fqdn	163.com
+fqdn	blog.gdatasoftware.com
+fqdn	blog.jpcert.or.jp
+fqdn	freemoney.ignorelist.com
+fqdn	gmail.com
+fqdn	lucas1.dnset.com
+fqdn	lucas1.freetcp.com
+fqdn	mooo.com
+fqdn	msi.dll.mov
+fqdn	nakedsecurity.sophos.com
+fqdn	nusteachers.no-ip.org
+fqdn	ruchi.mysq1.net
+fqdn	sophos.com
+fqdn	sophos.com.au
+fqdn	sumy2012.jkub.com
+fqdn	supercat.strangled.net
+fqdn	unisers.com
+fqdn	www.fireeye.com
+fqdn	www.freetimes.dns05.com
+fqdn	www.notebookhk.net
+fqdn	www.sophos.com
+fqdn	www.togolaga.com
+fqdn	yahoo.com
+phoneNumber	+448447671131
+phoneNumber	+61294099100
+phoneNumber	+6562244168
+phoneNumber	+861085452454
+phoneNumber	+861090888962
+sha1	03b2a660d68004444a5189173e3b8001f4a7cd0b
+sha1	147fbdfeed9f0825026b3b3ce558c3ad00410b11
+sha1	19e9dfabdb9b10a90b62c12f205ff0d1eeef3f14
+sha1	56b3f0f03ae12b56c000df67c1153d518c8a66fc
+sha1	6340a7916db67c1b6dc1731014bb440435578c66
+sha1	6f845ef154a0b456afcf8b562a0387dabf4f5f85
+sha1	739405cad3650ed0447a475f50f814f7c9787ff4
+sha1	8ee8ab984cb01762dfc6d341278b87a7c83906cf
+sha1	9b90d6608ba6167619b5991fd70319dfcd1fa881
+sha1	a4602a357360b0ed8e9b0814b1322146156fb7f6
+sha1	a7e52cb429ac22cc20be77158f97d6f9dd887e1f
+sha1	a97827aef54e7969b9cbbec64d9ee81a835f2240
+sha1	d746ca9b74fb04782e0e783980f7702a9356f1c7
+sha1	dea6525b696df4643b10eb91381d95eec51479d7
+sha1	e8a29bb90422fa6116563073725fa54169998325
+url	http://blog.jpcert.or.jp/2015/01/analysis-of-a-r-ff05
+url	http://blog.jpcert.or.jp/2015/01/analysis-of-a-r-ff05.html
+url	http://www.fireeye.com/blog/technical/
+url	https://blog.gdatasoftware.com/blog/article/poweliks-
+url	https://nakedsecurity.sophos.com/2013/07/15/
+url	https://nakedsecurity.sophos.com/2014/06/30/from-the-
+url	sophos.com/2015/02/03/exploit-this-evaluating-the-exploit-skills-of-malware-groups/
+url	www.sophos.com/products

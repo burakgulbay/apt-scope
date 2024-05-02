@@ -1,0 +1,17 @@
+Malware, skelky
+Malware, winnti 
+AffectedCountry, usa 
+AffectedCountry, vietnam
+Filename, msuta64.dll
+Filename, ole64.dll
+Filename, HookDC64.dll
+Filename, HookDC.dll
+Filename, olex64.dll
+md5	48377c1c4cfedebe35733e9c3675f9be
+md5	600b604784594e3339776c6563aa45a1
+md5	66da7ed621149975f6e643b4f9886cfd
+md5	747cc5ce7f2d062ebec6219384b57e8c
+md5	8ba4df29b0593be172ff5678d8a05bb3
+md5	a487f1668390df0f4951b7292bae6ecf
+md5	bf45086e6334f647fda33576e2a05826
+md5	f01026e1107b722435126c53b2af47a9

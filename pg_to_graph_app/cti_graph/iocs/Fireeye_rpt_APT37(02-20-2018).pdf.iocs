@@ -1,0 +1,42 @@
+Malware, winerack
+Malware, zumkong
+Malware, soundwave
+Malware, slowdrift
+AffectedIndustry, media
+AffectedIndustry, government
+AffectedIndustry, energy
+AffectedIndustry, healthcare
+AffectedIndustry, finance
+AffectedIndustry, aerospace and defence
+AffectedCountry, south korea
+AffectedCountry, japan
+AffectedCountry, vietnam
+AttackerCountry, north korea
+APTGroup, apt37, reaper
+
+copyright	© 2018 FireEye, Inc. All rights reserved.
+cve	CVE-2013-4979
+cve	CVE-2014-8439
+cve	CVE-2015-2387
+cve	CVE-2015-2419
+cve	CVE-2015-2545
+cve	CVE-2015-3043
+cve	CVE-2015-3105
+cve	CVE-2015-5119
+cve	CVE-2015-5122
+cve	CVE-2015-7645
+cve	CVE-2016-1019
+cve	CVE-2016-4117
+cve	CVE-2017-0199
+cve	CVE-2018-0802
+cve	CVE-2018-4878
+email	info@FireEye.com
+fqdn	daum.net
+fqdn	fireeye.com
+fqdn	hmamail.com
+fqdn	india.com
+fqdn	mail.zmail.ru
+fqdn	www.fireeye.com
+fqdn	yandex.com
+md5	183be2035d5a546670d2b9deeca4eb59
+md5	7c2ebfc7960aac6f8d58b37e3f092a9c

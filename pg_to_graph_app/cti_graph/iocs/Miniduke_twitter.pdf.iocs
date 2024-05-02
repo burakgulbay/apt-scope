@@ -1,0 +1,14 @@
+Malware, miniduke
+
+cve	CVE-2014-1761
+fqdn	data.cat
+fqdn	github.com
+fqdn	www.geoiptool.com
+githubHandle	eset
+sha1	58be4918df7fbf1e12de1a31d4f622e570a81b93
+sha1	a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+sha1	a94a8fe5dce4f01c1c4c0873d391e987982fbbd3
+sha1	b27f6174173e71dc154413a525baddf3d6dea1fd
+sha1	c059303cd420dc892421ba4465f09b892de93c77
+url	http://www.geoiptool.com
+url	https://github.com/eset/malware-research/tree/master/miniduke

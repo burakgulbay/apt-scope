@@ -1,0 +1,38 @@
+AffectedIndustry, media
+AffectedCountry, france
+APTGroup, islamic state group, cyber caliphate
+TerroristGroup, ISIS
+TerroristGroup, Islamic State of Iraq and Syria
+AffectedCountry, united states
+TwitterUser, pent0thal
+Malware, njrat
+Malware, njworm
+Filename, SecurityNajaf.vbs
+AttackerCountry, kuwait, algeria
+copyright	© 2015 AhnLab, Inc. All rights reserved.
+fqdn	blog.trendmicro.com
+fqdn	blogs.microsoft.com
+fqdn	blogs.technet.com
+fqdn	jomgegar.com
+fqdn	twitter.com
+fqdn	www.ahnlab.com
+fqdn	www.bluecoat.com
+fqdn	www.cnbc.com
+fqdn	www.dailymail.co.uk
+fqdn	www.eff.org
+fqdn	www.lemonde.fr
+fqdn	www.symantec.com
+fqdn	www.youtube.com
+twitterHandle	pent0thal
+url	http://blog.trendmicro.com/trendlabs-security-intelligence/new-rats-emerge-fromleaked-njw0rm-source-code
+url	http://blogs.microsoft.com/blog/2014/06/30/microsoft-takes-onglobal-cybercrime-epidemic-in-tenth-malware-disruption/
+url	http://blogs.technet.com/b/mmpc/archive/2014/06/30/microsoftdigital-crimes-unit-disrupts-jenxcus-and-bladabindi-
+url	http://www.lemonde.fr/pixels/article/2015/04/09/les-sites-de-tv5-monde-detournes-par-un-groupe-
+url	https://jomgegar.com/topic/14665-njrat-v07dbuilderstub-fullsource-code/
+url	https://twitter.com/pent0thal
+url	www.bluecoat.com/security-blog/2015--04-09/visual-basicscript-malware-reportedly-used-tv5-monde-intrusion
+url	www.cnbc.com/id/102330338
+url	www.dailymail.co.uk/wires/afp/article-3031644/French-TV5Monde-hitpro-Islamic-State-hackers.html
+url	www.eff.org/files/2013/12/28/quantum_of_surveillance4d.pdf
+url	www.symantec.com/connect/blogs/simple-njrat-fuels-nascent-middleeast-cybercrime-scene
+url	www.youtube.com/watch?v=sKtoONku1w0

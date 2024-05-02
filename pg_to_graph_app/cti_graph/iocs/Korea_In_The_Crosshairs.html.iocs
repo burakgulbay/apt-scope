@@ -1,0 +1,90 @@
+Filename, SbieDll.dll 
+Filename, Dbghelp.dll 
+Filename, Api_log.dll 
+Filename, Dir_watch.dll
+AffectedCountry, north korea
+APTGroup, golden time
+APTGroup, evil new year
+APTGroup, are you happy
+APTGroup, freemilk
+APTGroup, north korean human rights
+APTGroup, evil new year
+
+copyright	© Cisco Systems, Inc. and/or its affiliates. All rights reserved.
+cve	CVE-2013-0808
+cve	CVE-2017-0199
+email	kgf2016@yonsei.ac.kr
+fqdn	60chicken.co.kr
+fqdn	acddesigns.com.au
+fqdn	discgolfglow.com
+fqdn	old.jrchina.com
+fqdn	rohitab.com
+fqdn	www.amazon.com
+fqdn	www.belasting-telefoon.nl
+fqdn	www.hulu.com
+fqdn	www.imuz.com
+fqdn	www.kgls.or.kr
+fqdn	www.w3.org
+fqdn	www.wildrush.co.kr
+fqdn	yonsei.ac.kr
+ip6	::
+sha256	051463a14767c6477b6dacd639f30a8a5b9e126ff31532b58fc29c8364604d00
+sha256	171e26822421f7ed2e34cc092eaeba8a504b5d576c7fd54aa6975c2e2db0f824
+sha256	1893af524edea4541c317df288adbf17ae4fcc3a30d403331eae541281c71a3c
+sha256	19e4c45c0cd992564532b89a4dc1f35c769133167dc20e40b2a41fccb881277b
+sha256	21b098d721ea88bf237c08cdb5c619aa435046d9143bd4a2c4ec463dcf275cbe
+sha256	281828d6f5bd377f91c6283c34896d0483b08ac2167d34e981fbea871893c919
+sha256	35273d6c25665a19ac14d469e1436223202be655ee19b5b247cb1afef626c9f2
+sha256	3a0fc4cc145eafe20129e9c53aac424e429597a58682605128b3656c3ab0a409
+sha256	3d442c4457cf921b7a335c0d7276bea9472976dc31af94ea0e604e466596b4e8
+sha256	3f7827bf26150ec26c61d8dbf43cdb8824e320298e7b362d79d7225ab3d655b1
+sha256	4b20883386665bd205ac50f34f7b6293747fd720d602e2bb3c270837a21291b4
+sha256	5441f45df22af63498c63a49aae82065086964f9067cfa75987951831017bd4f
+sha256	6332c97c76d2da7101ad05f501dc1188ac22ce29e91dab6d0c034c4a90b615bd
+sha256	6c372f29615ce8ae2cdf257e9f2617870c74b321651e9219ea16847467f51c9f
+sha256	761454dafba7e191587735c0dc5c6c8ab5b1fb87a0fa44bd046e8495a27850c7
+sha256	7d163e36f47ec56c9fe08d758a0770f1778fa30af68f39aac80441a3f037761e
+sha256	7d8008028488edd26e665a3d4f70576cc02c237fffe5b8493842def528d6a1d8
+sha256	7e810cb159fab5baccee7e72708d97433d92ef6d3ef7d8b6926c2df481ccac2f
+sha256	7ebc9a1fd93525fc42277efbccecf5a0470a0affbc4cf6c3934933c4c1959eb1
+sha256	7f35521cdbaa4e86143656ff9c52cef8d1e5e5f8245860c205364138f82c54df
+sha256	930fce7272ede29833abbfb5df4e32eee9f15443542434d7a8363f7a7b2d1f00
+sha256	95192de1f3239d5c0a7075627cf9845c91fd397796383185f61dde893989c08a
+sha256	99c1b4887d96cb94f32b280c1039b3a7e39ad996859ffa6dd011cf3cca4f1ba5
+sha256	9b383ebc1c592d5556fec9d513223d4f99a5061591671db560faf742dd68493f
+sha256	a29b07a6fe5d7ce3147dd7ef1d7d18df16e347f37282c43139d53cce25ae7037
+sha256	a585849d02c94e93022c5257b162f74c0cdf6144ad82dd7cf7ac700cbfedd84f
+sha256	b3de3f9309b2f320738772353eb724a0782a1fc2c912483c036c303389307e2e
+sha256	bdd48dbed10f74f234ed38908756b5c3ae3c79d014ecf991e31b36d957d9c950
+sha256	cd166565ce09ef410c5bba40bad0b49441af6cfb48772e7e4a9de3d646b4851c
+sha256	eb6d25e08b2b32a736b57f8df22db6d03dc82f16da554f4e8bb67120eacb1d14
+sha256	f068196d2c492b49e4aae4312c140e9a6c8c61a33f61ea35d74f4a26ef263ead
+sha256	f080f019073654acbe6b7ab735d3fd21f8942352895890d7e8b27fa488887d08
+sha256	f1419cde4dd4e1785d6ec6d33afb413e938f6aece2e8d55cf6328a9d2ac3c2d0
+tronix	410c5bba40bad0b49441af6cfb48772e7e4a9de3d6
+tronix	419cde4dd4e1785d6ec6d33afb413e938f6aece2e8
+tronix	41c317df288adbf17ae4fcc3a30d403331eae54128
+tronix	41f45df22af63498c63a49aae82065086964f9067c
+url	http://60chicken.co.kr/wysiwyg/PEG_temp/logo1.png
+url	http://acddesigns.com.au/clients/ACPRCM/kingstone.jpg
+url	http://discgolfglow.com/wp-content/plugins/maintenance/images/worker.jpg
+url	http://discgolfglow.com:/wp-content/plugins/maintenance/images/worker.jpg
+url	http://old.jrchina.com/btob_asiana/appach01.jpg
+url	http://old.jrchina.com/btob_asiana/appach02.jpg
+url	http://old.jrchina.com/btob_asiana/udel_calcel.php?fdid=[base64_data
+url	http://old.jrchina.com/btob_asiana/udel_confirm.php
+url	http://old.jrchina.com/btob_asiana/udel_ok.ipp
+url	http://www.hulu.com/watch/559035/episode3.mp4
+url	http://www.w3.org/1999/xhtml
+url	http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd
+url	https://www.amazon.com/Men-War-PC/dp/B001QZGVEC/EsoftTeam/watchcom.jpg
+url	www.belasting-telefoon.nl//images/banners/temp/02BC6B26_put.jpg
+url	www.belasting-telefoon.nl//images/banners/temp/index.php
+url	www.imuz.com/admin/data/bbs/review2/board/02BC6B26_put.jpg
+url	www.imuz.com/admin/data/bbs/review2/board/123.php
+url	www.imuz.com/admin/data/bbs/review2/board/index.php
+url	www.kgls.or.kr/news2/news_dir/02BC6B26_put.jpg
+url	www.kgls.or.kr/news2/news_dir/02BC6B26_put.jpgKorean
+url	www.kgls.or.kr/news2/news_dir/index.php
+url	www.wildrush.co.kr/bbs/data/image/work/02BC6B26_put.jpg
+url	www.wildrush.co.kr/bbs/data/image/work/webproxy.php

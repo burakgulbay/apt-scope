@@ -1,0 +1,12 @@
+APTGroup, lazarus, bluenoroff
+APTGroup, sandworm, sofacy
+
+cve	CVE-2016-4117
+cve	CVE-2016-4171
+cve	CVE-2018-8174
+email	intelreports@kasperksy.com
+email	intelreports@kaspersky.com
+fqdn	kasperksy.com
+fqdn	kaspersky.com
+fqdn	securelist.com
+url	securelist.com/apt-trends-report-q2-2018/86487

@@ -1,0 +1,25 @@
+Malware, uroburos
+Malware, comrat
+Malware, agent.btz
+AffectedIndustry, military
+AffectedCountry, usa
+
+fqdn	decode.py
+fqdn	easport-news.publicvm.com
+fqdn	new-book.linkpc.net
+fqdn	sportacademy.my03.com
+fqdn	weather-online.hopto.org
+fqdn	webonline.mefound.com
+fqdn	www.foreignaffairs.com
+md5	0ae421691579ff6b27f65f49e79e88f6
+md5	255118ac14a9e66124f7110acd16f2cd
+md5	51e7e58a1e654b6e586fe36e10c67a73
+md5	83a48760e92bf30961b4a943d3095b0a
+md5	8ebf7f768d7214f99905c99b6f8242dc
+md5	9d481769de63789d571805009cbf709a
+md5	b407b6e5b4046da226d6e189a67f62ca
+md5	e6ce1f962a47479a86ff2e67129f4ecc
+md5	ea23d67e41d1f0a7f7e7a8b59e7cb60f
+md5	ec7e3cfaeaac0401316d66e964be684e
+url	www.foreignaffairs.com/articles/66552/william-j-lynn-iii/defending-a-new-domain
+uuid	42aedc87-2188-41fd-b9a3-0c966feabec1

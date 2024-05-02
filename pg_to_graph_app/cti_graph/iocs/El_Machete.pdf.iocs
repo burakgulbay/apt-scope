@@ -1,0 +1,42 @@
+Malware, trojan-spy,python.ragua
+Filename, Hermosa XXX.pps.rar
+Filename, Suntzu.rar
+Filename, El arte de la guerra.rar
+Filename, Hot brazilian XXX.rar
+AffectedCountry, ecuador
+AffectedCountry, colombia
+AffectedCountry, venezuela
+AffectedCountry, usa
+AffectedCountry, peru
+AffectedCountry, cuba
+AffectedCountry, brazil
+AffectedCountry, spain
+AffectedCountry, france
+AffectedCountry, belgium
+AffectedCountry, sweden
+AffectedCountry, germany
+AffectedCountry, russia
+AffectedCountry, china
+AffectedCountry, malaysia
+AttackerCountry, spain
+APTGroup, machete
+
+email	intelreports@kaspersky.com
+fqdn	agaliarept.com
+fqdn	blogwhereyou.com
+fqdn	frejabe.com
+fqdn	grannegral.com
+fqdn	java.serveblog.net
+fqdn	kaspersky.com
+fqdn	name.domain.org
+fqdn	plushbr.com
+fqdn	xmailliwx.com
+md5	61d33dc5b257a18eb6514e473c1495fe
+md5	b26d1aec219ce45b2e80769368310471
+md5	b5ada760476ba9a815ca56f12a11d557
+md5	d6c112d951cb48cab37e5d7ebed2420b
+md5	df2889df7ac209e7b696733aa6b52af5
+md5	e486eddffd13bed33e68d6d8d4052270
+md5	e9b2499b92279669a09fef798af7f45b
+md5	f7e23b876fc887052ac8e2558f0d6c38
+url	http://name.domain.org/nickname/set/Signed_Update.jar

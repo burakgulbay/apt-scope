@@ -1,0 +1,8 @@
+Malware, x-agent
+Filename, Попр-Д30.apk
+AffectedCountry, ukraine
+APTGroup, fancy bear
+APTGroup, sofacy
+
+fqdn	crowdstrike.com
+md5	6f7523d3019fa190499f327211e01fcb

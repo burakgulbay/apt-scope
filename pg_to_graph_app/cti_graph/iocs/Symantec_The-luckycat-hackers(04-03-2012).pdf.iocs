@@ -1,0 +1,50 @@
+Malware, vbs.sojax
+Malware, bloodhound
+Malware, pidief
+AffectedCountry, india
+AffectedCountry, malaysia
+AffectedCountry, saudi arabia
+AffectedCountry, south korea
+APTGroup, luckycat
+
+copyright	Copyright  © Symantec Corporation 2012 
+copyright	Copyright © 2012 Symantec Corporation. All rights reserved.
+cve	CVE-2010-0188
+cve	CVE-2010-2883
+cve	CVE-2010-3333
+cve	CVE-2011-0611
+fqdn	2012enviroment.world.mu
+fqdn	bit.ly
+fqdn	charlesbrain.shop.co
+fqdn	clbest.greenglassint.net
+fqdn	dasauto.no-sports.de
+fqdn	et.com
+fqdn	footballshopping.shop.co
+fqdn	frankwhales.shop.co
+fqdn	jeepvihecle.shop.co
+fqdn	killmannets.0fees.net
+fqdn	lampaur.b2b.cm
+fqdn	lovesea-blog.co.de
+fqdn	lucysmith.0fees.net
+fqdn	maritimemaster.kilu.org
+fqdn	sawakastocks.tv4.org
+fqdn	security.cloud
+fqdn	server.com
+fqdn	shoesshopping.shop.co
+fqdn	shoppingfans.shop.co
+fqdn	skirtdressing.shop.co
+fqdn	symantec.cloud
+fqdn	tec.cloud
+fqdn	toms.0fees.net
+fqdn	tomsburs.shop.co
+fqdn	vpoasport.shopping2000.com
+fqdn	womems.in.nf
+fqdn	www.fireequipment.website.org
+fqdn	www.goodwell.all.co.uk
+fqdn	www.pumasports.website.org
+fqdn	www.symantec.com
+phoneNumber	+16505278000
+url	bit.ly/waZFhf
+url	bit.ly/ypnsNs
+url	http://server.com/count/count.php?m=c&n=MACADDRESS
+url	http://server.com/count/count.php?m=r&n=MACADDRESS.c

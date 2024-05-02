@@ -1,0 +1,13 @@
+Malware, elirks
+Malware, plugx
+AffectedCountry, japan
+
+cve	CVE-2011-0611
+fqdn	researchcenter.paloaltonetworks.com
+sha256	0e317e0fee4eb6c6e81b2a41029a9573d34cebeabab6d661709115c64526bf95
+sha256	200a4708afe812989451f5947aed2f30b8e9b8e609a91533984ffa55d02e60a2
+sha256	755138308bbaa9fcb9c60f0b089032ed4fa1cece830a954ad574bd0c2fe1f104
+sha256	8587e3a0312a6c4374989cbcca48dc54ddcd3fbd54b48833afda991a6a2dfdea
+sha256	f18ddcacfe4a98fb3dd9eaffd0feee5385ffc7f81deac100fdbbabf64233dc68
+tronix	41029a9573d34cebeabab6d661709115c64526bf95
+url	researchcenter.paloaltonetworks.com/2016/06/unit42-tracking-elirks-variants-in-japan-similarities-to-previous-attacks/
