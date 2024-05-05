@@ -38,12 +38,15 @@ Each file contains sql scripts to create database and import data.
 **ioc_transformations_db:** transformation between IoC served in this database. Possible transformation between IP <-> Domain <-> Subdomain <-> URL divided into different tables.
 
 **scan_db:** Scan results of IoCs are served in this database.
+
 Access Link: https://www.kaggle.com/datasets/burakglbay/scan-dataset
 
 **ssl_db:** SSL certificates and related info like fingerprints and etc. served in this database.
+
 Access Link: https://www.kaggle.com/datasets/burakglbay/ioc-ssl-fingerprint
 
 **whois_lookup_db:** Whois lookup results served in this database.
+
 Access Link: https://www.kaggle.com/datasets/burakglbay/whois-dataset
 
 **x_db:** X (Twitter) posts and related info about IoCs served in tihs database. 
