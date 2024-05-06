@@ -30,8 +30,12 @@ iocsearcher -f "Democracy_HongKong_Under_Attack.pdf"
 
 ## pg_raw_data
 Export of PostgreSQL  databases.
+
 Each file corresponds to an individual PostgreSQL database instance.
+
 Each file contains sql scripts to create database and import data.
+
+The following datasets are shared on Kaggle, due to the file size limitations applied on GitHub.
 
 **blocklists_db:** Collected IoC blocklists
 
