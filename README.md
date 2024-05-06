@@ -35,7 +35,11 @@ Each file contains sql scripts to create database and import data.
 
 **blocklists_db:** Collected IoC blocklists
 
+Access Link: https://www.kaggle.com/datasets/burakglbay/blocklists-dataset
+
 **ioc_transformations_db:** transformation between IoC served in this database. Possible transformation between IP <-> Domain <-> Subdomain <-> URL divided into different tables.
+
+Access Link: https://www.kaggle.com/datasets/burakglbay/ioc-transformation-dataset
 
 **scan_db:** Scan results of IoCs are served in this database.
 
